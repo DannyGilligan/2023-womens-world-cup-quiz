@@ -97,6 +97,23 @@ The inner HTML of the main button will change to 'Play On!' which when pressed w
 ![Check Answer](assets/documentation/wireframe05_check_answer.webp)
 </details>
 <!-- Wireframe 5 ends -->
+<!-- Wireframe 6 begins -->
+<details>
+  <summary> <b>Display Next Question</b></summary>
+<br>
+The nextQuestion() function will continue the process of iterating over the quizEngine object using the value of the questionCounter variable to access the corresponding index of the questions and choices to display until the final question has been reached. 
+
+This function will also change the HTML class attribute of the current question to .active in order to give the glowing effect on the tracker panel.
+
+When the last question has been answered, the nextQuestion() function will change the inner HTML of the main button to 'View Result!' instead of 'Play On!' and assign to it a function of displayResult().
+
+![Display Next Question 1](assets/documentation/wireframe06_display_next_question(1).webp)
+![Display Next Question 2](assets/documentation/wireframe06_display_next_question(2).webp)
+</details>
+<!-- Wireframe 6 ends -->
+
+
+
 
 
 ## Bugs
