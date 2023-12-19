@@ -159,7 +159,50 @@ A little bonus for the whiteboard lovers :cupid:
 ## Manual Testing
 
 
+<!-- The Deployment section is shown below, this will be disaplyed in a collapsible format, with each item shown in tabular form -->
 ## Deployment
+
+The site was deployed as a Minimum Viable Product using Github pages. 
+
+<details>
+    <summary><b>The steps for deployment are outlined here</b></summary>
+<br>
+<table>
+<tr><th><b>Step Description</b></th><th><b>Status</b></th></tr>
+<tr><td>In the Github repository, navigate to the 'Settings' tab</td><td rowspan="2">:heavy_check_mark:</td></tr>
+<tr><td>
+
+![Deployment Step 1](assets/documentation/deployment_01.webp)
+</td></tr>
+<tr><td>On the menu, navigate to 'Pages'</td><td rowspan="2">:heavy_check_mark:</td></tr>
+<tr><td>
+
+![Deployment Step 2](assets/documentation/deployment_02.webp)
+</td></tr>
+<tr><td>From the 'Branch' dropdown menu, select 'main'</td><td rowspan="2">:heavy_check_mark:</td></tr>
+<tr><td>
+
+![Deployment Step 3](assets/documentation/deployment_03.webp)
+</td></tr>
+<tr><td>Click the save button</td><td rowspan="2">:heavy_check_mark:</td></tr>
+<tr><td>
+
+![Deployment Step 4](assets/documentation/deployment_04.webp)
+</td></tr>
+<tr><td>The deployment process begins</td><td rowspan="2">:heavy_check_mark:</td></tr>
+<tr><td>
+
+![Deployment Step 5](assets/documentation/deployment_05.webp)
+</td></tr>
+<tr><td>Once the site deploys successfully, a confirmation is displayed and a live link generated</td><td rowspan="2">:heavy_check_mark:</td></tr>
+<tr><td>
+
+![Deployment Step 6](assets/documentation/deployment_06.webp)
+</td></tr>
+</table>
+</details>
+<br>
+The live link to this site is https://dannygilligan.github.io/2023-womens-world-cup-quiz/
 
 
 ## Technologies Used
