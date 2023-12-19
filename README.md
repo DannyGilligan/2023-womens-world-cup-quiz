@@ -80,8 +80,23 @@ Once a choice has been made by the user. the 'Shoot!' button will then trigger t
 ![VAR Assist Feature](assets/documentation/wireframe04_var_assist_feature.webp)
 </details>
 <!-- Wireframe 4 ends -->
+<!-- Wireframe 5 begins -->
+<details>
+  <summary> <b>Check Answer</b></summary>
+<br>
+Once the user has decided on their choice and selected the corresponding radio input, they can then trigger the checkAnswer() function by clicking on the 'Shoot!' button. This will then assign the radio inputs to a HTML collection by utilising the getElementsByClass method (the radio inputs will have a class attribute of 'choices'). 
 
+This HTML collection will then be iterated over using a 'for loop' to determine which input has been checked (using an IF conditional statement). Once the checked input has been identified, this will be stored in a variable named userChoice, which will be compared against the corresponding correct answer for the question held in the 'Answers' property of the quizEngine object (this will be accessed using dot notation and assigned to a variable named correctAnswer).
 
+If the userChoice and correctAnswer variables are equal (===), then feedback will be presented to the user with a 'GOAL!' message and a picture being displayed, the HTML element of the corresponding tracker item will be assigned a class of .correct and the colour will be changed to green (the .active class will be removed). The 'Goals Scored' counter will also be incremented by 1.
+
+If the userChoice and correctAnswer variables are not equal, the feedback will be presented to the user with a 'MISS!' message and a picture being displayed, the HTML element of the corresponding tracker item will be assigned a class of .incorrect and the colour will be changed to red  (the .active class will be removed). The 'Goals Scored' counter will not be incremented. 
+
+The inner HTML of the main button will change to 'Play On!' which when pressed will invoke a nextQuestion() function that will increment the questionCounter variable and display the content of the next question and set of choices to the user.
+
+![Check Answer](assets/documentation/wireframe05_check_answer.webp)
+</details>
+<!-- Wireframe 5 ends -->
 
 
 ## Bugs
