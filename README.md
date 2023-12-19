@@ -33,9 +33,21 @@ To note, the quiz will exist on a single page of HTML, with different sections b
 ![Wireframe_01](assets/documentation/wireframe01_enter_username.webp)
 </details>
 <!-- Wireframe 1 ends -->
+<!-- Wireframe 2 begins -->
+<details>
+  <summary> <b>Quiz Rules</b></summary>
+<br>
+Once the username is accepted, the rules of the quiz will then be displayed using the displayRules() function.
 
+In summary, there will be 11 questions related to the 2023 Women's World Cup, with 4 choices per question along with a VAR Assist feature that will remove 2 incorrect answers. The VAR Assist name comes from the 'Video Assistant Referee' which is a controversial technology used in football to assist in refereeing decisions (hopefully it will only do good things in this quiz). The user will be granted 3 VAR Assists at the beginning, and can use a max of 1 per question until they run out. (To disambiguate completely, there is no relationship to the VAR variable declaration keyword!)
 
+When a question is answered correctly, the user will score a goal, otherwise the attempt will be considered a miss.
 
+The button on this screen will have an inner text of 'Kick Off!' and will call a function to display the quiz content.
+
+![Wireframe Quiz Rules](assets/documentation/wireframe02_display_rules.webp)
+</details>
+<!-- Wireframe 2 ends -->
 
 
 
