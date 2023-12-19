@@ -111,9 +111,21 @@ When the last question has been answered, the nextQuestion() function will chang
 ![Display Next Question 2](assets/documentation/wireframe06_display_next_question(2).webp)
 </details>
 <!-- Wireframe 6 ends -->
+<!-- Wireframe 7 begins -->
+<details>
+  <summary> <b>Display Result</b></summary>
+<br>
+Once the last question has been answered, the user can click on the 'View Result!' button. This will display feedback to the user on the total goals scored out of the 11 attempts along with a text message congratulating the user on completing the quiz.
 
+An image will also be displayed to the user.
 
+The main button's inner HTML will be changed to 'Rematch!' and have a rematch() function assigned to it.
 
+This screen is the end of the current quiz session.
+
+![Display Result](assets/documentation/wireframe07_display_result.webp)
+</details>
+<!-- Wireframe 7 ends -->
 
 
 ## Bugs
