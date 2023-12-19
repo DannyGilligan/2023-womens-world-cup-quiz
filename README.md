@@ -69,8 +69,17 @@ Just below the logo, a progress tracker will be located that gives the user feed
 ![Display Quiz](assets/documentation/wireframe03_display_quiz.webp)
 </details>
 <!-- Wireframe 3 ends -->
+<!-- Wireframe 4 begins -->
+<details>
+  <summary> <b>VAR Assist Feature</b></summary>
+<br>
+The user can decide to trigger the varAssist() feature in order to remove 2 wrong answers from the screen. A 'varAssists' property will be included in the quizEngine object, this property will have 2 choice IDs held as string values in an array at each index that correspond to the wrong answers for each question, these choice IDs will be used to access the related HTML elements and set the display attribute to 'none'. The 'VAR Assists remaining' counter will be decremented upon use until it reaches 0, at this point the VAR Assist button will be disabled for the remainder of the quiz.
 
+Once a choice has been made by the user. the 'Shoot!' button will then trigger the checkAnswer() function.
 
+![VAR Assist Feature](assets/documentation/wireframe04_var_assist_feature.webp)
+</details>
+<!-- Wireframe 4 ends -->
 
 
 
