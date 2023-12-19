@@ -201,7 +201,7 @@ The site was deployed as a Minimum Viable Product using Github pages.
 </td></tr>
 </table>
 </details>
-<br>
+
 The live link to this site is https://dannygilligan.github.io/2023-womens-world-cup-quiz/
 
 
