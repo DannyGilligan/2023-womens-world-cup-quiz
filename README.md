@@ -126,6 +126,20 @@ This screen is the end of the current quiz session.
 ![Display Result](assets/documentation/wireframe07_display_result.webp)
 </details>
 <!-- Wireframe 7 ends -->
+<!-- Wireframe 8 begins -->
+<details>
+  <summary> <b>Rematch</b></summary>
+<br>
+The end screen prompts the user with a 'Rematch!' that will guide them back to the start screen.
+
+This will effectively reset the quiz.
+
+![Rematch](assets/documentation/wireframe08_rematch.webp)
+</details>
+<!-- Wireframe 8 ends -->
+
+
+
 
 
 ## Bugs
