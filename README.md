@@ -137,9 +137,17 @@ This will effectively reset the quiz.
 ![Rematch](assets/documentation/wireframe08_rematch.webp)
 </details>
 <!-- Wireframe 8 ends -->
+<!-- Wireframe 9 begins -->
+<details>
+  <summary> <b>Whiteboard Wireframe</b></summary>
+<br>
+A little bonus for the whiteboard lovers :cupid:
+<br>
+<br>
 
-
-
+![Whiteboard Wireframe](assets/documentation/wireframe09_whiteboard.webp)
+</details>
+<!-- Wireframe 9 ends -->
 
 
 ## Bugs
