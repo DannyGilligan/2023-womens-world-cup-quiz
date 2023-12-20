@@ -30,21 +30,22 @@ the entire contents of the page
     animation: quizEaseIn .7s;
     /*border: 1px solid magenta;*/
     /*overflow: hidden;*/
-  }
+}
   
-  @keyframes quizEaseIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-  }
+@keyframes quizEaseIn {
+0% { opacity: 0; }
+100% { opacity: 1; }
+}
 
 
 
-  /* 
+/* 
 ---------------------------------------- HERO IMAGE SECTION
 The hero image styling is below, 
 this will relate to the official FIFA logo 
 and the final end quiz picture
 */
+
 #hero-container{
     display: flex;
     flex-direction: column;
@@ -52,20 +53,111 @@ and the final end quiz picture
     margin-top: .2rem;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: .75rem;
+    margin-bottom: .5rem;
     justify-content: center;
     border: 2px solid black;
-    width: 97%;
+    width: 98%;
     border-radius: 5px;
     padding: 0;
     background-color: gold;
     box-shadow: 3px 3px 2px grey;
-  }
+}
   
-  #hero-image{
+#hero-image{
     width: 100%;
     height: auto;
     padding: 0;
     margin: 0;
     border-radius: 5px;
-  }
+}
+
+
+/* 
+---------------------------------------- TRACKER SECTION
+
+The styling of the tracking feature and 
+the individual 'tracker items' is below 
+*/
+
+#tracker-container {
+    height: 2.2rem;
+    width: 98%;
+    background: rgb(6,84,187);
+
+    /* The CSS code below for the gradient effect was taken directly from https://cssgradient.io/ */
+    background: -moz-linear-gradient(90deg, rgba(6,84,187,1) 0%, rgba(59,142,250,1) 14%, rgba(59,142,250,1) 86%, rgba(6,84,187,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(6,84,187,1) 0%, rgba(59,142,250,1) 14%, rgba(59,142,250,1) 86%, rgba(6,84,187,1) 100%);
+    background: linear-gradient(90deg, rgba(6,84,187,1) 0%, rgba(59,142,250,1) 14%, rgba(59,142,250,1) 86%, rgba(6,84,187,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0654bb",endColorstr="#0654bb",GradientType=1);
+    /* End of copied code from https://cssgradient.io/ */
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 5px;
+    box-shadow: 3px 3px 2px grey;
+}
+  
+#tracker-container-glow{
+    animation: glowFinal 1s infinite alternate;
+}
+
+@keyframes glowFinal {
+from {
+    box-shadow: 0 0 0.2rem red;
+}
+to {
+    box-shadow: 0 0 3rem 0.2rem gold;
+}
+}
+  
+#tracker-container-inner{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+  
+.tracker-item{
+    font-family: "FWWC 2023";
+    font-size: .8rem;
+    color: white ;
+    background-color: rgb(6, 84, 187);
+    width: 1.4rem;
+    height: 1.4rem;
+    border: 1.8px solid white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*text-shadow: 0rem 0rem .1rem #EEEDCE;*/
+}
+
+.tracker-item-incorrect{
+    background-color: #E83800;
+    color: white;
+}
+
+.tracker-item-correct{
+    background-color: #2F852B;
+    color: white;
+}
+
+.tracker-item-active{
+    background-color: #cc9d04;
+    color: white;
+    animation: glow .6s infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        box-shadow: 0 0 0.2rem -0.1rem blue;
+    }
+    to {
+        box-shadow: 0 0 0.3rem 0.2rem rgb(235, 235, 83);
+}
+}
+  
+
+
