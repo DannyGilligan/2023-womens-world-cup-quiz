@@ -1,6 +1,6 @@
 # FIFA 2023 Women's World Cup Quiz
 
-
+![Fifa WWC 2023 Logo](assets/images/hero-image.webp)
 
 <!-- Introduction Section is below, with a 'Back to Top' anchor link, the link will be shown at the bottom of every section -->
 ## Introduction
