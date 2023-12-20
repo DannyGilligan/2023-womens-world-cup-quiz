@@ -77,7 +77,19 @@ The question container takes up a prominent space on the screen and clearly disp
 </td></tr>
 </table>
 <!-- spacer -->
+<br>
+<table>
+<tr><td> <b>Choice Container</b> </td></tr>
+<tr><td>
+The choices can be selected from easy to use containers utilising radio inputs.
+</td></tr>
+<tr><td Colspan="2">
 
+![Choice Container](assets/documentation/features04_choice_containers.webp)
+
+</td></tr>
+</table>
+<!-- spacer -->
 
 
 
