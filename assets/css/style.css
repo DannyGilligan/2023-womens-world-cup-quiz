@@ -175,5 +175,28 @@ enter username, questions and choices panels
     margin-top: .5rem;
 }
   
+
+/* 
+---------------------------------------- TOP PANEL SECTION
+the top panel contains the question text box 
+and enter username panel
+*/
+
+#top-panel{
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 98%;
+    height: 4rem;
+    background-color: black;
+    color: #EEEDCE;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 800;
+    font-family: "FWWC 2023";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 3px 3px 2px grey;
+}
   
 
