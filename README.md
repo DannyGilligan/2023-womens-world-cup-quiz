@@ -321,6 +321,7 @@ A little bonus for the whiteboard lovers :cupid:
 
 ## User Stories
 
+<!-- 'As a user' User Stories are shown below -->
 <details>
   <summary><b>As a User</b></summary>
 <br>
@@ -386,8 +387,37 @@ A little bonus for the whiteboard lovers :cupid:
 </tr>
 </table>
 </details>
-
-
+<!-- 'As a Developer' User Stories are shown below -->
+<details>
+  <summary><b>As a Developer</b></summary>
+<br>
+<table>
+<tr>
+<th>User Story</th><th>Result</th>
+</tr>
+<!-- spacer -->
+<tr>
+<td>As a developer, I can easily access the quizEngine object in order to make any amendments such as new questions, choices, answers and VAR assists</td><td>:heavy_check_mark:</td>
+</tr>
+<!-- spacer -->
+<tr>
+<td>As a developer, I can easily navigate the code in the HTML file and I am provided with clear comments throughout</td><td>:heavy_check_mark:</td>
+</tr>
+<!-- spacer -->
+<tr>
+<td>As a developer, I can easily navigate the code in the CSS file and I am provided with clear comments throughout</td><td>:heavy_check_mark:</td>
+</tr>
+<!-- spacer -->
+<tr>
+<td>As a developer, I can easily navigate the code in the Javascript file and I am provided with clear comments throughout</td><td>:heavy_check_mark:</td>
+</tr>
+<!-- spacer -->
+<tr>
+<td>As a developer, I am provided with a comprehensive README.md file that details the functionality of the site and deployment steps</td><td>:heavy_check_mark:</td>
+</tr>
+<!-- spacer -->
+</table>
+</details>
 
 
 [Back to Top](#fifa-2023-womens-world-cup-quiz)
