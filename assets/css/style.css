@@ -4,4 +4,11 @@
     src: url('/assets/fonts/FWWC2023-Regular.woff') format('woff');
     font-weight: 400;
     font-style: normal;
-  }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: white;
+    font-family: "FWWC 2023"; 
+}
