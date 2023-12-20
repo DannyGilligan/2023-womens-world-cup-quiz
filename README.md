@@ -64,7 +64,19 @@ A tracker panel has been developed that provides the user with information on th
 </td></tr>
 </table>
 <!-- spacer -->
+<br>
+<table>
+<tr><td> <b>Question Container</b> </td></tr>
+<tr><td>
+The question container takes up a prominent space on the screen and clearly displays the text to the user, the high contrast allows for easy readibility and accessibilty.
+</td></tr>
+<tr><td Colspan="2">
 
+![Question Container](assets/documentation/features03_question_container.webp)
+
+</td></tr>
+</table>
+<!-- spacer -->
 
 
 
