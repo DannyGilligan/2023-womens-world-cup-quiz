@@ -524,7 +524,7 @@ The live link to this site is https://dannygilligan.github.io/2023-womens-world-
 <!-- spacer -->
 <tr><td>
 <div>
-	<code><img width="50" src="assets/documentation/tech_used_w3c.png" alt="W3C" title="W3C"/></code>
+	<code><img width="50" src="assets/documentation/tech_used_w3c.webp" alt="W3C" title="W3C"/></code>
 </div>
 </td>
 <td>W3C</td>
