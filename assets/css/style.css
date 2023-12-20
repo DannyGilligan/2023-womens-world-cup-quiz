@@ -160,4 +160,20 @@ to {
 }
   
 
+/* 
+---------------------------------------- QUIZ CONTAINER SECTION
+The quiz container sits below the tracker, 
+it's main function is to display the 
+enter username, questions and choices panels 
+*/
+
+#quiz-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: .5rem;
+}
+  
+  
 
