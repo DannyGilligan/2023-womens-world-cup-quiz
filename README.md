@@ -51,6 +51,23 @@ The official FIFA Women's World Cup 2023 logo has been adapted to incorporate 'Q
 </td></tr>
 </table>
 <!-- Feature 1 ends -->
+<br>
+<table>
+<tr><td> <b>Tracker Panel</b> </td></tr>
+<tr><td>
+A tracker panel has been developed that provides the user with information on their progress throughout the quiz such as the current question being displayed and which questions were previously answered correctly or incorrectly.
+</td></tr>
+<tr><td Colspan="2">
+
+![Tracker Panel](assets/documentation/features02_tracker_panel.webp)
+
+</td></tr>
+</table>
+<!-- spacer -->
+
+
+
+
 
 </details>
 
