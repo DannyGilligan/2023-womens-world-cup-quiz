@@ -38,7 +38,6 @@ the entire contents of the page
 }
 
 
-
 /* 
 ---------------------------------------- HERO IMAGE SECTION
 The hero image styling is below, 
@@ -100,7 +99,7 @@ the individual 'tracker items' is below
 }
   
 #tracker-container-glow{
-    animation: glowFinal 1s infinite alternate;
+    animation: glowFinal 1 infinite alternate;
 }
 
 @keyframes glowFinal {
@@ -147,7 +146,7 @@ to {
 .tracker-item-active{
     background-color: #cc9d04;
     color: white;
-    animation: glow .6s infinite alternate;
+    animation: glow 1s infinite alternate;
 }
 
 @keyframes glow {
