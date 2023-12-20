@@ -425,17 +425,12 @@ A little bonus for the whiteboard lovers :cupid:
 <br>
 <br>
 
-
-
 ## Manual Testing
 
 [Back to Top](#fifa-2023-womens-world-cup-quiz)
 <br>
 <br>
 <br>
-
-
-
 
 <!-- The Deployment section is shown below, this will be disaplyed in a collapsible format, with each item shown in tabular form -->
 ## Deployment
@@ -452,11 +447,13 @@ The site was deployed as a Minimum Viable Product using Github pages.
 
 ![Deployment Step 1](assets/documentation/deployment_01.webp)
 </td></tr>
+<!-- spacer -->
 <tr><td>On the menu, navigate to 'Pages'</td><td rowspan="2">:heavy_check_mark:</td></tr>
 <tr><td>
 
 ![Deployment Step 2](assets/documentation/deployment_02.webp)
 </td></tr>
+<!-- spacer -->
 <tr><td>From the 'Branch' dropdown menu, select 'main'</td><td rowspan="2">:heavy_check_mark:</td></tr>
 <tr><td>
 
@@ -472,6 +469,7 @@ The site was deployed as a Minimum Viable Product using Github pages.
 
 ![Deployment Step 5](assets/documentation/deployment_05.webp)
 </td></tr>
+<!-- spacer -->
 <tr><td>Once the site deploys successfully, a confirmation is displayed and a live link generated</td><td rowspan="2">:heavy_check_mark:</td></tr>
 <tr><td>
 
@@ -487,9 +485,55 @@ The live link to this site is https://dannygilligan.github.io/2023-womens-world-
 <br>
 <br>
 
-
-
+<!-- The Technologies Used section is shown below, this will be disaplyed in tabular form with icons for each technology -->
 ## Technologies Used
+
+#### 
+<table>
+<tr><th>Logo</th><th>Name</th><th>Primary Role</th><th>Link</th></tr>
+<!-- Technology Used 1 begins -->
+<tr><td>
+<div>
+	<code><img width="50" src="https://user-images.githubusercontent.com/25181517/117447155-6a868a00-af3d-11eb-9cfe-245df15c9f3f.png" alt="JavaScript" title="JavaScript"/></code>
+</div>
+</td>
+<td>Javascript</td>
+<td>Site interaction</td>
+<td>https://developer.mozilla.org/en-US/docs/Web/JavaScript</td>
+</tr>
+<!-- Technology Used 1 ends -->
+<tr><td>
+<div>
+	<code><img width="50" src="https://user-images.githubusercontent.com/25181517/192158954-f88b5814-d510-4564-b285-dff7d6400dad.png" alt="HTML" title="HTML"/></code>
+</div>
+</td>
+<td>HTML 5</td>
+<td>Site structure</td>
+<td>https://dev.w3.org/html5/spec-LC/</td>
+</tr>
+<!-- spacer -->
+<tr><td>
+<div>
+	<code><img width="50" src="https://user-images.githubusercontent.com/25181517/183898674-75a4a1b1-f960-4ea9-abcb-637170a00a75.png" alt="CSS" title="CSS"/></code>
+</div>
+</td>
+<td>CSS 3</td>
+<td>Site Styling</td>
+<td>https://www.w3.org/TR/2001/WD-css3-roadmap-20010523/</td>
+</tr>
+<!-- spacer -->
+<tr><td>
+<div>
+	<code><img width="50" src="assets/documentation/tech_used_w3c.png" alt="W3C" title="W3C"/></code>
+</div>
+</td>
+<td>W3C</td>
+<td>HTML & CSS Validation</td>
+<td>https://validator.w3.org/docs/</td>
+</tr>
+
+</table>
+
 
 [Back to Top](#fifa-2023-womens-world-cup-quiz)
 <br>
