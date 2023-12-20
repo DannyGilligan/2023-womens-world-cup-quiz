@@ -129,8 +129,19 @@ The VAR Assist feature will allow the user to remove two incorrect choices from 
 </td></tr>
 </table>  
 <!-- spacer -->
+<br>
+<table>
+<tr><td> <b>Goals Scored</b> </td></tr>
+<tr><td>
+A tracker will be visible on the bottom right hand corner of the screen during the quiz that will display the 'Goals Scored' by the user.
+</td></tr>
+<tr><td Colspan="2">
 
+![Goals Scored](assets/documentation/features08_goals_scored.webp)  
 
+</td></tr>
+</table>  
+<!-- spacer -->
 
 
 
