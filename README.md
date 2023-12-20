@@ -265,6 +265,318 @@ The live link to this site is https://dannygilligan.github.io/2023-womens-world-
 
 ## Credits
 
+
+<!-- The Images sub section is shown below, this will be disaplyed in a collapsible format, with each item shown in tabular form, the images represent thumbnails of the actual pictures used on the live site (they've been scaled down to 10% of the original size, approx 50px by 50px) -->
+<details>
+  <summary>Images</summary>
+<br>
+
+<table>
+<tr><th><b> Thumb </b></th><th><b> Production File Name </b></th><th><b> Description </b></th><th><b> Source </b></th></tr>
+<!-- image 1 begins -->
+<tr><td>
+
+![miss_image_0_thumb](assets/documentation/thumbnails/miss_image_0_thumbnail.webp)
+</td>
+<td>miss_image_0</td>
+<td>Emily van Egmond, Australia</td>
+<td>
+
+[here](https://www.sbs.com.au/news/article/what-must-happen-for-matildas-to-progress-to-world-cup-knockout/hn6ggt6eq)
+</td>
+</tr>
+<!-- image 1 ends -->
+<tr><td>
+
+![miss_image_1_thumb](assets/documentation//thumbnails/miss_image_1_thumbnail.webp)
+</td>
+<td>miss_image_1</td>
+<td>Giulia Dragoni, Italy</td>
+<td>
+
+[here](https://www.ctvnews.ca/mobile/sports/italians-in-tears-after-loss-to-south-africa-knocks-them-out-of-women-s-world-cup-1.6503519)
+</td>
+</tr>
+<!-- spacer -->
+<tr><td>
+
+![miss_image_2_thumb](assets/documentation/thumbnails/miss_image_2_thumbnail.webp)
+</td>
+<td>miss_image_2</td>
+<td>Julie Ertz, USA</td>
+<td>
+
+[here](https://www.forbes.com/sites/maryroeloffs/2023/08/06/us-knocked-out-of-womens-world-cup-after-dramatic-loss-to-sweden/
+)
+</td>
+</tr>
+<!-- spacer -->
+<tr><td>
+
+![miss_image_3_thumb](assets/documentation/thumbnails/miss_image_3_thumbnail.webp)
+</td>
+<td>miss_image_3</td>
+<td>Sam Kerr, Australia</td>
+<td>
+
+[here](https://www.forbes.com/sites/asifburhan/2023/08/16/england-defeat-hosts-australia-to-reach-first-womens-world-cup-final/)
+</td>
+</tr>
+<!-- spacer -->
+<tr><td>
+
+![miss_image_4_thumb](assets/documentation/thumbnails/miss_image_4_thumbnail.webp)
+</td>
+<td>miss_image_4</td>
+<td>Megan Rapinoe, USA</td>
+<td>
+
+[here](https://edition.cnn.com/sport/live-news/uswnt-sweden-womens-world-cup-knockout/h_9d56c79135d15aab65841753a8692a16
+)
+</td>
+</tr>
+<!-- spacer -->
+<tr><td>
+
+![miss_image_5_thumb](assets/documentation/thumbnails/miss_image_5_thumbnail.webp)
+</td>
+<td>miss_image_5</td>
+<td>Sophie Howard, Scotland</td>
+<td>
+
+[here](https://domesticolammy.medium.com/salma-paralluelo-and-my-uneven-connection-with-womens-football-a8a99bc4dd10
+)
+</td>
+</tr>
+<!-- spacer -->
+<tr><td>
+
+![miss_image_6_thumb](assets/documentation/thumbnails/miss_image_6_thumbnail.webp)
+</td>
+<td>miss_image_6</td>
+<td>Alex Morgan, USA</td>
+<td>
+
+[here](https://www.the-express.com/sport/soccer/109905/USWNT-lose-top-spot-FIFA-Rankings
+)
+</td>
+</tr>
+<!-- spacer -->
+<tr><td>
+
+![miss_image_7_thumb](assets/documentation/thumbnails/miss_image_7_thumbnail.webp)
+</td>
+<td>miss_image_7</td>
+<td>Sam Kerr, Australia</td>
+<td>
+
+[here](https://www.foxsports.com.au/football/world-cup/changed-sport-forever-australia-reacts-to-matildas-devastating-world-cup-exit/news-story/de2c94a88de3019c2af2e7eae2f81774
+)
+</td>
+</tr>
+<!-- spacer -->
+<tr><td>
+
+![miss_image_8_thumb](assets/documentation/thumbnails/miss_image_8_thumbnail.webp)
+</td>
+<td>miss_image_8</td>
+<td>Mary Earps, England</td>
+<td>
+
+[here](https://www.bbc.com/sport/football/66611861
+)
+</td>
+</tr>
+<!-- spacer -->
+<tr><td>
+
+![miss_image_9_thumb](assets/documentation/thumbnails/miss_image_9_thumbnail.webp)
+</td>
+<td>miss_image_9</td>
+<td>Hannah Wilkinson, New Zealand</td>
+<td>
+
+[here](https://www.abc.net.au/news/2023-07-25/womens-world-cup-live-updates-new-zealand-philippines-var/102644612
+)
+</td>
+</tr>
+<!-- spacer -->
+<tr><td>
+
+![miss_image_10_thumb](assets/documentation/thumbnails/miss_image_10_thumbnail.webp)
+</td>
+<td>miss_image_10</td>
+<td>Alexandra Popp, Germany</td>
+<td>
+
+[here](https://www.goal.com/en/news/shock-germany-out-womens-world-cup-group-stages-south-korea/bltb2277dcbc1244f38)
+</td>
+</tr>
+<!-- Miss Images end here -->
+<!-- Goal Images start here -->
+<tr><td>
+
+![goal_image_0_thumb](assets/documentation/thumbnails/goal_image_0_thumbnail.webp)
+</td>
+<td>goal_image_0</td>
+<td>Sam Kerr, Australia</td>
+<td>
+
+[here](https://www.theguardian.com/football/commentisfree/2023/aug/16/womens-world-cup-2023-matildas-fan-guide)
+</td>
+</tr>
+<!-- spacer -->
+<tr><td>
+
+![goal_image_1_thumb](assets/documentation/thumbnails/goal_image_1_thumbnail.webp)
+</td>
+<td>goal_image_1</td>
+<td>Wendy Shongwe, South Africa</td>
+<td>
+
+[here](https://www.flashscore.com/news/soccer-world-cup-women-south-africa-s-joy-at-women-s-world-cup-win-brings-hope-of-change-back-home/n9c0NhLj/)
+</td>
+</tr>
+<!-- spacer -->
+<tr><td>
+
+![goal_image_2_thumb](assets/documentation/thumbnails/goal_image_2_thumbnail.webp)
+</td>
+<td>goal_image_2</td>
+<td>Fridolina Rolfo, Sweden</td>
+<td>
+
+[here](https://www.latimes.com/sports/soccer/story/2023-08-19/womens-world-cup-sweden-beats-australia-bronze-medal)
+</td>
+</tr>
+<!-- spacer -->
+<tr><td>
+
+![goal_image_3_thumb](assets/documentation/thumbnails/goal_image_3_thumbnail.webp)
+</td>
+<td>goal_image_3</td>
+<td>Filippa Angeldal, Sweden</td>
+<td>
+
+[here](https://eu.usatoday.com/story/sports/soccer/2023/08/11/sweden-stakes-claim-as-a-women-s-world-cup-favorite-by-stopping-japan-2-1-in-quarterfinals/70572973007/)
+</td>
+</tr>
+<!-- spacer -->
+<tr><td>
+
+![goal_image_4_thumb](assets/documentation/thumbnails/goal_image_4_thumbnail.webp)
+</td>
+<td>goal_image_4</td>
+<td>Kenza Dali, France</td>
+<td>
+
+[here](https://newsrnd.com/sports/2023-08-08-france-morocco-(4-0)--les-bleues-join-the-quarters-of-the-women-s-world-cup-without-trembling.BJXjfpknn.html)
+</td>
+</tr>
+<!-- spacer -->
+<tr><td>
+
+![goal_image_5_thumb](assets/documentation/thumbnails/goal_image_5_thumbnail.webp)
+</td>
+<td>goal_image_5</td>
+<td>Sarina Bolden, Philippines</td>
+<td>
+
+[here](https://www.nzherald.co.nz/sport/fifa-womens-world-cup-2023-football-ferns-crash-back-down-to-earth-with-shock-loss-to-the-philippines/PCDJNAO7SRCRTFMBTGIB5RNWNM/)
+</td>
+</tr>
+<!-- spacer -->
+<tr><td>
+
+![goal_image_6_thumb](assets/documentation/thumbnails/goal_image_6_thumbnail.webp)
+</td>
+<td>goal_image_6</td>
+<td>Débora Cristiane de Oliveira, Brazil</td>
+<td>
+
+[here](https://www.skysports.com/football/story-telling/37390/12944561/20-of-the-best-images-from-the-womens-world-cup)
+</td>
+</tr>
+<!-- spacer -->
+<tr><td>
+
+![goal_image_7_thumb](assets/documentation/thumbnails/goal_image_7_thumbnail.webp)
+</td>
+<td>goal_image_7</td>
+<td>Yui Hasegawa, Japan</td>
+<td>
+
+[here](https://www.forbes.com/sites/asifburhan/2020/03/02/fifa-inspectors-assess-potential-hosts-of-the-2023-womens-world-cup/)
+</td>
+</tr>
+<!-- spacer -->
+<tr><td>
+
+![goal_image_8_thumb](assets/documentation/thumbnails/goal_image_8_thumbnail.webp)
+</td>
+<td>goal_image_8</td>
+<td>Ary Borges, Brazil</td>
+<td>
+
+[here](https://www.theguardian.com/football/2023/jul/27/brazil-womens-world-cup-fans-france-revival)
+</td>
+</tr>
+<!-- spacer -->
+<tr><td>
+
+![goal_image_9_thumb](assets/documentation/thumbnails/goal_image_9_thumbnail.webp)
+</td>
+<td>goal_image_9</td>
+<td>Charlotte Grant, Australia</td>
+<td>
+
+[here](https://shekicks.net/matildas-end-lionesses-30-game-unbeaten-run/)
+</td>
+</tr>
+<!-- spacer -->
+<tr><td>
+
+![goal_image_10_thumb](assets/documentation/thumbnails/goal_image_10_thumbnail.webp)
+</td>
+<td>goal_image_10</td>
+<td>Denise O'Sullivan, Ireland</td>
+<td>
+
+[here](https://www.uefa.com/womensworldcup/news/0283-1876eee8e56e-635398217fd4-1000--republic-of-ireland-at-the-2023-women-s-world-cup-fixtures-r/)
+</td>
+</tr>
+<!-- Goal images end here -->
+<!-- Miscellaneous images start here -->
+<tr><td>
+
+![hero_image_updated_thumb](assets/documentation/thumbnails/official_logo_thumbnail.webp)
+</td>
+<td>hero_image_updated</td>
+<td>Offical FIFA WWC 2023 Logo</td>
+<td>
+
+[here](https://www.printmag.com/branding-identity-design/2023-fifa-womens-world-cup/)
+</td>
+</tr>
+<!-- spacer -->
+<tr><td>
+
+![favicon_source_thumb](assets/documentation/thumbnails/favicon_source_thumbnail.webp)
+</td>
+<td>favicon</td>
+<td>Source used to generate favicon</td>
+<td>
+
+[here](https://seeklogo.com/vector-logo/495259/fifa-womens-world-cup-2023)
+</td>
+</tr>
+</table>
+
+</details>
+<!-- Images credits end here -->
+
+
+
 [Back to Top](#fifa-2023-womens-world-cup-quiz)
 <br>
 <br>
