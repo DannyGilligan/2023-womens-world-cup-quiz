@@ -265,6 +265,248 @@ The live link to this site is https://dannygilligan.github.io/2023-womens-world-
 
 ## Credits
 
+<!-- The Credits section is shown below, this will be disaplyed in a collapsible format, with a sub section for reference content/materials and a sub section for images, with each item shown in tabular form -->
+<details>
+    <summary>Reference Materials Used</summary>
+<br>
+<table>
+<tr><th><b> Description </b></th><th><b> Link </b></th></tr>
+<!-- Reference Material 1 begins -->
+<tr><td> Code Institute LMS Javascript Essentials Content </td>
+<td> 
+
+[here](https://codeinstitute.net/) 
+
+</td></tr>
+<!-- Reference Material 1 ends -->
+<tr><td> Javascript tutorial video produced by 'Bro Code' YouTube Channel</td>
+<td> 
+
+[here](https://www.youtube.com/watch?v=8dWL3wF_OMw)  
+
+</td></tr>
+<tr><td> Javascript 30 for 30 tutorials produced by Wes Bos</td>
+<td> 
+
+[here](https://javascript30.com/)
+
+</td></tr>
+<tr><td> W3 Schools Javascript Tutorial, Exercises and Quiz, published by w3schools.com </td>
+<td> 
+
+[here](https://www.w3schools.com/js/default.asp) 
+
+</td></tr>
+<tr><td> JS Challenger exercises, published by jschallenger.com </td>
+<td> 
+
+[here](https://www.jschallenger.com/)
+
+</td></tr>
+<tr><td> Guide on using the transform property, published by geeksforgeeks.org </td>
+<td> 
+
+[here](https://www.geeksforgeeks.org/how-to-rotate-an-html-div-element-90-degrees-using-javascript/)
+
+</td></tr>
+<tr><td> Code Institute README.md Tutorial by Kasia Bogucka </td>
+<td> 
+
+[here](https://www.youtube.com/watch?v=l1DE7L-4eKQ)  
+
+</td></tr>
+<tr><td> Code Institute Guide to MVP (PP2) by Kasia Bogucka </td>
+<td> 
+
+[here](https://www.youtube.com/watch?v=wsOvkf22B_A)  
+
+</td></tr>
+<tr><td> Official FIFA 2023 Women's World Cup colour scheme published by schemecolor.com </td>
+<td> 
+
+[here](https://www.schemecolor.com/fifa-womens-world-cup-2023-logo.php)  
+
+</td></tr>
+<tr><td> Official FIFA 2023 Women's World Cup font, downloaded from fontshub.pro </td>
+<td> 
+
+[here](https://fontshub.pro/font/fwwc-2023-download)
+
+</td></tr>
+<tr><td> Flexbox guide, published by css-tricks.com </td>
+<td> 
+
+[here](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)  
+
+</td></tr>
+<tr><td> Guide to self-hosting fonts, published by Kevin Powell </td>
+<td> 
+
+[here](https://www.youtube.com/watch?v=zK-yy6C2Nck)
+
+</td></tr>
+<tr><td> Centering items using Flexbox, published by MDN Web Docs </td>
+<td> 
+
+[here](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout/Aligning_items_in_a_flex_container)  
+
+</td></tr>
+<tr><td> Code used for spherical shading on main button developed by 'The Anonymous Koder' </td>
+<td> 
+
+[here](https://codepen.io/theanonymouskoder/pen/PomjmeY?editors=1100)  
+
+</td></tr>
+<tr><td> Code used for CSS gradient effects provided by cssgradient.io </td>
+<td> 
+
+[here](https://cssgradient.io/)
+
+</td></tr>
+<tr><td> Guide for using the CSS 'fade in' animation, published by Jamie Juviler </td>
+<td> 
+
+[here](https://blog.hubspot.com/website/css-fade-in)
+
+</td></tr>
+<!-- spacer -->
+</td></tr>
+<tr><td> Guide on scaling an element up and down gracefully on hover, by Stackoverflow user Roy </td>
+<td> 
+
+[here](https://stackoverflow.com/a/36227036)
+
+</td></tr>
+<!-- spacer -->
+<tr><td> Guide for styling input placeholder text, published by MDN Web Docs </td>
+<td> 
+
+[here](https://developer.mozilla.org/en-US/docs/Web/CSS/::placeholder) 
+
+</td></tr>
+<!-- spacer -->
+<tr><td> Code Institute README.md Template, published by Code Institute </td>
+<td> 
+
+[here](https://github.com/Code-Institute-Solutions/readme-template)  
+
+</td></tr>
+<!-- spacer -->
+<tr><td> Github README.md Markdown Guide, by Github user lifeparticle </td>
+<td> 
+
+[here](https://github.com/lifeparticle/Markdown-Cheatsheet)  
+
+</td></tr>
+<!-- spacer -->
+<tr><td> Github README.md Cheatsheet, by Github user tchapi </td>
+<td> 
+
+[here](https://github.com/tchapi/markdown-cheatsheet/blob/master/README.md)
+
+</td></tr>
+<!-- spacer -->
+<tr><td> The hex values of the Github background colour were obtained using imagecolorpicker.com </td>
+<td> 
+
+[here](https://imagecolorpicker.com/en)
+
+</td></tr>
+<!-- spacer -->
+<tr><td> How to create anchor links in README.md, by Github user Rachel Hyman </td>
+<td> 
+
+[here](https://gist.github.com/rachelhyman/b1f109155c9dafffe618)  
+
+</td></tr>
+<!-- spacer -->
+<tr><td> How to add collapsible items to README.md, by Github user pierrejoubert73 </td>
+<td> 
+
+[here](https://gist.github.com/pierrejoubert73/902cc94d79424356a8d20be2b382e1ab)
+
+</td></tr>
+<!-- spacer -->
+</td></tr>
+<tr><td> Advice to add documentation folder to README.md, Code Institute Slack message by Kera Cudmore </td>
+<td> 
+
+[here](https://code-institute-room.slack.com/archives/C01UE4ND3H7/p1701601763768449?thread_ts=1701600346.836459&cid=C01UE4ND3H7)
+
+</td></tr>
+<!-- spacer -->
+<tr><td> How to add a tickmark to README.md, by Stackoverflow user Waylan </td>
+<td> 
+
+[here](https://stackoverflow.com/questions/54694160/adding-checkbox-in-markdown-table-does-not-work)
+
+</td></tr>
+<!-- spacer -->
+<tr><td> Github emojis cheatsheet, by Github user ikatyang </td>
+<td> 
+
+[here](https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md)
+
+</td></tr>
+<!-- spacer -->
+<tr><td> Site used to convert png to favicon, favicon.io </td>
+<td> 
+
+[here](https://favicon.io/favicon-converter/)
+
+</td></tr>
+<!-- spacer -->
+<tr><td> Guide to making atomic git commits, by Aleksandr Hovhannisyan </td>
+<td> 
+
+[here](https://www.aleksandrhovhannisyan.com/blog/atomic-git-commits/)
+
+</td></tr>
+<!-- spacer -->
+<tr><td> Library of front end icons used for README.md, by Github user marwin1991 </td>
+<td> 
+
+[here](https://marwin1991.github.io/profile-technology-icons/)
+
+</td></tr>
+<!-- spacer -->
+<tr><td> Site containing open source icons used for README.md, published by iconduck.com </td>
+<td> 
+
+[here](https://iconduck.com/)
+
+</td></tr>
+<!-- spacer -->
+<tr><td> Site used to convert svg to png, svgtopng.com </td>
+<td> 
+
+[here](https://svgtopng.com/)
+
+</td></tr>
+<!-- spacer -->
+<tr><td> How to make a cell span a row, used in README.md, by Stackoverflow user Nisse Engström </td>
+<td> 
+
+[here](https://stackoverflow.com/questions/26400006/make-a-td-span-the-entire-row-in-a-table)
+
+</td></tr>
+<!-- spacer -->
+<tr><td> Introduction to the pillars of OOP, by Chandrakishor Gupta </td>
+<td> 
+
+[here](https://datatrained.com/post/four-pillars-of-oops/)
+
+</td></tr>
+<!-- spacer -->
+<tr><td> Guide on HTML Radio Input Tags, published by w3schools.com </td>
+<td> 
+
+[here](https://www.w3schools.com/tags/att_input_type_radio.asp)
+
+</td></tr>
+<!-- spacer -->
+</table>
+</details>
 
 <!-- The Images sub section is shown below, this will be disaplyed in a collapsible format, with each item shown in tabular form, the images represent thumbnails of the actual pictures used on the live site (they've been scaled down to 10% of the original size, approx 50px by 50px) -->
 <details>

@@ -465,7 +465,6 @@ the VAR Assist button
     align-items: center;
     width: 30%;
     color: #EEEDCE;
-    font-size: .7rem;
     border-radius: 5px;
     background-color: black;
     box-shadow: 2px 2px 2px grey;
@@ -550,7 +549,7 @@ the Goals Scored tracker
     color: #EEEDCE;
     background-color: black;
     width: 30%;
-    font-size: .8rem;
+    font-size: .9rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -566,4 +565,5 @@ the Goals Scored tracker
     align-items: center;
     text-align: center;
     margin-bottom: .3rem;
+    font-size: .9rem;
 }
