@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'FWWC 2023';
+    src: local('FWWC 2023 Regular'), local('FWWC-2023-Regular'),
+        url('FWWC2023-Regular.woff2') format('woff2'),
+        url('FWWC2023-Regular.woff') format('woff'),
+        url('FWWC2023-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
