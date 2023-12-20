@@ -282,3 +282,68 @@ input::placeholder {
 }
 
 
+/* 
+---------------------------------------- CHOICE CONTAINER SECTION
+The styling for the outer choices container, 
+the individual choice containers and 
+the radio inputs is below 
+*/
+
+#choices-container-outer{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: .5rem;
+    row-gap: .5rem;
+    /*display: none;*/
+}
+  
+  
+.choice-container{
+    display: flex;
+    height: 2rem;
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 5px;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(6,84,187);
+    color: #EEEDCE;
+    font-family: "FWWC 2023";
+    font-size: .9rem;
+    padding: .3rem 1rem .3rem 1rem;
+    box-shadow: 3px 3px 2px grey;
+    transition: transform .2s ease-in-out;
+    /*display: none;*/
+}
+  
+.choice-container:hover {
+    box-shadow: 5px 5px 2px pink;
+    transform: scale(1.02);
+}
+  
+.choice-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.offside-text{
+    justify-content: center;
+    align-items: center;
+    margin-right: 1.5rem; /*This is to offset the margin-left applied from .choice-text */
+}
+  
+.choice-input{
+    margin-right: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+input {
+    width: 1.2rem;
+    height: 1.2rem;
+    border: 1px solid black;
+}
