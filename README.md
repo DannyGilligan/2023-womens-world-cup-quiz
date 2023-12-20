@@ -142,7 +142,25 @@ A tracker will be visible on the bottom right hand corner of the screen during t
 </td></tr>
 </table>  
 <!-- spacer -->
+<br>
+<table>
+<tr><td> <b>On Hover Changes</b> </td></tr>
+<tr><td>
+Any items on the screen that the user can interact with will display a subtle colour change on the box shadow when hovered over to convey that the item can be interacted with by tapping or clicking on it.
+</td></tr>
+<tr><td Colspan="2">
 
+![On Hover](assets/documentation/features09_hover_change.webp)
+
+</td></tr>
+</table>
+<!-- spacer -->
+
+[Back to Features](#features)
+<br>
+<br>
+<br>
+</details>
 
 
 </details>
