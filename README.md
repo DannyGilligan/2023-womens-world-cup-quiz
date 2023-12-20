@@ -31,9 +31,15 @@ It is aimed at anyone who enjoys quizzes and may have an interest in sports with
 
 
 
+<!-- The Existing Features section is shown below, this will be disaplyed in a collapsible format, with each item shown in tabular form -->
 ## Features
 
+<details>
+  <summary> <b>Existing Features</b> </summary>
 
+
+
+</details>
 
 [Back to Top](#fifa-2023-womens-world-cup-quiz)
 <br>
