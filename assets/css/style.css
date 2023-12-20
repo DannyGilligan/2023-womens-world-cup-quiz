@@ -462,7 +462,7 @@ the VAR Assist button
     font-size: .7rem;
     border-radius: 5px;
     background-color: black;
-    box-shadow: 3px 3px 2px grey;
+    box-shadow: 2px 2px 2px grey;
 }
   
 #var-assist-button{
@@ -470,7 +470,7 @@ the VAR Assist button
     background-color: #E83800;
     border: 1px solid #E83800;
     color: #EEEDCE;
-    box-shadow: 3px 3px 2px #EEEDCE;
+    box-shadow: 2px 2px 2px #EEEDCE;
     border-radius: 5px;
     cursor: pointer;
     height: 2rem;
@@ -487,3 +487,49 @@ the VAR Assist button
 #var-assist-remaining{
     font-size: .8rem;
 }
+
+
+/* 
+---------------------------------------- MAIN BUTTON SECTION
+This section holds the styling 
+for the main on screen button 
+*/
+
+#bottom-panel-item2{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+#main-button{
+    font-family: "FWWC 2023";
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    border: 1.5px solid black;
+    box-shadow: 3px 3px 2px grey;
+   
+  
+    /* Below is the code for the subtle 3D sphere effect copied directly from https://codepen.io/theanonymouskoder/pen/PomjmeY?editors=1100 */
+    background: 
+    radial-gradient(
+      circle at 25% 25%,
+      #ffffff,
+      #EEEDCE
+    );
+    border-radius: 50%;
+    /* End of copied code from https://codepen.io/theanonymouskoder/pen/PomjmeY?editors=1100 */
+  
+    cursor: pointer;
+    transition: transform .1s ease-in-out;
+}
+  
+#main-button:hover {
+    box-shadow: 4px 4px 2px pink;
+    transform: scale(1.04);
+}
+  
