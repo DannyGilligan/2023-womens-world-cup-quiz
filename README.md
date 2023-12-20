@@ -36,8 +36,21 @@ It is aimed at anyone who enjoys quizzes and may have an interest in sports with
 
 <details>
   <summary> <b>Existing Features</b> </summary>
+<!-- Feature 1 begins -->
+<table>
+<tr><td> <b> Customised Logo</b></td></tr>
+<tr>
+<td>
+The official FIFA Women's World Cup 2023 logo has been adapted to incorporate 'Quiz' in the title and serves as a visual highlight of the screen adding vibrant colour to enhance the user experience.
+</td>
+</tr>
+<tr><td Colspan="2">
 
+![Quiz logo](assets/documentation/features01_customised_logo.webp)
 
+</td></tr>
+</table>
+<!-- Feature 1 ends -->
 
 </details>
 
