@@ -230,7 +230,7 @@ answer feedback boxes
     color: #EEEDCE;
     font-size: .7rem;
     box-shadow: 3px 3px 2px grey;
-    /*display: none;*/
+    display: none; /* toggle this!!!! */
 }
   
 #enter-username-message{
@@ -280,4 +280,5 @@ input::placeholder {
     opacity: 0.8;
     color: black;
 }
-  
+
+
