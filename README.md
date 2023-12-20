@@ -2,6 +2,22 @@
 
 ![Fifa WWC 2023 Logo](assets/images/hero-image.webp)
 
+## Table of Contents
+
+* [Introduction](#introduction)
+* [Features](#features)
+* [Wireframes](#wireframes)
+* [Bugs](#bugs)
+* [User Stories](#user-stories)
+* [Manual Testing](#manual-testing)
+* [Deployment](#deployment)
+* [Technologies Used](#technologies-used)
+* [Credits](#credits)
+* [Acknowledgements](#acknowledgements)
+<br>
+<br>
+<br>
+
 <!-- Introduction Section is below, with a 'Back to Top' anchor link, the link will be shown at the bottom of every section -->
 ## Introduction
 The FIFA 2023 Women's World Cup Quiz is the 2nd project deliverable as part of the Code Insititute Diploma in Full Stack Software Development. It is a multiple choice quiz built using Javascript, HTML and CSS.
