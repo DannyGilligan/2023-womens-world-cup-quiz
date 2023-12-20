@@ -103,7 +103,18 @@ The user interaction with the quiz is enabled through a simple button that has c
 </td></tr>
 </table>  
 <!-- spacer -->
+<br>
+<table>
+<tr><td> <b>FWWC 2023 Official Font</b> </td></tr>
+<tr><td>
+The site uses the official font named 'FWWC 2023' to stay consistent with the brand identity of the event. The source of the font download has been linked in the Credits section.
+</td></tr>
+<tr><td Colspan="2">
 
+![Official Font](assets/documentation/features06_official_font.JPG)
+
+</td></tr>
+</table>  
 
 </details>
 
