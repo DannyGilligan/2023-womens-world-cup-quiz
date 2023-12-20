@@ -1,169 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FIFA 2023 Women's World Cup Quiz</title>
 </head>
+
 <body>
 
-<!-- The outer-container below will encapsulate the entire quiz screen to aid in responsiveness styling -->
-<div id="outer-container">
+    <!-- The outer-container below will encapsulate the entire quiz screen to aid in responsiveness styling -->
+    <div id="outer-container">
         <!-- The hero-container below will hold the FIFA official logo, and also the end quiz image once the user answers clicks on 'view result' -->
-    <div id="hero-container">
-        <div id="hero-container-inner">
-            <img src="assets/images/hero-image-updated.jpg" alt="Women's World Cup 2023 Logo" id="hero-image">
-            <img src="assets/images/test-final-pic.JPG" alt="Women's World Cup 2023 winners celebrate" id="end-quiz-image">
-        </div>
-    </div>
-
-    <div id="tracker-container">
-        <div id="tracker-container-inner">
-            <!-- Each individual tracker item below will correspond to a question, this will provide user feedback on their progress during the quiz -->
-            <div id="tracker-item-0" class="tracker-item tracker-item-incorrect">
-                <span>1</span>
-            </div>
-            <div id="tracker-item-1" class="tracker-item tracker-item-correct">
-                <span>2</span>
-            </div>
-            <div id="tracker-item-2" class="tracker-item tracker-item-correct">
-                <span>3</span>
-            </div>
-            <div id="tracker-item-3" class="tracker-item tracker-item-correct">
-                <span>4</span>
-            </div>
-            <div id="tracker-item-4" class="tracker-item tracker-item-incorrect">
-                <span>5</span>
-            </div>
-            <div id="tracker-item-5" class="tracker-item tracker-item-correct">
-                <span>6</span>
-            </div>
-            <div id="tracker-item-6" class="tracker-item tracker-item-active">
-                <span>7</span>
-            </div>
-            <div id="tracker-item-7" class="tracker-item">
-                <span>8</span>
-            </div>
-            <div id="tracker-item-8" class="tracker-item">
-                <span>9</span>
-            </div>
-            <div id="tracker-item-9" class="tracker-item">
-                <span>10</span>
-            </div>
-            <div id="tracker-item-10" class="tracker-item">
-                <span>11</span>
+        <div id="hero-container">
+            <div id="hero-container-inner">
+                <img src="assets/images/hero-image-updated.jpg" alt="Women's World Cup 2023 Logo" id="hero-image">
+                <img src="assets/images/test-final-pic.JPG" alt="Women's World Cup 2023 winners celebrate"
+                    id="end-quiz-image">
             </div>
         </div>
-    </div> <!-- << tracker-container closing tag -->
 
-    <!-- The quiz-container below will hold all the elements related to the actual quiz (features, questions, choices, main button) -->
-    <div id="quiz-container">
-
-        <!-- The top panel displays the welcome message, and then the question text to the user depending on the context -->
-        <div id="top-panel">
-            <div id="top-panel-inner">
-                <p>
-                    Welcome to the FIFA 2023 Women's World Cup Quiz
-                </p>
+        <div id="tracker-container">
+            <div id="tracker-container-inner">
+                <!-- Each individual tracker item below will correspond to a question, this will provide user feedback on their progress during the quiz -->
+                <div id="tracker-item-0" class="tracker-item tracker-item-incorrect">
+                    <span>1</span>
+                </div>
+                <div id="tracker-item-1" class="tracker-item tracker-item-correct">
+                    <span>2</span>
+                </div>
+                <div id="tracker-item-2" class="tracker-item tracker-item-correct">
+                    <span>3</span>
+                </div>
+                <div id="tracker-item-3" class="tracker-item tracker-item-correct">
+                    <span>4</span>
+                </div>
+                <div id="tracker-item-4" class="tracker-item tracker-item-incorrect">
+                    <span>5</span>
+                </div>
+                <div id="tracker-item-5" class="tracker-item tracker-item-correct">
+                    <span>6</span>
+                </div>
+                <div id="tracker-item-6" class="tracker-item tracker-item-active">
+                    <span>7</span>
+                </div>
+                <div id="tracker-item-7" class="tracker-item">
+                    <span>8</span>
+                </div>
+                <div id="tracker-item-8" class="tracker-item">
+                    <span>9</span>
+                </div>
+                <div id="tracker-item-9" class="tracker-item">
+                    <span>10</span>
+                </div>
+                <div id="tracker-item-10" class="tracker-item">
+                    <span>11</span>
+                </div>
             </div>
-        </div> <!-- << top-panel closing tag -->
+        </div> <!-- << tracker-container closing tag -->
 
-        <!-- The mid-panel below will display enter username box, the quiz rules, the choices and input fields, then the answer feedback to the user depending on the context -->
-        <div id="mid-panel">
-            <!-- the enter-username-container will hold the login input form -->
-            <div id="enter-username-container">
-                <div id="enter-username-message">
+        <!-- The quiz-container below will hold all the elements related to the actual quiz (features, questions, choices, main button) -->
+        <div id="quiz-container">
+
+            <!-- The top panel displays the welcome message, and then the question text to the user depending on the context -->
+            <div id="top-panel">
+                <div id="top-panel-inner">
                     <p>
-                        11 questions stand between you and glory!
-                    </p>
-                    <p>
-                        Get your shooting boots ready and enter your shirt name below to get on the team sheet.
+                        Welcome to the FIFA 2023 Women's World Cup Quiz
                     </p>
                 </div>
+            </div> <!-- << top-panel closing tag -->
 
-                <div id="input-form-container">
-                    <form>
-                        <label for="username-input">Shirt name:</label><br>
-                        <input type="text" id="username-input" name="username"
-                            placeholder="Must be between 2 and 15 characters"><br>
-                    </form>
-                </div>
-            </div> <!-- << enter-username-container closing tag -->
-        
-            <!-- The choices container displays the 4 possible choices and radio inputs to the user, the guide on HTML Radio Input tags published by w3schools.com was referenced here, link in README.md -->
-            <div id="choices-container-outer">
-
-                <!-- Choice 1 -->
-                <div id="choice-1-container" class="choice-container">
-                    <label for="choice-1-input" class="choice-input choice-text">Spain</label>
-                        <input type="radio" id="choice-1-input" name="choice-input" value="choice-1">
-                </div>
-
-                <!-- Choice 2 -->
-                <div id="choice-2-container" class="choice-container">
-                    <label for="choice-2-input" class="choice-input choice-text">Ireland</label>
-                        <input type="radio" id="choice-2-input" name="choice-input" value="choice-2">
-                </div>
-
-                <!-- Choice 3 -->
-                <div id="choice-3-container" class="choice-container">
-                    <label for="choice-3-input" class="choice-input choice-text">France</label>
-                        <input type="radio" id="choice-3-input" name="choice-input" value="choice-3">
-                </div>
-
-                <!-- Choice 4 -->
-                <div id="choice-4-container" class="choice-container">                  
-                    <label for="choice-4-input" class="choice-input choice-text">Argentina</label>
-                        <input type="radio" id="choice-4-input" name="choice-input" value="choice-4">
-                </div>
-
-            </div> <!-- << choices-container-outer closing tag -->
-
-            <!-- This container will display the answer feedback to the user, whether it was a 'GOAL!' or a 'MISS!', related images and text will also be displayed -->
-            <div id="answer-feedback-outer">
-
-                <div id="answer-feedback-inner">
-
-                    <!-- will hold the feedback image -->
-                    <div id="answer-feedback-image-container">
-                        <img src="assets/images/" alt="Female Footballer" id="answer-feedback-image">
-                    </div>
-
-                    <!-- Will hold text -->
-                    <div id="answer-feedback-text">
+            <!-- The mid-panel below will display enter username box, the quiz rules, the choices and input fields, then the answer feedback to the user depending on the context -->
+            <div id="mid-panel">
+                <!-- the enter-username-container will hold the login input form -->
+                <div id="enter-username-container">
+                    <div id="enter-username-message">
                         <p>
-                            Choice is Correct
+                            11 questions stand between you and glory!
                         </p>
-                    </div>   
-
-                    <!-- Will hold the 'GOAL!' or 'MISS!' feedback -->
-                    <div id="answer-feedback-status">
-                        <span>GOAL!</span>
+                        <p>
+                            Get your shooting boots ready and enter your shirt name below to get on the team sheet.
+                        </p>
                     </div>
 
-                </div>
-            </div> <!-- << answer-feedback-outer closing tag -->
+                    <div id="input-form-container">
+                        <form>
+                            <label for="username-input">Shirt name:</label><br>
+                            <input type="text" id="username-input" name="username"
+                                placeholder="Must be between 2 and 15 characters"><br>
+                        </form>
+                    </div>
+                </div> <!-- << enter-username-container closing tag -->
+
+                <!-- The choices container displays the 4 possible choices and radio inputs to the user, the guide on HTML Radio Input tags published by w3schools.com was referenced here, link in README.md -->
+                <div id="choices-container-outer">
+
+                    <!-- Choice 1 -->
+                    <div id="choice-1-container" class="choice-container">
+                        <label for="choice-1-input" class="choice-input choice-text">Spain</label>
+                        <input type="radio" id="choice-1-input" name="choice-input" value="choice-1">
+                    </div>
+
+                    <!-- Choice 2 -->
+                    <div id="choice-2-container" class="choice-container">
+                        <label for="choice-2-input" class="choice-input choice-text">Ireland</label>
+                        <input type="radio" id="choice-2-input" name="choice-input" value="choice-2">
+                    </div>
+
+                    <!-- Choice 3 -->
+                    <div id="choice-3-container" class="choice-container">
+                        <label for="choice-3-input" class="choice-input choice-text">France</label>
+                        <input type="radio" id="choice-3-input" name="choice-input" value="choice-3">
+                    </div>
+
+                    <!-- Choice 4 -->
+                    <div id="choice-4-container" class="choice-container">
+                        <label for="choice-4-input" class="choice-input choice-text">Argentina</label>
+                        <input type="radio" id="choice-4-input" name="choice-input" value="choice-4">
+                    </div>
+
+                </div> <!-- << choices-container-outer closing tag -->
+
+                <!-- This container will display the answer feedback to the user, whether it was a 'GOAL!' or a 'MISS!', related images and text will also be displayed -->
+                <div id="answer-feedback-outer">
+                    <div id="answer-feedback-inner">
+
+                        <!-- will hold the feedback image -->
+                        <div id="answer-feedback-image-container">
+                            <img src="assets/images/" alt="Female Footballer" id="answer-feedback-image">
+                        </div>
+
+                        <!-- Will hold text -->
+                        <div id="answer-feedback-text">
+                            <p>
+                                Choice is Correct
+                            </p>
+                        </div>
+
+                        <!-- Will hold the 'GOAL!' or 'MISS!' feedback -->
+                        <div id="answer-feedback-status">
+                            <span>GOAL!</span>
+                        </div>
+
+                    </div>
+
+                </div> <!-- << answer-feedback-outer closing tag -->
+
+            </div> <!-- << mid-panel closing tag -->
+
+        </div> <!-- << quiz-container closing tag -->
+
+        <!-- The bottom-panel contains the VAR Assist button, the main button and the goals scored tracker -->
+        <div id="bottom-panel">
+
+            
+        </div>
 
 
 
 
-        </div> <!-- << mid-panel closing tag -->
 
-
-
-
-
-
-
-    </div> <!-- << quiz-container closing tag -->
-
-
-
-
-
-
-</div> <!-- << outer-container closing tag -->
-
+    </div> <!-- << outer-container closing tag -->
 
 </body>
+
 </html>
