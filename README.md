@@ -111,10 +111,28 @@ The site uses the official font named 'FWWC 2023' to stay consistent with the br
 </td></tr>
 <tr><td Colspan="2">
 
-![Official Font](assets/documentation/features06_official_font.JPG)
+![Official Font](assets/documentation/features06_official_font.webp)
 
 </td></tr>
 </table>  
+<!-- spacer -->
+<br>
+<table>
+<tr><td> <b>VAR Assist</b> </td></tr>
+<tr><td>
+The VAR Assist feature will allow the user to remove two incorrect choices from the screen. When activated, a function will be invoked that replaces the inner HTML of the incorrect choices with 'Offside!', the radio inputs will also be disabled for these choices. The user will be granted 3 VAR Assists at the start of the quiz, and can use 1 per question until they run out.
+</td></tr>
+<tr><td Colspan="2">
+
+![VAR Assist](assets/documentation/features07_var_assist.webp) 
+
+</td></tr>
+</table>  
+<!-- spacer -->
+
+
+
+
 
 </details>
 
