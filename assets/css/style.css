@@ -12,3 +12,27 @@ body {
     background: white;
     font-family: "FWWC 2023"; 
 }
+
+
+/* 
+---------------------------------------- OUTER CONTAINER SECTION
+The outer container encapsulates 
+the entire contents of the page 
+*/
+
+#outer-container{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 98%;
+    animation: quizEaseIn .7s;
+    border: 1px solid magenta;
+    overflow: hidden;
+  }
+  
+  @keyframes quizEaseIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
