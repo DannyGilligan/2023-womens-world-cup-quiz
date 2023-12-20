@@ -321,6 +321,75 @@ A little bonus for the whiteboard lovers :cupid:
 
 ## User Stories
 
+<details>
+  <summary><b>As a User</b></summary>
+<br>
+<table>
+<tr>
+<th>User Story</th><th>Result</th>
+</tr>
+<!-- User Story 1 begins -->
+<tr>
+<td>As a user, I can enter a username</td><td>:heavy_check_mark:</td>
+</tr>
+<!-- User Story 1 ends -->
+<tr>
+<td>As a user, if the username I submit is invalid, I am alerted to this and the requirements are emphasised to me</td><td>:heavy_check_mark:</td>
+</tr>
+<!-- spacer -->
+<tr>
+<td>As a user, I can clearly read the question text displayed to me</td><td>:heavy_check_mark:</td>
+</tr>
+<!-- spacer -->
+<tr>
+<td>As a user, I can easily read the choices text that is displayed to me</td><td>:heavy_check_mark:</td>
+</tr>
+<!-- spacer -->
+<tr>
+<td>As a user, I can select a choice by tapping or clicking on the associated radio input</td><td>:heavy_check_mark:</td>
+</tr>
+<!-- spacer -->
+<tr>
+<td>As a user, I can tap or click on the 'Shoot!' button to submit my choice</td><td>:heavy_check_mark:</td>
+</tr>
+<!-- spacer -->
+<tr>
+<td>As a user, I can easily identify the VAR Assist button and tap or click on it</td><td>:heavy_check_mark:</td>
+</tr>
+<!-- spacer -->
+<tr>
+<td>As a user, I can easily see my progress throughout the quiz including the current active question and the questions I answered correctly or incorrectly previously</td><td>:heavy_check_mark:</td>
+</tr>
+<!-- spacer -->
+<tr>
+<td>As a user, I can easily see my current score</td><td>:heavy_check_mark:</td>
+</tr>
+<!-- spacer -->
+<tr>
+<td>As a user, I am provided with instant and clear feedback on whether my answer was correct or incorrect</td><td>:heavy_check_mark:</td>
+</tr>
+<!-- spacer -->
+<tr>
+<td>As a user, when I choose to use the VAR Assist feature, I can clearly determine which choices remain selectable and which have been changed to 'Offside!'</td><td>:heavy_check_mark:</td>
+</tr>
+<!-- spacer -->
+<tr>
+<td>As a user, I can clearly see how many VAR Assists I have remaining</td><td>:heavy_check_mark:</td>
+</tr>
+<!-- spacer -->
+<tr>
+<td>As a user, I can clearly determine when the quiz has ended</td><td>:heavy_check_mark:</td>
+</tr>
+<!-- spacer -->
+<tr>
+<td>As a user, I am provided with a final result</td><td>:heavy_check_mark:</td>
+</tr>
+</table>
+</details>
+
+
+
+
 [Back to Top](#fifa-2023-womens-world-cup-quiz)
 <br>
 <br>
