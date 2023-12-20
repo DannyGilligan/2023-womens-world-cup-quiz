@@ -179,7 +179,6 @@ enter username, questions and choices panels
 /* 
 ---------------------------------------- TOP PANEL SECTION
 the top panel contains the question text box 
-and enter username panel
 */
 
 #top-panel{
@@ -191,7 +190,6 @@ and enter username panel
     color: #EEEDCE;
     text-align: center;
     font-size: 1rem;
-    font-weight: 800;
     font-family: "FWWC 2023";
     display: flex;
     justify-content: center;
@@ -200,3 +198,86 @@ and enter username panel
 }
   
 
+/* 
+---------------------------------------- MID PANEL SECTION
+the top panel contains the enter username, 
+choice container and 
+answer feedback boxes
+*/
+
+#mid-panel{
+    width: 98%;
+    /*display: none;*/
+}
+
+#enter-username-container{
+    display: flex;
+    color: white;
+    flex-wrap: wrap;
+    max-width: 100%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 12rem;
+    margin-top: .5rem;
+    padding-top: .3rem;
+    padding-left: .3rem;
+    padding-right: .2rem;
+    row-gap: .5rem;
+    border: 2px solid black;
+    border-radius: 5px;
+    background: rgb(6,84,187);
+    color: #EEEDCE;
+    font-size: .7rem;
+    box-shadow: 3px 3px 2px grey;
+    /*display: none;*/
+}
+  
+#enter-username-message{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+}
+  
+#enter-username-message p{
+    font-size: .8rem;
+    margin: 0;
+    padding-top: .3rem;
+}
+
+#input-form-container{
+    display: flex;
+    width: 100%;
+}
+
+#input-form-container form{
+    width: 100%;
+}
+
+#username-input{
+    margin-top: 0rem;
+    text-align: center;
+    width: 80%;
+    height: 2rem;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-family: "FWWC 2023";
+    font-size: .7rem;
+}
+  
+/*
+#input-form-container label {
+    margin-bottom: 1rem;
+}
+*/
+
+input::placeholder {
+    text-align: center;
+    font-size: .7rem;
+    opacity: 0.8;
+    color: black;
+}
+  
