@@ -13,7 +13,7 @@
     <div id="hero-container">
         <div id="hero-container-inner">
             <img src="assets/images/hero-image-updated.jpg" alt="Women's World Cup 2023 Logo" id="hero-image">
-            <img src="assets/images/test-final-pic.JPG" alt="Women's World Cup 2023 Logo" id="end-quiz-image">
+            <img src="assets/images/test-final-pic.JPG" alt="Women's World Cup 2023 winners celebrate" id="end-quiz-image">
         </div>
     </div>
 
@@ -56,39 +56,39 @@
         </div>
     </div> <!-- << tracker-container closing tag -->
 
-        <!-- The quiz-container below will hold all the elements related to the actual quiz (features, questions, choices, main button) -->
-        <div id="quiz-container">
+    <!-- The quiz-container below will hold all the elements related to the actual quiz (features, questions, choices, main button) -->
+    <div id="quiz-container">
 
-            <!-- The top panel displays the welcome message, and then the question text to the user depending on the context -->
-            <div id="top-panel">
-                <div id="top-panel-inner">
+        <!-- The top panel displays the welcome message, and then the question text to the user depending on the context -->
+        <div id="top-panel">
+            <div id="top-panel-inner">
+                <p>
+                    Welcome to the FIFA 2023 Women's World Cup Quiz
+                </p>
+            </div>
+        </div> <!-- << top-panel closing tag -->
+
+        <!-- The mid-panel below will display enter username box, the quiz rules, the choices and input fields, then the answer feedback to the user depending on the context -->
+        <div id="mid-panel">
+            <div id="enter-username-container">
+                <div id="enter-username-message">
                     <p>
-                        Welcome to the FIFA 2023 Women's World Cup Quiz
+                        11 questions stand between you and glory!
+                    </p>
+                    <p>
+                        Get your shooting boots ready and enter your shirt name below to get on the team sheet.
                     </p>
                 </div>
-            </div>
 
-            <!-- The mid-panel below will display enter username box, the quiz rules, the choices and input fields, then the answer feedback to the user depending on the context -->
-            <div id="mid-panel">
-                <div id="enter-username-container">
-                    <div id="enter-username-message">
-                        <p>
-                            11 questions stand between you and glory!
-                        </p>
-                        <p>
-                            Get your shooting boots ready and enter your shirt name below to get on the team sheet.
-                        </p>
-                    </div>
-
-                    <div id="input-form-container">
-                        <form>
-                            <label for="username-input">Shirt name:</label><br>
-                            <input type="text" id="username-input" name="username"
-                                placeholder="Must be between 2 and 15 characters"><br>
-                        </form>
-                    </div>
+                <div id="input-form-container">
+                    <form>
+                        <label for="username-input">Shirt name:</label><br>
+                        <input type="text" id="username-input" name="username"
+                            placeholder="Must be between 2 and 15 characters"><br>
+                    </form>
                 </div>
-            </div> <!-- << mid-panel closing tag -->
+            </div>
+        
 
             <!-- The choices container displays the 4 possible choices and radio inputs to the user, the guide on HTML Radio Input tags published by w3schools.com was referenced here, link in README.md -->
             <div id="choices-container-outer">
@@ -119,6 +119,7 @@
 
             </div> <!-- << choices-container-outer closing tag -->
 
+        </div> <!-- << mid-panel closing tag -->
 
 
 
@@ -126,8 +127,7 @@
 
 
 
-
-        </div> <!-- << quiz-container closing tag -->
+    </div> <!-- << quiz-container closing tag -->
 
 
 
