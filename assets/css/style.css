@@ -26,13 +26,46 @@ the entire contents of the page
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 98%;
+    max-width: 100%;
     animation: quizEaseIn .7s;
-    border: 1px solid magenta;
-    overflow: hidden;
+    /*border: 1px solid magenta;*/
+    /*overflow: hidden;*/
   }
   
   @keyframes quizEaseIn {
     0% { opacity: 0; }
     100% { opacity: 1; }
+  }
+
+
+
+  /* 
+---------------------------------------- HERO IMAGE SECTION
+The hero image styling is below, 
+this will relate to the official FIFA logo 
+and the final end quiz picture
+*/
+#hero-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: .2rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: .75rem;
+    justify-content: center;
+    border: 2px solid black;
+    width: 97%;
+    border-radius: 5px;
+    padding: 0;
+    background-color: gold;
+    box-shadow: 3px 3px 2px grey;
+  }
+  
+  #hero-image{
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    border-radius: 5px;
   }
