@@ -26,7 +26,7 @@ the entire contents of the page
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 100%;
+    max-width: 98%;
     animation: quizEaseIn .7s;
     /*border: 1px solid magenta;*/
     /*overflow: hidden;*/
@@ -376,7 +376,6 @@ include the feedback image, text and
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100%;
     padding-left: 2rem;
     padding-right: 2rem;
 }
@@ -384,7 +383,7 @@ include the feedback image, text and
 #answer-feedback-image-container{
     margin-top: .5rem;
     border: 1px solid #EEEDCE;
-    width: 50%;
+    width: 60%;
     border-radius: 5px;
     box-shadow: 0 0 5px 1px #EEEDCE;
 }
@@ -413,8 +412,37 @@ include the feedback image, text and
     align-items: center;
     text-align: center;
     color: #EEEDCE;
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: bold;
     width: 100%;
     height: 20%;
 }
+
+
+/* 
+---------------------------------------- BOTTOM PANEL SECTION
+Container for the VAR Assist Button, 
+Shoot Button and Goals Scored tracker 
+is shown below
+*/
+
+#bottom-panel{
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+    width: 98%;
+    height: 6rem;
+    justify-content: space-between;
+    border-radius: 5px;
+    animation: easeIn 2s;
+    /*display: none;*/
+}
+  
+  /* The fade in animation code below was taken from https://blog.hubspot.com/website/css-fade-in */
+@keyframes easeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+  /* End of copied code from https://blog.hubspot.com/website/css-fade-in */
+  
+
