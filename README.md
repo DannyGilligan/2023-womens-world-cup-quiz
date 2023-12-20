@@ -639,6 +639,13 @@ The live link to this site is https://dannygilligan.github.io/2023-womens-world-
 
 </td></tr>
 <!-- spacer -->
+<tr><td> How to use a submit button outside the form, by joshbranchaud </td>
+<td> 
+
+[here](https://til.hashrocket.com/posts/v2s2gxgifj-submit-a-form-with-a-button-outside-the-form)
+
+</td></tr>
+<!-- spacer -->
 </table>
 </details>
 
