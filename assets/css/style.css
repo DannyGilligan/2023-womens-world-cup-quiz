@@ -99,7 +99,7 @@ the individual 'tracker items' is below
 }
   
 #tracker-container-glow{
-    animation: glowFinal 1 infinite alternate;
+    animation: glowFinal 1s infinite alternate;
 }
 
 @keyframes glowFinal {
