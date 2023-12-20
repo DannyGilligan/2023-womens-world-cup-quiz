@@ -431,18 +431,59 @@ is shown below
     flex-direction: row;
     margin-top: 1rem;
     width: 98%;
-    height: 6rem;
+    height: 5rem;
     justify-content: space-between;
     border-radius: 5px;
     animation: easeIn 2s;
     /*display: none;*/
 }
   
-  /* The fade in animation code below was taken from https://blog.hubspot.com/website/css-fade-in */
+/* The fade in animation code below was taken from https://blog.hubspot.com/website/css-fade-in */
 @keyframes easeIn {
     0% { opacity: 0; }
     100% { opacity: 1; }
 }
-  /* End of copied code from https://blog.hubspot.com/website/css-fade-in */
+/* End of copied code from https://blog.hubspot.com/website/css-fade-in */
   
 
+/* 
+---------------------------------------- VAR ASSIST SECTION
+Holds the styling for
+the VAR Assist button 
+*/
+
+#bottom-panel-item1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    color: #EEEDCE;
+    font-size: .7rem;
+    border-radius: 5px;
+    background-color: black;
+    box-shadow: 3px 3px 2px grey;
+}
+  
+#var-assist-button{
+    font-size: .9rem;
+    background-color: #E83800;
+    border: 1px solid #E83800;
+    color: #EEEDCE;
+    box-shadow: 3px 3px 2px #EEEDCE;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 2rem;
+    min-width: 3rem;
+    margin: .4rem;
+    transition: transform .1s ease-in-out;
+}
+  
+#var-assist-button:hover {
+    box-shadow: 3px 3px 2px pink;
+    transform: scale(1.05);
+}
+  
+#var-assist-remaining{
+    font-size: .8rem;
+}
