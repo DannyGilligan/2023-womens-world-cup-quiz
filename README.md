@@ -24,9 +24,17 @@ The FIFA 2023 Women's World Cup Quiz is the 2nd project deliverable as part of t
 The topic of the quiz is general knowledge relating to the FIFA 2023 Women's World Cup. The quiz aims to be an entertaining and informative way of increasing exposure and knowledge of women's football, with the intention of helping to increase popularity.
 It is aimed at anyone who enjoys quizzes and may have an interest in sports with the hopes of providing this audience with a fun, interactive Javascript product.
 
+[Back to Top](#fifa-2023-womens-world-cup-quiz)
+<br>
+<br>
+<br>
+
 ## Features
 
-
+[Back to Top](#fifa-2023-womens-world-cup-quiz)
+<br>
+<br>
+<br>
 
 
 <!-- The Wireframces section is shown below, this will be disaplyed in a collapsible format, with screenshots -->  
@@ -165,14 +173,35 @@ A little bonus for the whiteboard lovers :cupid:
 </details>
 <!-- Wireframe 9 ends -->
 
+[Back to Top](#fifa-2023-womens-world-cup-quiz)
+<br>
+<br>
+<br>
 
 ## Bugs
 
+[Back to Top](#fifa-2023-womens-world-cup-quiz)
+<br>
+<br>
+<br>
 
 ## User Stories
 
+[Back to Top](#fifa-2023-womens-world-cup-quiz)
+<br>
+<br>
+<br>
+
+
 
 ## Manual Testing
+
+[Back to Top](#fifa-2023-womens-world-cup-quiz)
+<br>
+<br>
+<br>
+
+
 
 
 <!-- The Deployment section is shown below, this will be disaplyed in a collapsible format, with each item shown in tabular form -->
@@ -220,11 +249,31 @@ The site was deployed as a Minimum Viable Product using Github pages.
 
 The live link to this site is https://dannygilligan.github.io/2023-womens-world-cup-quiz/
 
+[Back to Top](#fifa-2023-womens-world-cup-quiz)
+<br>
+<br>
+<br>
+
+
 
 ## Technologies Used
 
+[Back to Top](#fifa-2023-womens-world-cup-quiz)
+<br>
+<br>
+<br>
 
 ## Credits
 
+[Back to Top](#fifa-2023-womens-world-cup-quiz)
+<br>
+<br>
+<br>
+
 
 ## Acknowledgements
+
+[Back to Top](#fifa-2023-womens-world-cup-quiz)
+<br>
+<br>
+<br>
