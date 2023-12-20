@@ -90,7 +90,19 @@ The choices can be selected from easy to use containers utilising radio inputs.
 </td></tr>
 </table>
 <!-- spacer -->
+<br>
+<table>
+<tr><td> <b>Main Button</b> </td></tr>
+<tr><td>
+The user interaction with the quiz is enabled through a simple button that has contextual commands associated with it depending on what screen is currently displayed. The focus is on making the quiz easy to use and accessible.
+</td></tr>
+<tr><td Colspan="2">
 
+![Main Button](assets/documentation/features05_main_button.webp)
+
+</td></tr>
+</table>  
+<!-- spacer -->
 
 
 </details>
