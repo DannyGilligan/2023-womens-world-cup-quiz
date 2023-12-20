@@ -466,7 +466,7 @@ the VAR Assist button
 }
   
 #var-assist-button{
-    font-size: .9rem;
+    font-size: .8rem;
     background-color: #E83800;
     border: 1px solid #E83800;
     color: #EEEDCE;
@@ -532,4 +532,32 @@ for the main on screen button
     box-shadow: 4px 4px 2px pink;
     transform: scale(1.04);
 }
-  
+
+
+/* 
+---------------------------------------- GOALS SCORED SECTION
+This holds the styling for
+the Goals Scored tracker 
+*/
+
+#bottom-panel-item3{
+    color: #EEEDCE;
+    background-color: black;
+    width: 30%;
+    font-size: .8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 3px 3px 2px grey;
+}
+
+#goals-scored-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: .3rem;
+}
