@@ -9,11 +9,13 @@ let quizEngine = {
         event.preventDefault();
         quizEngine.userName = document.getElementById('username-input');
         console.log(quizEngine.userName.value);
+        document.getElementById('enter-username-container').style.display = 'none';
+        document.getElementById('quiz-rules-inner-container').style.display = 'flex';
     }
-}
+};
 
-let enterUsernameForm = document.getElementById('enter-username')
-enterUsernameForm.addEventListener("submit", quizEngine.handleUserNameSubmit)
+let enterUsernameForm = document.getElementById('enter-username');
+enterUsernameForm.addEventListener("submit", quizEngine.handleUserNameSubmit);
 
 
 /*
