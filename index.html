@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="A multiple choice quiz based on the FIFA 2023 Women's World Cup">
-    <meta name="keywords" content="FIFA, Women, World Cup, Football, 2023, Quiz, Sport, General Knowledge, Competition, Fair Play">
+    <meta name="keywords"
+        content="FIFA, Women, World Cup, Football, 2023, Quiz, Sport, General Knowledge, Competition, Fair Play">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="ass/favicon-32x32.png">
@@ -81,7 +82,7 @@
 
             <!-- The mid-panel below will display enter username box, the quiz rules, the choices and input fields, then the answer feedback to the user depending on the context -->
             <div id="mid-panel">
-                <!-- the enter-username-container will hold the login input form -->
+                <!-- the enter-username-container will hold the login input form, the input validation will be performed via the 'minlength', 'maxlength' and 'required' attributes -->
                 <div id="enter-username-container">
                     <div id="enter-username-message">
                         <p>
@@ -96,7 +97,8 @@
                         <form id="enter-username">
                             <label for="username-input"></label><br>
                             <input type="text" id="username-input" name="username"
-                                placeholder="Must be between 2 and 15 characters" class="username-input-warning" minlength=2 maxlength=15 required><br>
+                                placeholder="Must be between 2 and 15 characters" class="username-input-warning"
+                                minlength=2 maxlength=15 required><br>
                         </form>
                     </div>
                 </div> <!-- << enter-username-container closing tag -->
@@ -120,31 +122,31 @@
 
                 <!-- The choices container displays the 4 possible choices and radio inputs to the user, the guide on HTML Radio Input tags published by w3schools.com was referenced here, link in README.md -->
                 <div>
-                <form id="choices-container-outer">
-                    <!-- Choice 1 -->
-                    <div id="choice-1-container" class="choice-container">
-                        <label for="choice-1-input" class="choice-input choice-text">Spain</label>
-                        <input type="radio" id="choice-1-input" name="choice-input" value="choice-1" required>
-                    </div>
+                    <form id="choices-container-outer">
+                        <!-- Choice 1 -->
+                        <div id="choice-1-container" class="choice-container">
+                            <label for="choice-1-input" class="choice-input choice-text">Spain</label>
+                            <input type="radio" id="choice-1-input" name="choice-input" value="choice-1" required>
+                        </div>
 
-                    <!-- Choice 2 -->
-                    <div id="choice-2-container" class="choice-container">
-                        <label for="choice-2-input" class="choice-input choice-text">Ireland</label>
-                        <input type="radio" id="choice-2-input" name="choice-input" value="choice-2">
-                    </div>
+                        <!-- Choice 2 -->
+                        <div id="choice-2-container" class="choice-container">
+                            <label for="choice-2-input" class="choice-input choice-text">Ireland</label>
+                            <input type="radio" id="choice-2-input" name="choice-input" value="choice-2">
+                        </div>
 
-                    <!-- Choice 3 -->
-                    <div id="choice-3-container" class="choice-container">
-                        <label for="choice-3-input" class="choice-input choice-text">France</label>
-                        <input type="radio" id="choice-3-input" name="choice-input" value="choice-3">
-                    </div>
+                        <!-- Choice 3 -->
+                        <div id="choice-3-container" class="choice-container">
+                            <label for="choice-3-input" class="choice-input choice-text">France</label>
+                            <input type="radio" id="choice-3-input" name="choice-input" value="choice-3">
+                        </div>
 
-                    <!-- Choice 4 -->
-                    <div id="choice-4-container" class="choice-container">
-                        <label for="choice-4-input" class="choice-input choice-text">Argentina</label>
-                        <input type="radio" id="choice-4-input" name="choice-input" value="choice-4">
-                    </div>
-                </form>        
+                        <!-- Choice 4 -->
+                        <div id="choice-4-container" class="choice-container">
+                            <label for="choice-4-input" class="choice-input choice-text">Argentina</label>
+                            <input type="radio" id="choice-4-input" name="choice-input" value="choice-4">
+                        </div>
+                    </form>
                 </div> <!-- << choices-container-outer closing tag -->
 
                 <!-- This container will display the answer feedback to the user, whether it was a 'GOAL!' or a 'MISS!', related images and text will also be displayed -->
@@ -153,7 +155,8 @@
 
                         <!-- will hold the feedback image -->
                         <div id="answer-feedback-image-container">
-                            <img src="assets/images/goal_image_2.webp" alt="Female Footballer" id="answer-feedback-image">
+                            <img src="assets/images/goal_image_2.webp" alt="Female Footballer"
+                                id="answer-feedback-image">
                         </div>
 
                         <!-- Will hold text -->
@@ -211,13 +214,13 @@
 
     </div> <!-- << outer-container closing tag -->
 
-<script src="assets/javascript/script.js"></script>
+    <script src="assets/javascript/script.js"></script>
 
-<!-- noscript tag added to inform user if browser does not support javascript -->
-<noscript>
-    Your browser does not support Javascript. Please check your settings or use a different
-    browser.
-</noscript>
+    <!-- noscript tag added to inform user if browser does not support javascript -->
+    <noscript>
+        Your browser does not support Javascript. Please check your settings or use a different
+        browser.
+    </noscript>
 
 </body>
 
