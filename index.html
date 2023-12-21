@@ -21,9 +21,9 @@
         <!-- The hero-container below will hold the FIFA official logo, and also the end quiz image once the user answers clicks on 'view result' -->
         <div id="hero-container">
             <div id="hero-container-inner">
-                <img src="assets/images/hero-image.webp" alt="Women's World Cup 2023 Logo" id="hero-image">
+                <img src="assets/images/hero-image.webp" alt="Women's World Cup 2023 Logo" id="hero-image" style="display: none">
                 <img src="assets/images/end-quiz-image.webp" alt="Women's World Cup 2023 winners celebrate"
-                    id="end-quiz-image" style="display: none">
+                    id="end-quiz-image" >
             </div>
         </div> <!-- << hero-container closing tag -->
 
@@ -74,7 +74,7 @@
             <div id="top-panel">
                 <div id="top-panel-inner">
                     <p>
-                        Welcome to the FIFA 2023 Women's World Cup Quiz
+                        Congratulations Danny, you scored 6 out of 11 attempts on goal.
                     </p>
                 </div>
             </div> <!-- << top-panel closing tag -->
@@ -103,15 +103,15 @@
 
                 <!-- The quiz rules container will hold the rules of the quiz and be displayed after the user enters a valid username -->
                 <div id="quiz-rules-outer-container">
-                    <div id="quiz-rules-outer-container">
+                    <div id="quiz-rules-inner-container">
                         <p>
-                            There are 11 questions.
-                            With 4 choices per question.
-                            You must select a choice.
-                            When your choice is made, shoot!
-                            A correct answer will score a goal.
-                            Use the VAR Assist to remove 2 wrong answers.
-                            You will be granted 3 assists, use them wisely!
+                            There are 11 questions.<br>
+                            With 4 choices per question.<br>
+                            You must select a choice.<br>
+                            When your choice is made, shoot!<br>
+                            A correct answer will score a goal.<br>
+                            A VAR Assist removes 2 wrong answers.<br>
+                            You have 3 VAR Assists, use them wisely!<br>
                             <br>
                             Are you ready to kick off?
                         </p>
@@ -153,7 +153,7 @@
 
                         <!-- will hold the feedback image -->
                         <div id="answer-feedback-image-container">
-                            <img src="assets/images/miss_image_10.webp" alt="Female Footballer" id="answer-feedback-image">
+                            <img src="assets/images/goal_image_2.webp" alt="Female Footballer" id="answer-feedback-image">
                         </div>
 
                         <!-- Will hold text -->
@@ -191,7 +191,7 @@
 
             <!-- Main button elements -->
             <div id="bottom-panel-item2">
-                <button form="choices-container-outer" id="main-button">Enter</button>
+                <button form="choices-container-outer" id="main-button">Rematch?</button>
             </div>
 
             <!-- Goals Scored tracker elements -->

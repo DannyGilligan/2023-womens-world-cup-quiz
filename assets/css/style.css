@@ -50,8 +50,7 @@ and the final end quiz picture
     flex-direction: column;
     align-items: center;
     margin-top: .2rem;
-    margin-left: auto;
-    margin-right: auto;
+
     margin-bottom: .5rem;
     justify-content: center;
     border: 2px solid black;
@@ -69,6 +68,15 @@ and the final end quiz picture
     margin: 0;
     border-radius: 5px;
 }
+
+#end-quiz-image{
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    border-radius: 5px; 
+}
+
 
 
 /* 
@@ -116,7 +124,7 @@ to {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    visibility: hidden;  /*  */
+    /*  visibility: hidden;    TOGGLE THIS!!  */
 }
   
 .tracker-item{
@@ -235,7 +243,7 @@ answer feedback boxes
     color: #EEEDCE;
     font-size: .7rem;
     box-shadow: 3px 3px 2px grey;
-    /* display: none; toggle this!!!! */
+    display: none;   /* toggle this!!!! */
 }
   
 #enter-username-message{
@@ -288,6 +296,41 @@ input::placeholder {
 
 
 /* 
+---------------------------------------- QUIZ RULES CONTAINER SECTION
+The styling for the quiz rules section is below, this will be displayed
+after the user enters a valid username
+*/
+
+#quiz-rules-inner-container{
+    display: flex;
+    color: white;
+    flex-wrap: wrap;
+    max-width: 100%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 13rem;
+    margin-top: .5rem;
+    padding-top: .1rem;
+    padding-left: .1rem;
+    padding-right: .1rem;
+    padding-bottom: .3rem;
+    row-gap: .5rem;
+    border: 2px solid black;
+    border-radius: 5px;
+    background: rgb(6,84,187);
+    color: #EEEDCE;
+    font-size: .8rem;
+    line-height: 1.6;
+    box-shadow: 3px 3px 2px grey;
+    display: none;    /*  toggle this!!!! */
+}
+
+
+
+
+
+/* 
 ---------------------------------------- CHOICE CONTAINER SECTION
 The styling for the outer choices container, 
 the individual choice containers and 
@@ -302,7 +345,7 @@ the radio inputs is below
     justify-content: space-between;
     margin-top: .5rem;
     row-gap: .5rem;
-    display: none;
+    display: none;      /*   TOGGLE THIS!!!! */
 }
   
   
@@ -374,7 +417,7 @@ include the feedback image, text and
     border: 1px solid black;
     border-radius: 5px;
     box-shadow: 3px 3px 2px grey;
-    display: none;  /*   */
+    display: none;  /*   TOGGLE THIS!!! */
   
 }
   
@@ -469,7 +512,7 @@ the VAR Assist button
     border-radius: 5px;
     background-color: black;
     box-shadow: 2px 2px 2px grey;
-    visibility: hidden;  /* */
+    visibility: hidden;  /*  TOGGLE THIS!!  */
 }
   
 #var-assist-button{
@@ -511,7 +554,7 @@ for the main on screen button
   
 #main-button{
     font-family: "FWWC 2023";
-    font-size: 1rem;
+    font-size: .8rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -558,7 +601,7 @@ the Goals Scored tracker
     align-items: center;
     border-radius: 5px;
     box-shadow: 2px 2px 2px grey;
-    visibility: hidden;  /* */
+    visibility: hidden; /*   TOGGLE THIS!!  */
 }
 
 #goals-scored-text{
