@@ -834,6 +834,13 @@ The live link to this site is https://dannygilligan.github.io/2023-womens-world-
 
 </td></tr>
 <!-- spacer -->
+<tr><td> Guide on adding minlength and maxlength HTML attirubtes, published by MDN Web Docs </td>
+<td> 
+
+[here](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/minlength)
+
+</td></tr>
+<!-- spacer -->
 </table>
 </details>
 <!-- Reference Materials credits section ends here -->
