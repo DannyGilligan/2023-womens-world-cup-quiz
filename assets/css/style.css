@@ -265,12 +265,13 @@ answer feedback boxes
 #enter-username-message p{
     font-size: .8rem;
     margin: 0;
-    padding-top: .3rem;
+    padding-top: .5rem;
 }
 
 #input-form-container{
     display: flex;
     width: 100%;
+    padding-bottom: 2rem;
 }
 
 #input-form-container form{
