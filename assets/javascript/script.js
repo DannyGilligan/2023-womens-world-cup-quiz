@@ -5,6 +5,7 @@ let quizEngine = {
     /* Object Properties */
     userName: null,
     mainButton: document.getElementById("main-button"),
+    questionCounter: 0,
 
 
     /* Object Methods */
