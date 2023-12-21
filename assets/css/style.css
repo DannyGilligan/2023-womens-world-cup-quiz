@@ -290,7 +290,7 @@ answer feedback boxes
 }
 
 .username-input-warning{
-    animation: inputWarning 1.5s ease-in-out;
+    animation: inputWarning 1s ease-in-out;
 }
 
 @keyframes inputWarning {

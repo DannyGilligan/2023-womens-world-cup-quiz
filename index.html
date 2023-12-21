@@ -93,10 +93,10 @@
                     </div>
 
                     <div id="input-form-container">
-                        <form>
+                        <form id="enter-username">
                             <label for="username-input"></label><br>
                             <input type="text" id="username-input" name="username"
-                                placeholder="Must be between 2 and 15 characters" class="username-input-warning"><br>
+                                placeholder="Must be between 2 and 15 characters" class="username-input-warning" minlength=2 maxlength=15 required><br>
                         </form>
                     </div>
                 </div> <!-- << enter-username-container closing tag -->
@@ -191,7 +191,8 @@
 
             <!-- Main button elements -->
             <div id="bottom-panel-item2">
-                <button form="choices-container-outer" id="main-button">Enter</button>
+                <!-- <button form="choices-container-outer" id="main-button">Enter</button> -->
+                <button form="enter-username" id="main-button">Enter</button>
             </div>
 
             <!-- Goals Scored tracker elements -->
