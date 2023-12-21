@@ -125,7 +125,7 @@ to {
     justify-content: space-evenly;
     align-items: center;
     animation: trackerEaseIn 1s ease-in;
-    /*  visibility: hidden;    TOGGLE THIS!!  */
+    visibility: hidden;    /*  TOGGLE THIS!!  */
 }
 
 @keyframes trackerEaseIn {
@@ -289,26 +289,6 @@ answer feedback boxes
     font-family: "FWWC 2023";
     font-size: .8rem;
 }
-
-.username-input-warning{
-    animation: inputWarning 1s ease-in-out;
-}
-
-@keyframes inputWarning {
-    0% {
-        background-color: white;
-    }
-
-    50% {
-        background-color: #E83800;
-        opacity: 1;
-    }
-
-    100% {
-        background-color: white;
-    }
-}
-
 
   
 /*
