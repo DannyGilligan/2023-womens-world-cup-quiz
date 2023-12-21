@@ -443,42 +443,57 @@ The site was deployed as a Minimum Viable Product using Github pages.
 <table>
 <tr><th><b>Step Description</b></th><th><b>Status</b></th></tr>
 <tr><td>In the Github repository, navigate to the 'Settings' tab</td><td rowspan="2">:heavy_check_mark:</td></tr>
+<!-- spacer -->
 <tr><td>
 
 ![Deployment Step 1](assets/documentation/deployment_01.webp)
 </td></tr>
 <!-- spacer -->
-<tr><td>On the menu, navigate to 'Pages'</td><td rowspan="2">:heavy_check_mark:</td></tr>
+<tr><td colspan="2">On the menu, navigate to 'Pages'</td></tr>
 <tr><td>
 
 ![Deployment Step 2](assets/documentation/deployment_02.webp)
-</td></tr>
+</td>
+<td>:heavy_check_mark:</td>
+</tr>
 <!-- spacer -->
-<tr><td>From the 'Branch' dropdown menu, select 'main'</td><td rowspan="2">:heavy_check_mark:</td></tr>
+<tr><td colspan="2">From the 'Branch' dropdown menu, select 'main'</td></tr>
 <tr><td>
 
 ![Deployment Step 3](assets/documentation/deployment_03.webp)
-</td></tr>
-<tr><td>Click the save button</td><td rowspan="2">:heavy_check_mark:</td></tr>
+</td>
+<td>:heavy_check_mark:</td>
+</tr>
+<!-- spacer -->
+<tr><td colspan="2">Click the save button</td></tr>
 <tr><td>
 
 ![Deployment Step 4](assets/documentation/deployment_04.webp)
-</td></tr>
-<tr><td>The deployment process begins</td><td rowspan="2">:heavy_check_mark:</td></tr>
+</td>
+<td>:heavy_check_mark:</td>
+</tr>
+<!-- spacer -->
+<tr><td colspan="2">The deployment process begins</td></tr>
 <tr><td>
 
 ![Deployment Step 5](assets/documentation/deployment_05.webp)
-</td></tr>
+</td>
+<td>:heavy_check_mark:</td>
+</tr>
 <!-- spacer -->
-<tr><td>Once the site deploys successfully, a confirmation is displayed and a live link generated</td><td rowspan="2">:heavy_check_mark:</td></tr>
+<tr><td colspan="2">Once the site deploys successfully, a confirmation is displayed and a live link generated</td></tr>
 <tr><td>
 
 ![Deployment Step 6](assets/documentation/deployment_06.webp)
-</td></tr>
+</td>
+<td>:heavy_check_mark:</td>
+</tr>
 </table>
 </details>
 
 The live link to this site is https://dannygilligan.github.io/2023-womens-world-cup-quiz/
+
+<!-- Deployment section ends here -->
 
 [Back to Top](#fifa-2023-womens-world-cup-quiz)
 <br>
@@ -533,7 +548,7 @@ The live link to this site is https://dannygilligan.github.io/2023-womens-world-
 </tr>
 
 </table>
-
+<!-- Technologies Used section ends here -->
 
 [Back to Top](#fifa-2023-womens-world-cup-quiz)
 <br>
@@ -562,84 +577,98 @@ The live link to this site is https://dannygilligan.github.io/2023-womens-world-
 [here](https://www.youtube.com/watch?v=8dWL3wF_OMw)  
 
 </td></tr>
+<!-- spacer -->
 <tr><td> Javascript 30 for 30 tutorials produced by Wes Bos</td>
 <td> 
 
 [here](https://javascript30.com/)
 
 </td></tr>
+<!-- spacer -->
 <tr><td> W3 Schools Javascript Tutorial, Exercises and Quiz, published by w3schools.com </td>
 <td> 
 
 [here](https://www.w3schools.com/js/default.asp) 
 
 </td></tr>
+<!-- spacer -->
 <tr><td> JS Challenger exercises, published by jschallenger.com </td>
 <td> 
 
 [here](https://www.jschallenger.com/)
 
 </td></tr>
+<!-- spacer -->
 <tr><td> Guide on using the transform property, published by geeksforgeeks.org </td>
 <td> 
 
 [here](https://www.geeksforgeeks.org/how-to-rotate-an-html-div-element-90-degrees-using-javascript/)
 
 </td></tr>
+<!-- spacer -->
 <tr><td> Code Institute README.md Tutorial by Kasia Bogucka </td>
 <td> 
 
 [here](https://www.youtube.com/watch?v=l1DE7L-4eKQ)  
 
 </td></tr>
+<!-- spacer -->
 <tr><td> Code Institute Guide to MVP (PP2) by Kasia Bogucka </td>
 <td> 
 
 [here](https://www.youtube.com/watch?v=wsOvkf22B_A)  
 
 </td></tr>
+<!-- spacer -->
 <tr><td> Official FIFA 2023 Women's World Cup colour scheme published by schemecolor.com </td>
 <td> 
 
 [here](https://www.schemecolor.com/fifa-womens-world-cup-2023-logo.php)  
 
 </td></tr>
+<!-- spacer -->
 <tr><td> Official FIFA 2023 Women's World Cup font, downloaded from fontshub.pro </td>
 <td> 
 
 [here](https://fontshub.pro/font/fwwc-2023-download)
 
 </td></tr>
+<!-- spacer -->
 <tr><td> Flexbox guide, published by css-tricks.com </td>
 <td> 
 
 [here](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)  
 
 </td></tr>
+<!-- spacer -->
 <tr><td> Guide to self-hosting fonts, published by Kevin Powell </td>
 <td> 
 
 [here](https://www.youtube.com/watch?v=zK-yy6C2Nck)
 
 </td></tr>
+<!-- spacer -->
 <tr><td> Centering items using Flexbox, published by MDN Web Docs </td>
 <td> 
 
 [here](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout/Aligning_items_in_a_flex_container)  
 
 </td></tr>
+<!-- spacer -->
 <tr><td> Code used for spherical shading on main button developed by 'The Anonymous Koder' </td>
 <td> 
 
 [here](https://codepen.io/theanonymouskoder/pen/PomjmeY?editors=1100)  
 
 </td></tr>
+<!-- spacer -->
 <tr><td> Code used for CSS gradient effects provided by cssgradient.io </td>
 <td> 
 
 [here](https://cssgradient.io/)
 
 </td></tr>
+<!-- spacer -->
 <tr><td> Guide for using the CSS 'fade in' animation, published by Jamie Juviler </td>
 <td> 
 
@@ -798,7 +827,7 @@ The live link to this site is https://dannygilligan.github.io/2023-womens-world-
 <!-- spacer -->
 </table>
 </details>
-
+<!-- Reference Materials credits section ends here -->
 <!-- The Images sub section is shown below, this will be disaplyed in a collapsible format, with each item shown in tabular form, the images represent thumbnails of the actual pictures used on the live site (they've been scaled down to 10% of the original size, approx 50px by 50px) -->
 <details>
   <summary>Images</summary>
@@ -1108,13 +1137,10 @@ The live link to this site is https://dannygilligan.github.io/2023-womens-world-
 </details>
 <!-- Images credits end here -->
 
-
-
 [Back to Top](#fifa-2023-womens-world-cup-quiz)
 <br>
 <br>
 <br>
-
 
 ## Acknowledgements
 
