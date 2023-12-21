@@ -442,12 +442,14 @@ The site was deployed as a Minimum Viable Product using Github pages.
 <br>
 <table>
 <tr><th><b>Step Description</b></th><th><b>Status</b></th></tr>
-<tr><td>In the Github repository, navigate to the 'Settings' tab</td><td rowspan="2">:heavy_check_mark:</td></tr>
 <!-- spacer -->
+<tr><td colspan="2">In the Github repository, navigate to the 'Settings' tab</td></tr>
 <tr><td>
 
 ![Deployment Step 1](assets/documentation/deployment_01.webp)
-</td></tr>
+</td>
+<td>:heavy_check_mark:</td>
+</tr>
 <!-- spacer -->
 <tr><td colspan="2">On the menu, navigate to 'Pages'</td></tr>
 <tr><td>
