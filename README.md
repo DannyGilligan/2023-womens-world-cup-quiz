@@ -37,6 +37,7 @@ It is aimed at anyone who enjoys quizzes and may have an interest in sports with
 <details>
   <summary> <b>Existing Features</b> </summary>
 <!-- Feature 1 begins -->
+<br>
 <table>
 <tr><td> <b> Customised Logo</b></td></tr>
 <tr>
