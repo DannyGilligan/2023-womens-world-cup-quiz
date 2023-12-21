@@ -4,7 +4,7 @@
     src: url('../fonts/FWWC2023-Regular.woff') format('woff');
     font-weight: 400;
     font-style: normal;
-  }
+}
 
 body {
     margin: 0;
@@ -301,7 +301,7 @@ the radio inputs is below
     justify-content: space-between;
     margin-top: .5rem;
     row-gap: .5rem;
-    /*display: none;*/
+    display: none;
 }
   
   
@@ -373,7 +373,7 @@ include the feedback image, text and
     border: 1px solid black;
     border-radius: 5px;
     box-shadow: 3px 3px 2px grey;
-    display: none;
+    /*display: none;*/
   
 }
   
