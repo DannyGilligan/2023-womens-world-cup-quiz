@@ -21,9 +21,9 @@
         <!-- The hero-container below will hold the FIFA official logo, and also the end quiz image once the user answers clicks on 'view result' -->
         <div id="hero-container">
             <div id="hero-container-inner">
-                <img src="assets/images/hero-image.webp" alt="Women's World Cup 2023 Logo" id="hero-image" style="display: none">
+                <img src="assets/images/hero-image.webp" alt="Women's World Cup 2023 Logo" id="hero-image">
                 <img src="assets/images/end-quiz-image.webp" alt="Women's World Cup 2023 winners celebrate"
-                    id="end-quiz-image" >
+                    id="end-quiz-image" style="display: none">
             </div>
         </div> <!-- << hero-container closing tag -->
 
@@ -74,7 +74,7 @@
             <div id="top-panel">
                 <div id="top-panel-inner">
                     <p>
-                        Congratulations Danny, you scored 6 out of 11 attempts on goal.
+                        Welcome to the FIFA 2023 Women's World Cup Quiz
                     </p>
                 </div>
             </div> <!-- << top-panel closing tag -->
@@ -96,7 +96,7 @@
                         <form>
                             <label for="username-input"></label><br>
                             <input type="text" id="username-input" name="username"
-                                placeholder="Must be between 2 and 15 characters"><br>
+                                placeholder="Must be between 2 and 15 characters" class="username-input-warning"><br>
                         </form>
                     </div>
                 </div> <!-- << enter-username-container closing tag -->
@@ -191,7 +191,7 @@
 
             <!-- Main button elements -->
             <div id="bottom-panel-item2">
-                <button form="choices-container-outer" id="main-button">Rematch?</button>
+                <button form="choices-container-outer" id="main-button">Enter</button>
             </div>
 
             <!-- Goals Scored tracker elements -->

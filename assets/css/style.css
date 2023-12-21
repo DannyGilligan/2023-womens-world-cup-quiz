@@ -124,8 +124,16 @@ to {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    animation: trackerEaseIn 1s ease-in;
     /*  visibility: hidden;    TOGGLE THIS!!  */
 }
+
+@keyframes trackerEaseIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+    }
+
+
   
 .tracker-item{
     font-family: "FWWC 2023";
@@ -243,7 +251,7 @@ answer feedback boxes
     color: #EEEDCE;
     font-size: .7rem;
     box-shadow: 3px 3px 2px grey;
-    display: none;   /* toggle this!!!! */
+    /* display: none;    toggle this!!!! */
 }
   
 #enter-username-message{
@@ -278,8 +286,29 @@ answer feedback boxes
     border: 1px solid black;
     border-radius: 5px;
     font-family: "FWWC 2023";
-    font-size: .7rem;
+    font-size: .8rem;
 }
+
+.username-input-warning{
+    animation: inputWarning 1.5s ease-in-out;
+}
+
+@keyframes inputWarning {
+    0% {
+        background-color: white;
+    }
+
+    50% {
+        background-color: #E83800;
+        opacity: 1;
+    }
+
+    100% {
+        background-color: white;
+    }
+}
+
+
   
 /*
 #input-form-container label {
