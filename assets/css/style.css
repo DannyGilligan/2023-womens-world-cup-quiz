@@ -116,6 +116,7 @@ to {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    visibility: hidden;  /*  */
 }
   
 .tracker-item{
@@ -234,7 +235,7 @@ answer feedback boxes
     color: #EEEDCE;
     font-size: .7rem;
     box-shadow: 3px 3px 2px grey;
-    display: none; /* toggle this!!!! */
+    /* display: none; toggle this!!!! */
 }
   
 #enter-username-message{
@@ -373,7 +374,7 @@ include the feedback image, text and
     border: 1px solid black;
     border-radius: 5px;
     box-shadow: 3px 3px 2px grey;
-    /*display: none;*/
+    display: none;  /*   */
   
 }
   
@@ -468,6 +469,7 @@ the VAR Assist button
     border-radius: 5px;
     background-color: black;
     box-shadow: 2px 2px 2px grey;
+    visibility: hidden;  /* */
 }
   
 #var-assist-button{
@@ -556,6 +558,7 @@ the Goals Scored tracker
     align-items: center;
     border-radius: 5px;
     box-shadow: 2px 2px 2px grey;
+    visibility: hidden;  /* */
 }
 
 #goals-scored-text{
