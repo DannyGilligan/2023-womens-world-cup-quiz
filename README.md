@@ -827,6 +827,13 @@ The live link to this site is https://dannygilligan.github.io/2023-womens-world-
 
 </td></tr>
 <!-- spacer -->
+<tr><td> Guide to displaying a 'flash' effect animation, by Stackoverflow user Rohith </td>
+<td> 
+
+[here](https://stackoverflow.com/questions/16791851/a-flash-of-color-using-pure-css-transitions)
+
+</td></tr>
+<!-- spacer -->
 </table>
 </details>
 <!-- Reference Materials credits section ends here -->
