@@ -396,9 +396,11 @@ The first image filenames in the sequence are now goal_image_0.webp and miss_ima
 </details>
 <!-- Resolved Bug 3 ends -->
 <!-- Resolved Bug 4 begins -->
+<details>
+  <summary><i>InnerText Display Bug</i></summary>
+<br>
 <table>
 <tr><th><b>InnerText Display Bug</b></th><th><b>Status</b></th></tr>
-
 <tr>
 <td>
 While testing the initial screens displayed to the user, such as the 'display rules' and 'display choices' screens, I noticed the innerText of the main dialogue box was not behaving as expected. It appeared to be 'stuck' on the welcome message.
