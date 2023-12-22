@@ -51,7 +51,7 @@ let quizEngine = {
         'choice-1',
         'choice-2',
         'choice-3',
-    ]
+    ],
 
     /* Object Methods */
 
