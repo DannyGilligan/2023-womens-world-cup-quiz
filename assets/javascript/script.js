@@ -8,19 +8,17 @@ const userChoiceInput2 = document.getElementById('choice-2-input'); // Used for 
 const userChoiceInput3 = document.getElementById('choice-3-input'); // Used for user input
 const userChoiceInput4 = document.getElementById('choice-4-input'); // Used for user input
 
-const goalsScoredDisplay = document.getElementById('goals-scored-value');
+const goalsScoredDisplay = document.getElementById('goals-scored-value'); // Displays the goals scored to the user on screen
 
-let questionDialogueBox = document.getElementById('top-panel-inner');
+let questionDialogueBox = document.getElementById('top-panel-inner'); // Displays the main dialogue to the user (question text etc)
+
 
 let quizEngine = {
 
     /* Object Properties */
     userName: null,
-
     welcomeMessage: `Welcome to the FIFA 2023 Women's World Cup Quiz`,
-
     questionCounter: 0,
-
     questions: [
         'Is this question 1?', // Text for Question 1
         'Is this question 2?', // Text for Question 2
@@ -34,7 +32,6 @@ let quizEngine = {
         'Is this question 10?', // Text for Question 10
         'Is this question 11?'  // Text for Question 11
     ],
-
     choices: [
         ['Q1 Choice 1', 'Q1 Choice 2 correct', 'Q1 Choice 3', 'Q1 Choice 4'], // Choices for Question 1
         ['Q2 Choice 1', 'Q2 Choice 2', 'Q2 Choice 3', 'Q2 Choice 4 correct'], // Choices for Question 2
@@ -48,7 +45,6 @@ let quizEngine = {
         ['Q10 Choice 1 correct', 'Q10 Choice 2', 'Q10 Choice 3', 'Q10 Choice 4'], // Choices for Question 10
         ['Q11 Choice 1', 'Q11 Choice 2', 'Q11 Choice 3 correct', 'Q11 Choice 4']  // Choices for Question 11
     ],
-
     answers: [
         'choice-2-input', // Answer for Question 1
         'choice-4-input', // Answer for Question 2
@@ -62,7 +58,6 @@ let quizEngine = {
         'choice-1-input', // Answer for Question 10
         'choice-3-input', // Answer for Question 11
     ],
-
     varAssists: [
         ['choice-3-input', 'choice-1-input'], // VAR Assists for Question 1
         ['choice-1-input', 'choice-3-input'], // VAR Assists for Question 2
@@ -76,22 +71,15 @@ let quizEngine = {
         ['choice-3-input', 'choice-2-input'], // VAR Assists for Question 10
         ['choice-4-input', 'choice-1-input']  // VAR Assists for Question 11
     ],
-
     userChoiceInputs: [
         userChoiceInput1, // Holds the radio input for choice 1
         userChoiceInput2, // Holds the radio input for choice 2
         userChoiceInput3, // Holds the radio input for choice 3
         userChoiceInput4  // Holds the radio input for choice 4
     ],
-
     userChoiceSubmitted: null, // Holds the current choice selected by the user (for the current question)
-
     currentCorrectAnswer: null, // Holds the correct answer for the current question
-
-    goalsScored: 0,
-
-
-
+    goalsScored: 0, // Holds the tally of goals scored by the user
 
     /* Object Methods */
 
@@ -139,22 +127,24 @@ let quizEngine = {
 
 
     handleUserChoiceSubmit: function (event) {
-        event.preventDefault();                                                                     // prevents the form from submitting
+        event.preventDefault();                                                                         // prevents the form from submitting
         
-        for (let i = 0; i < quizEngine.userChoiceInputs.length; i++) {                              // For loop that will iterate over the user inputs
-            if (quizEngine.userChoiceInputs[i].checked === true) {                                  // An IF conditional determines which input has been checked
-                quizEngine.userChoiceSubmitted = quizEngine.userChoiceInputs[i].id;                 // The id of the checked input is then assigned to the userChoiceSubmitted property
-                quizEngine.currentCorrectAnswer = quizEngine.answers[quizEngine.questionCounter];   // Assigns the answer to the current question to the currentCorrectAnswer property
-                if (quizEngine.userChoiceSubmitted === quizEngine.currentCorrectAnswer) {           // An IF conditional determines if the user choice and the correct answer match
-                    console.log('Finally, this might work!');
-                    ++quizEngine.goalsScored;
-                    goalsScoredDisplay.innerText = quizEngine.goalsScored;
-                    console.log(quizEngine.goalsScored);
-                    document.getElementById('answer-feedback-image-container').innerHTML = `<img src="assets/images/goal_image_${quizEngine.questionCounter}.webp" alt="Female Footballer" id="answer-feedback-image">`;
-                    document.getElementById('choices-container-outer').style.display = 'none';
-                    document.getElementById('answer-feedback-outer').style.display = 'flex';
-                } else {
-                    console.log('It might be wrong, but at least it works!')
+        for (let i = 0; i < quizEngine.userChoiceInputs.length; i++) {                                  // For loop that will iterate over the user inputs
+            if (quizEngine.userChoiceInputs[i].checked === true) {                                      // An IF conditional determines which input has been checked
+                quizEngine.userChoiceSubmitted = quizEngine.userChoiceInputs[i].id;                     // The id of the checked input is then assigned to the userChoiceSubmitted property
+                quizEngine.currentCorrectAnswer = quizEngine.answers[quizEngine.questionCounter];       // Assigns the answer to the current question to the currentCorrectAnswer property
+                if (quizEngine.userChoiceSubmitted === quizEngine.currentCorrectAnswer) {               // An IF conditional determines if the user choice and the correct answer match
+                    ++quizEngine.goalsScored;                                                           // Increments goals scored if answer is correct
+                    goalsScoredDisplay.innerText = quizEngine.goalsScored;                              // Displays the goals scored on screen to the user
+                    document.getElementById('answer-feedback-image-container').innerHTML = `<img src="assets/images/goal_image_${quizEngine.questionCounter}.webp" alt="Female Footballer" id="answer-feedback-image">`; // Displays the 'GOAL!' feedback image
+                    document.getElementById('answer-feedback-status').innerHTML = `<span>GOAL!</span>`; // Updates the feedback text
+                    document.getElementById('choices-container-outer').style.display = 'none';          // Hides the choices container
+                    document.getElementById('answer-feedback-outer').style.display = 'flex';            // Displays the feedback container to the user
+                } else {                                                                                // If the answer is incorrect, the code below runs
+                    document.getElementById('answer-feedback-image-container').innerHTML = `<img src="assets/images/miss_image_${quizEngine.questionCounter}.webp" alt="Female Footballer" id="answer-feedback-image">`; // Displays the 'MISS!' feedback image
+                    document.getElementById('answer-feedback-status').innerHTML = `<span>MISS!</span>`; // Updates the feedback text
+                    document.getElementById('choices-container-outer').style.display = 'none';          // Hides the choices container
+                    document.getElementById('answer-feedback-outer').style.display = 'flex';            // Displays the feedback container to the user
                 }
             }
         }
