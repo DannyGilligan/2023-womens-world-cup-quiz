@@ -1,10 +1,13 @@
 
 
+
+
+
 let quizEngine = {
 
     /* Object Properties */
     userName: null,
-    mainButton: document.getElementById("main-button"),
+    mainButton: document.getElementById("main-button"),  /* should this be a const variable instead? */
     questionCounter: 0,
 
     /* Object Methods */
@@ -13,8 +16,8 @@ let quizEngine = {
      * The handleUserNameSubmit method is triggered when the user enters their username,
      * the default behaviour of the form is prevented and
      * the value of the input is assigned to the userName property in the quizEngine object,
-     * to note, the validation here occurs in the HTML element itself using the minlength, maxlength
-     * and required attributes
+     * to note, the validation here occurs in the HTML element itself using the 'minlength', 'maxlength'
+     * and 'required' attributes
      */
     handleUserNameSubmit: function (event) {
         event.preventDefault();
@@ -24,10 +27,11 @@ let quizEngine = {
         document.getElementById('main-button').innerText = 'Kick Off!';
         document.getElementById('enter-username-container').style.display = 'none';
         document.getElementById('quiz-rules-inner-container').style.display = 'flex';
+        
     },
 
 
-    
+
 };
 
 let enterUsernameForm = document.getElementById('enter-username');
@@ -38,3 +42,5 @@ enterUsernameForm.addEventListener("submit", quizEngine.handleUserNameSubmit);
 let user = document.getElementById('username-input');
 */
 
+
+console.log(quizEngine.questionCounter)
