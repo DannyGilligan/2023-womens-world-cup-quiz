@@ -1,7 +1,7 @@
-const choice1Container = document.getElementById('choice-1-text');
-const choice2Container = document.getElementById('choice-2-text');
-const choice3Container = document.getElementById('choice-3-text');
-const choice4Container = document.getElementById('choice-4-text');
+const choice1Container = document.getElementById('choice-1-input');
+const choice2Container = document.getElementById('choice-2-input');
+const choice3Container = document.getElementById('choice-3-input');
+const choice4Container = document.getElementById('choice-4-input');
 
 let quizEngine = {
 
@@ -120,16 +120,18 @@ let quizEngine = {
         document.getElementById('bottom-panel-item3').style.visibility = 'visible'; // Makes the Goals Scored box visible
         questionDialogueBox.innerText = quizEngine.questions[0]; // Displays the question text to the user, driven by the questionCounter
         mainButton.innerText = 'Shoot!'; // Changes the text on the main button to 'Shoot!'
+        mainButton.setAttribute('form', 'choices-container-outer'); // Connects the main button to the user choice form to enable HTML validation
         mainButton.addEventListener = ("submit", quizEngine.handleUserChoiceSubmit) // Add an event listener to the main button, 'handing off' the functionality
     },
 
 
     handleUserChoiceSubmit: function (event) {
-        mainButton.setAttribute('form', 'choices-container-outer'); // Connects the main button to the user choice form to enable HTML validation
+        
         event.preventDefault(); // prevents the form from submitting
         for (choice of quizEngine.userChoiceInputs) {
-            if (choice.checked === true) {
-                quizEngine.userChoiceSubmitted = choice.id;
+            if (choice[quizEngine.userChoiceInputs].checked === true) {
+                quizEngine.userChoiceSubmitted = choice[quizEngine.userChoiceInputs];
+                console.log(quizEngine.userChoiceSubmitted)
             }
         }
 
@@ -144,7 +146,8 @@ let questionDialogueBox = document.getElementById('top-panel-inner');
 
 let mainButton = document.getElementById('main-button');
 
-
+const submitUserChoiceForm = document.getElementById('choices-container-outer');
+submitUserChoiceForm.addEventListener("submit", quizEngine.handleUserChoiceSubmit);
 
 
 
@@ -163,4 +166,4 @@ let user = document.getElementById('username-input');
 */
 
 
-console.log(quizEngine.questionCounter)
+console.log(quizEngine.userChoiceInputs)
