@@ -1,7 +1,7 @@
-const choice1Container = document.getElementById('choice-1-input');
-const choice2Container = document.getElementById('choice-2-input');
-const choice3Container = document.getElementById('choice-3-input');
-const choice4Container = document.getElementById('choice-4-input');
+const choice1Container = document.getElementById('choice-1-text');
+const choice2Container = document.getElementById('choice-2-text');
+const choice3Container = document.getElementById('choice-3-text');
+const choice4Container = document.getElementById('choice-4-text');
 
 let quizEngine = {
 
@@ -128,12 +128,7 @@ let quizEngine = {
     handleUserChoiceSubmit: function (event) {
         
         event.preventDefault(); // prevents the form from submitting
-        for (choice of quizEngine.userChoiceInputs) {
-            if (choice[quizEngine.userChoiceInputs].checked === true) {
-                quizEngine.userChoiceSubmitted = choice[quizEngine.userChoiceInputs];
-                console.log(quizEngine.userChoiceSubmitted)
-            }
-        }
+
 
     }
 
@@ -166,4 +161,4 @@ let user = document.getElementById('username-input');
 */
 
 
-console.log(quizEngine.userChoiceInputs)
+console.log('page loaded')
