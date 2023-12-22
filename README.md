@@ -395,7 +395,40 @@ The first image filenames in the sequence are now goal_image_0.webp and miss_ima
 <br>
 </details>
 <!-- Resolved Bug 3 ends -->
+<!-- Resolved Bug 4 begins -->
+<table>
+<tr><th><b>InnerText Display Bug</b></th><th><b>Status</b></th></tr>
 
+<tr>
+<td>
+I encountered issues with displaying the bottom container that holds the VAR Assist and Shoot Buttons, along with the Goals Scored tracker. Initially I thought that using display: flex, and using 'space-between' would automatically position these items evenly, with the shoot button in the centre.
+</td>
+<td rowspan="4">
+:heavy_check_mark:
+</td>
+</tr>
+
+<tr>
+<td>
+
+![Bottom Container](assets/documentation/bugs01_bottom_container_resolved_1.webp)
+</td>
+</tr>
+
+<tr>
+<td>
+I was able to resolve the issue by separating the bottom container into 3 sections with widths of 30%, 40% and 30% respectively (yellow borders added for illustration, percentage values may change after deployment), and then set the flex properties for each individual section, and the entire container as a whole. This produced the desired result. 
+</td>
+</tr>
+
+<td>
+
+![Bottom Container Resolved](assets/documentation/bugs01_bottom_container_resolved_2.webp)
+</td>
+</tr>
+</table>
+</details>
+<!-- Resolved Bug 4 ends -->
 
 </details>
 
