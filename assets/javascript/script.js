@@ -1,12 +1,14 @@
-const choice1Container = document.getElementById('choice-1-text');
-const choice2Container = document.getElementById('choice-2-text');
-const choice3Container = document.getElementById('choice-3-text');
-const choice4Container = document.getElementById('choice-4-text');
+const choice1Container = document.getElementById('choice-1-text'); // Displays choice text
+const choice2Container = document.getElementById('choice-2-text'); // Displays choice text
+const choice3Container = document.getElementById('choice-3-text'); // Displays choice text
+const choice4Container = document.getElementById('choice-4-text'); // Displays choice text
 
-const userChoiceInput1 = document.getElementById('choice-1-input');
-const userChoiceInput2 = document.getElementById('choice-2-input');
-const userChoiceInput3 = document.getElementById('choice-3-input');
-const userChoiceInput4 = document.getElementById('choice-4-input');
+const userChoiceInput1 = document.getElementById('choice-1-input'); // Used for user input
+const userChoiceInput2 = document.getElementById('choice-2-input'); // Used for user input
+const userChoiceInput3 = document.getElementById('choice-3-input'); // Used for user input
+const userChoiceInput4 = document.getElementById('choice-4-input'); // Used for user input
+
+let questionDialogueBox = document.getElementById('top-panel-inner');
 
 let quizEngine = {
 
@@ -46,17 +48,17 @@ let quizEngine = {
     ],
 
     answers: [
-        'choice-2', // Answer for Question 1
-        'choice-4', // Answer for Question 2
-        'choice-3', // Answer for Question 3
-        'choice-2', // Answer for Question 4
-        'choice-1', // Answer for Question 5
-        'choice-3', // Answer for Question 6
-        'choice-1', // Answer for Question 7
-        'choice-4', // Answer for Question 8
-        'choice-2', // Answer for Question 9
-        'choice-1', // Answer for Question 10
-        'choice-3', // Answer for Question 11
+        'choice-2-input', // Answer for Question 1
+        'choice-4-input', // Answer for Question 2
+        'choice-3-input', // Answer for Question 3
+        'choice-2-input', // Answer for Question 4
+        'choice-1-input', // Answer for Question 5
+        'choice-3-input', // Answer for Question 6
+        'choice-1-input', // Answer for Question 7
+        'choice-4-input', // Answer for Question 8
+        'choice-2-input', // Answer for Question 9
+        'choice-1-input', // Answer for Question 10
+        'choice-3-input', // Answer for Question 11
     ],
 
     varAssists: [
@@ -102,7 +104,7 @@ let quizEngine = {
         document.getElementById('quiz-rules-inner-container').style.display = 'flex';
         document.getElementById('main-button').removeAttribute('form'); // Removes the form attribute, disonnecting the button from enter username form
         document.getElementById('main-button').removeEventListener("submit", quizEngine.handleUserNameSubmit); // Removes the initial event listener assigned at the enter username screen
-        document.getElementById('main-button').addEventListener('click', quizEngine.displayQuiz); // Assigns a new event listener to 'hand off' to
+        document.getElementById('main-button').addEventListener('click', quizEngine.displayQuiz); // Assigns a new event listener to 'hand off' functionality
         
     },
 
@@ -126,13 +128,21 @@ let quizEngine = {
         questionDialogueBox.innerText = quizEngine.questions[0]; // Displays the question text to the user, driven by the questionCounter
         mainButton.innerText = 'Shoot!'; // Changes the text on the main button to 'Shoot!'
         mainButton.setAttribute('form', 'choices-container-outer'); // Connects the main button to the user choice form to enable HTML validation
-        mainButton.addEventListener = ("submit", quizEngine.handleUserChoiceSubmit) // Add an event listener to the main button, 'handing off' the functionality
+        /*mainButton.addEventListener = ("submit", quizEngine.handleUserChoiceSubmit) // Add an event listener to the main button, 'handing off' the functionality*/
     },
 
 
     handleUserChoiceSubmit: function (event) {
-        
         event.preventDefault(); // prevents the form from submitting
+        
+        for (let i = 0; i < quizEngine.userChoiceInputs.length; i++) {
+            if (quizEngine.userChoiceInputs[i].checked === true) {
+            quizEngine.userChoiceSubmitted = quizEngine.userChoiceInputs[i];
+            quizEngine.currentCorrectAnswer = quizEngine.answers[quizEngine.questionCounter];
+            console.log(quizEngine.userChoiceSubmitted.id);
+            console.log(quizEngine.currentCorrectAnswer);
+        }
+        }
 
 
     }
@@ -141,8 +151,6 @@ let quizEngine = {
 
 const enterUsernameForm = document.getElementById('enter-username');
 enterUsernameForm.addEventListener("submit", quizEngine.handleUserNameSubmit);
-
-let questionDialogueBox = document.getElementById('top-panel-inner');
 
 let mainButton = document.getElementById('main-button');
 
@@ -165,5 +173,3 @@ const choice4Container = document.getElementById('choice-4-text').innerText = qu
 let user = document.getElementById('username-input');
 */
 
-
-console.log('page loaded')
