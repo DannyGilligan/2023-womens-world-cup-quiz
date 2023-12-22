@@ -52,15 +52,15 @@ let quizEngine = {
     varAssists: [
         ['choice-3-input', 'choice-1-input'], /* VAR Assist for Question 1 */
         ['choice-1-input', 'choice-3-input'], /* VAR Assist for Question 2 */
-        ['choice-3-input', 'choice-1-input'], /* VAR Assist for Question 3 */
+        ['choice-4-input', 'choice-2-input'], /* VAR Assist for Question 3 */
         ['choice-3-input', 'choice-1-input'], /* VAR Assist for Question 4 */
-        ['choice-3-input', 'choice-1-input'], /* VAR Assist for Question 5 */
-        ['choice-3-input', 'choice-1-input'], /* VAR Assist for Question 6 */
-        ['choice-3-input', 'choice-1-input'], /* VAR Assist for Question 7 */
+        ['choice-3-input', 'choice-4-input'], /* VAR Assist for Question 5 */
+        ['choice-4-input', 'choice-1-input'], /* VAR Assist for Question 6 */
+        ['choice-3-input', 'choice-2-input'], /* VAR Assist for Question 7 */
         ['choice-3-input', 'choice-1-input'], /* VAR Assist for Question 8 */
-        ['choice-3-input', 'choice-1-input'], /* VAR Assist for Question 9 */
-        ['choice-3-input', 'choice-1-input'], /* VAR Assist for Question 10 */
-        ['choice-3-input', 'choice-1-input']  /* VAR Assist for Question 11 */
+        ['choice-4-input', 'choice-1-input'], /* VAR Assist for Question 9 */
+        ['choice-3-input', 'choice-2-input'], /* VAR Assist for Question 10 */
+        ['choice-4-input', 'choice-1-input']  /* VAR Assist for Question 11 */
     ],
 
     /* Object Methods */
