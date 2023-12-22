@@ -3,6 +3,8 @@ let quizEngine = {
     /* Object Properties */
     userName: null,
 
+    welcomeMessage: `Welcome to the FIFA 2023 Women's World Cup Quiz`,
+
     mainButton: document.getElementById("main-button"),  /* should this be a const variable instead? */
 
     questionCounter: 10,

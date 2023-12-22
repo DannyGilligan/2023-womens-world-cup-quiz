@@ -251,7 +251,7 @@ answer feedback boxes
     color: #EEEDCE;
     font-size: .7rem;
     box-shadow: 3px 3px 2px grey;
-    display: none;   /* toggle this!!!! */
+    /* display: none;    toggle this!!!! */
 }
   
 #enter-username-message{
@@ -355,7 +355,7 @@ the radio inputs is below
     justify-content: space-between;
     margin-top: .5rem;
     row-gap: .5rem;
-    /* display: none;         TOGGLE THIS!!!! */
+    display: none;      /*    TOGGLE THIS!!!! */
 }
   
   
