@@ -72,11 +72,11 @@ let quizEngine = {
 
 const enterUsernameForm = document.getElementById('enter-username');
 enterUsernameForm.addEventListener("submit", quizEngine.handleUserNameSubmit);
-
-const choice1Container = document.getElementById('choice-1-text')
-const choice2Container = document.getElementById('choice-2-text')
-const choice3Container = document.getElementById('choice-3-text')
-const choice4Container = document.getElementById('choice-4-text')
+const questionDialogueBox = document.getElementById('top-panel-inner');
+const choice1Container = document.getElementById('choice-1-text');
+const choice2Container = document.getElementById('choice-2-text');
+const choice3Container = document.getElementById('choice-3-text');
+const choice4Container = document.getElementById('choice-4-text');
 
 
 /*
