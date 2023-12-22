@@ -146,7 +146,13 @@ let quizEngine = {
                 quizEngine.userChoiceSubmitted = quizEngine.userChoiceInputs[i].id;                 // The id of the checked input is then assigned to the userChoiceSubmitted property
                 quizEngine.currentCorrectAnswer = quizEngine.answers[quizEngine.questionCounter];   // Assigns the answer to the current question to the currentCorrectAnswer property
                 if (quizEngine.userChoiceSubmitted === quizEngine.currentCorrectAnswer) {           // An IF conditional determines if the user choice and the correct answer match
-                    console.log('Finally, this might work!')
+                    console.log('Finally, this might work!');
+                    ++quizEngine.goalsScored;
+                    goalsScoredDisplay.innerText = quizEngine.goalsScored;
+                    console.log(quizEngine.goalsScored);
+                    document.getElementById('answer-feedback-image-container').innerHTML = `<img src="assets/images/goal_image_${quizEngine.questionCounter}.webp" alt="Female Footballer" id="answer-feedback-image">`;
+                    document.getElementById('choices-container-outer').style.display = 'none';
+                    document.getElementById('answer-feedback-outer').style.display = 'flex';
                 } else {
                     console.log('It might be wrong, but at least it works!')
                 }
