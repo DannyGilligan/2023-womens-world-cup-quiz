@@ -24,18 +24,33 @@ let quizEngine = {
         'Is this question 10?',
         'Is this question 11?'
         ],
-    choice: [
-        ['Q1 Choice 1', 'Q1 Choice 2', 'Q1 Choice 3', 'Q1 Choice 4'],
-        ['Q1 Choice 1', 'Q1 Choice 2', 'Q1 Choice 3', 'Q1 Choice 4'],
-        ['Q1 Choice 1', 'Q1 Choice 2', 'Q1 Choice 3', 'Q1 Choice 4'],
-        ['Q1 Choice 1', 'Q1 Choice 2', 'Q1 Choice 3', 'Q1 Choice 4'],
-        ['Q1 Choice 1', 'Q1 Choice 2', 'Q1 Choice 3', 'Q1 Choice 4'],
-        ['Q1 Choice 1', 'Q1 Choice 2', 'Q1 Choice 3', 'Q1 Choice 4'],
-        ['Q1 Choice 1', 'Q1 Choice 2', 'Q1 Choice 3', 'Q1 Choice 4'],
-        ['Q1 Choice 1', 'Q1 Choice 2', 'Q1 Choice 3', 'Q1 Choice 4'],
-        ['Q1 Choice 1', 'Q1 Choice 2', 'Q1 Choice 3', 'Q1 Choice 4'],
-        ['Q1 Choice 1', 'Q1 Choice 2', 'Q1 Choice 3', 'Q1 Choice 4'],
-        ['Q1 Choice 1', 'Q1 Choice 2', 'Q1 Choice 3', 'Q1 Choice 4']
+
+    choices: [
+        ['Q1 Choice 1 correct', 'Q1 Choice 2', 'Q1 Choice 3', 'Q1 Choice 4'],
+        ['Q2 Choice 1', 'Q2 Choice 2 correct', 'Q2 Choice 3', 'Q2 Choice 4'],
+        ['Q3 Choice 1', 'Q3 Choice 2', 'Q3 Choice 3 correct', 'Q3 Choice 4'],
+        ['Q4 Choice 1', 'Q4 Choice 2', 'Q4 Choice 3', 'Q4 Choice 4 correct'],
+        ['Q5 Choice 1 correct', 'Q5 Choice 2', 'Q5 Choice 3', 'Q5 Choice 4'],
+        ['Q6 Choice 1', 'Q6 Choice 2 correct', 'Q6 Choice 3', 'Q6 Choice 4'],
+        ['Q7 Choice 1', 'Q7 Choice 2', 'Q7 Choice 3 correct', 'Q7 Choice 4'],
+        ['Q8 Choice 1', 'Q8 Choice 2', 'Q8 Choice 3', 'Q8 Choice 4 correct'],
+        ['Q9 Choice 1 correct', 'Q9 Choice 2', 'Q9 Choice 3', 'Q9 Choice 4'],
+        ['Q10 Choice 1', 'Q10 Choice 2 correct', 'Q10 Choice 3', 'Q10 Choice 4'],
+        ['Q11 Choice 1', 'Q11 Choice 2', 'Q11 Choice 3 correct', 'Q11 Choice 4']
+    ],
+
+    answers: [
+        'choice-1',
+        'choice-2',
+        'choice-3',
+        'choice-4',
+        'choice-1',
+        'choice-2',
+        'choice-3',
+        'choice-4',
+        'choice-1',
+        'choice-2',
+        'choice-3',
     ]
 
     /* Object Methods */
