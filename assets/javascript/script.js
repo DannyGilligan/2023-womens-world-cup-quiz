@@ -1,4 +1,4 @@
-
+const choice1Container = document.getElementById('choice-1-text')
 
 
 
