@@ -75,7 +75,7 @@ let quizEngine = {
     handleUserNameSubmit: function (event) {
         event.preventDefault();
         quizEngine.userName = document.getElementById('username-input');
-        document.getElementById('top-panel-inner').innerText = `It's almost kick off time ${quizEngine.userName.value}, let's get the rules out of the way first..`;
+        questionDialogueBox.innerText = `It's almost kick off time ${quizEngine.userName.value}, let's get the rules out of the way first..`;
         document.getElementById('main-button').innerText = 'Kick Off!';
         document.getElementById('enter-username-container').style.display = 'none';
         document.getElementById('quiz-rules-inner-container').style.display = 'flex';
@@ -97,9 +97,9 @@ let quizEngine = {
 
 const enterUsernameForm = document.getElementById('enter-username');
 enterUsernameForm.addEventListener("submit", quizEngine.handleUserNameSubmit);
-let questionDialogueBox = document.getElementById('top-panel-inner')
+let questionDialogueBox = document.getElementById('top-panel-inner');
 
-let mainButton = document.getElementById('main-button')
+let mainButton = document.getElementById('main-button');
 
 const choice1Container = document.getElementById('choice-1-text').innerText = quizEngine.choices[quizEngine.questionCounter][0];
 const choice2Container = document.getElementById('choice-2-text').innerText = quizEngine.choices[quizEngine.questionCounter][1];
