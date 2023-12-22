@@ -401,7 +401,7 @@ The first image filenames in the sequence are now goal_image_0.webp and miss_ima
 
 <tr>
 <td>
-I encountered issues with displaying the bottom container that holds the VAR Assist and Shoot Buttons, along with the Goals Scored tracker. Initially I thought that using display: flex, and using 'space-between' would automatically position these items evenly, with the shoot button in the centre.
+While testing the initial screens displayed to the user, such as the 'display rules' and 'display choices' screens, I noticed the innerText of the main dialogue box was not behaving as expected. It appeared to be 'stuck' on the welcome message.
 </td>
 <td rowspan="4">
 :heavy_check_mark:
@@ -411,19 +411,19 @@ I encountered issues with displaying the bottom container that holds the VAR Ass
 <tr>
 <td>
 
-![Bottom Container](assets/documentation/bugs01_bottom_container_resolved_1.webp)
+![Bottom Container](assets/documentation/bugs02_innertext_display_resolved_1.webp)
 </td>
 </tr>
 
 <tr>
 <td>
-I was able to resolve the issue by separating the bottom container into 3 sections with widths of 30%, 40% and 30% respectively (yellow borders added for illustration, percentage values may change after deployment), and then set the flex properties for each individual section, and the entire container as a whole. This produced the desired result. 
+The issue related to the innerText property that was attached to the this dialogue box when it was declared as a variable. Once the innerText property was removed, the screens displayed the correct/expected text to the user.
 </td>
 </tr>
 
 <td>
 
-![Bottom Container Resolved](assets/documentation/bugs01_bottom_container_resolved_2.webp)
+![Bottom Container Resolved](assets/documentation/bugs02_innertext_display_resolved_2.webp)
 </td>
 </tr>
 </table>
