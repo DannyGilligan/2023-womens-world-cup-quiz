@@ -76,16 +76,21 @@ let quizEngine = {
     ],
 
     userChoiceInputs: [
-        userChoiceInput1,
-        userChoiceInput2,
-        userChoiceInput3,
-        userChoiceInput4
+        userChoiceInput1, // Holds the radio input for choice 1
+        userChoiceInput2, // Holds the radio input for choice 2
+        userChoiceInput3, // Holds the radio input for choice 3
+        userChoiceInput4  // Holds the radio input for choice 4
     ],
 
-    userChoiceSubmitted: null,
+    userChoiceSubmitted: null, // Holds the current choice selected by the user (for the current question)
 
-    currentCorrectAnswer: null,
+    currentCorrectAnswer: null, // Holds the correct answer for the current question
 
+    goalsScored: 0,
+
+
+
+    
     /* Object Methods */
 
     /**
@@ -102,9 +107,9 @@ let quizEngine = {
         document.getElementById('main-button').innerText = 'Kick Off!';
         document.getElementById('enter-username-container').style.display = 'none';
         document.getElementById('quiz-rules-inner-container').style.display = 'flex';
-        document.getElementById('main-button').removeAttribute('form'); // Removes the form attribute, disonnecting the button from enter username form
-        document.getElementById('main-button').removeEventListener("submit", quizEngine.handleUserNameSubmit); // Removes the initial event listener assigned at the enter username screen
-        document.getElementById('main-button').addEventListener('click', quizEngine.displayQuiz); // Assigns a new event listener to 'hand off' functionality
+        document.getElementById('main-button').removeAttribute('form');                                          // Removes the form attribute, disonnecting the button from enter username form
+        document.getElementById('main-button').removeEventListener("submit", quizEngine.handleUserNameSubmit);   // Removes the initial event listener assigned at the enter username screen
+        document.getElementById('main-button').addEventListener('click', quizEngine.displayQuiz);                // Assigns a new event listener to 'hand off' functionality
         
     },
 
@@ -114,34 +119,36 @@ let quizEngine = {
      * tracker container, var assist container and goals scored container.
      */
     displayQuiz: function () {
-        console.log('display quiz');
         /* mainButton.setAttribute('form', 'choices-container-outer') */
-        document.getElementById('quiz-rules-inner-container').style.display = 'none'; // Hides the quiz rules screen
-        choice1Container.innerText = quizEngine.choices[quizEngine.questionCounter][0]; // Displays choice 1 text to user
-        choice2Container.innerText = quizEngine.choices[quizEngine.questionCounter][1]; // Displays choice 2 text to user
-        choice3Container.innerText = quizEngine.choices[quizEngine.questionCounter][2]; // Displays choice 3 text to user
-        choice4Container.innerText = quizEngine.choices[quizEngine.questionCounter][3]; // Displays choice 4 text to user
-        document.getElementById('choices-container-outer').style.display = 'flex'; // Displays the choices to the user
+        document.getElementById('quiz-rules-inner-container').style.display = 'none';    // Hides the quiz rules screen
+        choice1Container.innerText = quizEngine.choices[quizEngine.questionCounter][0];  // Displays choice 1 text to user
+        choice2Container.innerText = quizEngine.choices[quizEngine.questionCounter][1];  // Displays choice 2 text to user
+        choice3Container.innerText = quizEngine.choices[quizEngine.questionCounter][2];  // Displays choice 3 text to user
+        choice4Container.innerText = quizEngine.choices[quizEngine.questionCounter][3];  // Displays choice 4 text to user
+        document.getElementById('choices-container-outer').style.display = 'flex';       // Displays the choices to the user
         document.getElementById('tracker-container-inner').style.visibility = 'visible'; // Makes the tracker feature visible
-        document.getElementById('bottom-panel-item1').style.visibility = 'visible'; // Makes the VAR Assist button visible
-        document.getElementById('bottom-panel-item3').style.visibility = 'visible'; // Makes the Goals Scored box visible
-        questionDialogueBox.innerText = quizEngine.questions[0]; // Displays the question text to the user, driven by the questionCounter
-        mainButton.innerText = 'Shoot!'; // Changes the text on the main button to 'Shoot!'
-        mainButton.setAttribute('form', 'choices-container-outer'); // Connects the main button to the user choice form to enable HTML validation
-        /*mainButton.addEventListener = ("submit", quizEngine.handleUserChoiceSubmit) // Add an event listener to the main button, 'handing off' the functionality*/
+        document.getElementById('bottom-panel-item1').style.visibility = 'visible';      // Makes the VAR Assist button visible
+        document.getElementById('bottom-panel-item3').style.visibility = 'visible';      // Makes the Goals Scored box visible
+        questionDialogueBox.innerText = quizEngine.questions[0];                         // Displays the question text to the user, driven by the questionCounter
+        mainButton.innerText = 'Shoot!';                                                 // Changes the text on the main button to 'Shoot!'
+        mainButton.setAttribute('form', 'choices-container-outer');                      // Connects the main button to the user choice form to enable HTML validation
+        /*mainButton.addEventListener = ("submit", quizEngine.handleUserChoiceSubmit)    // Add an event listener to the main button, 'handing off' the functionality*/
     },
 
 
     handleUserChoiceSubmit: function (event) {
-        event.preventDefault(); // prevents the form from submitting
+        event.preventDefault();                                                                     // prevents the form from submitting
         
-        for (let i = 0; i < quizEngine.userChoiceInputs.length; i++) {
-            if (quizEngine.userChoiceInputs[i].checked === true) {
-            quizEngine.userChoiceSubmitted = quizEngine.userChoiceInputs[i];
-            quizEngine.currentCorrectAnswer = quizEngine.answers[quizEngine.questionCounter];
-            console.log(quizEngine.userChoiceSubmitted.id);
-            console.log(quizEngine.currentCorrectAnswer);
-        }
+        for (let i = 0; i < quizEngine.userChoiceInputs.length; i++) {                              // For loop that will iterate over the user inputs
+            if (quizEngine.userChoiceInputs[i].checked === true) {                                  // An IF conditional determines which input has been checked
+                quizEngine.userChoiceSubmitted = quizEngine.userChoiceInputs[i].id;                 // The id of the checked input is then assigned to the userChoiceSubmitted property
+                quizEngine.currentCorrectAnswer = quizEngine.answers[quizEngine.questionCounter];   // Assigns the answer to the current question to the currentCorrectAnswer property
+                if (quizEngine.userChoiceSubmitted === quizEngine.currentCorrectAnswer) {           // An IF conditional determines if the user choice and the correct answer match
+                    console.log('Finally, this might work!')
+                } else {
+                    console.log('It might be wrong, but at least it works!')
+                }
+            }
         }
 
 
@@ -156,7 +163,6 @@ let mainButton = document.getElementById('main-button');
 
 const submitUserChoiceForm = document.getElementById('choices-container-outer');
 submitUserChoiceForm.addEventListener("submit", quizEngine.handleUserChoiceSubmit);
-
 
 
 
