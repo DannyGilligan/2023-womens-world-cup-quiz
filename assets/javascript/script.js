@@ -3,6 +3,11 @@ const choice2Container = document.getElementById('choice-2-text');
 const choice3Container = document.getElementById('choice-3-text');
 const choice4Container = document.getElementById('choice-4-text');
 
+const userChoiceInput1 = document.getElementById('choice-1-input');
+const userChoiceInput2 = document.getElementById('choice-2-input');
+const userChoiceInput3 = document.getElementById('choice-3-input');
+const userChoiceInput4 = document.getElementById('choice-4-input');
+
 let quizEngine = {
 
     /* Object Properties */
