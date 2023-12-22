@@ -97,7 +97,7 @@ let quizEngine = {
 
 const enterUsernameForm = document.getElementById('enter-username');
 enterUsernameForm.addEventListener("submit", quizEngine.handleUserNameSubmit);
-let questionDialogueBox = document.getElementById('top-panel-inner').innerText = quizEngine.welcomeMessage;
+let questionDialogueBox = document.getElementById('top-panel-inner')
 
 let mainButton = document.getElementById('main-button')
 
