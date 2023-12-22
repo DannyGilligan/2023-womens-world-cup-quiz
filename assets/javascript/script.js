@@ -2,49 +2,66 @@ let quizEngine = {
 
     /* Object Properties */
     userName: null,
+
     mainButton: document.getElementById("main-button"),  /* should this be a const variable instead? */
-    questionCounter: 0,
+
+    questionCounter: 10,
+
     questions: [
-        'Is this question 1?',
-        'Is this question 2?',
-        'Is this question 3?',
-        'Is this question 4?',
-        'Is this question 5?',
-        'Is this question 6?',
-        'Is this question 7?',
-        'Is this question 8?',
-        'Is this question 9?',
-        'Is this question 10?',
-        'Is this question 11?'
+        'Is this question 1?', /* Text for Question 1 */
+        'Is this question 2?', /* Text for Question 2 */
+        'Is this question 3?', /* Text for Question 3 */
+        'Is this question 4?', /* Text for Question 4 */
+        'Is this question 5?', /* Text for Question 5 */
+        'Is this question 6?', /* Text for Question 6 */
+        'Is this question 7?', /* Text for Question 7 */
+        'Is this question 8?', /* Text for Question 8 */
+        'Is this question 9?', /* Text for Question 9 */
+        'Is this question 10?', /* Text for Question 10 */
+        'Is this question 11?'  /* Text for Question 11 */
         ],
 
     choices: [
-        ['Q1 Choice 1', 'Q1 Choice 2 correct', 'Q1 Choice 3', 'Q1 Choice 4'],
-        ['Q2 Choice 1', 'Q2 Choice 2', 'Q2 Choice 3', 'Q2 Choice 4 correct'],
-        ['Q3 Choice 1', 'Q3 Choice 2', 'Q3 Choice 3 correct', 'Q3 Choice 4'],
-        ['Q4 Choice 1', 'Q4 Choice 2 correct', 'Q4 Choice 3', 'Q4 Choice 4'],
-        ['Q5 Choice 1 correct', 'Q5 Choice 2', 'Q5 Choice 3', 'Q5 Choice 4'],
-        ['Q6 Choice 1', 'Q6 Choice 2', 'Q6 Choice 3 correct', 'Q6 Choice 4'],
-        ['Q7 Choice 1 correct', 'Q7 Choice 2', 'Q7 Choice 3', 'Q7 Choice 4'],
-        ['Q8 Choice 1', 'Q8 Choice 2', 'Q8 Choice 3', 'Q8 Choice 4 correct'],
-        ['Q9 Choice 1', 'Q9 Choice 2 correct', 'Q9 Choice 3', 'Q9 Choice 4'],
-        ['Q10 Choice 1 correct', 'Q10 Choice 2', 'Q10 Choice 3', 'Q10 Choice 4'],
-        ['Q11 Choice 1', 'Q11 Choice 2', 'Q11 Choice 3 correct', 'Q11 Choice 4']
+        ['Q1 Choice 1', 'Q1 Choice 2 correct', 'Q1 Choice 3', 'Q1 Choice 4'], /* Choices for Question 1 */
+        ['Q2 Choice 1', 'Q2 Choice 2', 'Q2 Choice 3', 'Q2 Choice 4 correct'], /* Choices for Question 2 */
+        ['Q3 Choice 1', 'Q3 Choice 2', 'Q3 Choice 3 correct', 'Q3 Choice 4'], /* Choices for Question 3 */
+        ['Q4 Choice 1', 'Q4 Choice 2 correct', 'Q4 Choice 3', 'Q4 Choice 4'], /* Choices for Question 4 */
+        ['Q5 Choice 1 correct', 'Q5 Choice 2', 'Q5 Choice 3', 'Q5 Choice 4'], /* Choices for Question 5 */
+        ['Q6 Choice 1', 'Q6 Choice 2', 'Q6 Choice 3 correct', 'Q6 Choice 4'], /* Choices for Question 6 */
+        ['Q7 Choice 1 correct', 'Q7 Choice 2', 'Q7 Choice 3', 'Q7 Choice 4'], /* Choices for Question 7 */
+        ['Q8 Choice 1', 'Q8 Choice 2', 'Q8 Choice 3', 'Q8 Choice 4 correct'], /* Choices for Question 8 */
+        ['Q9 Choice 1', 'Q9 Choice 2 correct', 'Q9 Choice 3', 'Q9 Choice 4'], /* Choices for Question 9 */
+        ['Q10 Choice 1 correct', 'Q10 Choice 2', 'Q10 Choice 3', 'Q10 Choice 4'], /* Choices for Question 10 */
+        ['Q11 Choice 1', 'Q11 Choice 2', 'Q11 Choice 3 correct', 'Q11 Choice 4']  /* Choices for Question 11 */
     ],
 
     answers: [
-        'choice-2',
-        'choice-4',
-        'choice-3',
-        'choice-2',
-        'choice-1',
-        'choice-3',
-        'choice-1',
-        'choice-4',
-        'choice-2',
-        'choice-1',
-        'choice-3',
+        'choice-2', /* Answer for Question 1 */
+        'choice-4', /* Answer for Question 2 */
+        'choice-3', /* Answer for Question 3 */
+        'choice-2', /* Answer for Question 4 */
+        'choice-1', /* Answer for Question 5 */
+        'choice-3', /* Answer for Question 6 */
+        'choice-1', /* Answer for Question 7 */
+        'choice-4', /* Answer for Question 8 */
+        'choice-2', /* Answer for Question 9 */
+        'choice-1', /* Answer for Question 10 */
+        'choice-3', /* Answer for Question 11 */
     ],
+
+    varAssist: [
+        ['choice-3-input', 'choice-1-input'], /* VAR Assist for Question 1 */
+        ['choice-1-input', 'choice-3-input'], /* VAR Assist for Question 2 */
+        ['choice-3-input', 'choice-1-input'], /* VAR Assist for Question 3 */
+        ['choice-3-input', 'choice-1-input'], /* VAR Assist for Question 4 */
+        ['choice-3-input', 'choice-1-input'], /* VAR Assist for Question 5 */
+        ['choice-3-input', 'choice-1-input'], /* VAR Assist for Question 6 */
+        ['choice-3-input', 'choice-1-input'], /* VAR Assist for Question 7 */
+        ['choice-3-input', 'choice-1-input'], /* VAR Assist for Question 8 */
+        ['choice-3-input', 'choice-1-input'], /* VAR Assist for Question 9 */
+        ['choice-3-input', 'choice-1-input'], /* VAR Assist for Question 10 */
+        ['choice-3-input', 'choice-1-input']  /* VAR Assist for Question 11 */
+    ]
 
     /* Object Methods */
 
