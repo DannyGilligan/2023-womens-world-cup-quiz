@@ -19,7 +19,7 @@ let quizEngine = {
         'Is this question 9?', /* Text for Question 9 */
         'Is this question 10?', /* Text for Question 10 */
         'Is this question 11?'  /* Text for Question 11 */
-        ],
+    ],
 
     choices: [
         ['Q1 Choice 1', 'Q1 Choice 2 correct', 'Q1 Choice 3', 'Q1 Choice 4'], /* Choices for Question 1 */
@@ -49,7 +49,7 @@ let quizEngine = {
         'choice-3', /* Answer for Question 11 */
     ],
 
-    varAssist: [
+    varAssists: [
         ['choice-3-input', 'choice-1-input'], /* VAR Assist for Question 1 */
         ['choice-1-input', 'choice-3-input'], /* VAR Assist for Question 2 */
         ['choice-3-input', 'choice-1-input'], /* VAR Assist for Question 3 */
@@ -61,7 +61,7 @@ let quizEngine = {
         ['choice-3-input', 'choice-1-input'], /* VAR Assist for Question 9 */
         ['choice-3-input', 'choice-1-input'], /* VAR Assist for Question 10 */
         ['choice-3-input', 'choice-1-input']  /* VAR Assist for Question 11 */
-    ]
+    ],
 
     /* Object Methods */
 
