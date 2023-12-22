@@ -110,6 +110,10 @@ let quizEngine = {
         console.log('display quiz');
         /* mainButton.setAttribute('form', 'choices-container-outer') */
         document.getElementById('quiz-rules-inner-container').style.display = 'none'; // Hides the quiz rules screen
+        choice1Container.innerText = quizEngine.choices[quizEngine.questionCounter][0]; // Displays choice 1 text to user
+        choice2Container.innerText = quizEngine.choices[quizEngine.questionCounter][1]; // Displays choice 2 text to user
+        choice3Container.innerText = quizEngine.choices[quizEngine.questionCounter][2]; // Displays choice 3 text to user
+        choice4Container.innerText = quizEngine.choices[quizEngine.questionCounter][3]; // Displays choice 4 text to user
         document.getElementById('choices-container-outer').style.display = 'flex'; // Displays the choices to the user
         document.getElementById('tracker-container-inner').style.visibility = 'visible'; // Makes the tracker feature visible
         document.getElementById('bottom-panel-item1').style.visibility = 'visible'; // Makes the VAR Assist button visible
