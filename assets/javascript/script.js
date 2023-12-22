@@ -74,10 +74,10 @@ let quizEngine = {
     ],
 
     userChoiceInputs: [
-        choice1Container,
-        choice2Container,
-        choice3Container,
-        choice4Container
+        userChoiceInput1,
+        userChoiceInput2,
+        userChoiceInput3,
+        userChoiceInput4
     ],
 
     userChoiceSubmitted: null,
