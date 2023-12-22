@@ -8,6 +8,8 @@ const userChoiceInput2 = document.getElementById('choice-2-input'); // Used for 
 const userChoiceInput3 = document.getElementById('choice-3-input'); // Used for user input
 const userChoiceInput4 = document.getElementById('choice-4-input'); // Used for user input
 
+const goalsScoredDisplay = document.getElementById('goals-scored-value');
+
 let questionDialogueBox = document.getElementById('top-panel-inner');
 
 let quizEngine = {
@@ -90,7 +92,7 @@ let quizEngine = {
 
 
 
-    
+
     /* Object Methods */
 
     /**
