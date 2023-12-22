@@ -11,6 +11,19 @@ let quizEngine = {
     userName: null,
     mainButton: document.getElementById("main-button"),  /* should this be a const variable instead? */
     questionCounter: 0,
+    questions: [
+        'Is this question 1?',
+        'Is this question 2?',
+        'Is this question 3?',
+        'Is this question 4?',
+        'Is this question 5?',
+        'Is this question 6?',
+        'Is this question 7?',
+        'Is this question 8?',
+        'Is this question 9?',
+        'Is this question 10?',
+        'Is this question 11?'
+        ],
 
     /* Object Methods */
 
