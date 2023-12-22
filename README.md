@@ -565,7 +565,7 @@ The site was deployed as a Minimum Viable Product using Github pages.
     <summary><b>The steps for deployment are outlined here</b></summary>
 <br>
 <table>
-<tr><th><b>Step Description</b></th><th><b>Status</b></th></tr>
+
 <!-- spacer -->
 <tr><td colspan="2">In the Github repository, navigate to the 'Settings' tab</td></tr>
 <tr><td>
