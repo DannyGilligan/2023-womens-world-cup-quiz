@@ -1,4 +1,5 @@
 const choice1Container = document.getElementById('choice-1-text')
+const choice2Container = document.getElementById('choice-2-text')
 
 
 
