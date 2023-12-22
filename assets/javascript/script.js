@@ -5,7 +5,7 @@ let quizEngine = {
 
     welcomeMessage: `Welcome to the FIFA 2023 Women's World Cup Quiz`,
 
-    questionCounter: 10,
+    questionCounter: 0,
 
     questions: [
         'Is this question 1?', /* Text for Question 1 */
@@ -80,8 +80,10 @@ let quizEngine = {
         document.getElementById('main-button').innerText = 'Kick Off!';
         document.getElementById('enter-username-container').style.display = 'none';
         document.getElementById('quiz-rules-inner-container').style.display = 'flex';
+        document.getElementById('main-button').removeAttribute('form'); /* Removes the form attribute, disonnecting the button from enter username context */
         
     },
+
 
 
 
