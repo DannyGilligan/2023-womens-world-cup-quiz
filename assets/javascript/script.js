@@ -50,18 +50,25 @@ let quizEngine = {
     ],
 
     varAssists: [
-        ['choice-3-input', 'choice-1-input'], /* VAR Assist for Question 1 */
-        ['choice-1-input', 'choice-3-input'], /* VAR Assist for Question 2 */
-        ['choice-4-input', 'choice-2-input'], /* VAR Assist for Question 3 */
-        ['choice-3-input', 'choice-1-input'], /* VAR Assist for Question 4 */
-        ['choice-3-input', 'choice-4-input'], /* VAR Assist for Question 5 */
-        ['choice-4-input', 'choice-1-input'], /* VAR Assist for Question 6 */
-        ['choice-3-input', 'choice-2-input'], /* VAR Assist for Question 7 */
-        ['choice-3-input', 'choice-1-input'], /* VAR Assist for Question 8 */
-        ['choice-4-input', 'choice-1-input'], /* VAR Assist for Question 9 */
-        ['choice-3-input', 'choice-2-input'], /* VAR Assist for Question 10 */
-        ['choice-4-input', 'choice-1-input']  /* VAR Assist for Question 11 */
+        ['choice-3-input', 'choice-1-input'], /* VAR Assists for Question 1 */
+        ['choice-1-input', 'choice-3-input'], /* VAR Assists for Question 2 */
+        ['choice-4-input', 'choice-2-input'], /* VAR Assists for Question 3 */
+        ['choice-3-input', 'choice-1-input'], /* VAR Assists for Question 4 */
+        ['choice-3-input', 'choice-4-input'], /* VAR Assists for Question 5 */
+        ['choice-4-input', 'choice-1-input'], /* VAR Assists for Question 6 */
+        ['choice-3-input', 'choice-2-input'], /* VAR Assists for Question 7 */
+        ['choice-3-input', 'choice-1-input'], /* VAR Assists for Question 8 */
+        ['choice-4-input', 'choice-1-input'], /* VAR Assists for Question 9 */
+        ['choice-3-input', 'choice-2-input'], /* VAR Assists for Question 10 */
+        ['choice-4-input', 'choice-1-input']  /* VAR Assists for Question 11 */
     ],
+
+    userChoiceInputs: [
+        choice1Container,
+        choice2Container,
+        choice3Container,
+        choice4Container
+    ]
 
     /* Object Methods */
 
@@ -100,12 +107,21 @@ let quizEngine = {
         document.getElementById('bottom-panel-item3').style.visibility = 'visible';
         questionDialogueBox.innerText = quizEngine.questions[0];
         mainButton.innerText = 'Shoot!';
+        mainButton.addEventListener = ("submit", quizEngine.handleUserChoiceSubmit)
     },
+
+
+    handleUserChoiceSubmit: function (event) {
+        mainButton.setAttribute('form', 'choices-container-outer');
+        event.preventDefault();
+
+    }
 
 };
 
 const enterUsernameForm = document.getElementById('enter-username');
 enterUsernameForm.addEventListener("submit", quizEngine.handleUserNameSubmit);
+
 let questionDialogueBox = document.getElementById('top-panel-inner');
 
 let mainButton = document.getElementById('main-button');
