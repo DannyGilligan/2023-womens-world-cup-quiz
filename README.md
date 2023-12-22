@@ -338,7 +338,7 @@ I encountered issues with displaying the bottom container that holds the VAR Ass
 <tr>
 <td>
 
-![Bottom Container](assets/documentation/bugs01_bottom_container.JPG)
+![Bottom Container](assets/documentation/bugs01_bottom_container_resolved_1.webp)
 </td>
 </tr>
 
@@ -350,7 +350,7 @@ I was able to resolve the issue by separating the bottom container into 3 sectio
 
 <td>
 
-![Bottom Container Resolved](assets/documentation/bugs02_bottom_container_resolved.JPG)
+![Bottom Container Resolved](assets/documentation/bugs01_bottom_container_resolved_2.webp)
 </td>
 </tr>
 </table>
