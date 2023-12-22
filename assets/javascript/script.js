@@ -3,7 +3,7 @@ let quizEngine = {
     /* Object Properties */
     userName: null,
     mainButton: document.getElementById("main-button"),  /* should this be a const variable instead? */
-    questionCounter: 0,
+    questionCounter: 5,
     questions: [
         'Is this question 1?',
         'Is this question 2?',
@@ -72,11 +72,11 @@ let quizEngine = {
 
 const enterUsernameForm = document.getElementById('enter-username');
 enterUsernameForm.addEventListener("submit", quizEngine.handleUserNameSubmit);
-const questionDialogueBox = document.getElementById('top-panel-inner');
-const choice1Container = document.getElementById('choice-1-text');
-const choice2Container = document.getElementById('choice-2-text');
-const choice3Container = document.getElementById('choice-3-text');
-const choice4Container = document.getElementById('choice-4-text');
+const questionDialogueBox = document.getElementById('top-panel-inner').innerText = quizEngine.questions[quizEngine.questionCounter];
+const choice1Container = document.getElementById('choice-1-text').innerText = quizEngine.choices[quizEngine.questionCounter][0];
+const choice2Container = document.getElementById('choice-2-text').innerText = quizEngine.choices[quizEngine.questionCounter][1];
+const choice3Container = document.getElementById('choice-3-text').innerText = quizEngine.choices[quizEngine.questionCounter][2];
+const choice4Container = document.getElementById('choice-4-text').innerText = quizEngine.choices[quizEngine.questionCounter][3];
 
 
 /*
