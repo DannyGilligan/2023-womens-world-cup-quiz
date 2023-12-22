@@ -315,6 +315,56 @@ A little bonus for the whiteboard lovers :cupid:
 
 ## Bugs
 
+<details>
+  <summary><b>Resolved Bugs</b></summary>
+<br>
+<!--sub-section -->
+<details>
+  <summary><i>Bottom panel layout</i></summary>  
+<br>
+<!-- Resolved Bug 1 begins -->
+<table>
+<tr><th><b>Bottom Panel Layout</b></th><th><b>Status</b></th></tr>
+
+<tr>
+<td>
+I encountered issues with displaying the bottom container that holds the VAR Assist and Shoot Buttons, along with the Goals Scored tracker. Initially I thought that using display: flex, and using 'space-between' would automatically position these items evenly, with the shoot button in the centre.
+</td>
+<td rowspan="4">
+:heavy_check_mark:
+</td>
+</tr>
+
+<tr>
+<td>
+
+![Bottom Container](assets/documentation/bugs01_bottom_container.JPG)
+</td>
+</tr>
+
+<tr>
+<td>
+I was able to resolve the issue by separating the bottom container into 3 sections with widths of 30%, 40% and 30% respectively (yellow borders added for illustration, percentage values may change after deployment), and then set the flex properties for each individual section, and the entire container as a whole. This produced the desired result. 
+</td>
+</tr>
+
+<td>
+
+![Bottom Container Resolved](assets/documentation/bugs02_bottom_container_resolved.JPG)
+</td>
+</tr>
+</table>
+</details>
+<!-- Resolved Bug 1 ends -->
+
+
+
+</details>
+
+
+
+
+
 [Back to Top](#fifa-2023-womens-world-cup-quiz)
 <br>
 <br>
