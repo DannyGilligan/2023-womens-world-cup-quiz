@@ -76,24 +76,30 @@ let quizEngine = {
         event.preventDefault();
         quizEngine.userName = document.getElementById('username-input');
         document.getElementById('top-panel-inner').innerText = `It's almost kick off time ${quizEngine.userName.value}, let's get the rules out of the way first..`;
-        console.log(quizEngine.userName.value);
         document.getElementById('main-button').innerText = 'Kick Off!';
         document.getElementById('enter-username-container').style.display = 'none';
         document.getElementById('quiz-rules-inner-container').style.display = 'flex';
         document.getElementById('main-button').removeAttribute('form'); /* Removes the form attribute, disonnecting the button from enter username context */
+        document.getElementById('main-button').removeEventListener("submit", quizEngine.handleUserNameSubmit); /*Removes the initial event listener assigned at the enter username screen */
+        document.getElementById('main-button').addEventListener('click', quizEngine.displayQuiz); /* Assigns a new event listener to 'hand off' to */
         
     },
 
-
-
+    displayQuiz: function () {
+        console.log('display quiz')
+        document.getElementById('quiz-rules-inner-container').style.display = 'none';
+        document.getElementById('choices-container-outer').style.display = 'flex';
+        questionDialogueBox.innerText = quizEngine.questions[0];
+        mainButton.innerText = 'Shoot!';
+    },
 
 };
 
 const enterUsernameForm = document.getElementById('enter-username');
 enterUsernameForm.addEventListener("submit", quizEngine.handleUserNameSubmit);
-const questionDialogueBox = document.getElementById('top-panel-inner').innerText = quizEngine.welcomeMessage;
+let questionDialogueBox = document.getElementById('top-panel-inner').innerText = quizEngine.welcomeMessage;
 
-const mainButton = document.getElementById('main-button').innerText = 'Enter!';
+let mainButton = document.getElementById('main-button')
 
 const choice1Container = document.getElementById('choice-1-text').innerText = quizEngine.choices[quizEngine.questionCounter][0];
 const choice2Container = document.getElementById('choice-2-text').innerText = quizEngine.choices[quizEngine.questionCounter][1];
