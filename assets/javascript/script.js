@@ -79,16 +79,25 @@ let quizEngine = {
         document.getElementById('main-button').innerText = 'Kick Off!';
         document.getElementById('enter-username-container').style.display = 'none';
         document.getElementById('quiz-rules-inner-container').style.display = 'flex';
-        document.getElementById('main-button').removeAttribute('form'); /* Removes the form attribute, disonnecting the button from enter username context */
+        document.getElementById('main-button').removeAttribute('form'); /* Removes the form attribute, disonnecting the button from enter username form */
         document.getElementById('main-button').removeEventListener("submit", quizEngine.handleUserNameSubmit); /*Removes the initial event listener assigned at the enter username screen */
         document.getElementById('main-button').addEventListener('click', quizEngine.displayQuiz); /* Assigns a new event listener to 'hand off' to */
         
     },
 
+    /**
+     * The displayQuiz method will display the question and the choices to the user, 
+     * this hides the previous 'quiz rules' screen, then displays the choices container,
+     * tracker container, var assist container and goals scored container.
+     */
     displayQuiz: function () {
-        console.log('display quiz')
+        console.log('display quiz');
+        /* mainButton.setAttribute('form', 'choices-container-outer') */
         document.getElementById('quiz-rules-inner-container').style.display = 'none';
         document.getElementById('choices-container-outer').style.display = 'flex';
+        document.getElementById('tracker-container-inner').style.visibility = 'visible';
+        document.getElementById('bottom-panel-item1').style.visibility = 'visible';
+        document.getElementById('bottom-panel-item3').style.visibility = 'visible';
         questionDialogueBox.innerText = quizEngine.questions[0];
         mainButton.innerText = 'Shoot!';
     },
