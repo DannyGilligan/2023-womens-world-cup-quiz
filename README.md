@@ -356,6 +356,25 @@ I was able to resolve the issue by separating the bottom container into 3 sectio
 </table>
 </details>
 <!-- Resolved Bug 1 ends -->
+<!-- Resolved But 2 begins -->
+<details>
+  <summary><i>Font Import Issue</i></summary>
+<br>
+<table>
+<tr><th><b>Font Import Issue</b></th><th><b>Status</b></th></tr>
+<tr>
+<td>
+I experienced problems when importing the 'FWWC2023' font, I could not get it to load successfully initially (even after several attempts). I found a very helpful video by Kevin Powell on how to self-host fonts that helped, the video resource is linked in the Credits section. I also received very helpful advice and a suggested Stackoverflow post from my mentor Martina Terlevic which allowed me to resolve the issue completely. 
+</td>
+<td>
+:heavy_check_mark:
+</td>
+</tr>
+</table>
+<br>
+</details>
+<!-- Resolved Bug 2 ends -->
+
 
 
 
