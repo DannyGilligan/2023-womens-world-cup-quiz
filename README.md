@@ -374,8 +374,27 @@ I experienced problems when importing the 'FWWC2023' font, I could not get it to
 <br>
 </details>
 <!-- Resolved Bug 2 ends -->
-
-
+<!-- Resolved Bug 3 begins -->
+<details>
+  <summary><i>Image Naming Index</i></summary>
+<br>
+<table>
+<tr><th><b>Image Naming Index</b></th><th><b>Status</b></th></tr>
+<tr>
+<td>
+Once all images were selected for the 'GOAL!' and 'MISS!' feedback screens, I proceeded to crop, copy and resize for thumbnails then convert them to .webp files. However, I initially overlooked the naming convention and started the file name sequence at 1 instead of 0. This would have thrown off the function that would loop through these images using an index starting at 0 (i.e, the questionCounter's initial value). I renamed the image files accordingly.
+<br>
+<br>
+The first image filenames in the sequence are now goal_image_0.webp and miss_image_0.jpg, instead of goal_image_1.webp and miss_image_1.jpg.
+</td>
+<td>
+:heavy_check_mark:
+</td>
+</tr>
+</table>
+<br>
+</details>
+<!-- Resolved Bug 3 ends -->
 
 
 </details>
