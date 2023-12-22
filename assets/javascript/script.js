@@ -24,6 +24,19 @@ let quizEngine = {
         'Is this question 10?',
         'Is this question 11?'
         ],
+    choice: [
+        ['Q1 Choice 1', 'Q1 Choice 2', 'Q1 Choice 3', 'Q1 Choice 4'],
+        ['Q1 Choice 1', 'Q1 Choice 2', 'Q1 Choice 3', 'Q1 Choice 4'],
+        ['Q1 Choice 1', 'Q1 Choice 2', 'Q1 Choice 3', 'Q1 Choice 4'],
+        ['Q1 Choice 1', 'Q1 Choice 2', 'Q1 Choice 3', 'Q1 Choice 4'],
+        ['Q1 Choice 1', 'Q1 Choice 2', 'Q1 Choice 3', 'Q1 Choice 4'],
+        ['Q1 Choice 1', 'Q1 Choice 2', 'Q1 Choice 3', 'Q1 Choice 4'],
+        ['Q1 Choice 1', 'Q1 Choice 2', 'Q1 Choice 3', 'Q1 Choice 4'],
+        ['Q1 Choice 1', 'Q1 Choice 2', 'Q1 Choice 3', 'Q1 Choice 4'],
+        ['Q1 Choice 1', 'Q1 Choice 2', 'Q1 Choice 3', 'Q1 Choice 4'],
+        ['Q1 Choice 1', 'Q1 Choice 2', 'Q1 Choice 3', 'Q1 Choice 4'],
+        ['Q1 Choice 1', 'Q1 Choice 2', 'Q1 Choice 3', 'Q1 Choice 4']
+    ]
 
     /* Object Methods */
 
