@@ -14,7 +14,7 @@ const trackerItem4 = document.getElementById('tracker-item-3'); // Individual tr
 const trackerItem5 = document.getElementById('tracker-item-4'); // Individual tracker item shown in the tracker panel
 const trackerItem6 = document.getElementById('tracker-item-5'); // Individual tracker item shown in the tracker panel
 const trackerItem7 = document.getElementById('tracker-item-6'); // Individual tracker item shown in the tracker panel
-
+const trackerItem8 = document.getElementById('tracker-item-7'); // Individual tracker item shown in the tracker panel
 
 
 let questionDialogueBox = document.getElementById('top-panel-inner'); // Displays the main dialogue to the user (question text etc)
