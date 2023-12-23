@@ -9,7 +9,7 @@ const userChoiceInput4 = document.getElementById('choice-4-input'); // Used for 
 const goalsScoredDisplay = document.getElementById('goals-scored-value'); // Displays the goals scored to the user on screen
 const trackerItem1 = document.getElementById('tracker-item-0'); // Individual tracker item shown in the tracker panel
 const trackerItem2 = document.getElementById('tracker-item-1'); // Individual tracker item shown in the tracker panel
-
+const trackerItem3 = document.getElementById('tracker-item-2'); // Individual tracker item shown in the tracker panel
 
 
 
