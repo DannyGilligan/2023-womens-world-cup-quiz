@@ -179,7 +179,7 @@ let quizEngine = {
      */
     handleUserChoiceSubmit: function (event) {
         event.preventDefault();   
-        mainButton.removeAttributeAttribute('form', 'choices-container-outer');                                              // Disonnects the main button to the user choice submit form                                                                                // prevents the form from submitting
+        mainButton.removeAttribute('form', 'choices-container-outer');                                              // Disonnects the main button to the user choice submit form                                                                                // prevents the form from submitting
         quizEngine.trackerItems[0].classList.remove('tracker-item-active');                                      // Removes active class from first tracker item
         quizEngine.trackerItems[quizEngine.questionCounter].classList.remove('tracker-item-active');             // Removes active class from current tracker item
 
