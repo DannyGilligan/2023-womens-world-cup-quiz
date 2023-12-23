@@ -179,9 +179,8 @@ let quizEngine = {
      */
     handleUserChoiceSubmit: function (event) {
         event.preventDefault();                                                                                  // prevents the form from submitting
-        
-        quizEngine.trackerItems[0].classList.remove('tracker-item-active');
-        quizEngine.trackerItems[quizEngine.questionCounter].classList.remove('tracker-item-active'); 
+        quizEngine.trackerItems[0].classList.remove('tracker-item-active');                                      // Removes active class from first tracker item
+        quizEngine.trackerItems[quizEngine.questionCounter].classList.remove('tracker-item-active');             // Removes active class from current tracker item
         for (let i = 0; i < quizEngine.userChoiceInputs.length; i++) {                                           // For loop that will iterate over the user inputs
             if (quizEngine.userChoiceInputs[i].checked === true) {                                               // An IF conditional determines which input has been checked
                 quizEngine.userChoiceSubmitted = quizEngine.userChoiceInputs[i].id;                              // The id of the checked input is then assigned to the userChoiceSubmitted property
@@ -194,21 +193,17 @@ let quizEngine = {
                     document.getElementById('choices-container-outer').style.display = 'none';                   // Hides the choices container
                     document.getElementById('answer-feedback-outer').style.display = 'flex';                     // Displays the answer feedback screen
                     document.getElementById('answer-feedback-image-container').innerHTML = `<img src="assets/images/goal_image_${quizEngine.questionCounter}.webp" alt="Female Footballer" id="answer-feedback-image">`; // Displays the 'GOAL!' feedback image
-                    mainButton.innerText = 'Play on!';                                                           // Changes text of main button to 'Play On!'
-                    mainButton.addEventListener('click', quizEngine.displayNextQuestion);
-
                 } else {                                                                                         // If the answer is incorrect, the code below runs
                     document.getElementById('answer-feedback-image-container').innerHTML = `<img src="assets/images/miss_image_${quizEngine.questionCounter}.webp" alt="Female Footballer" id="answer-feedback-image">`; // Displays the 'MISS!' feedback image
                     quizEngine.trackerItems[quizEngine.questionCounter].classList.add('tracker-item-incorrect'); // Adds tracker item incorrect class
                     document.getElementById('answer-feedback-status').innerHTML = `<span>MISS!</span>`;          // Updates the feedback text
                     document.getElementById('choices-container-outer').style.display = 'none';                   // Hides the choices container
                     document.getElementById('answer-feedback-outer').style.display = 'flex';                     // Displays the feedback container to the user
-                    mainButton.innerText = 'Play on!';                                                           // Changes text of main button to 'Play On!'
-                    mainButton.addEventListener('click', quizEngine.displayNextQuestion);
                 }
             }
         }
-
+        mainButton.addEventListener('click', quizEngine.displayNextQuestion);                                    // Assigns an event listener to hand off functionality to displayNextQuestion method
+        mainButton.innerText = 'Play on!';                                                                       // Changes text of main button to 'Play On!'
         quizEngine.questionCounter++;
     },
 
