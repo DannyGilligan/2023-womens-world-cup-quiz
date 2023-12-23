@@ -433,7 +433,7 @@ The issue related to the innerText property that was attached to the this dialog
 <!-- Resolved Bug 4 ends -->
 <!-- Resolved Bug 5 begins -->
 <details>
-  <summary><i>InnerText Display Bug</i></summary>
+  <summary><i>Image Responsiveness</i></summary>
 <br>
 <table>
 <tr><th><b>Image Responsiveness</b></th><th><b>Status</b></th></tr>
