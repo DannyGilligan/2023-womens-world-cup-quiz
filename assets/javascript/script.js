@@ -17,7 +17,7 @@ const trackerItem7 = document.getElementById('tracker-item-6'); // Individual tr
 const trackerItem8 = document.getElementById('tracker-item-7'); // Individual tracker item shown in the tracker panel
 const trackerItem9 = document.getElementById('tracker-item-8'); // Individual tracker item shown in the tracker panel
 const trackerItem10 = document.getElementById('tracker-item-9'); // Individual tracker item shown in the tracker panel
-
+const trackerItem11 = document.getElementById('tracker-item-10'); // Individual tracker item shown in the tracker panel
 
 
 
