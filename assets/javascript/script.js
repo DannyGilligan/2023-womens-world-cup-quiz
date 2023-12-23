@@ -10,7 +10,7 @@ const goalsScoredDisplay = document.getElementById('goals-scored-value'); // Dis
 const trackerItem1 = document.getElementById('tracker-item-0'); // Individual tracker item shown in the tracker panel
 const trackerItem2 = document.getElementById('tracker-item-1'); // Individual tracker item shown in the tracker panel
 const trackerItem3 = document.getElementById('tracker-item-2'); // Individual tracker item shown in the tracker panel
-
+const trackerItem4 = document.getElementById('tracker-item-3'); // Individual tracker item shown in the tracker panel
 
 
 let questionDialogueBox = document.getElementById('top-panel-inner'); // Displays the main dialogue to the user (question text etc)
