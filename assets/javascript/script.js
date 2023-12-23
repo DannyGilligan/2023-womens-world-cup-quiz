@@ -91,7 +91,20 @@ let quizEngine = {
     userChoiceSubmitted: null, // Holds the current choice selected by the user (for the current question)
     currentCorrectAnswer: null, // Holds the correct answer for the current question
     goalsScored: 0, // Holds the tally of goals scored by the user
-
+    trackerItems: [
+        trackerItem1,
+        trackerItem2,
+        trackerItem3,
+        trackerItem4,
+        trackerItem5,
+        trackerItem6,
+        trackerItem7,
+        trackerItem8,
+        trackerItem9,
+        trackerItem10,
+        trackerItem11
+    ],
+    
     /* Object Methods */
 
     /**
