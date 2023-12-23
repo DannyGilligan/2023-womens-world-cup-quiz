@@ -60,7 +60,7 @@ let quizEngine = {
         choice3Container,
         choice4Container
     ],
-    
+
     answers: [
         'choice-2-input', // Answer for Question 1
         'choice-4-input', // Answer for Question 2
@@ -200,16 +200,21 @@ let quizEngine = {
     },
 
     displayNextQuestion: function () {
+        ++quizEngine.questionCounter;
         document.getElementById("choices-container-outer").reset();                                             // Resets the form, clearing the radio inputs (add credit to readme!)
-
+        questionDialogueBox.innerText = quizEngine.questions[quizEngine.questionCounter];                         // Displays the question text to the user, driven by the questionCounter  
+        choice1Container.innerText = quizEngine.choices[quizEngine.questionCounter][0];  // Displays choice 1 text to user
+        choice2Container.innerText = quizEngine.choices[quizEngine.questionCounter][1];  // Displays choice 2 text to user
+        choice3Container.innerText = quizEngine.choices[quizEngine.questionCounter][2];  // Displays choice 3 text to user
+        choice4Container.innerText = quizEngine.choices[quizEngine.questionCounter][3];  // Displays choice 4 text to user
         questionDialogueBox.innerText = quizEngine.questions[quizEngine.questionCounter];
         document.getElementById('answer-feedback-outer').style.display = 'none';                                // Hides the answer feedback screen
-        ++quizEngine.questionCounter;                                                                           // Increments questionCounter
+                                                                                  // Increments questionCounter
         document.getElementById('choices-container-outer').style.display = 'flex';                              // Displays choices container
         quizEngine.trackerItems[quizEngine.questionCounter].classList.add('tracker-item-active');               // Adds tracker item active class
         console.log(quizEngine.questionCounter);
+        console.log(quizEngine.questions[quizEngine.questionCounter]);
 
-        for (let i = 0; i < )
     }
 };
 
