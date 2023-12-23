@@ -160,7 +160,7 @@ let quizEngine = {
         document.getElementById('bottom-panel-item1').style.visibility = 'visible';                              // Makes the VAR Assist button visible
         document.getElementById('bottom-panel-item3').style.visibility = 'visible';                              // Makes the Goals Scored box visible
         mainButton.innerText = 'Shoot!';                                                                         // Changes the text on the main button to 'Shoot!'
-        mainButton.setAttribute('form', 'choices-container-outer');                                              // Connects the main button to the user choice form to enable HTML validation
+        mainButton.setAttribute('form', 'choices-container-outer');                                              // Connects the main button to the user choice submit form 
     },
 
     /** 
@@ -178,7 +178,8 @@ let quizEngine = {
      * method.
      */
     handleUserChoiceSubmit: function (event) {
-        event.preventDefault();                                                                                  // prevents the form from submitting
+        event.preventDefault();   
+        mainButton.removeAttributeAttribute('form', 'choices-container-outer');                                              // Disonnects the main button to the user choice submit form                                                                                // prevents the form from submitting
         quizEngine.trackerItems[0].classList.remove('tracker-item-active');                                      // Removes active class from first tracker item
         quizEngine.trackerItems[quizEngine.questionCounter].classList.remove('tracker-item-active');             // Removes active class from current tracker item
 
@@ -211,11 +212,11 @@ let quizEngine = {
     displayNextQuestion: function () {
         quizEngine.currentCorrectAnswer = null;
         quizEngine.userChoiceSubmitted = null;
-        document.getElementById("choices-container-outer").reset();                               // Resets the form, clearing the radio inputs (add credit to readme!)
-        document.getElementById('answer-feedback-outer').style.display = 'none';                  // Hides the answer feedback screen
-        document.getElementById('choices-container-outer').style.display = 'flex';                // Displays choices container
-        quizEngine.trackerItems[quizEngine.questionCounter].classList.add('tracker-item-active'); // Adds tracker item active class
-        mainButton.addEventListener('click', quizEngine.handleUserChoiceSubmit);
+        document.getElementById("choices-container-outer").reset();                                              // Resets the form, clearing the radio inputs (add credit to readme!)
+        document.getElementById('answer-feedback-outer').style.display = 'none';                                 // Hides the answer feedback screen
+        document.getElementById('choices-container-outer').style.display = 'flex';                               // Displays choices container
+        quizEngine.trackerItems[quizEngine.questionCounter].classList.add('tracker-item-active');                // Adds tracker item active class
+        mainButton.setAttribute('form', 'choices-container-outer');                                              // Connects the main button to the user choice submit form 
     }
 };
 
