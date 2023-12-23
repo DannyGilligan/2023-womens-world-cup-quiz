@@ -159,6 +159,10 @@ let quizEngine = {
      */
     displayQuiz: function () {
 
+        document.getElementById('no-option-selected-alert').style.display = 'none';                              // Hides the 'no option selected' warning
+        document.getElementById('tracker-container-inner').style.display = 'flex';                               // Makes the tracker panel visible
+        document.getElementById('bottom-panel-item1').style.visibility = 'visible';                              // Makes the VAR Assist button visible
+        document.getElementById('bottom-panel-item3').style.visibility = 'visible';                              // Makes the Goals Scored box visible
         document.getElementById('main-button').removeEventListener('click', quizEngine.displayQuiz);             // Removes the displayQuiz event listener from main button, not needed once quiz is displayed
         document.getElementById('quiz-rules-inner-container').style.display = 'none';                            // Hides the quiz rules screen
         document.getElementById('tracker-container-inner').style.visibility = 'visible';                         // Makes the tracker feature visible
@@ -167,6 +171,7 @@ let quizEngine = {
         quizEngine.userChoiceInputs[1].checked = false;                                                          // Clears the radio input for choice 2
         quizEngine.userChoiceInputs[2].checked = false;                                                          // Clears the radio input for choice 3
         quizEngine.userChoiceInputs[3].checked = false;                                                          // Clears the radio input for choice 4
+        document.getElementById('main-button').innerText = 'Shoot!'                                              // Changes innerText of main button to 'Shoot!'
         questionDialogueBox.innerText = quizEngine.questions[quizEngine.questionCounter];                        // Displays the question text to the user, driven by the questionCounter  
         quizEngine.choiceContainers[0].innerText = quizEngine.choices[quizEngine.questionCounter][0];            // Displays choice 1 text to user, driven by the questionCounter  
         quizEngine.choiceContainers[1].innerText = quizEngine.choices[quizEngine.questionCounter][1];            // Displays choice 2 text to user, driven by the questionCounter  
@@ -180,12 +185,10 @@ let quizEngine = {
 
 
       //    document.getElementById('choices-container-outer').addEventListener("submit", quizEngine.handleUserChoiceSubmit);
-      
-      //    
+          
   
       //    document.getElementById('tracker-container-inner').style.visibility = 'visible';                         // Makes the tracker feature visible
-      //    document.getElementById('bottom-panel-item1').style.visibility = 'visible';                              // Makes the VAR Assist button visible
-      //    document.getElementById('bottom-panel-item3').style.visibility = 'visible';                              // Makes the Goals Scored box visible
+      
       //    mainButton.innerText = 'Shoot!';                                                                         // Changes the text on the main button to 'Shoot!'
       //    mainButton.setAttribute('form', 'choices-container-outer');                                              // Connects the main button to the user choice submit form 
       //    console.log('Hello from displayQuiz!')
@@ -198,13 +201,19 @@ let quizEngine = {
         
         console.log('printed from inside incrementQuestionCounter: ' + quizEngine.questionCounter);
 
+
         if( quizEngine.userChoiceInputs[0].checked === false && quizEngine.userChoiceInputs[1].checked === false && quizEngine.userChoiceInputs[2].checked === false && quizEngine.userChoiceInputs[3].checked === false ) {
-            console.log('You must make a choice!')
+            document.getElementById('tracker-container-inner').style.display = 'none';
+            document.getElementById('no-option-selected-alert').style.display = 'flex';
+            document.getElementById('main-button').addEventListener('click', quizEngine.incrementQuestionCounter);
+        } else {
+            
+            quizEngine.trackerItems[quizEngine.questionCounter].classList.add('tracker-item-correct'); 
+            quizEngine.trackerItems[quizEngine.questionCounter].classList.remove('tracker-item-active');                // Removes active item class to tracker item
+            document.getElementById('main-button').addEventListener('click', quizEngine.displayQuiz);
+            quizEngine.questionCounter++;
+            
         }
-        quizEngine.trackerItems[quizEngine.questionCounter].classList.add('tracker-item-correct'); 
-        quizEngine.trackerItems[quizEngine.questionCounter].classList.remove('tracker-item-active');                // Removes active item class to tracker item
-        document.getElementById('main-button').addEventListener('click', quizEngine.displayQuiz);
-        quizEngine.questionCounter++;
     },
 
     
