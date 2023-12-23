@@ -25,8 +25,11 @@ let quizEngine = {
 
     /* Object Properties */
     userName: null,
+
     welcomeMessage: `Welcome to the FIFA 2023 Women's World Cup Quiz`,
+
     questionCounter: 0,
+    
     questions: [
         'Is this question 1?',  // Text for Question 1
         'Is this question 2?',  // Text for Question 2
@@ -40,6 +43,7 @@ let quizEngine = {
         'Is this question 10?', // Text for Question 10
         'Is this question 11?'  // Text for Question 11
     ],
+
     choices: [
         ['Q1 Choice 1', 'Q1 Choice 2 correct', 'Q1 Choice 3', 'Q1 Choice 4'],     // Choices for Question 1
         ['Q2 Choice 1', 'Q2 Choice 2', 'Q2 Choice 3', 'Q2 Choice 4 correct'],     // Choices for Question 2
@@ -74,6 +78,7 @@ let quizEngine = {
         'choice-1-input', // Answer for Question 10
         'choice-3-input', // Answer for Question 11
     ],
+
     varAssists: [
         ['choice-3-input', 'choice-1-input'], // VAR Assists for Question 1
         ['choice-1-input', 'choice-3-input'], // VAR Assists for Question 2
@@ -87,15 +92,20 @@ let quizEngine = {
         ['choice-3-input', 'choice-2-input'], // VAR Assists for Question 10
         ['choice-4-input', 'choice-1-input']  // VAR Assists for Question 11
     ],
+
     userChoiceInputs: [
         userChoiceInput1, // Holds the radio input for choice 1
         userChoiceInput2, // Holds the radio input for choice 2
         userChoiceInput3, // Holds the radio input for choice 3
         userChoiceInput4  // Holds the radio input for choice 4
     ],
+
     userChoiceSubmitted: null, // Holds the current choice selected by the user (for the current question)
+
     currentCorrectAnswer: null, // Holds the correct answer for the current question
-    goalsScored: 0, // Holds the tally of goals scored by the user
+
+    goalsScored: 0, // Holds the running total of goals scored by the user
+
     trackerItems: [
         trackerItem1,
         trackerItem2,
@@ -121,14 +131,14 @@ let quizEngine = {
      */
     handleUserNameSubmit: function (event) {
         event.preventDefault();
-        quizEngine.userName = document.getElementById('username-input');
-        questionDialogueBox.innerText = `It's almost kick off time ${quizEngine.userName.value}, let's get the rules out of the way first..`;
-        document.getElementById('main-button').innerText = 'Kick Off!';
-        document.getElementById('enter-username-container').style.display = 'none';
-        document.getElementById('quiz-rules-inner-container').style.display = 'flex';
+        quizEngine.userName = document.getElementById('username-input');                                         // Assigns the username entered to the userName property in quizEngine
+        questionDialogueBox.innerText = `It's almost kick off time ${quizEngine.userName.value}, let's get the rules out of the way first..`;  // Displays quiz rules message to user
+        document.getElementById('main-button').innerText = 'Kick Off!';                                          // Changes text of main button to 'Kick Off!'
+        document.getElementById('enter-username-container').style.display = 'none';                              // Hides the enter user name screen, not needed now
+        document.getElementById('quiz-rules-inner-container').style.display = 'flex';                            // Display the quiz rules
         document.getElementById('main-button').removeAttribute('form');                                          // Removes the form attribute, disonnecting the button from enter username form
         document.getElementById('main-button').removeEventListener("submit", quizEngine.handleUserNameSubmit);   // Removes the initial event listener assigned at the enter username screen
-        document.getElementById('main-button').addEventListener('click', quizEngine.displayQuiz);                // Assigns a new event listener to 'hand off' functionality
+        document.getElementById('main-button').addEventListener('click', quizEngine.displayQuiz);                // Assigns a new event listener to 'hand off' functionality to next method
     },
 
     /**
@@ -137,19 +147,20 @@ let quizEngine = {
      * tracker container, var assist container and goals scored container.
      */
     displayQuiz: function () {
-        document.getElementById('quiz-rules-inner-container').style.display = 'none';    // Hides the quiz rules screen
-        quizEngine.trackerItems[quizEngine.questionCounter].classList.add('tracker-item-active');                // Adds active item class to tracker item, this should only run once
-        questionDialogueBox.innerText = quizEngine.questions[quizEngine.questionCounter];                         // Displays the question text to the user, driven by the questionCounter  
-        choice1Container.innerText = quizEngine.choices[quizEngine.questionCounter][0];  // Displays choice 1 text to user
-        choice2Container.innerText = quizEngine.choices[quizEngine.questionCounter][1];  // Displays choice 2 text to user
-        choice3Container.innerText = quizEngine.choices[quizEngine.questionCounter][2];  // Displays choice 3 text to user
-        choice4Container.innerText = quizEngine.choices[quizEngine.questionCounter][3];  // Displays choice 4 text to user
-        document.getElementById('choices-container-outer').style.display = 'flex';       // Displays the choices to the user
-        document.getElementById('tracker-container-inner').style.visibility = 'visible'; // Makes the tracker feature visible
-        document.getElementById('bottom-panel-item1').style.visibility = 'visible';      // Makes the VAR Assist button visible
-        document.getElementById('bottom-panel-item3').style.visibility = 'visible';      // Makes the Goals Scored box visible
-        mainButton.innerText = 'Shoot!';                                                 // Changes the text on the main button to 'Shoot!'
-        mainButton.setAttribute('form', 'choices-container-outer');                      // Connects the main button to the user choice form to enable HTML validation
+        document.getElementById('main-button').removeEventListener('click', quizEngine.displayQuiz);
+        document.getElementById('quiz-rules-inner-container').style.display = 'none';                            // Hides the quiz rules screen
+        /*quizEngine.trackerItems[quizEngine.questionCounter].classList.add('tracker-item-active');   */         // Adds active item class to tracker item, this should only run once
+        questionDialogueBox.innerText = quizEngine.questions[quizEngine.questionCounter];                        // Displays the question text to the user, driven by the questionCounter  
+        choice1Container.innerText = quizEngine.choices[quizEngine.questionCounter][0];                          // Displays choice 1 text to user
+        choice2Container.innerText = quizEngine.choices[quizEngine.questionCounter][1];                          // Displays choice 2 text to user
+        choice3Container.innerText = quizEngine.choices[quizEngine.questionCounter][2];                          // Displays choice 3 text to user
+        choice4Container.innerText = quizEngine.choices[quizEngine.questionCounter][3];                          // Displays choice 4 text to user
+        document.getElementById('choices-container-outer').style.display = 'flex';                               // Displays the choices to the user
+        document.getElementById('tracker-container-inner').style.visibility = 'visible';                         // Makes the tracker feature visible
+        document.getElementById('bottom-panel-item1').style.visibility = 'visible';                              // Makes the VAR Assist button visible
+        document.getElementById('bottom-panel-item3').style.visibility = 'visible';                              // Makes the Goals Scored box visible
+        mainButton.innerText = 'Shoot!';                                                                         // Changes the text on the main button to 'Shoot!'
+        mainButton.setAttribute('form', 'choices-container-outer');                                              // Connects the main button to the user choice form to enable HTML validation
     },
 
     /** 
@@ -169,6 +180,8 @@ let quizEngine = {
     handleUserChoiceSubmit: function (event) {
         event.preventDefault();                                                                                  // prevents the form from submitting
         
+        quizEngine.trackerItems[0].classList.remove('tracker-item-active');
+        quizEngine.trackerItems[quizEngine.questionCounter].classList.remove('tracker-item-active'); 
         for (let i = 0; i < quizEngine.userChoiceInputs.length; i++) {                                           // For loop that will iterate over the user inputs
             if (quizEngine.userChoiceInputs[i].checked === true) {                                               // An IF conditional determines which input has been checked
                 quizEngine.userChoiceSubmitted = quizEngine.userChoiceInputs[i].id;                              // The id of the checked input is then assigned to the userChoiceSubmitted property
@@ -176,7 +189,6 @@ let quizEngine = {
                 if (quizEngine.userChoiceSubmitted === quizEngine.currentCorrectAnswer) {                        // An IF conditional determines if the user choice and the correct answer match
                     ++quizEngine.goalsScored;                                                                    // Increments goals scored if answer is correct
                     goalsScoredDisplay.innerText = quizEngine.goalsScored;                                       // Displays the goals scored on screen to the user
-                    quizEngine.trackerItems[quizEngine.questionCounter].classList.remove('tracker-item-active'); // Removes tracker item active class
                     quizEngine.trackerItems[quizEngine.questionCounter].classList.add('tracker-item-correct');   // Adds tracker item correct class
                     document.getElementById('answer-feedback-status').innerHTML = `<span>GOAL!</span>`;          // Updates the feedback text
                     document.getElementById('choices-container-outer').style.display = 'none';                   // Hides the choices container
@@ -187,7 +199,6 @@ let quizEngine = {
 
                 } else {                                                                                         // If the answer is incorrect, the code below runs
                     document.getElementById('answer-feedback-image-container').innerHTML = `<img src="assets/images/miss_image_${quizEngine.questionCounter}.webp" alt="Female Footballer" id="answer-feedback-image">`; // Displays the 'MISS!' feedback image
-                    quizEngine.trackerItems[quizEngine.questionCounter].classList.remove('tracker-item-active'); // Removes tracker item active class
                     quizEngine.trackerItems[quizEngine.questionCounter].classList.add('tracker-item-incorrect'); // Adds tracker item incorrect class
                     document.getElementById('answer-feedback-status').innerHTML = `<span>MISS!</span>`;          // Updates the feedback text
                     document.getElementById('choices-container-outer').style.display = 'none';                   // Hides the choices container
@@ -197,24 +208,17 @@ let quizEngine = {
                 }
             }
         }
+
+        quizEngine.questionCounter++;
     },
 
     displayNextQuestion: function () {
-        ++quizEngine.questionCounter;
-        document.getElementById("choices-container-outer").reset();                                             // Resets the form, clearing the radio inputs (add credit to readme!)
-        questionDialogueBox.innerText = quizEngine.questions[quizEngine.questionCounter];                         // Displays the question text to the user, driven by the questionCounter  
-        choice1Container.innerText = quizEngine.choices[quizEngine.questionCounter][0];  // Displays choice 1 text to user
-        choice2Container.innerText = quizEngine.choices[quizEngine.questionCounter][1];  // Displays choice 2 text to user
-        choice3Container.innerText = quizEngine.choices[quizEngine.questionCounter][2];  // Displays choice 3 text to user
-        choice4Container.innerText = quizEngine.choices[quizEngine.questionCounter][3];  // Displays choice 4 text to user
-        questionDialogueBox.innerText = quizEngine.questions[quizEngine.questionCounter];
-        document.getElementById('answer-feedback-outer').style.display = 'none';                                // Hides the answer feedback screen
-                                                                                  // Increments questionCounter
-        document.getElementById('choices-container-outer').style.display = 'flex';                              // Displays choices container
-        quizEngine.trackerItems[quizEngine.questionCounter].classList.add('tracker-item-active');               // Adds tracker item active class
-        console.log(quizEngine.questionCounter);
-        console.log(quizEngine.questions[quizEngine.questionCounter]);
-
+        
+        document.getElementById("choices-container-outer").reset();                               // Resets the form, clearing the radio inputs (add credit to readme!)
+        document.getElementById('answer-feedback-outer').style.display = 'none';                  // Hides the answer feedback screen
+        document.getElementById('choices-container-outer').style.display = 'flex';                // Displays choices container
+        quizEngine.trackerItems[quizEngine.questionCounter].classList.add('tracker-item-active'); // Adds tracker item active class
+        mainButton.addEventListener('click', quizEngine.handleUserChoiceSubmit);
     }
 };
 
