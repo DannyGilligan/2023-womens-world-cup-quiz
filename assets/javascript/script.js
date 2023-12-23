@@ -2,13 +2,15 @@ const choice1Container = document.getElementById('choice-1-text'); // Displays c
 const choice2Container = document.getElementById('choice-2-text'); // Displays choice text
 const choice3Container = document.getElementById('choice-3-text'); // Displays choice text
 const choice4Container = document.getElementById('choice-4-text'); // Displays choice text
-
 const userChoiceInput1 = document.getElementById('choice-1-input'); // Used for user input
 const userChoiceInput2 = document.getElementById('choice-2-input'); // Used for user input
 const userChoiceInput3 = document.getElementById('choice-3-input'); // Used for user input
 const userChoiceInput4 = document.getElementById('choice-4-input'); // Used for user input
-
 const goalsScoredDisplay = document.getElementById('goals-scored-value'); // Displays the goals scored to the user on screen
+const trackerItem1 = document.getElementById('tracker-item-0'); // Individual tracker item shown in the tracker panel
+
+
+
 
 let questionDialogueBox = document.getElementById('top-panel-inner'); // Displays the main dialogue to the user (question text etc)
 
@@ -139,9 +141,7 @@ let quizEngine = {
 
                     document.getElementById('answer-feedback-status').innerHTML = `<span>GOAL!</span>`; // Updates the feedback text
                     document.getElementById('choices-container-outer').style.display = 'none';          // Hides the choices container
-                    
-                    
-                    
+                    document.getElementById('answer-feedback-outer').style.display = 'flex';            // Displays the answer feedback screen
                     document.getElementById('answer-feedback-image-container').innerHTML = `<img src="assets/images/goal_image_${quizEngine.questionCounter}.webp" alt="Female Footballer" id="answer-feedback-image">`; // Displays the 'GOAL!' feedback image
                 } else {                                                                                // If the answer is incorrect, the code below runs
                     document.getElementById('answer-feedback-image-container').innerHTML = `<img src="assets/images/miss_image_${quizEngine.questionCounter}.webp" alt="Female Footballer" id="answer-feedback-image">`; // Displays the 'MISS!' feedback image
