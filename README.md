@@ -397,10 +397,10 @@ The first image filenames in the sequence are now goal_image_0.webp and miss_ima
 <!-- Resolved Bug 3 ends -->
 <!-- Resolved Bug 4 begins -->
 <details>
-  <summary><i>InnerText Display Bug</i></summary>
+  <summary><i>InnerText Display</i></summary>
 <br>
 <table>
-<tr><th><b>InnerText Display Bug</b></th><th><b>Status</b></th></tr>
+<tr><th><b>InnerText Display</b></th><th><b>Status</b></th></tr>
 <tr>
 <td>
 While testing the initial screens displayed to the user, such as the 'display rules' and 'display choices' screens, I noticed the innerText of the main dialogue box was not behaving as expected. It appeared to be 'stuck' on the welcome message.
@@ -431,6 +431,42 @@ The issue related to the innerText property that was attached to the this dialog
 </table>
 </details>
 <!-- Resolved Bug 4 ends -->
+<!-- Resolved Bug 5 begins -->
+<details>
+  <summary><i>InnerText Display Bug</i></summary>
+<br>
+<table>
+<tr><th><b>Image Responsiveness</b></th><th><b>Status</b></th></tr>
+<tr>
+<td>
+During testing, the images displayed at the answer feedback stage lost responsiveness. I was following a mobile first approach and focused my initial styling for smaller screen devices. When testing for larger screens, the bug was discovered.
+</td>
+<td rowspan="4">
+:heavy_check_mark:
+</td>
+</tr>
+
+<tr>
+<td>
+
+![Bottom Container](assets/documentation/bug03_image_responsiveness_1.webp)
+</td>
+</tr>
+
+<tr>
+<td>
+The issue was resolved by applying a 'max-width' property to the #answer-feedback-image rule.
+</td>
+</tr>
+
+<td>
+
+![Bottom Container Resolved](assets/documentation/bug03_image_responsiveness_2.webp)
+</td>
+</tr>
+</table>
+</details>
+<!-- Resolved Bug 5 begins -->
 
 </details>
 

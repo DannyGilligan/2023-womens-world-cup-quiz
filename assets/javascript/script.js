@@ -136,10 +136,13 @@ let quizEngine = {
                 if (quizEngine.userChoiceSubmitted === quizEngine.currentCorrectAnswer) {               // An IF conditional determines if the user choice and the correct answer match
                     ++quizEngine.goalsScored;                                                           // Increments goals scored if answer is correct
                     goalsScoredDisplay.innerText = quizEngine.goalsScored;                              // Displays the goals scored on screen to the user
-                    document.getElementById('answer-feedback-image-container').innerHTML = `<img src="assets/images/goal_image_${quizEngine.questionCounter}.webp" alt="Female Footballer" id="answer-feedback-image">`; // Displays the 'GOAL!' feedback image
+
                     document.getElementById('answer-feedback-status').innerHTML = `<span>GOAL!</span>`; // Updates the feedback text
                     document.getElementById('choices-container-outer').style.display = 'none';          // Hides the choices container
-                    document.getElementById('answer-feedback-outer').style.display = 'flex';            // Displays the feedback container to the user
+                    
+                    
+                    
+                    document.getElementById('answer-feedback-image-container').innerHTML = `<img src="assets/images/goal_image_${quizEngine.questionCounter}.webp" alt="Female Footballer" id="answer-feedback-image">`; // Displays the 'GOAL!' feedback image
                 } else {                                                                                // If the answer is incorrect, the code below runs
                     document.getElementById('answer-feedback-image-container').innerHTML = `<img src="assets/images/miss_image_${quizEngine.questionCounter}.webp" alt="Female Footballer" id="answer-feedback-image">`; // Displays the 'MISS!' feedback image
                     document.getElementById('answer-feedback-status').innerHTML = `<span>MISS!</span>`; // Updates the feedback text
