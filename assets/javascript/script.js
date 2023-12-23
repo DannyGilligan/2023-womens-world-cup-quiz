@@ -104,7 +104,7 @@ let quizEngine = {
         trackerItem10,
         trackerItem11
     ],
-    
+
     /* Object Methods */
 
     /**
@@ -135,6 +135,7 @@ let quizEngine = {
     displayQuiz: function () {
         /* mainButton.setAttribute('form', 'choices-container-outer') */
         document.getElementById('quiz-rules-inner-container').style.display = 'none';    // Hides the quiz rules screen
+        quizEngine.trackerItems[0].classList.add('tracker-item-active')                  // Adds active item class to tracker item, this should only run once  
         choice1Container.innerText = quizEngine.choices[quizEngine.questionCounter][0];  // Displays choice 1 text to user
         choice2Container.innerText = quizEngine.choices[quizEngine.questionCounter][1];  // Displays choice 2 text to user
         choice3Container.innerText = quizEngine.choices[quizEngine.questionCounter][2];  // Displays choice 3 text to user
@@ -160,13 +161,17 @@ let quizEngine = {
                 if (quizEngine.userChoiceSubmitted === quizEngine.currentCorrectAnswer) {               // An IF conditional determines if the user choice and the correct answer match
                     ++quizEngine.goalsScored;                                                           // Increments goals scored if answer is correct
                     goalsScoredDisplay.innerText = quizEngine.goalsScored;                              // Displays the goals scored on screen to the user
-
+                    quizEngine.trackerItems[quizEngine.questionCounter].classList.remove('tracker-item-active') // Removes tracker item active class
+                    quizEngine.trackerItems[quizEngine.questionCounter].classList.add('tracker-item-correct') // Adds tracker item correct class
                     document.getElementById('answer-feedback-status').innerHTML = `<span>GOAL!</span>`; // Updates the feedback text
                     document.getElementById('choices-container-outer').style.display = 'none';          // Hides the choices container
                     document.getElementById('answer-feedback-outer').style.display = 'flex';            // Displays the answer feedback screen
                     document.getElementById('answer-feedback-image-container').innerHTML = `<img src="assets/images/goal_image_${quizEngine.questionCounter}.webp" alt="Female Footballer" id="answer-feedback-image">`; // Displays the 'GOAL!' feedback image
+
                 } else {                                                                                // If the answer is incorrect, the code below runs
                     document.getElementById('answer-feedback-image-container').innerHTML = `<img src="assets/images/miss_image_${quizEngine.questionCounter}.webp" alt="Female Footballer" id="answer-feedback-image">`; // Displays the 'MISS!' feedback image
+                    quizEngine.trackerItems[quizEngine.questionCounter].classList.remove('tracker-item-active') // Removes tracker item active class
+                    quizEngine.trackerItems[quizEngine.questionCounter].classList.add('tracker-item-incorrect') // Adds tracker item incorrect class
                     document.getElementById('answer-feedback-status').innerHTML = `<span>MISS!</span>`; // Updates the feedback text
                     document.getElementById('choices-container-outer').style.display = 'none';          // Hides the choices container
                     document.getElementById('answer-feedback-outer').style.display = 'flex';            // Displays the feedback container to the user
