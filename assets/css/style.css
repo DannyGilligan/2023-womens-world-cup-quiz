@@ -10,7 +10,7 @@ body {
     margin: 0;
     padding: 0;
     background: #0d1017;
-    /* background: white; */
+    /* background: white;    <---- TOGGLE THIS!!! */   
     font-family: "FWWC 2023"; 
 }
 
@@ -76,7 +76,6 @@ and the final end quiz picture
 }
 
 
-
 /* 
 ---------------------------------------- TRACKER SECTION
 
@@ -131,8 +130,6 @@ to {
     100% { opacity: 1; }
     }
 
-
-  
 .tracker-item{
     font-family: "FWWC 2023";
     font-size: .7rem;
@@ -145,7 +142,6 @@ to {
     display: flex;
     justify-content: center;
     align-items: center;
-    /*text-shadow: 0rem 0rem .1rem #EEEDCE;*/
 }
 
 .tracker-item-incorrect{
@@ -226,7 +222,6 @@ answer feedback boxes
 
 #mid-panel{
     width: 98%;
-    /*display: none;*/
 }
 
 #enter-username-container{
@@ -288,13 +283,6 @@ answer feedback boxes
     font-size: .8rem;
 }
 
-  
-/*
-#input-form-container label {
-    margin-bottom: 1rem;
-}
-*/
-
 input::placeholder {
     text-align: center;
     font-size: .7rem;
@@ -333,9 +321,6 @@ after the user enters a valid username
     box-shadow: 3px 3px 2px grey;
     display: none;    /*    <----------- TOGGLE THIS!!  */
 }
-
-
-
 
 
 /* 
@@ -456,7 +441,6 @@ include the feedback image, text and
     border: 1px solid #EEEDCE;
     box-shadow: 0 0 5px 1px #EEEDCE;
 }
-
 
 /* This container will hold text "Choice is Correct", only to be displayed on larger screen sizes */
 #answer-feedback-text{

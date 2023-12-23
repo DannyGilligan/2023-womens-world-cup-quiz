@@ -19,10 +19,7 @@ const trackerItem9 = document.getElementById('tracker-item-8'); // Individual tr
 const trackerItem10 = document.getElementById('tracker-item-9'); // Individual tracker item shown in the tracker panel
 const trackerItem11 = document.getElementById('tracker-item-10'); // Individual tracker item shown in the tracker panel
 
-
-
 let questionDialogueBox = document.getElementById('top-panel-inner'); // Displays the main dialogue to the user (question text etc)
-
 
 let quizEngine = {
 
@@ -124,7 +121,6 @@ let quizEngine = {
         document.getElementById('main-button').removeAttribute('form');                                          // Removes the form attribute, disonnecting the button from enter username form
         document.getElementById('main-button').removeEventListener("submit", quizEngine.handleUserNameSubmit);   // Removes the initial event listener assigned at the enter username screen
         document.getElementById('main-button').addEventListener('click', quizEngine.displayQuiz);                // Assigns a new event listener to 'hand off' functionality
-        
     },
 
     /**
@@ -193,10 +189,7 @@ let quizEngine = {
                 }
             }
         }
-
-
     }
-
 };
 
 const enterUsernameForm = document.getElementById('enter-username');
