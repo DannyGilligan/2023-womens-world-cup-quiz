@@ -275,7 +275,7 @@ let quizEngine = {
             document.getElementById(quizEngine.varAssists[quizEngine.questionCounter][0]).parentNode.classList.add('offside-container');
 
             document.getElementById(quizEngine.varAssists[quizEngine.questionCounter][1]).style.visibility = 'hidden';
-            document.getElementById(quizEngine.varAssists[quizEngine.questionCounter][1]).previousElementSibling.innerText = 'Offside';
+            document.getElementById(quizEngine.varAssists[quizEngine.questionCounter][1]).previousElementSibling.innerText = 'Offside!';
             document.getElementById(quizEngine.varAssists[quizEngine.questionCounter][1]).parentNode.classList.remove('choice-container');
             document.getElementById(quizEngine.varAssists[quizEngine.questionCounter][1]).parentNode.classList.add('offside-container');
 
