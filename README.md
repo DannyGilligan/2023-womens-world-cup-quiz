@@ -1063,6 +1063,13 @@ The live link to this site is https://dannygilligan.github.io/2023-womens-world-
 
 </td></tr>
 <!-- spacer -->
+<tr><td> Guide on the syntax for CSS animations, published by w3schools.com </td>
+<td> 
+
+[here](https://www.w3schools.com/cssref/css3_pr_animation.php)
+
+</td></tr>
+<!-- spacer -->
 </table>
 </details>
 <!-- Reference Materials credits section ends here -->
