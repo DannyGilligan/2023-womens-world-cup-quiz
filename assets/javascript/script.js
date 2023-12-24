@@ -155,7 +155,7 @@ let quizEngine = {
      */
     displayQuiz: function () {
 
-        document.getElementById('answer-feedback-outer').style.display = 'flex';                                 // Hides answer feedback container
+        document.getElementById('answer-feedback-outer').style.display = 'none';                                 // Hides answer feedback container
         document.getElementById('no-option-selected-alert').style.display = 'none';                              // Hides the 'no option selected' warning.
         document.getElementById('tracker-container-inner').style.display = 'flex';                               // Makes the tracker panel visible.
         document.getElementById('bottom-panel-item1').style.visibility = 'visible';                              // Makes the VAR Assist button visible.
