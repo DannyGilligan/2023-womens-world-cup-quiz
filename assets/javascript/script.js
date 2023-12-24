@@ -131,14 +131,16 @@ const quizEngine = {
      */
     handleUserNameSubmit: function (event) {
         event.preventDefault();
-        quizEngine.userName = document.getElementById('username-input');                                                                       // Assigns the username entered to the userName property in quizEngine.
-        questionDialogueBox.innerText = `It's almost kick off time ${quizEngine.userName.value}, let's get the rules out of the way first..`;  // Displays quiz rules message to user.
-        document.getElementById('main-button').innerText = 'Kick Off!';                                                                        // Changes text of main button to 'Kick Off!'.
-        document.getElementById('enter-username-container').style.display = 'none';                                                            // Hides the enter user name screen, not needed now.
-        document.getElementById('quiz-rules-inner-container').style.display = 'flex';                                                          // Displays the quiz rules.
-        document.getElementById('main-button').removeAttribute('form');                                                                        // Removes the form attribute, disonnecting the button from enter username form.
-        document.getElementById('main-button').addEventListener('click', quizEngine.displayQuiz);                                              // Assigns a new event listener to 'hand off' functionality to next method
-        console.log(quizEngine.userName.value);                                                                                                // Debugging message.
+        quizEngine.userName = document.getElementById('username-input');                                                                              // Assigns the username entered to the userName property in quizEngine.
+        questionDialogueBox.innerHTML = `<p>It's almost kick off time ${quizEngine.userName.value}, let's get the rules out of the way first..</p>`;  // Displays quiz rules message to user.
+        questionDialogueBox.firstElementChild.style.animation = 'easeIn .2s ease-in 0s 1 normal forwards';                                            // Adds easeIn animation to text in question box
+        document.getElementById('main-button').innerText = 'Kick Off!';                                                                               // Changes text of main button to 'Kick Off!'.
+        document.getElementById('enter-username-container').style.display = 'none';                                                                   // Hides the enter user name screen, not needed now.
+        document.getElementById('quiz-rules-inner-container').firstElementChild.style.animation = 'easeIn .3s ease-in 0s 1 normal forwards';          // Adds easeIn animation to rules text
+        document.getElementById('quiz-rules-inner-container').style.display = 'flex';                                                                 // Displays the quiz rules.
+        document.getElementById('main-button').removeAttribute('form');                                                                               // Removes the form attribute, disonnecting the button from enter username form.
+        document.getElementById('main-button').addEventListener('click', quizEngine.displayQuiz);                                                     // Assigns a new event listener to 'hand off' functionality to next method
+        console.log(quizEngine.userName.value);                                                                                                       // Debugging message.
     },
 
     /**
