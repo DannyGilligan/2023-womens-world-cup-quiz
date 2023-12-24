@@ -278,8 +278,7 @@ const quizEngine = {
         questionDialogueBox.innerHTML = `Congratulations on making it to the final whistle ${quizEngine.userName.value}!`;
         document.getElementById('answer-feedback-outer').style.display = 'none';
         document.getElementById('end-quiz-message').style.display = 'flex';
-        document.getElementById('end-quiz-inner').innerHTML = `<p>You scored ${quizEngine.goalsScored} out of 11 attempts on goal!<br><br>Learn more about the 
-                                                            devlopment of women's football at<br><br><link href='https://www.fifa.com/womens-football' target='_blank'><strong>fifa.com/womens-football</strong></link></p>`
+        document.getElementById('end-quiz-inner').innerHTML = `<p>You scored <strong>${quizEngine.goalsScored}</strong> out of <strong>11</strong> attempts on goal!<br><br>Learn more about the devlopment of women's football at<br><br><link href="https://www.fifa.com/womens-football" target="_blank"><strong>fifa.com/womens-football</strong></link></p>`
     },
 
     varAssist: function () {
