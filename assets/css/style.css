@@ -110,7 +110,7 @@ an option
 }
   
 .tracker-container-glow{
-    animation: glowFinal 1s infinite alternate;
+    animation: glowFinal .8s infinite alternate;
 }
 
 @keyframes glowFinal {
