@@ -177,7 +177,7 @@ let quizEngine = {
         document.getElementById('goals-scored-value').innerText = quizEngine.goalsScored;                        // Displays the goalsScored value to the user    
         console.log('The current correct answer is ' + quizEngine.currentCorrectAnswer);                         // Debugging message.
         document.getElementById('choices-container-outer').style.display = 'flex';                               // Displays the choices screen to the user.
-        document.getElementById('main-button').addEventListener('click', quizEngine.checkAnswer);   // Directs to increment counter function, debugging.
+        document.getElementById('main-button').addEventListener('click', quizEngine.checkAnswer);                // Hands off functionality to the checkAnswer method
         console.log(quizEngine.questionCounter);                                                                 // Debugging message.
 
 
@@ -202,19 +202,22 @@ let quizEngine = {
             // The code below will fire when a choice selection has been submitted.
             let userChoiceSubmitted;                                                            // Declares a variable within the else part of the IF statement, left unassigned initially.                  
             if (quizEngine.userChoiceInputs[0].checked === true) {                              // First condition is checked to see if the 1st choice radio input has been checked.
-                userChoiceSubmitted = quizEngine.userChoiceInputs[0].id;                        // If first choice radio input has been checked, the id of that input is assigned to userChoiceSubmitted variable, if not, the next condition is tested.
+                userChoiceSubmitted = quizEngine.userChoiceInputs[0].id;                        // If first choice radio input has been checked, the ID of that input is assigned to userChoiceSubmitted variable, if not, the next condition is tested.
             } else if (quizEngine.userChoiceInputs[1].checked === true) {                       // Second condition is checked to see if the 2nd choice radio input has been checked.
-                userChoiceSubmitted = quizEngine.userChoiceInputs[1].id;                        // If 2nd choice radio input has been checked, the id of that input is assigned to userChoiceSubmitted variable, if not, the next condition is tested.
+                userChoiceSubmitted = quizEngine.userChoiceInputs[1].id;                        // If 2nd choice radio input has been checked, the ID of that input is assigned to userChoiceSubmitted variable, if not, the next condition is tested.
             } else if (quizEngine.userChoiceInputs[2].checked === true) {                       // Third condition is checked to see if the 3rd choice radio input has been checked.
-                userChoiceSubmitted = quizEngine.userChoiceInputs[2].id;                        // If 3rd choice radio input has been checked, the id of that input is assigned to userChoiceSubmitted variable.
+                userChoiceSubmitted = quizEngine.userChoiceInputs[2].id;                        // If 3rd choice radio input has been checked, the ID of that input is assigned to userChoiceSubmitted variable.
             } else {                                                                            // If the first 3 choice radio inputs are blank,
                 userChoiceSubmitted = quizEngine.userChoiceInputs[3].id;                        // The 4th choice is automatically assigned to userChoiceSubmitted
             };
 
-            console.log('The user choice is ' + userChoiceSubmitted);                            // Debugging message
-            console.log('The current correct answer is ' + quizEngine.currentCorrectAnswer)       // Debugging message
-            if (userChoiceSubmitted === quizEngine.currentCorrectAnswer){                        // Checks if the userChoiceSubmitted equals the currentCorrectAnswer value
-                ++quizEngine.goalsScored;
+            console.log('The user choice is ' + userChoiceSubmitted);                                        // Debugging message
+            console.log('The current correct answer is ' + quizEngine.currentCorrectAnswer)                  // Debugging message
+            if (userChoiceSubmitted === quizEngine.currentCorrectAnswer){                                    // Checks if the userChoiceSubmitted equals the currentCorrectAnswer value (both values use the html element IDs associated with the radio inputs)
+                ++quizEngine.goalsScored;                                                                    // Increments goalsScored value   
+                document.getElementById('goals-scored-value').innerText = quizEngine.goalsScored;            // Updates goals scored disaplyed to the user
+                quizEngine.trackerItems[quizEngine.questionCounter].classList.add('tracker-item-correct');   // Adds 'correct' item class to tracker item
+                quizEngine.trackerItems[quizEngine.questionCounter].classList.remove('tracker-item-active'); // Removes 'active' item class to tracker item
                 console.log('The answer is correct!')
             } else {
                 console.log('The answer is incorrect!')
@@ -223,12 +226,10 @@ let quizEngine = {
 
 
 
-            /*
-            quizEngine.trackerItems[quizEngine.questionCounter].classList.add('tracker-item-correct'); 
-            quizEngine.trackerItems[quizEngine.questionCounter].classList.remove('tracker-item-active');                // Removes active item class to tracker item
-            document.getElementById('main-button').addEventListener('click', quizEngine.displayQuiz);
-            quizEngine.questionCounter++;
-            */
+
+                            
+            // document.getElementById('main-button').addEventListener('click', quizEngine.displayQuiz);
+            
         }
     },
 
