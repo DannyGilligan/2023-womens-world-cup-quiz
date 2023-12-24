@@ -10,7 +10,7 @@ body {
     margin: 0;
     padding: 0;
     background: #0d1017;
-    /* background: white;    <---- TOGGLE THIS!!! */   
+    background: white;  /*  <---- TOGGLE THIS!!! */   
     font-family: "FWWC 2023"; 
 }
 
@@ -542,9 +542,9 @@ the VAR Assist button
 #var-assist-button{
     font-size: .8rem;
     background-color: #E83800;
-    border: 1px solid #E83800;
+    border: 1px solid #EEEDCE;
     color: #EEEDCE;
-    box-shadow: 2px 2px 2px #EEEDCE;
+    box-shadow: 3px 3px 2px #cc9d04;
     border-radius: 5px;
     cursor: pointer;
     height: 2rem;
@@ -554,7 +554,7 @@ the VAR Assist button
 }
   
 #var-assist-button:hover {
-    box-shadow: 3px 3px 2px pink;
+    box-shadow: 4px 4px 2px pink;
     transform: scale(1.05);
 }
   
