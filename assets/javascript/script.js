@@ -174,17 +174,17 @@ let quizEngine = {
             quizEngine.userChoiceInputs[i].checked = false;                                                                // radio inputs.
         }
         
-        document.getElementById('main-button').innerText = 'Shoot!';                                                       // Changes innerText of main button to 'Shoot!'.
-        questionDialogueBox.innerText = quizEngine.questions[quizEngine.questionCounter];                                  // Displays the question text to the user, driven by the questionCounter.  
-        quizEngine.choiceContainers[0].innerText = quizEngine.choices[quizEngine.questionCounter][0];                      // Displays choice 1 text to user, driven by the questionCounter.  
-        quizEngine.choiceContainers[1].innerText = quizEngine.choices[quizEngine.questionCounter][1];                      // Displays choice 2 text to user, driven by the questionCounter.  
-        quizEngine.choiceContainers[2].innerText = quizEngine.choices[quizEngine.questionCounter][2];                      // Displays choice 3 text to user, driven by the questionCounter.  
-        quizEngine.choiceContainers[3].innerText = quizEngine.choices[quizEngine.questionCounter][3];                      // Displays choice 4 text to user, driven by the questionCounter.  
-        quizEngine.currentCorrectAnswer = quizEngine.answers[quizEngine.questionCounter];                                  // Assigns the correct answer to the current question to currentCorrectAnswer.
-        document.getElementById('goals-scored-value').innerText = quizEngine.goalsScored;                                  // Displays the goalsScored value to the user  
-        document.getElementById('var-assist-remaining').innerHTML = `<span>${quizEngine.varAssistCounter} Remaining</span>`// Displays the VAR Assists remaining to the user  
-        console.log('The current correct answer is ' + quizEngine.currentCorrectAnswer);                                   // Debugging message.
-        document.getElementById('choices-container-outer').style.display = 'flex';                                         // Displays the choices screen to the user.
+        document.getElementById('main-button').innerText = 'Shoot!';                                                        // Changes innerText of main button to 'Shoot!'.
+        questionDialogueBox.innerText = quizEngine.questions[quizEngine.questionCounter];                                   // Displays the question text to the user, driven by the questionCounter.  
+        quizEngine.choiceContainers[0].innerText = quizEngine.choices[quizEngine.questionCounter][0];                       // Displays choice 1 text to user, driven by the questionCounter.  
+        quizEngine.choiceContainers[1].innerText = quizEngine.choices[quizEngine.questionCounter][1];                       // Displays choice 2 text to user, driven by the questionCounter.  
+        quizEngine.choiceContainers[2].innerText = quizEngine.choices[quizEngine.questionCounter][2];                       // Displays choice 3 text to user, driven by the questionCounter.  
+        quizEngine.choiceContainers[3].innerText = quizEngine.choices[quizEngine.questionCounter][3];                       // Displays choice 4 text to user, driven by the questionCounter.  
+        quizEngine.currentCorrectAnswer = quizEngine.answers[quizEngine.questionCounter];                                   // Assigns the correct answer to the current question to currentCorrectAnswer.
+        document.getElementById('goals-scored-value').innerText = quizEngine.goalsScored;                                   // Displays the goalsScored value to the user  
+        document.getElementById('var-assist-remaining').innerHTML = `<span>${quizEngine.varAssistCounter} Remaining</span>`;// Displays the VAR Assists remaining to the user  
+        console.log('The current correct answer is ' + quizEngine.currentCorrectAnswer);                                    // Debugging message.
+        document.getElementById('choices-container-outer').style.display = 'flex';                                          // Displays the choices screen to the user.
         
         if (quizEngine.varAssistCounter > 0) {
             document.getElementById('var-assist-button').classList.add('var-assist-button-style');
