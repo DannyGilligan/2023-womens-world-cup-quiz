@@ -157,6 +157,14 @@ let quizEngine = {
         document.getElementById('quiz-rules-inner-container').style.display = 'none';                                      // Hides the quiz rules screen.
         document.getElementById('tracker-container-inner').style.visibility = 'visible';                                   // Makes the tracker feature visible.
         quizEngine.trackerItems[quizEngine.questionCounter].classList.add('tracker-item-active');                          // Adds active item class to tracker item.
+        
+        for (let i = 0; i < quizEngine.userChoiceInputs.length; i++) {                                                     // Loops through the radio inputs and resets the visibilty for the, 
+            quizEngine.userChoiceInputs[i].style.visibility = 'visible';                                                   // radio input for choices in case hidden previously by varAssist.
+        }
+        
+        
+        
+        
         quizEngine.userChoiceInputs[0].checked = false;                                                                    // Resets the radio input for choice 1.
         quizEngine.userChoiceInputs[1].checked = false;                                                                    // Resets the radio input for choice 2.
         quizEngine.userChoiceInputs[2].checked = false;                                                                    // Resets the radio input for choice 3.
@@ -179,9 +187,6 @@ let quizEngine = {
             document.getElementById('var-assist-button').disabled = false;
         }
         
-
-
-
         document.getElementById('main-button').addEventListener('click', quizEngine.checkAnswer);                          // Hands off functionality to the checkAnswer method
         console.log(quizEngine.questionCounter);                                                                           // Debugging message.
     },
