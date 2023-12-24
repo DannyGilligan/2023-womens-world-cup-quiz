@@ -221,7 +221,7 @@ let quizEngine = {
                 document.getElementById('choices-container-outer').style.display = 'none';                                                                                                                           // Hides the choices container
                 document.getElementById('answer-feedback-outer').style.display = 'flex';                                                                                                                             // Displays the answer feedback container which will hold the feedback image
                 document.getElementById('answer-feedback-image-container').innerHTML = `<img src="assets/images/goal_image_${quizEngine.questionCounter}.webp" alt="Female Footballer" id="answer-feedback-image">`; // Displays the 'GOAL!' feedback image
-                document.getElementById('answer-feedback-status').innerHTML = '<span>GOAL!</span>';
+                document.getElementById('answer-feedback-status').innerHTML = '<span>GOAL!</span>';                                                                                                                  // Displays answer feedback text to user
                 console.log('The answer is correct!')
             } else {
                 quizEngine.trackerItems[quizEngine.questionCounter].classList.add('tracker-item-incorrect');                                                                                                         // Adds 'incorrect' item class to tracker item
@@ -229,6 +229,7 @@ let quizEngine = {
                 document.getElementById('choices-container-outer').style.display = 'none';                                                                                                                           // Hides the choices container
                 document.getElementById('answer-feedback-outer').style.display = 'flex';                                                                                                                             // Displays the answer feedback container which will hold the feedback image
                 document.getElementById('answer-feedback-image-container').innerHTML = `<img src="assets/images/miss_image_${quizEngine.questionCounter}.webp" alt="Female Footballer" id="answer-feedback-image">`; // Displays the 'MISS!' feedback image
+                document.getElementById('answer-feedback-status').innerHTML = '<span>MISS!</span>';                                                                                                                  // Displays answer feedback text to user
                 console.log('The answer is incorrect!')
             };
 
