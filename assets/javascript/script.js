@@ -233,13 +233,10 @@ let quizEngine = {
                 document.getElementById('answer-feedback-status').innerHTML = '<span>MISS!</span>';                                                                                                                  // Displays answer feedback text to user
                 console.log('The answer is incorrect!')
             };
-
-
-
-
-
-                            
-            // document.getElementById('main-button').addEventListener('click', quizEngine.displayQuiz);
+             
+            quizEngine.questionCounter++ // Increments question counter to drive the relevant array indices being accessed
+            document.getElementById('main-button').innerText = 'Play On!';  // Changes the text of the main button to 'Play On!', which will display the next question, choices etc
+            document.getElementById('main-button').addEventListener('click', quizEngine.displayQuiz);
             
         }
     },
