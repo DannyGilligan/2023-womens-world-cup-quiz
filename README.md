@@ -24,6 +24,8 @@ The FIFA 2023 Women's World Cup Quiz is the 2nd project deliverable as part of t
 The topic of the quiz is general knowledge relating to the FIFA 2023 Women's World Cup. The quiz aims to be an entertaining and informative way of increasing exposure and knowledge of women's football, with the intention of helping to increase popularity.
 It is aimed at anyone who enjoys quizzes and may have an interest in sports with the hopes of providing this audience with a fun, interactive Javascript product.
 
+The deployed site can be found [here](https://dannygilligan.github.io/2023-womens-world-cup-quiz/).
+
 [Back to Top](#fifa-2023-womens-world-cup-quiz)
 <br>
 <br>
