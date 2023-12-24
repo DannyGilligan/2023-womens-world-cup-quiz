@@ -29,6 +29,8 @@ let quizEngine = {
     welcomeMessage: `Welcome to the FIFA 2023 Women's World Cup Quiz`,
 
     questionCounter: 0,
+
+    varAssistCounter: 3,
     
     questions: [
         'Is this question 1?',  // Text for Question 1.
