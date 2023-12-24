@@ -242,7 +242,10 @@ let quizEngine = {
         }
     },
 
-    
+    varAssist: function () {
+        document.getElementById(quizEngine.varAssists[quizEngine.questionCounter][0]).style.visibility = 'hidden';
+        document.getElementById(quizEngine.varAssists[quizEngine.questionCounter][1]).style.visibility = 'hidden';
+    },
  
 
     /** 
