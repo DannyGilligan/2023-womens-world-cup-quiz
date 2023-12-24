@@ -28,7 +28,7 @@ the entire contents of the page
     flex-direction: column;
     align-items: center;
     max-width: 98%;
-    animation: EaseIn .7s;
+    animation: easeIn .7s;
 }
 
 
@@ -113,7 +113,7 @@ an option
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    animation: EaseIn .5s ease-in;
+    animation: easeIn .5s ease-in;
     visibility: hidden;    /* <----------- TOGGLE THIS!!  */
 }
 
@@ -153,7 +153,7 @@ an option
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    animation: EaseIn .2s ease-in;
+    animation: easeIn .2s ease-in;
     background-color: #E83800;
     color: #EEEDCE;
     font-size: .85rem;
@@ -552,7 +552,7 @@ is shown below
     height: 5rem;
     justify-content: space-between;
     border-radius: 5px;
-    animation: EaseIn 1s;
+    animation: easeIn 1s;
     /* display: none;    <----------- TOGGLE THIS!!  */
 }
   
@@ -697,7 +697,7 @@ will be used throughout the quiz.
 The code for the ease/fade in animations were taken from https://blog.hubspot.com/website/css-fade-in
 */
 
-@keyframes EaseIn {
+@keyframes easeIn {
     0% { opacity: 0; }
     100% { opacity: 1; }
 }
