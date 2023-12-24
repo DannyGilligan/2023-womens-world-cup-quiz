@@ -572,6 +572,10 @@ include the feedback image, text and
     text-align: center;
 }
 
+#end-quiz-inner a{
+    text-decoration: none;
+    color:#EEEDCE;
+}
 
 /* 
 ---------------------------------------- BOTTOM PANEL SECTION
@@ -653,6 +657,7 @@ the VAR Assist button
     height: 2rem;
     min-width: 3rem;
     margin: .4rem;
+    cursor: default;
 }
 
 
