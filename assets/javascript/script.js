@@ -141,6 +141,7 @@ const quizEngine = {
         document.getElementById('main-button').removeAttribute('form');                                                                               // Removes the form attribute, disonnecting the button from enter username form.
         document.getElementById('main-button').addEventListener('click', quizEngine.displayQuiz);                                                     // Assigns a new event listener to 'hand off' functionality to next method
         console.log(quizEngine.userName.value);                                                                                                       // Debugging message.
+        document.getElementById('tracker-container-inner').style.display = 'none'; 
     },
 
     /**
@@ -149,10 +150,14 @@ const quizEngine = {
      * tracker container, var assist container and goals scored container.
      */
     displayQuiz: function () {
-
+        
         document.getElementById('answer-feedback-outer').style.display = 'none';                                           // Hides answer feedback container
         document.getElementById('no-option-selected-alert').style.display = 'none';                                        // Hides the 'no option selected' warning.
+        
         document.getElementById('tracker-container-inner').style.display = 'flex';                                         // Makes the tracker panel visible.
+        document.getElementById('tracker-container-inner').style.transition = 'all 2s ease-in'
+        document.getElementById('tracker-container-inner').style.animation = 'easeIn 2s ease-in 0s 1 normal forwards'
+        
         document.getElementById('bottom-panel-item1').style.visibility = 'visible';                                        // Makes the VAR Assist button visible.
         document.getElementById('bottom-panel-item3').style.visibility = 'visible';                                        // Makes the Goals Scored box visible.
         document.getElementById('main-button').removeEventListener('click', quizEngine.displayQuiz);                       // Removes the displayQuiz event listener from main button, not needed once quiz is displayed.
@@ -220,7 +225,7 @@ const quizEngine = {
         console.log('printed from inside checkAnswer: ' + quizEngine.questionCounter);
         // The code below will fire if the user clicks on 'Shoot!' without selecting a choice.
         if ( quizEngine.userChoiceInputs[0].checked === false && quizEngine.userChoiceInputs[1].checked === false && quizEngine.userChoiceInputs[2].checked === false && quizEngine.userChoiceInputs[3].checked === false ) {
-            document.getElementById('tracker-container-inner').style.display = 'none';
+            // document.getElementById('tracker-container-inner').style.display = 'none';
             document.getElementById('no-option-selected-alert').style.display = 'flex';
             document.getElementById('main-button').addEventListener('click', quizEngine.checkAnswer);
         } else {
