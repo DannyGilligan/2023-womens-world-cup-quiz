@@ -271,6 +271,10 @@ const quizEngine = {
         }
     },
 
+    viewFinalResult: function () {
+        
+    }
+
     varAssist: function () {
 
         if (quizEngine.varAssistCounter > 0) {
