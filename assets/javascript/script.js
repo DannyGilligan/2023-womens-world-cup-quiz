@@ -225,8 +225,8 @@ let quizEngine = {
             // The code below will fire when a choice selection has been submitted.
             document.getElementById('no-option-selected-alert').style.display = 'none';         // Hides the no option selected alert
             document.getElementById('tracker-container-inner').style.display = 'flex';          // Displays the tracker panel
-            document.getElementById('var-assist-button').disabled = true;                           // Disable VAR Assist button while answer feedback screen is displayed
-            let userChoiceSubmitted;                                                            // Declares a variable within the else part of the IF statement, left unassigned initially.                  
+            document.getElementById('var-assist-button').disabled = true;                       // Disable VAR Assist button while answer feedback screen is displayed
+            let userChoiceSubmitted;                                                            // Declares a local variable within the else part of the IF statement, left unassigned initially.                  
             if (quizEngine.userChoiceInputs[0].checked === true) {                              // First condition is checked to see if the 1st choice radio input has been checked.
                 userChoiceSubmitted = quizEngine.userChoiceInputs[0].id;                        // If first choice radio input has been checked, the ID of that input is assigned to userChoiceSubmitted variable, if not, the next condition is tested.
             } else if (quizEngine.userChoiceInputs[1].checked === true) {                       // Second condition is checked to see if the 2nd choice radio input has been checked.
@@ -258,10 +258,16 @@ let quizEngine = {
                 document.getElementById('answer-feedback-status').innerHTML = '<span>MISS!</span>';                                                                                                                  // Displays answer feedback text to user.
                 console.log('The answer is incorrect!');
             }
-             
-            quizEngine.questionCounter++;                                                                   // Increments question counter to drive the relevant array indices being accessed.
-            document.getElementById('main-button').innerText = 'Play On!';                                  // Changes the text of the main button to 'Play On!', which will display the next question, choices etc.
-            document.getElementById('main-button').addEventListener('click', quizEngine.displayQuiz);       // Changes the functionality of the main button to the displayQuiz method.          
+            
+            if (quizEngine.questionCounter < 10) {
+                quizEngine.questionCounter++;                                                                   // Increments question counter to drive the relevant array indices being accessed.
+                document.getElementById('main-button').innerText = 'Play On!';                                  // Changes the text of the main button to 'Play On!', which will display the next question, choices etc.
+                document.getElementById('main-button').addEventListener('click', quizEngine.displayQuiz);       // Changes the functionality of the main button to the displayQuiz method.  
+            } else {
+                document.getElementById('main-button').innerText = 'View Results!';                             // Changes the text of the main button to 'Play On!', which will display the next question, choices etc.
+                document.getElementById('main-button').addEventListener('click', quizEngine.viewResults);       // Changes the functionality of the main button to the displayQuiz method.  
+            }
+        
         }
     },
 
