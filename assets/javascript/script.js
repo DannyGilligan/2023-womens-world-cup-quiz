@@ -250,6 +250,9 @@ let quizEngine = {
         document.getElementById(quizEngine.varAssists[quizEngine.questionCounter][0]).style.visibility = 'hidden';
         document.getElementById(quizEngine.varAssists[quizEngine.questionCounter][1]).style.visibility = 'hidden';
         document.getElementById('var-assist-remaining').innerHTML = `<span>${quizEngine.varAssistCounter} Remaining</span>`;
+        document.getElementById('var-assist-button').disabled = true;
+        document.getElementById('var-assist-button').disabled.style.background = 'red';
+
     },
  
 

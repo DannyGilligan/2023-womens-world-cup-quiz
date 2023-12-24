@@ -587,6 +587,19 @@ the VAR Assist button
     font-size: .8rem;
 }
 
+.disabled {
+    font-size: .8rem;
+    background-color: grey;
+    border: 1px solid #EEEDCE;
+    color: #EEEDCE;
+    box-shadow: 3px 3px 2px grey;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 2rem;
+    min-width: 3rem;
+    margin: .4rem;
+}
+
 
 /* 
 ---------------------------------------- MAIN BUTTON SECTION
