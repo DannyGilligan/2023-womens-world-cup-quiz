@@ -564,7 +564,7 @@ the VAR Assist button
     visibility: hidden;  /*  <----------- TOGGLE THIS!!  */
 }
   
-#var-assist-button{
+.var-assist-button-style{
     font-size: .8rem;
     background-color: #E83800;
     border: 1px solid #EEEDCE;
@@ -578,7 +578,7 @@ the VAR Assist button
     transition: transform .1s ease-in-out;
 }
   
-#var-assist-button:hover {
+.var-assist-button-style:hover {
     box-shadow: 4px 4px 2px pink;
     transform: scale(1.05);
 }
