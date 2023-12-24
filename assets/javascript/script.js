@@ -321,6 +321,7 @@ let quizEngine = {
 
 
 document.getElementById('enter-username').addEventListener("submit", quizEngine.handleUserNameSubmit);
+document.getElementById('var-assist-button').addEventListener('click', quizEngine.varAssist);
 
 
 
