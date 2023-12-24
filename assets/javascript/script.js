@@ -212,10 +212,10 @@ let quizEngine = {
                 userChoiceSubmitted = quizEngine.userChoiceInputs[2].id;                        // If 3rd choice radio input has been checked, the ID of that input is assigned to userChoiceSubmitted variable.
             } else {                                                                            // If the first 3 choice radio inputs are blank,
                 userChoiceSubmitted = quizEngine.userChoiceInputs[3].id;                        // The 4th choice is automatically assigned to userChoiceSubmitted.
-            };
+            }
 
             console.log('The user choice is ' + userChoiceSubmitted);                                                                                                                                                // Debugging message.
-            console.log('The current correct answer is ' + quizEngine.currentCorrectAnswer)                                                                                                                          // Debugging message.
+            console.log('The current correct answer is ' + quizEngine.currentCorrectAnswer)  ;                                                                                                                        // Debugging message.
             if (userChoiceSubmitted === quizEngine.currentCorrectAnswer){                                                                                                                                            // Checks if the userChoiceSubmitted equals the currentCorrectAnswer value (both values use the html element IDs associated with the radio inputs).
                 ++quizEngine.goalsScored;                                                                                                                                                                            // Increments goalsScored value.   
                 document.getElementById('goals-scored-value').innerText = quizEngine.goalsScored;                                                                                                                    // Updates goals scored disaplyed to the user.
@@ -225,7 +225,7 @@ let quizEngine = {
                 document.getElementById('answer-feedback-outer').style.display = 'flex';                                                                                                                             // Displays the answer feedback container which will hold the feedback image.
                 document.getElementById('answer-feedback-image-container').innerHTML = `<img src="assets/images/goal_image_${quizEngine.questionCounter}.webp" alt="Female Footballer" id="answer-feedback-image">`; // Displays the 'GOAL!' feedback image.
                 document.getElementById('answer-feedback-status').innerHTML = '<span>GOAL!</span>';                                                                                                                  // Displays answer feedback text to user.
-                console.log('The answer is correct!')
+                console.log('The answer is correct!');
             } else {
                 quizEngine.trackerItems[quizEngine.questionCounter].classList.add('tracker-item-incorrect');                                                                                                         // Adds 'incorrect' item class to tracker item.
                 quizEngine.trackerItems[quizEngine.questionCounter].classList.remove('tracker-item-active');                                                                                                         // Removes 'active' item class to tracker item.
@@ -233,10 +233,10 @@ let quizEngine = {
                 document.getElementById('answer-feedback-outer').style.display = 'flex';                                                                                                                             // Displays the answer feedback container which will hold the feedback image.
                 document.getElementById('answer-feedback-image-container').innerHTML = `<img src="assets/images/miss_image_${quizEngine.questionCounter}.webp" alt="Female Footballer" id="answer-feedback-image">`; // Displays the 'MISS!' feedback image.
                 document.getElementById('answer-feedback-status').innerHTML = '<span>MISS!</span>';                                                                                                                  // Displays answer feedback text to user.
-                console.log('The answer is incorrect!')
-            };
+                console.log('The answer is incorrect!');
+            }
              
-            quizEngine.questionCounter++                                                                    // Increments question counter to drive the relevant array indices being accessed.
+            quizEngine.questionCounter++;                                                                   // Increments question counter to drive the relevant array indices being accessed.
             document.getElementById('main-button').innerText = 'Play On!';                                  // Changes the text of the main button to 'Play On!', which will display the next question, choices etc.
             document.getElementById('main-button').addEventListener('click', quizEngine.displayQuiz);       // Changes the functionality of the main button to the displayQuiz method.          
         }
