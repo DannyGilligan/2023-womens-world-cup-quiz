@@ -20,7 +20,7 @@ const trackerItem9 = document.getElementById('tracker-item-8');                 
 const trackerItem10 = document.getElementById('tracker-item-9');                    // Individual tracker item shown in the tracker panel.
 const trackerItem11 = document.getElementById('tracker-item-10');                   // Individual tracker item shown in the tracker panel.
 const questionDialogueBox = document.getElementById('top-panel-inner');               // Displays the main dialogue to the user (question text etc).
-let mainButton = document.getElementById('main-button');
+const mainButton = document.getElementById('main-button');
 
 let quizEngine = {
     /* OBJECT PROPERTIES BELOW */
