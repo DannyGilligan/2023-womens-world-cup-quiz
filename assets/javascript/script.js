@@ -22,7 +22,7 @@ const trackerItem11 = document.getElementById('tracker-item-10');               
 const questionDialogueBox = document.getElementById('top-panel-inner');               // Displays the main dialogue to the user (question text etc).
 const mainButton = document.getElementById('main-button');
 
-let quizEngine = {
+const quizEngine = {
     /* OBJECT PROPERTIES BELOW */
     userName: null,
 
