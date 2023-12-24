@@ -272,7 +272,8 @@ const quizEngine = {
     },
 
     viewFinalResult: function () {
-        document.getElementById('bottom-panel-item1').style.animation = 'fadeOut 1s linear 0s 1 normal forwards';        // Syntax referenced from W3Schools "animation: name duration timing-function delay iteration-count direction fill-mode play-state;""
+        document.getElementById('bottom-panel-item1').style.animation = 'fadeOut .4s ease-in 0s 1 normal forwards';        // Syntax referenced from W3Schools "animation: name duration timing-function delay iteration-count direction fill-mode play-state;"
+        document.getElementById('bottom-panel-item3').style.animation = 'fadeOut .4s ease-in 0s 1 normal forwards';        // Syntax referenced from W3Schools "animation: name duration timing-function delay iteration-count direction fill-mode play-state;"
         document.getElementById('hero-image').style.display = 'none';
         document.getElementById('end-quiz-image').style.display = 'flex';
         document.getElementById('tracker-container').classList.add('tracker-container-glow');
