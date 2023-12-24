@@ -211,13 +211,16 @@ let quizEngine = {
                 userChoiceSubmitted = quizEngine.userChoiceInputs[3].id;                        // The 4th choice is automatically assigned to userChoiceSubmitted
             };
 
-            console.log('The user choice is ' + userChoiceSubmitted);                                        // Debugging message
-            console.log('The current correct answer is ' + quizEngine.currentCorrectAnswer)                  // Debugging message
-            if (userChoiceSubmitted === quizEngine.currentCorrectAnswer){                                    // Checks if the userChoiceSubmitted equals the currentCorrectAnswer value (both values use the html element IDs associated with the radio inputs)
-                ++quizEngine.goalsScored;                                                                    // Increments goalsScored value   
-                document.getElementById('goals-scored-value').innerText = quizEngine.goalsScored;            // Updates goals scored disaplyed to the user
-                quizEngine.trackerItems[quizEngine.questionCounter].classList.add('tracker-item-correct');   // Adds 'correct' item class to tracker item
-                quizEngine.trackerItems[quizEngine.questionCounter].classList.remove('tracker-item-active'); // Removes 'active' item class to tracker item
+            console.log('The user choice is ' + userChoiceSubmitted);                                                                                                                                                // Debugging message
+            console.log('The current correct answer is ' + quizEngine.currentCorrectAnswer)                                                                                                                          // Debugging message
+            if (userChoiceSubmitted === quizEngine.currentCorrectAnswer){                                                                                                                                            // Checks if the userChoiceSubmitted equals the currentCorrectAnswer value (both values use the html element IDs associated with the radio inputs)
+                ++quizEngine.goalsScored;                                                                                                                                                                            // Increments goalsScored value   
+                document.getElementById('goals-scored-value').innerText = quizEngine.goalsScored;                                                                                                                    // Updates goals scored disaplyed to the user
+                quizEngine.trackerItems[quizEngine.questionCounter].classList.add('tracker-item-correct');                                                                                                           // Adds 'correct' item class to tracker item
+                quizEngine.trackerItems[quizEngine.questionCounter].classList.remove('tracker-item-active');                                                                                                         // Removes 'active' item class to tracker item
+                document.getElementById('choices-container-outer').style.display = 'none';                                                                                                                           // Hides the choices container
+                document.getElementById('answer-feedback-outer').style.display = 'flex';                                                                                                                             // Displays the answer feedback container which will hold the feedback image
+                document.getElementById('answer-feedback-image-container').innerHTML = `<img src="assets/images/goal_image_${quizEngine.questionCounter}.webp" alt="Female Footballer" id="answer-feedback-image">`; // Displays the 'GOAL!' feedback image     
                 console.log('The answer is correct!')
             } else {
                 quizEngine.trackerItems[quizEngine.questionCounter].classList.add('tracker-item-incorrect'); // Adds 'incorrect' item class to tracker item
@@ -274,7 +277,7 @@ let quizEngine = {
                     document.getElementById('answer-feedback-status').innerHTML = `<span>GOAL!</span>`;          // Updates the feedback text
                     // document.getElementById('choices-container-outer').style.display = 'none';               // Hides the choices container
                     document.getElementById('answer-feedback-outer').style.display = 'flex';                     // Displays the answer feedback screen
-                    document.getElementById('answer-feedback-image-container').innerHTML = `<img src="assets/images/goal_image_${quizEngine.questionCounter}.webp" alt="Female Footballer" id="answer-feedback-image">`; // Displays the 'GOAL!' feedback image
+                    
                 } else {                                                                                         // If the answer is incorrect, the code below runs
                     document.getElementById('answer-feedback-image-container').innerHTML = `<img src="assets/images/miss_image_${quizEngine.questionCounter}.webp" alt="Female Footballer" id="answer-feedback-image">`; // Displays the 'MISS!' feedback image
                     quizEngine.trackerItems[quizEngine.questionCounter].classList.add('tracker-item-incorrect'); // Adds tracker item incorrect class
