@@ -172,6 +172,16 @@ let quizEngine = {
         document.getElementById('var-assist-remaining').innerHTML = `<span>${quizEngine.varAssistCounter} Remaining</span>`// Displays the VAR Assists remaining to the user  
         console.log('The current correct answer is ' + quizEngine.currentCorrectAnswer);                                   // Debugging message.
         document.getElementById('choices-container-outer').style.display = 'flex';                                         // Displays the choices screen to the user.
+        
+        if (quizEngine.varAssistCounter > 0) {
+            document.getElementById('var-assist-button').classList.add('var-assist-button-style');
+            document.getElementById('var-assist-button').classList.remove('disabled');
+            document.getElementById('var-assist-button').disabled = false;
+        }
+        
+
+
+
         document.getElementById('main-button').addEventListener('click', quizEngine.checkAnswer);                          // Hands off functionality to the checkAnswer method
         console.log(quizEngine.questionCounter);                                                                           // Debugging message.
     },
@@ -246,13 +256,23 @@ let quizEngine = {
     },
 
     varAssist: function () {
-        --quizEngine.varAssistCounter;
-        document.getElementById(quizEngine.varAssists[quizEngine.questionCounter][0]).style.visibility = 'hidden';
-        document.getElementById(quizEngine.varAssists[quizEngine.questionCounter][1]).style.visibility = 'hidden';
-        document.getElementById('var-assist-remaining').innerHTML = `<span>${quizEngine.varAssistCounter} Remaining</span>`;
-        document.getElementById('var-assist-button').disabled = true;
-        document.getElementById('var-assist-button').classList.add('disabled');
-        document.getElementById('var-assist-button').classList.remove('var-assist-button-style');
+
+        if (quizEngine.varAssistCounter > 0) {
+            --quizEngine.varAssistCounter;
+            document.getElementById(quizEngine.varAssists[quizEngine.questionCounter][0]).style.visibility = 'hidden';
+            document.getElementById(quizEngine.varAssists[quizEngine.questionCounter][1]).style.visibility = 'hidden';
+            document.getElementById('var-assist-remaining').innerHTML = `<span>${quizEngine.varAssistCounter} Remaining</span>`;
+            document.getElementById('var-assist-button').disabled = true;
+            document.getElementById('var-assist-button').classList.add('disabled');
+            document.getElementById('var-assist-button').classList.remove('var-assist-button-style');
+        } else {
+            document.getElementById('var-assist-button').disabled = true;
+            document.getElementById('var-assist-remaining').innerHTML = `<span>${quizEngine.varAssistCounter} Remaining</span>`;
+            document.getElementById('var-assist-button').disabled = true;
+            document.getElementById('var-assist-button').classList.add('disabled');
+            document.getElementById('var-assist-button').classList.remove('var-assist-button-style');
+        }
+        
     },
  
 
