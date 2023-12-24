@@ -72,17 +72,17 @@ let quizEngine = {
     ],
 
     answers: [
-        'Q1 choice-2-input', // Answer for Question 1.
-        'Q2 choice-4-input', // Answer for Question 2.
-        'Q3 choice-3-input', // Answer for Question 3.
-        'Q4 choice-2-input', // Answer for Question 4.
-        'Q5 choice-1-input', // Answer for Question 5.
-        'Q6 choice-3-input', // Answer for Question 6.
-        'Q7 choice-1-input', // Answer for Question 7.
-        'Q8 choice-4-input', // Answer for Question 8.
-        'Q9 choice-2-input', // Answer for Question 9.
-        'Q10 choice-1-input', // Answer for Question 10.
-        'Q11 choice-3-input', // Answer for Question 11.
+        'choice-2-input', // Answer for Question 1.
+        'choice-4-input', // Answer for Question 2.
+        'choice-3-input', // Answer for Question 3.
+        'choice-2-input', // Answer for Question 4.
+        'choice-1-input', // Answer for Question 5.
+        'choice-3-input', // Answer for Question 6.
+        'choice-1-input', // Answer for Question 7.
+        'choice-4-input', // Answer for Question 8.
+        'choice-2-input', // Answer for Question 9.
+        'choice-1-input', // Answer for Question 10.
+        'choice-3-input', // Answer for Question 11.
     ],
 
     varAssists: [
@@ -211,8 +211,9 @@ let quizEngine = {
             };
 
             console.log('The user choice is ' + userChoiceSubmitted);                            // Debugging message
+            console.log('The current correct answer is ' + quizEngine.currentCorrectAnswer)       // Debugging message
             if (userChoiceSubmitted === quizEngine.currentCorrectAnswer){                        // Checks if the userChoiceSubmitted equals the currentCorrectAnswer value
-                console.log('The answer is correct!');
+                ++quizEngine.goalsScored;
             } else {
                 console.log('The answer is incorrect!')
             };
