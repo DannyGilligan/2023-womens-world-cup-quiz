@@ -347,7 +347,7 @@ the radio inputs is below
     margin-top: .5rem;
     padding-top: .3rem;
     display: none;      /*  <----------- TOGGLE THIS!!  */
-    border: 2px solid magenta;
+    border: 2px solid transparent;
 }
   
   
