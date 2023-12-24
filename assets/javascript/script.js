@@ -264,8 +264,8 @@ const quizEngine = {
                 document.getElementById('main-button').innerText = 'Play On!';                                  // Changes the text of the main button to 'Play On!', which will display the next question, choices etc.
                 document.getElementById('main-button').addEventListener('click', quizEngine.displayQuiz);       // Changes the functionality of the main button to the displayQuiz method.  
             } else {
-                document.getElementById('main-button').innerText = 'View Final Result!';                             // Changes the text of the main button to 'Play On!', which will display the next question, choices etc.
-                document.getElementById('main-button').addEventListener('click', quizEngine.viewFinalResult);       // Changes the functionality of the main button to the displayQuiz method.  
+                document.getElementById('main-button').innerText = 'View Final Result!';                        // Changes the text of the main button to 'Play On!', which will display the next question, choices etc.
+                document.getElementById('main-button').addEventListener('click', quizEngine.viewFinalResult);   // Changes the functionality of the main button to the displayQuiz method.  
             }
         
         }
@@ -278,6 +278,7 @@ const quizEngine = {
         questionDialogueBox.innerHTML = `Congratulations on making it to the final whistle ${quizEngine.userName.value}!`;
         document.getElementById('answer-feedback-outer').style.display = 'none';
         document.getElementById('end-quiz-message').style.display = 'flex';
+        document.getElementById('end-quiz-message').innerHTML = `<p>You scored ${quizEngine.goalsScored} out of 11 attempts on goal!<br><br>Learn more about the devlopment of women's football at<br>https://www.fifa.com/womens-football</p>`
     },
 
     varAssist: function () {
