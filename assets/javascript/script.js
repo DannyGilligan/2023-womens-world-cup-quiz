@@ -174,6 +174,7 @@ let quizEngine = {
         quizEngine.choiceContainers[2].innerText = quizEngine.choices[quizEngine.questionCounter][2];            // Displays choice 3 text to user, driven by the questionCounter.  
         quizEngine.choiceContainers[3].innerText = quizEngine.choices[quizEngine.questionCounter][3];            // Displays choice 4 text to user, driven by the questionCounter.  
         quizEngine.currentCorrectAnswer = quizEngine.answers[quizEngine.questionCounter];                        // Assigns the correct answer to the current question to currentCorrectAnswer.
+        document.getElementById('goals-scored-value').innerText = quizEngine.goalsScored;                        // Displays the goalsScored value to the user    
         console.log('The current correct answer is ' + quizEngine.currentCorrectAnswer);                         // Debugging message.
         document.getElementById('choices-container-outer').style.display = 'flex';                               // Displays the choices screen to the user.
         document.getElementById('main-button').addEventListener('click', quizEngine.checkAnswer);   // Directs to increment counter function, debugging.
@@ -214,6 +215,7 @@ let quizEngine = {
             console.log('The current correct answer is ' + quizEngine.currentCorrectAnswer)       // Debugging message
             if (userChoiceSubmitted === quizEngine.currentCorrectAnswer){                        // Checks if the userChoiceSubmitted equals the currentCorrectAnswer value
                 ++quizEngine.goalsScored;
+                console.log('The answer is correct!')
             } else {
                 console.log('The answer is incorrect!')
             };
