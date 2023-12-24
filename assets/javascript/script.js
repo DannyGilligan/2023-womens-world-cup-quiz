@@ -252,6 +252,7 @@ let quizEngine = {
         document.getElementById('var-assist-remaining').innerHTML = `<span>${quizEngine.varAssistCounter} Remaining</span>`;
         document.getElementById('var-assist-button').disabled = true;
         document.getElementById('var-assist-button').classList.add('disabled');
+        document.getElementById('var-assist-button').classList.remove('var-assist-button-style');
     },
  
 
