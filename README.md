@@ -708,7 +708,67 @@ The live link to this site is https://dannygilligan.github.io/2023-womens-world-
 <td>HTML & CSS Validation</td>
 <td>https://validator.w3.org/docs/</td>
 </tr>
-
+<!-- spacer -->
+<tr><td>
+<div>
+	<code><img width="50" src="assets/documentation/tech_used_jshint.webp" alt="JSHint" title="JSHint"/></code>
+</div>
+</td>
+<td>JSHint</td>
+<td>Javascript Validation</td>
+<td>https://jshint.com/docs/</td>
+</tr>
+<!-- spacer -->
+<tr><td>
+<div>
+	<code><img width="50" src="assets/documentation/tech_used_balsamiq.webp" alt="Balasmiq" title="Balasmiq"/></code>
+</div>
+</td>
+<td>Balsamiq</td>
+<td>Wireframing</td>
+<td>https://balsamiq.com/docs/</td>
+</tr>
+<!-- spacer -->
+<tr><td>
+<div>
+	<code><img width="50" src="https://user-images.githubusercontent.com/25181517/192108374-8da61ba1-99ec-41d7-80b8-fb2f7c0a4948.png" alt="GitHub" title="GitHub"/></code>
+</div>
+</td>
+<td>Github</td>
+<td>Site repository</td>
+<td>https://docs.github.com/en</td>
+</tr>
+<!-- spacer -->
+<tr><td>
+<div>
+	<code><img width="50" src="assets/documentation/tech_used_gitpod.webp" alt="Gitpod" title="Gitpod"/></code>
+</div>
+</td>
+<td>Gitpod</td>
+<td>Site development, IDE</td>
+<td>https://www.gitpod.io/docs/introduction</td>
+</tr>
+<!-- spacer -->
+<tr><td>
+<div>
+	<code><img width="50" src="assets/documentation/tech_used_coffee.webp" alt="Coffee" title="Coffee"/></code>
+</div>
+</td>
+<td>Coffee</td>
+<td>Site fuel</td>
+<td>https://en.wikipedia.org/wiki/Coffee</td>
+</tr>
+<!-- spacer -->
+<tr><td>
+<div>
+	<code><img width="50" src="assets/documentation/tech_used_google.webp" alt="Google" title="Google"/></code>
+</div>
+</td>
+<td>Google</td>
+<td>Superhero</td>
+<td>https://www.google.com/</td>
+</tr>
+<!-- spacer -->
 </table>
 <!-- Technologies Used section ends here -->
 
