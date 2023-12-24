@@ -561,6 +561,15 @@ include the feedback image, text and
         display: none;   /*  <----------- TOGGLE THIS!!  */
 }
 
+#end-quiz-inner{
+    display: flex;
+    flex-direction: column;
+    width: 98%;
+    align-items: center;
+    justify-content: center;
+    color: #EEEDCE;
+    font-size: .9rem;
+}
 
 
 /* 
