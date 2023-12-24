@@ -159,16 +159,13 @@ let quizEngine = {
         quizEngine.trackerItems[quizEngine.questionCounter].classList.add('tracker-item-active');                          // Adds active item class to tracker item.
         
         for (let i = 0; i < quizEngine.userChoiceInputs.length; i++) {                                                     // Loops through the radio inputs and resets the visibilty for the, 
-            quizEngine.userChoiceInputs[i].style.visibility = 'visible';                                                   // radio input for choices in case hidden previously by varAssist.
+            quizEngine.userChoiceInputs[i].style.visibility = 'visible';                                                   // radio input for all choices in case hidden previously by varAssist.
         }
         
+        for (let i = 0; i < quizEngine.userChoiceInputs.length; i++) {                                                     // Loops through the radio inputs and resets the checked status for all,
+            quizEngine.userChoiceInputs[i].checked = false;                                                                // radio inputs.
+        }
         
-        
-        
-        quizEngine.userChoiceInputs[0].checked = false;                                                                    // Resets the radio input for choice 1.
-        quizEngine.userChoiceInputs[1].checked = false;                                                                    // Resets the radio input for choice 2.
-        quizEngine.userChoiceInputs[2].checked = false;                                                                    // Resets the radio input for choice 3.
-        quizEngine.userChoiceInputs[3].checked = false;                                                                    // Resets the radio input for choice 4.
         document.getElementById('main-button').innerText = 'Shoot!';                                                       // Changes innerText of main button to 'Shoot!'.
         questionDialogueBox.innerText = quizEngine.questions[quizEngine.questionCounter];                                  // Displays the question text to the user, driven by the questionCounter.  
         quizEngine.choiceContainers[0].innerText = quizEngine.choices[quizEngine.questionCounter][0];                      // Displays choice 1 text to user, driven by the questionCounter.  
