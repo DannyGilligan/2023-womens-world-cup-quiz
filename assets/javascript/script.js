@@ -207,7 +207,6 @@ let quizEngine = {
      */
     checkAnswer: function () {
         document.getElementById('main-button').removeEventListener('click', quizEngine.checkAnswer);
-        document.getElementById('var-assist-button').disabled = true;                           // Disable VAR Assist button while answer feedback screen is displayed
         console.log('printed from inside checkAnswer: ' + quizEngine.questionCounter);
         // The code below will fire if the user clicks on 'Shoot!' without selecting a choice.
         if ( quizEngine.userChoiceInputs[0].checked === false && quizEngine.userChoiceInputs[1].checked === false && quizEngine.userChoiceInputs[2].checked === false && quizEngine.userChoiceInputs[3].checked === false ) {
@@ -218,6 +217,7 @@ let quizEngine = {
             // The code below will fire when a choice selection has been submitted.
             document.getElementById('no-option-selected-alert').style.display = 'none';         // Hides the no option selected alert
             document.getElementById('tracker-container-inner').style.display = 'flex';          // Displays the tracker panel
+            document.getElementById('var-assist-button').disabled = true;                           // Disable VAR Assist button while answer feedback screen is displayed
             let userChoiceSubmitted;                                                            // Declares a variable within the else part of the IF statement, left unassigned initially.                  
             if (quizEngine.userChoiceInputs[0].checked === true) {                              // First condition is checked to see if the 1st choice radio input has been checked.
                 userChoiceSubmitted = quizEngine.userChoiceInputs[0].id;                        // If first choice radio input has been checked, the ID of that input is assigned to userChoiceSubmitted variable, if not, the next condition is tested.
