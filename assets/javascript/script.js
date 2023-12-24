@@ -220,6 +220,8 @@ let quizEngine = {
                 quizEngine.trackerItems[quizEngine.questionCounter].classList.remove('tracker-item-active'); // Removes 'active' item class to tracker item
                 console.log('The answer is correct!')
             } else {
+                quizEngine.trackerItems[quizEngine.questionCounter].classList.add('tracker-item-incorrect'); // Adds 'incorrect' item class to tracker item
+                quizEngine.trackerItems[quizEngine.questionCounter].classList.remove('tracker-item-active'); // Removes 'active' item class to tracker item
                 console.log('The answer is incorrect!')
             };
 
