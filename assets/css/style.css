@@ -10,7 +10,7 @@ body {
     margin: 0;
     padding: 0;
     background: #0d1017;
-    /*background: white;    <---- TOGGLE THIS!!! */   
+    background: white;  /*  <---- TOGGLE THIS!!! */   
     font-family: "FWWC 2023"; 
 }
 
@@ -414,12 +414,6 @@ the radio inputs is below
     align-items: center;
 }
   
-.offside-text{
-    justify-content: center;
-    align-items: center;
-    margin-right: 1.5rem; /*This is to offset the margin-left applied from .choice-text */
-}
-  
 .choice-input{
     margin-right: 1.5rem;
     display: flex;
@@ -432,6 +426,31 @@ input {
     height: 1.2rem;
     border: 1px solid black;
 }
+
+
+.offside-container{
+    display: flex;
+    height: 2rem;
+    width: 100%;
+    border: 2px solid #E83800;
+    border-radius: 5px;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    color: #E83800;
+    font-family: "FWWC 2023";
+    font-size: .9rem;
+    padding: .3rem 1rem .3rem 1rem;
+    box-shadow: 3px 3px 2px grey;
+    transition: transform .1s ease-in-out;
+}
+ 
+.offside-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 
 /* 

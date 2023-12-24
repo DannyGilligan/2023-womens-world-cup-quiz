@@ -158,6 +158,14 @@ let quizEngine = {
         document.getElementById('tracker-container-inner').style.visibility = 'visible';                                   // Makes the tracker feature visible.
         quizEngine.trackerItems[quizEngine.questionCounter].classList.add('tracker-item-active');                          // Adds active item class to tracker item.
         
+        for (let i = 0; i < quizEngine.userChoiceInputs.length; i++) {
+            quizEngine.userChoiceInputs[i].parentNode.classList.add('choice-container');
+        }
+
+        for (let i = 0; i < quizEngine.userChoiceInputs.length; i++) {
+            quizEngine.userChoiceInputs[i].parentNode.classList.remove('offside-container');
+        }
+
         for (let i = 0; i < quizEngine.userChoiceInputs.length; i++) {                                                     // Loops through the radio inputs and resets the visibilty for the, 
             quizEngine.userChoiceInputs[i].style.visibility = 'visible';                                                   // radio input for all choices in case hidden previously by varAssist.
         }
@@ -262,7 +270,15 @@ let quizEngine = {
         if (quizEngine.varAssistCounter > 0) {
             --quizEngine.varAssistCounter;
             document.getElementById(quizEngine.varAssists[quizEngine.questionCounter][0]).style.visibility = 'hidden';
+            document.getElementById(quizEngine.varAssists[quizEngine.questionCounter][0]).previousElementSibling.innerText = 'Offside!';
+            document.getElementById(quizEngine.varAssists[quizEngine.questionCounter][0]).parentNode.classList.remove('choice-container');
+            document.getElementById(quizEngine.varAssists[quizEngine.questionCounter][0]).parentNode.classList.add('offside-container');
+
             document.getElementById(quizEngine.varAssists[quizEngine.questionCounter][1]).style.visibility = 'hidden';
+            document.getElementById(quizEngine.varAssists[quizEngine.questionCounter][1]).previousElementSibling.innerText = 'Offside';
+            document.getElementById(quizEngine.varAssists[quizEngine.questionCounter][1]).parentNode.classList.remove('choice-container');
+            document.getElementById(quizEngine.varAssists[quizEngine.questionCounter][1]).parentNode.classList.add('offside-container');
+
             document.getElementById('var-assist-remaining').innerHTML = `<span>${quizEngine.varAssistCounter} Remaining</span>`;
             document.getElementById('var-assist-button').disabled = true;
             document.getElementById('var-assist-button').classList.add('disabled');
