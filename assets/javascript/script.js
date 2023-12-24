@@ -200,16 +200,22 @@ let quizEngine = {
 
             // The code below will fire when a choice selection has been submitted.
             let userChoiceSubmitted;                                                            // Declares a variable within the else part of the IF statement, left unassigned initially.                  
-            if (quizEngine.userChoiceInputs[0].checked = true) {                                // First condition is checked to see if the 1st choice radio input has been checked.
-                userChoiceSubmitted = quizEngine.userChoiceInputs[0].id;                        // If 1st choice radio input has been checked, the id of that input is assigned to userChoiceSubmitted variable, if not, the next condition is tested.
-            } else if (quizEngine.userChoiceInputs[1].checked = true) {                         // The same logic applies for the remaining conditions.
-                userChoiceSubmitted = quizEngine.userChoiceInputs[1].id;
-            } else if (quizEngine.userChoiceInputs[2].checked = true) {
-                userChoiceSubmitted = quizEngine.userChoiceInputs[2].id;
-            } else {
-                userChoiceSubmitted = quizEngine.userChoiceInputs[3].id;
+            if (quizEngine.userChoiceInputs[0].checked === true) {                              // First condition is checked to see if the 1st choice radio input has been checked.
+                userChoiceSubmitted = quizEngine.userChoiceInputs[0].id;                        // If first choice radio input has been checked, the id of that input is assigned to userChoiceSubmitted variable, if not, the next condition is tested.
+            } else if (quizEngine.userChoiceInputs[1].checked === true) {                       // Second condition is checked to see if the 2nd choice radio input has been checked.
+                userChoiceSubmitted = quizEngine.userChoiceInputs[1].id;                        // If 2nd choice radio input has been checked, the id of that input is assigned to userChoiceSubmitted variable, if not, the next condition is tested.
+            } else if (quizEngine.userChoiceInputs[2].checked === true) {                       // Third condition is checked to see if the 3rd choice radio input has been checked.
+                userChoiceSubmitted = quizEngine.userChoiceInputs[2].id;                        // If 3rd choice radio input has been checked, the id of that input is assigned to userChoiceSubmitted variable.
+            } else {                                                                            // If the first 3 choice radio inputs are blank,
+                userChoiceSubmitted = quizEngine.userChoiceInputs[3].id;                        // The 4th choice is automatically assigned to userChoiceSubmitted
             };
 
+            console.log('The user choice is ' + userChoiceSubmitted);                            // Debugging message
+            if (userChoiceSubmitted === quizEngine.currentCorrectAnswer){                        // Checks if the userChoiceSubmitted equals the currentCorrectAnswer value
+                console.log('The answer is correct!');
+            } else {
+                console.log('The answer is incorrect!')
+            };
 
 
 
