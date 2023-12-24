@@ -432,12 +432,12 @@ input {
     display: flex;
     height: 2rem;
     width: 100%;
-    border: 2px solid #E83800;
+    border: 2px solid #cc9d04;
     border-radius: 5px;
     justify-content: space-between;
     align-items: center;
-    background: white;
-    color: #E83800;
+    background: #E83800;
+    color: #EEEDCE;
     font-family: "FWWC 2023";
     font-size: .9rem;
     padding: .3rem 1rem .3rem 1rem;
