@@ -155,13 +155,13 @@ const quizEngine = {
         document.getElementById('no-option-selected-alert').style.display = 'none';                                        // Hides the 'no option selected' warning.
         
         document.getElementById('tracker-container-inner').style.display = 'flex';                                         // Makes the tracker panel visible.
-        document.getElementById('tracker-container-inner').style.animation = 'easeIn .5s ease-in 0s 1 normal forwards';    // Eases the tracker panel onto the screen.
+        document.getElementById('tracker-container-inner').style.animation = 'easeIn .3s ease-in-out 0s 1 normal forwards';    // Eases the tracker panel onto the screen.
         
         document.getElementById('bottom-panel-item1').style.visibility = 'visible';                                        // Makes the VAR Assist button visible.
-        document.getElementById('bottom-panel-item1').style.animation = 'easeIn .5s ease-in 0s 1 normal forwards';         // Eases the VAR Assist button onto the screen.
+        document.getElementById('bottom-panel-item1').style.animation = 'easeIn .3s ease-in-out 0s 1 normal forwards';         // Eases the VAR Assist button onto the screen.
         
         document.getElementById('bottom-panel-item3').style.visibility = 'visible';                                        // Makes the Goals Scored box visible.
-        document.getElementById('bottom-panel-item3').style.animation = 'easeIn .5s ease-in 0s 1 normal forwards';         // Eases the Goals Scored box onto the screen.
+        document.getElementById('bottom-panel-item3').style.animation = 'easeIn .3s ease-in-out 0s 1 normal forwards';         // Eases the Goals Scored box onto the screen.
 
         document.getElementById('main-button').removeEventListener('click', quizEngine.displayQuiz);                       // Removes the displayQuiz event listener from main button, not needed once quiz is displayed.
         document.getElementById('quiz-rules-inner-container').style.display = 'none';                                      // Hides the quiz rules screen.
@@ -303,7 +303,7 @@ const quizEngine = {
 
     varAssist: function () {
 
-        if (quizEngine.varAssistCounter > 0) {
+        if (quizEngine.varAssistCounter > 0) { // If there are VAR Assists remaining
             --quizEngine.varAssistCounter;
             document.getElementById(quizEngine.varAssists[quizEngine.questionCounter][0]).style.visibility = 'hidden';
             document.getElementById(quizEngine.varAssists[quizEngine.questionCounter][0]).previousElementSibling.innerText = 'Offside!';
@@ -319,7 +319,7 @@ const quizEngine = {
             document.getElementById('var-assist-button').disabled = true;
             document.getElementById('var-assist-button').classList.add('disabled');
             document.getElementById('var-assist-button').classList.remove('var-assist-button-style');
-        } else {
+        } else { // If there are no VAR Assists remaining
             document.getElementById('var-assist-button').disabled = true;
             document.getElementById('var-assist-remaining').innerHTML = `<span>${quizEngine.varAssistCounter} Remaining</span>`;
             document.getElementById('var-assist-button').disabled = true;
