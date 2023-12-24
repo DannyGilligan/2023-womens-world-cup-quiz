@@ -109,7 +109,7 @@ an option
     box-shadow: 3px 3px 2px grey;
 }
   
-#tracker-container-glow{
+.tracker-container-glow{
     animation: glowFinal 1s infinite alternate;
 }
 

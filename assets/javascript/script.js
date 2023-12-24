@@ -264,16 +264,18 @@ const quizEngine = {
                 document.getElementById('main-button').innerText = 'Play On!';                                  // Changes the text of the main button to 'Play On!', which will display the next question, choices etc.
                 document.getElementById('main-button').addEventListener('click', quizEngine.displayQuiz);       // Changes the functionality of the main button to the displayQuiz method.  
             } else {
-                document.getElementById('main-button').innerText = 'View Results!';                             // Changes the text of the main button to 'Play On!', which will display the next question, choices etc.
-                document.getElementById('main-button').addEventListener('click', quizEngine.viewResults);       // Changes the functionality of the main button to the displayQuiz method.  
+                document.getElementById('main-button').innerText = 'View Final Result!';                             // Changes the text of the main button to 'Play On!', which will display the next question, choices etc.
+                document.getElementById('main-button').addEventListener('click', quizEngine.viewFinalResult);       // Changes the functionality of the main button to the displayQuiz method.  
             }
         
         }
     },
 
     viewFinalResult: function () {
-        
-    }
+        document.getElementById('hero-image').style.display = 'none';
+        document.getElementById('end-quiz-image').style.display = 'flex';
+        document.getElementById('tracker-container').classList.add('tracker-container-glow');
+    },
 
     varAssist: function () {
 
