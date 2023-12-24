@@ -225,7 +225,6 @@ const quizEngine = {
         console.log('printed from inside checkAnswer: ' + quizEngine.questionCounter);
         // The code below will fire if the user clicks on 'Shoot!' without selecting a choice.
         if ( quizEngine.userChoiceInputs[0].checked === false && quizEngine.userChoiceInputs[1].checked === false && quizEngine.userChoiceInputs[2].checked === false && quizEngine.userChoiceInputs[3].checked === false ) {
-            // document.getElementById('tracker-container-inner').style.display = 'none';
             document.getElementById('no-option-selected-alert').style.display = 'flex';
             document.getElementById('main-button').addEventListener('click', quizEngine.checkAnswer);
         } else {
