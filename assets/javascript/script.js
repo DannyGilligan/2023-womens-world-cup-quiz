@@ -148,31 +148,32 @@ let quizEngine = {
      */
     displayQuiz: function () {
 
-        document.getElementById('answer-feedback-outer').style.display = 'none';                                 // Hides answer feedback container
-        document.getElementById('no-option-selected-alert').style.display = 'none';                              // Hides the 'no option selected' warning.
-        document.getElementById('tracker-container-inner').style.display = 'flex';                               // Makes the tracker panel visible.
-        document.getElementById('bottom-panel-item1').style.visibility = 'visible';                              // Makes the VAR Assist button visible.
-        document.getElementById('bottom-panel-item3').style.visibility = 'visible';                              // Makes the Goals Scored box visible.
-        document.getElementById('main-button').removeEventListener('click', quizEngine.displayQuiz);             // Removes the displayQuiz event listener from main button, not needed once quiz is displayed.
-        document.getElementById('quiz-rules-inner-container').style.display = 'none';                            // Hides the quiz rules screen.
-        document.getElementById('tracker-container-inner').style.visibility = 'visible';                         // Makes the tracker feature visible.
-        quizEngine.trackerItems[quizEngine.questionCounter].classList.add('tracker-item-active');                // Adds active item class to tracker item.
-        quizEngine.userChoiceInputs[0].checked = false;                                                          // Resets the radio input for choice 1.
-        quizEngine.userChoiceInputs[1].checked = false;                                                          // Resets the radio input for choice 2.
-        quizEngine.userChoiceInputs[2].checked = false;                                                          // Resets the radio input for choice 3.
-        quizEngine.userChoiceInputs[3].checked = false;                                                          // Resets the radio input for choice 4.
-        document.getElementById('main-button').innerText = 'Shoot!';                                             // Changes innerText of main button to 'Shoot!'.
-        questionDialogueBox.innerText = quizEngine.questions[quizEngine.questionCounter];                        // Displays the question text to the user, driven by the questionCounter.  
-        quizEngine.choiceContainers[0].innerText = quizEngine.choices[quizEngine.questionCounter][0];            // Displays choice 1 text to user, driven by the questionCounter.  
-        quizEngine.choiceContainers[1].innerText = quizEngine.choices[quizEngine.questionCounter][1];            // Displays choice 2 text to user, driven by the questionCounter.  
-        quizEngine.choiceContainers[2].innerText = quizEngine.choices[quizEngine.questionCounter][2];            // Displays choice 3 text to user, driven by the questionCounter.  
-        quizEngine.choiceContainers[3].innerText = quizEngine.choices[quizEngine.questionCounter][3];            // Displays choice 4 text to user, driven by the questionCounter.  
-        quizEngine.currentCorrectAnswer = quizEngine.answers[quizEngine.questionCounter];                        // Assigns the correct answer to the current question to currentCorrectAnswer.
-        document.getElementById('goals-scored-value').innerText = quizEngine.goalsScored;                        // Displays the goalsScored value to the user    
-        console.log('The current correct answer is ' + quizEngine.currentCorrectAnswer);                         // Debugging message.
-        document.getElementById('choices-container-outer').style.display = 'flex';                               // Displays the choices screen to the user.
-        document.getElementById('main-button').addEventListener('click', quizEngine.checkAnswer);                // Hands off functionality to the checkAnswer method
-        console.log(quizEngine.questionCounter);                                                                 // Debugging message.
+        document.getElementById('answer-feedback-outer').style.display = 'none';                                           // Hides answer feedback container
+        document.getElementById('no-option-selected-alert').style.display = 'none';                                        // Hides the 'no option selected' warning.
+        document.getElementById('tracker-container-inner').style.display = 'flex';                                         // Makes the tracker panel visible.
+        document.getElementById('bottom-panel-item1').style.visibility = 'visible';                                        // Makes the VAR Assist button visible.
+        document.getElementById('bottom-panel-item3').style.visibility = 'visible';                                        // Makes the Goals Scored box visible.
+        document.getElementById('main-button').removeEventListener('click', quizEngine.displayQuiz);                       // Removes the displayQuiz event listener from main button, not needed once quiz is displayed.
+        document.getElementById('quiz-rules-inner-container').style.display = 'none';                                      // Hides the quiz rules screen.
+        document.getElementById('tracker-container-inner').style.visibility = 'visible';                                   // Makes the tracker feature visible.
+        quizEngine.trackerItems[quizEngine.questionCounter].classList.add('tracker-item-active');                          // Adds active item class to tracker item.
+        quizEngine.userChoiceInputs[0].checked = false;                                                                    // Resets the radio input for choice 1.
+        quizEngine.userChoiceInputs[1].checked = false;                                                                    // Resets the radio input for choice 2.
+        quizEngine.userChoiceInputs[2].checked = false;                                                                    // Resets the radio input for choice 3.
+        quizEngine.userChoiceInputs[3].checked = false;                                                                    // Resets the radio input for choice 4.
+        document.getElementById('main-button').innerText = 'Shoot!';                                                       // Changes innerText of main button to 'Shoot!'.
+        questionDialogueBox.innerText = quizEngine.questions[quizEngine.questionCounter];                                  // Displays the question text to the user, driven by the questionCounter.  
+        quizEngine.choiceContainers[0].innerText = quizEngine.choices[quizEngine.questionCounter][0];                      // Displays choice 1 text to user, driven by the questionCounter.  
+        quizEngine.choiceContainers[1].innerText = quizEngine.choices[quizEngine.questionCounter][1];                      // Displays choice 2 text to user, driven by the questionCounter.  
+        quizEngine.choiceContainers[2].innerText = quizEngine.choices[quizEngine.questionCounter][2];                      // Displays choice 3 text to user, driven by the questionCounter.  
+        quizEngine.choiceContainers[3].innerText = quizEngine.choices[quizEngine.questionCounter][3];                      // Displays choice 4 text to user, driven by the questionCounter.  
+        quizEngine.currentCorrectAnswer = quizEngine.answers[quizEngine.questionCounter];                                  // Assigns the correct answer to the current question to currentCorrectAnswer.
+        document.getElementById('goals-scored-value').innerText = quizEngine.goalsScored;                                  // Displays the goalsScored value to the user  
+        document.getElementById('var-assist-remaining').innerHTML = `<span>${quizEngine.varAssistCounter} Remaining</span>`// Displays the VAR Assists remaining to the user  
+        console.log('The current correct answer is ' + quizEngine.currentCorrectAnswer);                                   // Debugging message.
+        document.getElementById('choices-container-outer').style.display = 'flex';                                         // Displays the choices screen to the user.
+        document.getElementById('main-button').addEventListener('click', quizEngine.checkAnswer);                          // Hands off functionality to the checkAnswer method
+        console.log(quizEngine.questionCounter);                                                                           // Debugging message.
     },
     
     /** 
@@ -245,8 +246,10 @@ let quizEngine = {
     },
 
     varAssist: function () {
+        --quizEngine.varAssistCounter;
         document.getElementById(quizEngine.varAssists[quizEngine.questionCounter][0]).style.visibility = 'hidden';
         document.getElementById(quizEngine.varAssists[quizEngine.questionCounter][1]).style.visibility = 'hidden';
+        document.getElementById('var-assist-remaining').innerHTML = `<span>${quizEngine.varAssistCounter} Remaining</span>`;
     },
  
 
