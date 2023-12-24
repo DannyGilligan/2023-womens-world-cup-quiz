@@ -276,7 +276,8 @@ const quizEngine = {
         document.getElementById('end-quiz-image').style.display = 'flex';
         document.getElementById('tracker-container').classList.add('tracker-container-glow');
         questionDialogueBox.innerHTML = `Congratulations on making it to the final whistle ${quizEngine.userName.value}!`;
-        
+        document.getElementById('answer-feedback-outer').style.display = 'none';
+        document.getElementById('end-quiz-message').style.display = 'flex';
     },
 
     varAssist: function () {
