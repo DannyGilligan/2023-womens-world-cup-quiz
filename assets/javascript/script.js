@@ -207,7 +207,7 @@ let quizEngine = {
      */
     checkAnswer: function () {
         document.getElementById('main-button').removeEventListener('click', quizEngine.checkAnswer);
-        
+        document.getElementById('var-assist-button').disabled = true;                           // Disable VAR Assist button while answer feedback screen is displayed
         console.log('printed from inside checkAnswer: ' + quizEngine.questionCounter);
         // The code below will fire if the user clicks on 'Shoot!' without selecting a choice.
         if ( quizEngine.userChoiceInputs[0].checked === false && quizEngine.userChoiceInputs[1].checked === false && quizEngine.userChoiceInputs[2].checked === false && quizEngine.userChoiceInputs[3].checked === false ) {
