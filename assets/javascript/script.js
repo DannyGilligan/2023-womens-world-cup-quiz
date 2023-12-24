@@ -186,16 +186,19 @@ const quizEngine = {
         
         document.getElementById('main-button').innerText = 'Shoot!';                                                        // Changes innerText of main button to 'Shoot!'.
         questionDialogueBox.innerText = quizEngine.questions[quizEngine.questionCounter];                                   // Displays the question text to the user, driven by the questionCounter.  
+        
         quizEngine.choiceContainers[0].innerText = quizEngine.choices[quizEngine.questionCounter][0];                       // Displays choice 1 text to user, driven by the questionCounter.  
         quizEngine.choiceContainers[1].innerText = quizEngine.choices[quizEngine.questionCounter][1];                       // Displays choice 2 text to user, driven by the questionCounter.  
         quizEngine.choiceContainers[2].innerText = quizEngine.choices[quizEngine.questionCounter][2];                       // Displays choice 3 text to user, driven by the questionCounter.  
         quizEngine.choiceContainers[3].innerText = quizEngine.choices[quizEngine.questionCounter][3];                       // Displays choice 4 text to user, driven by the questionCounter.  
         quizEngine.currentCorrectAnswer = quizEngine.answers[quizEngine.questionCounter];                                   // Assigns the correct answer to the current question to currentCorrectAnswer.
+        
         document.getElementById('goals-scored-value').innerText = quizEngine.goalsScored;                                   // Displays the goalsScored value to the user  
         document.getElementById('var-assist-remaining').innerHTML = `<span>${quizEngine.varAssistCounter} Remaining</span>`;// Displays the VAR Assists remaining to the user  
         console.log('The current correct answer is ' + quizEngine.currentCorrectAnswer);                                    // Debugging message.
         document.getElementById('choices-container-outer').style.display = 'flex';                                          // Displays the choices screen to the user.
-        
+        document.getElementById('choices-container-outer').style.animation = 'easeIn .3s ease-in-out 0s 1 normal forwards'; // Eases in display of choices
+
         if (quizEngine.varAssistCounter > 0) {
             document.getElementById('var-assist-button').classList.add('var-assist-button-style');
             document.getElementById('var-assist-button').classList.remove('disabled');
@@ -248,6 +251,7 @@ const quizEngine = {
 
             console.log('The user choice is ' + userChoiceSubmitted);                                                                                                                                                // Debugging message.
             console.log('The current correct answer is ' + quizEngine.currentCorrectAnswer)  ;                                                                                                                        // Debugging message.
+            // If answer is correct!
             if (userChoiceSubmitted === quizEngine.currentCorrectAnswer){                                                                                                                                            // Checks if the userChoiceSubmitted equals the currentCorrectAnswer value (both values use the html element IDs associated with the radio inputs).
                 ++quizEngine.goalsScored;                                                                                                                                                                            // Increments goalsScored value.   
                 document.getElementById('goals-scored-value').innerText = quizEngine.goalsScored;                                                                                                                    // Updates goals scored disaplyed to the user.
@@ -255,13 +259,15 @@ const quizEngine = {
                 quizEngine.trackerItems[quizEngine.questionCounter].classList.remove('tracker-item-active');                                                                                                         // Removes 'active' item class to tracker item.
                 document.getElementById('choices-container-outer').style.display = 'none';                                                                                                                           // Hides the choices container.
                 document.getElementById('answer-feedback-outer').style.display = 'flex';                                                                                                                             // Displays the answer feedback container which will hold the feedback image.
+                document.getElementById('answer-feedback-inner').style.animation = 'easeIn .5s ease-in 0s 1 normal forwards';                                                                                        // Eases in the image and 'GOAL!' feedback                                                                           
                 document.getElementById('answer-feedback-image-container').innerHTML = `<img src="assets/images/goal_image_${quizEngine.questionCounter}.webp" alt="Female Footballer" id="answer-feedback-image">`; // Displays the 'GOAL!' feedback image.
                 document.getElementById('answer-feedback-status').innerHTML = '<span>GOAL!</span>';                                                                                                                  // Displays answer feedback text to user.
                 console.log('The answer is correct!');
-            } else {
+            } else { // If answer is incorrect!
                 quizEngine.trackerItems[quizEngine.questionCounter].classList.add('tracker-item-incorrect');                                                                                                         // Adds 'incorrect' item class to tracker item.
                 quizEngine.trackerItems[quizEngine.questionCounter].classList.remove('tracker-item-active');                                                                                                         // Removes 'active' item class to tracker item.
                 document.getElementById('choices-container-outer').style.display = 'none';                                                                                                                           // Hides the choices container.
+                document.getElementById('answer-feedback-inner').style.animation = 'easeIn .5s ease-in 0s 1 normal forwards';
                 document.getElementById('answer-feedback-outer').style.display = 'flex';                                                                                                                             // Displays the answer feedback container which will hold the feedback image.
                 document.getElementById('answer-feedback-image-container').innerHTML = `<img src="assets/images/miss_image_${quizEngine.questionCounter}.webp" alt="Female Footballer" id="answer-feedback-image">`; // Displays the 'MISS!' feedback image.
                 document.getElementById('answer-feedback-status').innerHTML = '<span>MISS!</span>';                                                                                                                  // Displays answer feedback text to user.
@@ -290,6 +296,7 @@ const quizEngine = {
         questionDialogueBox.innerHTML = `Congratulations on making it to the final whistle ${quizEngine.userName.value}!`;
         document.getElementById('answer-feedback-outer').style.display = 'none';
         document.getElementById('end-quiz-message').style.display = 'flex';
+        document.getElementById('end-quiz-message').style.animation = 'easeIn .3s ease-in-out 0s 1 normal forwards';
         document.getElementById('end-quiz-inner').innerHTML = `<p>You scored <strong>${quizEngine.goalsScored}</strong> out of <strong>11</strong> attempts on goal!<br><br>Learn more about the devlopment of women's football at:<br><br><a href="https://www.fifa.com/womens-football" target="_blank"><strong>fifa.com/womens-football</strong></a></p>`
         mainButton.innerText = "Rematch?";
     },
