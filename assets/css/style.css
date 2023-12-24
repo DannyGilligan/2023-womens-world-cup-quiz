@@ -720,3 +720,7 @@ The code for the ease/fade in animations were taken from https://blog.hubspot.co
     }
 }
 
+@keyframes fadeOut {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}
