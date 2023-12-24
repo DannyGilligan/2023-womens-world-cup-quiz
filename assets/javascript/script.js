@@ -1,6 +1,4 @@
 
-
-
 const choice1Container = document.getElementById('choice-1-text');                  // Displays choice text
 const choice2Container = document.getElementById('choice-2-text');                  // Displays choice text
 const choice3Container = document.getElementById('choice-3-text');                  // Displays choice text
@@ -140,14 +138,14 @@ let quizEngine = {
     
     handleUserNameSubmit: function (event) {
         event.preventDefault();
-        quizEngine.userName = document.getElementById('username-input');                                         // Assigns the username entered to the userName property in quizEngine
+        quizEngine.userName = document.getElementById('username-input');                                                                       // Assigns the username entered to the userName property in quizEngine
         questionDialogueBox.innerText = `It's almost kick off time ${quizEngine.userName.value}, let's get the rules out of the way first..`;  // Displays quiz rules message to user
-        document.getElementById('main-button').innerText = 'Kick Off!';                                          // Changes text of main button to 'Kick Off!'
-        document.getElementById('enter-username-container').style.display = 'none';                              // Hides the enter user name screen, not needed now
-        document.getElementById('quiz-rules-inner-container').style.display = 'flex';                            // Displays the quiz rules
-        document.getElementById('main-button').removeAttribute('form');                                          // Removes the form attribute, disonnecting the button from enter username form
-        document.getElementById('main-button').addEventListener('click', quizEngine.displayQuiz);                // Assigns a new event listener to 'hand off' functionality to next method
-        console.log(quizEngine.userName.value)
+        document.getElementById('main-button').innerText = 'Kick Off!';                                                                        // Changes text of main button to 'Kick Off!'
+        document.getElementById('enter-username-container').style.display = 'none';                                                            // Hides the enter user name screen, not needed now
+        document.getElementById('quiz-rules-inner-container').style.display = 'flex';                                                          // Displays the quiz rules
+        document.getElementById('main-button').removeAttribute('form');                                                                        // Removes the form attribute, disonnecting the button from enter username form
+        document.getElementById('main-button').addEventListener('click', quizEngine.displayQuiz);                                              // Assigns a new event listener to 'hand off' functionality to next method
+        console.log(quizEngine.userName.value);                                                                                                // Debugging message
     },
 
 
@@ -167,11 +165,11 @@ let quizEngine = {
         document.getElementById('quiz-rules-inner-container').style.display = 'none';                            // Hides the quiz rules screen
         document.getElementById('tracker-container-inner').style.visibility = 'visible';                         // Makes the tracker feature visible
         quizEngine.trackerItems[quizEngine.questionCounter].classList.add('tracker-item-active');                // Adds active item class to tracker item
-        quizEngine.userChoiceInputs[0].checked = false;                                                          // Clears the radio input for choice 1
-        quizEngine.userChoiceInputs[1].checked = false;                                                          // Clears the radio input for choice 2
-        quizEngine.userChoiceInputs[2].checked = false;                                                          // Clears the radio input for choice 3
-        quizEngine.userChoiceInputs[3].checked = false;                                                          // Clears the radio input for choice 4
-        document.getElementById('main-button').innerText = 'Shoot!'                                              // Changes innerText of main button to 'Shoot!'
+        quizEngine.userChoiceInputs[0].checked = false;                                                          // Resets the radio input for choice 1
+        quizEngine.userChoiceInputs[1].checked = false;                                                          // Resets the radio input for choice 2
+        quizEngine.userChoiceInputs[2].checked = false;                                                          // Resets the radio input for choice 3
+        quizEngine.userChoiceInputs[3].checked = false;                                                          // Resets the radio input for choice 4
+        document.getElementById('main-button').innerText = 'Shoot!';                                             // Changes innerText of main button to 'Shoot!'
         questionDialogueBox.innerText = quizEngine.questions[quizEngine.questionCounter];                        // Displays the question text to the user, driven by the questionCounter  
         quizEngine.choiceContainers[0].innerText = quizEngine.choices[quizEngine.questionCounter][0];            // Displays choice 1 text to user, driven by the questionCounter  
         quizEngine.choiceContainers[1].innerText = quizEngine.choices[quizEngine.questionCounter][1];            // Displays choice 2 text to user, driven by the questionCounter  
@@ -180,44 +178,37 @@ let quizEngine = {
         quizEngine.currentCorrectAnswer = quizEngine.answers[quizEngine.questionCounter];                        // Assigns the correct answer to the current question to currentCorrectAnswer
         console.log('The current correct answer is ' + quizEngine.currentCorrectAnswer);                         // Debugging message
         document.getElementById('choices-container-outer').style.display = 'flex';                               // Displays the choices screen to the user
-        document.getElementById('main-button').addEventListener('click', quizEngine.incrementQuestionCounter);   // Directs to increment counter function, debuggin
+        document.getElementById('main-button').addEventListener('click', quizEngine.checkAnswer);   // Directs to increment counter function, debuggin
         console.log(quizEngine.questionCounter);                                                                 // Debugging message
 
 
       //    document.getElementById('choices-container-outer').addEventListener("submit", quizEngine.handleUserChoiceSubmit);
-          
-  
       //    document.getElementById('tracker-container-inner').style.visibility = 'visible';                         // Makes the tracker feature visible
-      
       //    mainButton.innerText = 'Shoot!';                                                                         // Changes the text on the main button to 'Shoot!'
       //    mainButton.setAttribute('form', 'choices-container-outer');                                              // Connects the main button to the user choice submit form 
       //    console.log('Hello from displayQuiz!')
     },
     
-
-
-    incrementQuestionCounter: function () {
-        document.getElementById('main-button').removeEventListener('click', quizEngine.incrementQuestionCounter);
+    checkAnswer: function () {
+        document.getElementById('main-button').removeEventListener('click', quizEngine.checkAnswer);
         
-        console.log('printed from inside incrementQuestionCounter: ' + quizEngine.questionCounter);
-
-
-        if( quizEngine.userChoiceInputs[0].checked === false && quizEngine.userChoiceInputs[1].checked === false && quizEngine.userChoiceInputs[2].checked === false && quizEngine.userChoiceInputs[3].checked === false ) {
+        console.log('printed from inside checkAnswer: ' + quizEngine.questionCounter);
+        // Code below will fire if the user clicks on 'Shoot!' without selecting a choice
+        if ( quizEngine.userChoiceInputs[0].checked === false && quizEngine.userChoiceInputs[1].checked === false && quizEngine.userChoiceInputs[2].checked === false && quizEngine.userChoiceInputs[3].checked === false ) {
             document.getElementById('tracker-container-inner').style.display = 'none';
             document.getElementById('no-option-selected-alert').style.display = 'flex';
-            document.getElementById('main-button').addEventListener('click', quizEngine.incrementQuestionCounter);
+            document.getElementById('main-button').addEventListener('click', quizEngine.checkAnswer);
         } else {
             
             quizEngine.trackerItems[quizEngine.questionCounter].classList.add('tracker-item-correct'); 
             quizEngine.trackerItems[quizEngine.questionCounter].classList.remove('tracker-item-active');                // Removes active item class to tracker item
             document.getElementById('main-button').addEventListener('click', quizEngine.displayQuiz);
             quizEngine.questionCounter++;
-            
         }
     },
 
     
-    
+ 
 
     /** 
      * The handleUserChoiceSubmit method will process the user's input and determine if it is correct or incorrect.
@@ -233,6 +224,9 @@ let quizEngine = {
      * main button will be changed to 'Play on!' and the functionality will 'handed off' to another
      * method.
      */
+
+
+/*
     handleUserChoiceSubmit: function (event) {
         console.log('Hello from handleUserChoiceSubmit!')
         event.preventDefault();   
@@ -268,7 +262,8 @@ let quizEngine = {
         console.log(quizEngine.questionCounter + 'printed from inside handleUserChoiceSubmit before increment')
         console.log(quizEngine.questionCounter + 'printed from inside handleUserChoiceSubmit after increment')
     },
-
+*/
+    
 
     /* BLOCKED OUT, START AGAIN 
     displayNextQuestion: function () {
