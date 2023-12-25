@@ -178,37 +178,37 @@ const quizEngine = {
      */
     displayQuiz: function () {
         
-        document.getElementById('answer-feedback-outer').style.display = 'none';                                                // Hides answer feedback container
-        document.getElementById('no-option-selected-alert').style.display = 'none';                                             // Hides the 'no option selected' warning.
-        document.getElementById('tracker-container-inner').style.animation = 'easeIn .3s ease-in-out 0s 1 normal forwards';     // Eases the tracker panel onto the screen.  
-        document.getElementById('bottom-panel-item1').style.visibility = 'visible';                                             // Makes the VAR Assist button visible.
-        document.getElementById('bottom-panel-item1').style.animation = 'easeIn .3s ease-in-out 0s 1 normal forwards';          // Eases the VAR Assist button onto the screen.
-        document.getElementById('bottom-panel-item3').style.visibility = 'visible';                                             // Makes the Goals Scored box visible.
-        document.getElementById('bottom-panel-item3').style.animation = 'easeIn .3s ease-in-out 0s 1 normal forwards';          // Eases the Goals Scored box onto the screen.
-        document.getElementById('main-button').removeEventListener('click', quizEngine.displayQuiz);                            // Removes the displayQuiz event listener from main button, not needed once quiz is displayed.
-        document.getElementById('quiz-rules-inner-container').style.display = 'none';                                           // Hides the quiz rules screen.
-        document.getElementById('tracker-container-inner').style.visibility = 'visible';                                        // Sets the tracker feature visibility to visible
-        document.getElementById('tracker-container-inner').style.display = 'flex';                                              // Sets the tracker feature display to flex.
-        quizEngine.trackerItems[quizEngine.questionCounter].classList.add('tracker-item-active');                               // Adds active item class to tracker item.
+        document.getElementById('answer-feedback-outer').style.display = 'none';                                            // Hides answer feedback container
+        document.getElementById('no-option-selected-alert').style.display = 'none';                                         // Hides the 'no option selected' warning.
+        document.getElementById('tracker-container-inner').style.animation = 'easeIn .3s ease-in-out 0s 1 normal forwards'; // Eases the tracker panel onto the screen.  
+        document.getElementById('bottom-panel-item1').style.visibility = 'visible';                                         // Makes the VAR Assist button visible.
+        document.getElementById('bottom-panel-item1').style.animation = 'easeIn .3s ease-in-out 0s 1 normal forwards';      // Eases the VAR Assist button onto the screen.
+        document.getElementById('bottom-panel-item3').style.visibility = 'visible';                                         // Makes the Goals Scored box visible.
+        document.getElementById('bottom-panel-item3').style.animation = 'easeIn .3s ease-in-out 0s 1 normal forwards';      // Eases the Goals Scored box onto the screen.
+        document.getElementById('main-button').removeEventListener('click', quizEngine.displayQuiz);                        // Removes the displayQuiz event listener from main button, not needed once quiz is displayed.
+        document.getElementById('quiz-rules-inner-container').style.display = 'none';                                       // Hides the quiz rules screen.
+        document.getElementById('tracker-container-inner').style.visibility = 'visible';                                    // Sets the tracker feature visibility to visible
+        document.getElementById('tracker-container-inner').style.display = 'flex';                                          // Sets the tracker feature display to flex.
+        quizEngine.trackerItems[quizEngine.questionCounter].classList.add('tracker-item-active');                           // Adds active item class to tracker item.
         
-        for (let i = 0; i < choiceTextContainers.length; i++ ) {                                                                // Loops through the choice text containers and, 
-            choiceTextContainers[i].classList.remove('offside-text');                                                           // removes the 'offside-text' class if any were added by the varAssist method. 
+        for (let i = 0; i < choiceTextContainers.length; i++ ) {                                                            // Loops through the choice text containers and, 
+            choiceTextContainers[i].classList.remove('offside-text');                                                       // removes the 'offside-text' class if any were added previously by the varAssist method. 
         }
 
-        for (let i = 0; i < quizEngine.userChoiceInputs.length; i++) {
-            quizEngine.userChoiceInputs[i].parentNode.classList.add('choice-container');
+        for (let i = 0; i < quizEngine.userChoiceInputs.length; i++) {                                                      // Loops through the choice radio input containers and,
+            quizEngine.userChoiceInputs[i].parentNode.classList.add('choice-container');                                    // adds the 'choice-container' class if it was removed previously by the varAssist method.
         }
 
-        for (let i = 0; i < quizEngine.userChoiceInputs.length; i++) {
-            quizEngine.userChoiceInputs[i].parentNode.classList.remove('offside-container');
+        for (let i = 0; i < quizEngine.userChoiceInputs.length; i++) {                                                      // Loops through the choice radio input containers and,
+            quizEngine.userChoiceInputs[i].parentNode.classList.remove('offside-container');                                // removes the 'offside-container' class if it was added previously by the varAssist method.
         }
 
-        for (let i = 0; i < quizEngine.userChoiceInputs.length; i++) {                                                      // Loops through the radio inputs and resets the visibilty for the, 
-            quizEngine.userChoiceInputs[i].style.visibility = 'visible';                                                    // radio input for all choices in case hidden previously by varAssist.
+        for (let i = 0; i < quizEngine.userChoiceInputs.length; i++) {                                                      // Loops through the radio inputs and, 
+            quizEngine.userChoiceInputs[i].style.visibility = 'visible';                                                    // resets the visibilty for the radio input for all choices in case any were hidden previously by the varAssist mthod.
         }
         
-        for (let i = 0; i < quizEngine.userChoiceInputs.length; i++) {                                                      // Loops through the radio inputs and resets the checked status for all,
-            quizEngine.userChoiceInputs[i].checked = false;                                                                 // radio inputs.
+        for (let i = 0; i < quizEngine.userChoiceInputs.length; i++) {                                                      // Loops through the radio inputs and,
+            quizEngine.userChoiceInputs[i].checked = false;                                                                 // clears the 'offside-text' class if any were added by the varAssist methodradio inputs.
         }
         
         document.getElementById('goals-scored-container').style.removeProperty('animation');                                // Resets the animation for the Goals Scored display (removed here, so it will fire on the checkAnswer method)
@@ -233,7 +233,7 @@ const quizEngine = {
             document.getElementById('var-assist-button').disabled = false;
         }
         
-        document.getElementById('main-button').addEventListener('click', quizEngine.checkAnswer);                           // Hands off functionality to the checkAnswer method
+        document.getElementById('main-button').addEventListener('click', quizEngine.checkAnswer);                           // Hands off functionality to the checkAnswer method.
     },
     
     /** 
