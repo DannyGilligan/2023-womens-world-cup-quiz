@@ -23,12 +23,41 @@ const choiceTextContainers = document.getElementsByClassName('choice-text');    
 
 const quizEngine = {
     /* -- OBJECT PROPERTIES BELOW -- */
-    userName: null,
-
-    questionCounter: 0,
-
-    varAssistCounter: 3,
     
+    /**
+     * Stores user name entered at the start screen, initialised with a null value.
+     */
+    userName: null,        
+
+    /**
+     * Stores the number of the current question. 
+     * This will be used to drive the quiz and access the 
+     * indices of the necessary arrays to display content to the user
+     * , initialised with a 0 value.
+     */
+    questionCounter: 0, 
+
+    /**
+     * Stores the count of available VAR Assists, 
+     * initialised with a 3 value. 
+     */
+    varAssistCounter: 3,     
+    
+    /**
+     * The goalsScored property holds
+     * the running total of goals scored
+     * by the user. A goal is scored when a
+     * question is answered correctly.
+     */
+    goalsScored: 0,             
+
+    /**
+     * The currenctCorrectAnswer property holds the
+     * correct answer for the current question
+     * displayed to the user
+     */
+    currentCorrectAnswer: null, 
+
     questions: [
         'Is this question 1?',  // Text for Question 1.
         'Is this question 2?',  // Text for Question 2.
@@ -112,21 +141,6 @@ const quizEngine = {
     ],
 
     /**
-     * The currenctCorrectAnswer property holds the
-     * correct answer for the current question
-     * displayed to the user
-     */
-    currentCorrectAnswer: null, 
-
-    /**
-     * The goalsScored property holds
-     * the running total of goals scored
-     * by the user. A goal is scored when a
-     * question is answered correctly.
-     */
-    goalsScored: 0, 
-
-    /**
      * The 'trackerItems' property contains the
      * individual tracker items displayed in the
      * tracker panel. These communicate the progress
@@ -167,7 +181,7 @@ const quizEngine = {
         document.getElementById('quiz-rules-inner-container').style.display = 'flex';                                                                 // Displays the quiz rules.
         document.getElementById('main-button').removeAttribute('form');                                                                               // Removes the form attribute, disonnecting the button from enter username form.
         document.getElementById('main-button').addEventListener('click', quizEngine.displayQuiz);                                                     // Assigns a new event listener to 'hand off' functionality to next method
-        document.getElementById('tracker-container-inner').style.display = 'none'; 
+        document.getElementById('tracker-container-inner').style.display = 'none';                                                                    // Hides the the inner tracker panel
     },
 
     /**
@@ -226,10 +240,10 @@ const quizEngine = {
         document.getElementById('choices-container-outer').style.display = 'flex';                                          // Displays the choices screen to the user.
         document.getElementById('choices-container-outer').style.animation = 'easeIn .3s ease-in-out 0s 1 normal forwards'; // Eases in display of choices
 
-        if (quizEngine.varAssistCounter > 0) {
-            document.getElementById('var-assist-button').classList.add('var-assist-button-style');
-            document.getElementById('var-assist-button').classList.remove('disabled');
-            document.getElementById('var-assist-button').disabled = false;
+        if (quizEngine.varAssistCounter > 0) { // If there are VAR Assists remaining             
+            document.getElementById('var-assist-button').classList.add('var-assist-button-style');                          // Add the active style for the VAR Assist Button
+            document.getElementById('var-assist-button').classList.remove('disabled');                                      // Remove the disabled status for the button (will be disabled after clicking by the varAssist method)
+            document.getElementById('var-assist-button').disabled = false;                                                  // Resets the disabled property back to false so user can click on it
         }
         
         document.getElementById('main-button').addEventListener('click', quizEngine.checkAnswer);                           // Hands off functionality to the checkAnswer method.
@@ -307,14 +321,14 @@ const quizEngine = {
             
             if (quizEngine.questionCounter < 10) { // If questionCounter is less than 10 (11 Questions)
 
-                quizEngine.questionCounter++;                                                                   // Increments question counter to drive the relevant array indices being accessed.
-                document.getElementById('main-button').innerText = 'Play On!';                                  // Changes the text of the main button to 'Play On!', which will display the next question, choices etc.
-                document.getElementById('main-button').addEventListener('click', quizEngine.displayQuiz);       // Changes the functionality of the main button to the displayQuiz method.  
+                quizEngine.questionCounter++;                                                                              // Increments question counter to drive the relevant array indices being accessed.
+                document.getElementById('main-button').innerText = 'Play On!';                                             // Changes the text of the main button to 'Play On!', which will display the next question, choices etc.
+                document.getElementById('main-button').addEventListener('click', quizEngine.displayQuiz);                  // Changes the functionality of the main button to the displayQuiz method.  
 
             } else { // If the last question has been answered
 
-                document.getElementById('main-button').innerText = 'View Final Result!';                        // Changes the text of the main button to 'View Final Result!', which will display the next question, choices etc.
-                document.getElementById('main-button').addEventListener('click', quizEngine.viewFinalResult);   // Changes the functionality of the main button to the displayQuiz method.  
+                document.getElementById('main-button').innerText = 'View Final Result!';                                   // Changes the text of the main button to 'View Final Result!', which will display the next question, choices etc.
+                document.getElementById('main-button').addEventListener('click', quizEngine.viewFinalResult);              // Changes the functionality of the main button to the displayQuiz method.  
 
             }
         
