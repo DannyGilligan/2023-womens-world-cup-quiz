@@ -423,7 +423,7 @@ input {
     font-size: .9rem;
     padding: .3rem 1rem .3rem 1rem;
     box-shadow: 3px 3px 2px grey;
-    transition: transform .1s ease-in-out;
+    /*transition: transform .1s ease-in-out;*/
     animation:  rotateX180 .2s linear 0s 1 normal forwards;
 }
  
@@ -463,6 +463,7 @@ include the feedback image, text and
     border-radius: 5px;
     box-shadow: 3px 3px 2px grey;
     display: none;   /*  <----------- TOGGLE THIS!!  */
+    transform: scaleY(-1); /* This is needed to make the rotate180answerFeedback animation display correctly! */
 }
   
 #answer-feedback-inner{
@@ -471,6 +472,7 @@ include the feedback image, text and
     width: 98%;
     align-items: center;
     justify-content: center;
+    
 }
   
 #answer-feedback-image-container{
@@ -754,3 +756,8 @@ The code for the ease/fade in animations were taken from https://blog.hubspot.co
 }
 
 /* End of copied code */
+
+@keyframes rotateX180answerFeedback {
+    from {transform:rotateX(90deg);}
+    to   {transform:rotateX(180deg);}
+}
