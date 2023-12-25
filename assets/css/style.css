@@ -760,7 +760,7 @@ The code for the ease/fade in animations were taken from https://blog.hubspot.co
 }
 
 
-/* ---------------------------------------------------------------------------------------------- MEDIA QUERIES ---------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------- MEDIA QUERIES (min-width 481px) ---------------------------------------------------------------------------------------------- */
 
 @media screen and (min-width: 481px) {
     /* 
@@ -1506,5 +1506,781 @@ The code for the ease/fade in animations were taken from https://blog.hubspot.co
     from {transform:rotateX(270deg);}
     to   {transform:rotateX(360deg);}
 }
+
+
     
-}  /* <<<------------------------------------------------------ END OF MEDIA QUERY ---------------------------------------------------------------------------------------------
+}  
+
+
+
+
+/* ---------------------------------------------------------------------------------------------- MEDIA QUERIES (min-width 860px) ---------------------------------------------------------------------------------------------- */
+
+
+
+
+
+@media screen and (min-width: 860px) {
+    /* 
+---------------------------------------- OUTER CONTAINER SECTION
+The outer container encapsulates 
+the entire contents of the page 
+*/
+
+body{
+    background: rgb(255,212,254);
+    background: -moz-linear-gradient(270deg, rgba(255,212,254,1) 0%, rgba(255,239,254,1) 14%, rgba(255,255,255,1) 20%, rgba(255,255,255,1) 80%, rgba(255,239,254,1) 93%, rgba(255,212,254,1) 100%);
+    background: -webkit-linear-gradient(270deg, rgba(255,212,254,1) 0%, rgba(255,239,254,1) 14%, rgba(255,255,255,1) 20%, rgba(255,255,255,1) 80%, rgba(255,239,254,1) 93%, rgba(255,212,254,1) 100%);
+    background: linear-gradient(270deg, rgba(255,212,254,1) 0%, rgba(255,239,254,1) 14%, rgba(255,255,255,1) 20%, rgba(255,255,255,1) 80%, rgba(255,239,254,1) 93%, rgba(255,212,254,1) 100%);
+}
+
+#outer-container{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 860px;    /*CHANGED*/
+    animation: easeIn .7s;
+}
+
+
+/* 
+---------------------------------------- HERO IMAGE SECTION
+The hero image styling is below, 
+this will relate to the official FIFA logo 
+and the final end quiz picture
+*/
+
+#hero-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: .2rem;
+    margin-bottom: .75rem;
+    justify-content: center;
+    border: 2px solid black;
+    width: 98%;
+    border-radius: 5px;
+    padding: 0;
+    background-color: gold;
+    box-shadow: 3px 3px 2px grey;
+}
+  
+#hero-image{
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    border-radius: 5px;
+}
+
+#end-quiz-image{
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    border-radius: 5px; 
+    display: none;
+}
+
+
+/* 
+---------------------------------------- TRACKER SECTION
+
+The styling of the tracking feature and 
+the individual 'tracker items' is below,
+this section also contains the styling for
+the alert message displayed to the user
+when clicking on 'Shoot!' without selecting
+an option
+*/
+
+#tracker-container {
+    height: 3.5rem; /*<<<<< MEDIA QUERY >>>>>>>*/
+    width: 98%;
+    
+
+    /* The CSS code below for the gradient effect was taken directly from https://cssgradient.io/ */
+    background: rgb(0,59,137);
+    background: -moz-linear-gradient(37deg, rgba(0,59,137,1) 0%, rgba(6,84,187,1) 29%, rgba(6,84,187,1) 50%, rgba(6,84,187,1) 80%, rgba(0,59,137,1) 100%);
+    background: -webkit-linear-gradient(37deg, rgba(0,59,137,1) 0%, rgba(6,84,187,1) 29%, rgba(6,84,187,1) 50%, rgba(6,84,187,1) 80%, rgba(0,59,137,1) 100%);
+    background: linear-gradient(37deg, rgba(0,59,137,1) 0%, rgba(6,84,187,1) 29%, rgba(6,84,187,1) 50%, rgba(6,84,187,1) 80%, rgba(0,59,137,1) 100%);
+    /* End of copied code from https://cssgradient.io/ */
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 5px;
+    box-shadow: 3px 3px 2px grey;
+}
+  
+.tracker-container-glow{
+    animation: glowFinal .8s infinite alternate;
+}
+
+#tracker-container-inner{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    animation: easeIn .5s ease-in;
+    visibility: hidden;    /* <----------- TOGGLE THIS!!  */
+}
+
+.tracker-item{
+    font-family: "FWWC 2023";
+    font-size: 1rem;    /*<<<<< MEDIA QUERY >>>>>>>*/
+    color: white ;
+    background-color: rgb(6, 84, 187);
+    width: 2.3rem; /*<<<<< MEDIA QUERY >>>>>>>*/
+    height: 2.3rem;  /*<<<<< MEDIA QUERY >>>>>>>*/
+    border: 1.8px solid white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tracker-item-incorrect{
+    background-color: #E83800;
+    color: white;
+}
+
+.tracker-item-correct{
+    background-color: #2F852B;
+    color: white;
+}
+
+.tracker-item-active{
+    background-color: #cc9d04;
+    color: white;
+    animation: trackerActiveItemGlow 1s infinite alternate;
+}
+
+#no-option-selected-alert{
+    max-width: 844px;
+    height: 100%;
+    height: 3.5rem;       /*<<<<< MEDIA QUERY >>>>>>>*/
+    position: absolute;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #E83800;
+    color: #EEEDCE;
+    border-radius: 5px;
+    border: 2px solid black;
+    display: none;
+    z-index: +5;  /* this will set the alert in front of the tracker panel */
+    animation: rotateX180 .2s linear 0s 1 normal forwards;
+}
+
+ 
+#no-option-selected-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scaleY(-1);
+    font-size: 1.3rem;                       /*<<<<< MEDIA QUERY >>>>>>>*/
+}
+
+
+
+
+/* 
+---------------------------------------- QUIZ CONTAINER SECTION
+The quiz container sits below the tracker, 
+it's main function is to display the 
+enter username, questions and choices panels 
+*/
+
+#quiz-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: .75rem;
+}
+  
+
+/* 
+---------------------------------------- TOP PANEL SECTION
+the top panel contains the welcome message and question text box 
+*/
+
+#top-panel{
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 98%;
+    height: 6.5rem;  /*<<<<< MEDIA QUERY >>>>>>>*/
+    background-color: black;
+    color: #EEEDCE;
+    text-align: center;
+    font-size: 1.5rem; /*<<<<< MEDIA QUERY >>>>>>>*/
+    font-family: "FWWC 2023";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 3px 3px 2px grey;
+}
+
+#top-panel-inner{
+    padding-left: .4rem;
+    padding-right: .4rem;
+}
+  
+
+/* 
+---------------------------------------- MID PANEL SECTION
+the top panel contains the enter username, 
+choice container and,
+answer feedback boxes,
+and end quiz message.
+*/
+
+#mid-panel{
+    width: 98%;
+}
+
+#enter-username-container{
+    display: flex;
+    color: white;
+    flex-wrap: wrap;
+    max-width: 100%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 18rem;  /*<<<<< MEDIA QUERY >>>>>>>*/
+    margin-top: .75rem;
+    padding-top: .3rem;
+    padding-left: .3rem;
+    padding-right: .2rem;
+    row-gap: .5rem;
+    border: 2px solid black;
+    border-radius: 5px;
+    /* The CSS code below for the gradient effect was taken directly from https://cssgradient.io/ */
+    background: rgb(0,59,137);
+    background: -moz-linear-gradient(37deg, rgba(0,59,137,1) 0%, rgba(6,84,187,1) 29%, rgba(6,84,187,1) 50%, rgba(6,84,187,1) 80%, rgba(0,59,137,1) 100%);
+    background: -webkit-linear-gradient(37deg, rgba(0,59,137,1) 0%, rgba(6,84,187,1) 29%, rgba(6,84,187,1) 50%, rgba(6,84,187,1) 80%, rgba(0,59,137,1) 100%);
+    background: linear-gradient(37deg, rgba(0,59,137,1) 0%, rgba(6,84,187,1) 29%, rgba(6,84,187,1) 50%, rgba(6,84,187,1) 80%, rgba(0,59,137,1) 100%);
+    /* End of copied code from https://cssgradient.io/ */
+    color: #EEEDCE;
+    font-size: 1.5rem;
+    box-shadow: 3px 3px 2px grey;
+}
+  
+#enter-username-message{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+
+}
+  
+#enter-username-message p{
+    font-size: 1.3rem; /*<<<<< MEDIA QUERY >>>>>>>*/
+    margin: 0;
+    padding-top: 1.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+#input-form-container{
+    display: flex;
+    width: 100%;
+    padding-bottom: 2rem;
+}
+
+#input-form-container form{
+    width: 100%;
+}
+
+#username-input{
+    margin-top: 0rem;
+    text-align: center;
+    width: 50%;
+    height: 2.5rem;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-family: "FWWC 2023";
+    font-size: 1.3rem;
+}
+
+input::placeholder {
+    text-align: center;
+    font-size: 1rem;  /*<<<<< MEDIA QUERY >>>>>>>*/
+    opacity: 0.9;
+    color: black;
+}
+
+
+/* 
+---------------------------------------- QUIZ RULES CONTAINER SECTION
+The styling for the quiz rules section is below, this will be displayed
+after the user enters a valid username
+*/
+
+#quiz-rules-inner-container{
+    display: flex;
+    color: white;
+    flex-wrap: wrap;
+    max-width: 100%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 18rem;
+    margin-top: .75rem;
+    padding-top: .3rem;
+    padding-left: .1rem;
+    padding-right: .1rem;
+    row-gap: .5rem;
+    border: 2px solid black;
+    border-radius: 5px;
+    /* The CSS code below for the gradient effect was taken directly from https://cssgradient.io/ */
+    background: rgb(0,59,137);
+    background: -moz-linear-gradient(37deg, rgba(0,59,137,1) 0%, rgba(6,84,187,1) 29%, rgba(6,84,187,1) 50%, rgba(6,84,187,1) 80%, rgba(0,59,137,1) 100%);
+    background: -webkit-linear-gradient(37deg, rgba(0,59,137,1) 0%, rgba(6,84,187,1) 29%, rgba(6,84,187,1) 50%, rgba(6,84,187,1) 80%, rgba(0,59,137,1) 100%);
+    background: linear-gradient(37deg, rgba(0,59,137,1) 0%, rgba(6,84,187,1) 29%, rgba(6,84,187,1) 50%, rgba(6,84,187,1) 80%, rgba(0,59,137,1) 100%);
+    /* End of copied code from https://cssgradient.io/ */
+    color: #EEEDCE;
+    font-size: 1.1rem;  /*<<<<< MEDIA QUERY >>>>>>>*/
+    line-height: 1.6;
+    box-shadow: 3px 3px 2px grey;
+    display: none;    /*    <----------- TOGGLE THIS!!  */
+}
+
+
+/* 
+---------------------------------------- CHOICE CONTAINER SECTION
+The styling for the outer choices container, 
+the individual choice containers and 
+the radio inputs is below 
+*/
+
+#choices-container-outer{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 18rem;                /*<<<<< MEDIA QUERY >>>>>>>*/
+    justify-content: space-between;
+    margin-top: .75rem;
+    padding-top: .3rem;
+    display: none;      
+    border: 2px solid transparent;
+}
+  
+  
+.choice-container{
+    display: flex;
+    height: 6rem; /*<<<<< MEDIA QUERY >>>>>>>*/
+    width: 44%;  /*<<<<< MEDIA QUERY >>>>>>>*/
+    margin-top: 1rem;  /*<<<<< MEDIA QUERY >>>>>>>*/
+    border: 2px solid black;
+    border-radius: 5px;
+    justify-content: space-between;
+    align-items: center;
+    /* The CSS code below for the gradient effect was taken directly from https://cssgradient.io/ */
+    background: rgb(0,59,137);
+    background: -moz-linear-gradient(37deg, rgba(0,59,137,1) 0%, rgba(6,84,187,1) 29%, rgba(6,84,187,1) 50%, rgba(6,84,187,1) 80%, rgba(0,59,137,1) 100%);
+    background: -webkit-linear-gradient(37deg, rgba(0,59,137,1) 0%, rgba(6,84,187,1) 29%, rgba(6,84,187,1) 50%, rgba(6,84,187,1) 80%, rgba(0,59,137,1) 100%);
+    background: linear-gradient(37deg, rgba(0,59,137,1) 0%, rgba(6,84,187,1) 29%, rgba(6,84,187,1) 50%, rgba(6,84,187,1) 80%, rgba(0,59,137,1) 100%);
+    /* End of copied code from https://cssgradient.io/ */
+    color: #EEEDCE;
+    font-family: "FWWC 2023";
+    font-size: 1.5rem;      /*<<<<< MEDIA QUERY >>>>>>>*/
+    padding: .3rem 1rem .3rem 1rem;
+    box-shadow: 3px 3px 2px grey;
+    transition: transform .1s ease-in-out;
+}
+  
+.choice-container:hover {
+    box-shadow: 5px 5px 2px pink;
+    transform: scale(1.02);
+}
+  
+.choice-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.choice-input{
+    margin-right: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+input {
+    width: 1.8rem;   /*<<<<< MEDIA QUERY >>>>>>>*/
+    height: 1.8rem;   /*<<<<< MEDIA QUERY >>>>>>>*/
+    border: 1px solid black;
+}
+
+.offside-container{
+    display: flex;
+    height: 6rem;        /*<<<<< MEDIA QUERY >>>>>>>*/
+    width: 44%;          /*<<<<< MEDIA QUERY >>>>>>>*/
+    margin-top: 1rem;    /*<<<<< MEDIA QUERY >>>>>>>*/
+    border: 2px solid black;
+    border-radius: 5px;
+    justify-content: space-between;
+    align-items: center;
+    background: #E83800;
+    color: #EEEDCE;
+    font-family: "FWWC 2023";
+    font-size: 1.5rem;       /*<<<<< MEDIA QUERY >>>>>>>*/
+    padding: .3rem 1rem .3rem 1rem;
+    box-shadow: 3px 3px 2px grey;
+    animation:  rotateX180 .2s linear 0s 1 normal forwards;
+}
+ 
+.offside-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scaleY(-1);
+}
+
+
+/* 
+---------------------------------------- ANSWER FEEDBACK SECTION
+The styling for the answer feedback
+section is shown here, this will 
+include the feedback image, text and
+'GOAL!' or 'MISS!' status
+*/
+
+#answer-feedback-outer{
+    /* The CSS code below for the gradient effect was taken directly from https://cssgradient.io/ */
+    background: rgb(0,59,137);
+    background: -moz-linear-gradient(37deg, rgba(0,59,137,1) 0%, rgba(6,84,187,1) 29%, rgba(6,84,187,1) 50%, rgba(6,84,187,1) 80%, rgba(0,59,137,1) 100%);
+    background: -webkit-linear-gradient(37deg, rgba(0,59,137,1) 0%, rgba(6,84,187,1) 29%, rgba(6,84,187,1) 50%, rgba(6,84,187,1) 80%, rgba(0,59,137,1) 100%);
+    background: linear-gradient(37deg, rgba(0,59,137,1) 0%, rgba(6,84,187,1) 29%, rgba(6,84,187,1) 50%, rgba(6,84,187,1) 80%, rgba(0,59,137,1) 100%);
+    /* End of copied code from https://cssgradient.io/ */
+    margin-top: .75rem;
+    display: flex;
+    flex-direction: row;      /*<<<<< MEDIA QUERY >>>>>>>*/
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 18rem;
+    padding-top: .3rem;
+    border: 2px solid black;
+    border-radius: 5px;
+    box-shadow: 3px 3px 2px grey;
+    display: none;   
+    transform: scaleY(-1); /* This is needed to make the rotate180answerFeedback animation display correctly! */
+}
+  
+#answer-feedback-inner{
+    display: flex;
+    flex-direction: column;
+    width: 98%;
+    align-items: center;
+    justify-content: center;
+    animation: rotateX180answerFeedback;
+}
+  
+#answer-feedback-image-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 45%;
+    border-radius: 5px;
+}
+  
+#answer-feedback-image{
+    width: 100%;
+    height: auto;
+    max-width: 13rem;       /*<<<<< MEDIA QUERY >>>>>>>*/
+    border-radius: 5px;
+    border: 1px solid #EEEDCE;
+    box-shadow: 0 0 5px 1px #EEEDCE;
+}
+
+#answer-feedback-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 20%;
+    display: none;   
+}
+  
+#answer-feedback-status{
+    margin-top: .6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #EEEDCE;
+    font-size: 1.8rem;    /*<<<<< MEDIA QUERY >>>>>>>*/
+    font-weight: bold;
+    width: 100%;
+    height: 20%;
+}
+
+#end-quiz-message{
+        /* The CSS code below for the gradient effect was taken directly from https://cssgradient.io/ */
+        background: rgb(0,59,137);
+        background: -moz-linear-gradient(37deg, rgba(0,59,137,1) 0%, rgba(6,84,187,1) 29%, rgba(6,84,187,1) 50%, rgba(6,84,187,1) 80%, rgba(0,59,137,1) 100%);
+        background: -webkit-linear-gradient(37deg, rgba(0,59,137,1) 0%, rgba(6,84,187,1) 29%, rgba(6,84,187,1) 50%, rgba(6,84,187,1) 80%, rgba(0,59,137,1) 100%);
+        background: linear-gradient(37deg, rgba(0,59,137,1) 0%, rgba(6,84,187,1) 29%, rgba(6,84,187,1) 50%, rgba(6,84,187,1) 80%, rgba(0,59,137,1) 100%);
+        /* End of copied code from https://cssgradient.io/ */
+        margin-top: .75rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 9rem;
+        border: 1px solid black;
+        border-radius: 5px;
+        box-shadow: 3px 3px 2px grey;
+        display: none;   /*  <----------- TOGGLE THIS!!  */
+}
+
+#end-quiz-inner{
+    display: flex;
+    flex-direction: column;
+    width: 98%;
+    align-items: center;
+    justify-content: center;
+    color: #EEEDCE;
+    font-size: 1.1rem;                 /*<<<<< MEDIA QUERY >>>>>>>*/              
+    text-align: center;
+}
+
+#end-quiz-inner a{
+    text-decoration: none;
+    color:#EEEDCE;
+}
+
+/* 
+---------------------------------------- BOTTOM PANEL SECTION
+Container for the VAR Assist Button, 
+Shoot Button and Goals Scored tracker 
+is shown below
+*/
+
+#bottom-panel{
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+    width: 98%;
+    height: 7rem; /*<<<<< MEDIA QUERY >>>>>>>*/
+    justify-content: space-between;
+    border-radius: 5px;
+    animation: easeIn 1s;
+}
+  
+
+/* 
+---------------------------------------- VAR ASSIST SECTION
+Holds the styling for
+the VAR Assist button 
+*/
+
+#bottom-panel-item1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    color: #EEEDCE;
+    border-radius: 5px;
+    background-color: black;
+    box-shadow: 2px 2px 2px grey;
+    visibility: hidden;  /*  <----------- TOGGLE THIS!!  */
+}
+  
+.var-assist-button-style{
+    font-size: 1.2rem;  /*<<<<< MEDIA QUERY >>>>>>>*/
+    background-color: #E83800;
+    border: 1px solid #EEEDCE;
+    color: #EEEDCE;
+    box-shadow: 3px 3px 2px #cc9d04;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 3rem;   /*<<<<< MEDIA QUERY >>>>>>>*/
+    min-width: 6.5rem;     /*<<<<< MEDIA QUERY >>>>>>>*/
+    margin: .4rem;
+    transition: transform .1s ease-in-out;
+}
+  
+.var-assist-button-style:hover {
+    box-shadow: 4px 4px 2px pink;
+    transform: scale(1.05);
+}
+  
+#var-assist-remaining{
+    font-size: .9rem;       /*<<<<< MEDIA QUERY >>>>>>>*/
+    margin-top: .2rem;
+}
+
+.disabled {
+    font-size: 1.2rem;              /*<<<<< MEDIA QUERY >>>>>>>*/
+    background-color: grey;
+    border: 1px solid #EEEDCE;
+    color: #EEEDCE;
+    box-shadow: 3px 3px 2px grey;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 3rem;                   /*<<<<< MEDIA QUERY >>>>>>>*/
+    min-width: 6.5rem;               /*<<<<< MEDIA QUERY >>>>>>>*/
+    margin: .4rem;
+    cursor: default;
+}
+
+
+/* 
+---------------------------------------- MAIN BUTTON SECTION
+This section holds the styling 
+for the main on screen button 
+*/
+
+#bottom-panel-item2{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+#main-button{
+    font-family: "FWWC 2023";
+    font-size: 1.3rem;  /*<<<<< MEDIA QUERY >>>>>>>*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 8rem;        /*<<<<< MEDIA QUERY >>>>>>>*/
+    height: 8rem;       /*<<<<< MEDIA QUERY >>>>>>>*/
+    border: 1.5px solid black;
+    box-shadow: 3px 3px 2px grey;
+   
+  
+    /* Below is the code for the subtle 3D sphere effect copied directly from https://codepen.io/theanonymouskoder/pen/PomjmeY?editors=1100 */
+    background: 
+    radial-gradient(
+      circle at 25% 25%,
+      #ffffff,
+      #EEEDCE
+    );
+    border-radius: 50%;
+    /* End of copied code */
+  
+    cursor: pointer;
+    transition: transform .1s ease-in-out;
+}
+  
+#main-button:hover {
+    box-shadow: 4px 4px 2px pink;
+    transform: scale(1.04);
+}
+
+
+/* 
+---------------------------------------- GOALS SCORED SECTION
+This holds the styling for
+the Goals Scored tracker 
+*/
+
+#bottom-panel-item3{
+    color: #EEEDCE;
+    background-color: black;
+    width: 30%;
+    font-size: 1.3rem;              /*<<<<< MEDIA QUERY >>>>>>>*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px grey;
+    visibility: hidden; 
+}
+
+#goals-scored-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: .3rem;
+    font-size: 1.3rem;          /*<<<<< MEDIA QUERY >>>>>>>*/
+}
+
+
+/* 
+---------------------------------------- ANIMATIONS SECTION
+This holds the animations that,
+will be used throughout the quiz.
+*/
+
+/* The code for the ease/fade in animations were taken from https://blog.hubspot.com/website/css-fade-in */
+
+@keyframes easeIn {
+    0% { opacity: .2; }
+    100% { opacity: 1; }
+}
+
+@keyframes glowFinal {
+    from {
+        box-shadow: 0 0 0.2rem red;
+    }
+    to {
+        box-shadow: 0 0 3rem 0.2rem gold;
+    }
+}
+    
+@keyframes trackerActiveItemGlow {
+    from {
+        box-shadow: 0 0 0.2rem -0.1rem blue;
+    }
+    to {
+        box-shadow: 0 0 0.3rem 0.2rem rgb(235, 235, 83);
+    }
+}
+
+@keyframes fadeOut {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+
+/* The code for the animations below was copied and adapted from a Stackoverflow post https://stackoverflow.com/questions/14859322/css3-spin-animation */
+@keyframes rotate360 {
+    from {transform:rotateY(0deg);}
+    to   {transform:rotateY(360deg);}
+}
+
+@keyframes rotateX180 {
+    from {transform:rotateX(90deg);}
+    to   {transform:rotateX(180deg);
+          box-shadow: 2px -2px 2px grey;} /* Sets the box shadow to the correct angle/position after rotation */
+}
+
+/* End of copied code */
+
+@keyframes rotateX180answerFeedback {
+    from {transform:rotateX(90deg);}
+    to   {transform:rotateX(180deg);}
+}
+
+@keyframes rotateX180rematch {
+    from {transform:rotateX(270deg);}
+    to   {transform:rotateX(360deg);}
+}
+
+
+@keyframes easeInFeedbackOuter {
+    0% { opacity: .3; }
+    100% { opacity: 1; }
+}
+
+
+    
+}  
