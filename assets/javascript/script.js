@@ -279,7 +279,7 @@ const quizEngine = {
 
         } else { // The code below will fire when a choice selection has been submitted.
             
-            document.getElementById('answer-feedback-inner').style.animation = 'rotateX180answerFeedback .3s ease-in 0s 1 normal forwards'; 
+            document.getElementById('answer-feedback-inner').style.animation = 'rotateX180answerFeedback .3s ease-in-out 0s 1 normal forwards'; 
             //document.getElementById('answer-feedback-inner').style.transform = 'scaleY(1)';
             document.getElementById('no-option-selected-alert').style.display = 'none';                   // Hides the no option selected alert if displayed previously.
             document.getElementById('tracker-container-inner').style.display = 'flex';                    // Displays the tracker panel if hidden previously.
@@ -292,7 +292,7 @@ const quizEngine = {
             } else if (quizEngine.userChoiceInputs[2].checked === true) {                                 // Third condition is checked to see if the 3rd choice radio input has been checked.
                 userChoiceSubmitted = quizEngine.userChoiceInputs[2].id;                                  // If 3rd choice radio input has been checked, the ID of that input is assigned to userChoiceSubmitted variable.
             } else {                                                                                      // If the first 3 choice radio inputs are blank,
-                userChoiceSubmitted = quizEngine.userChoiceInputs[3].id;                                  // The 4th choice is automatically assigned to userChoiceSubmitted.
+                userChoiceSubmitted = quizEngine.userChoiceInputs[3].id;                                  // The 4th choice ID is automatically assigned to userChoiceSubmitted.
             }
             
             if (userChoiceSubmitted === quizEngine.currentCorrectAnswer){ // Checks if the userChoiceSubmitted equals the currentCorrectAnswer value (both values use the html element IDs associated with the radio inputs).                                                                                                                                        
