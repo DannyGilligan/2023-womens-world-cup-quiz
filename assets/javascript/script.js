@@ -341,11 +341,14 @@ const quizEngine = {
             document.getElementById(quizEngine.varAssists[quizEngine.questionCounter][0]).previousElementSibling.innerText = 'Offside!';
             document.getElementById(quizEngine.varAssists[quizEngine.questionCounter][0]).parentNode.classList.remove('choice-container');
             document.getElementById(quizEngine.varAssists[quizEngine.questionCounter][0]).parentNode.classList.add('offside-container');
+            document.getElementById(quizEngine.varAssists[quizEngine.questionCounter][0]).previousElementSibling.classList.add('offside-text');
 
             document.getElementById(quizEngine.varAssists[quizEngine.questionCounter][1]).style.visibility = 'hidden';
             document.getElementById(quizEngine.varAssists[quizEngine.questionCounter][1]).previousElementSibling.innerText = 'Offside!';
             document.getElementById(quizEngine.varAssists[quizEngine.questionCounter][1]).parentNode.classList.remove('choice-container');
             document.getElementById(quizEngine.varAssists[quizEngine.questionCounter][1]).parentNode.classList.add('offside-container');
+            document.getElementById(quizEngine.varAssists[quizEngine.questionCounter][1]).previousElementSibling.classList.add('offside-text');
+
 
             document.getElementById('var-assist-remaining').innerHTML = `<span>${quizEngine.varAssistCounter} Remaining</span>`;
             document.getElementById('var-assist-button').disabled = true;
