@@ -727,3 +727,10 @@ The code for the ease/fade in animations were taken from https://blog.hubspot.co
     100% { opacity: 0; }
 }
 
+
+/* The code for this animation was copied and adapted from a Stackoverflow post https://stackoverflow.com/questions/14859322/css3-spin-animation */
+@keyframes rotate360 {
+    from {transform:rotateY(0deg);}
+    to   {transform:rotateY(360deg);}
+}
+/* End of copied code */

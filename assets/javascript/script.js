@@ -212,6 +212,8 @@ const quizEngine = {
             quizEngine.userChoiceInputs[i].checked = false;                                                                 // radio inputs.
         }
         
+        document.getElementById('goals-scored-container').style.removeProperty('animation');                                // Resets the animation for the Goals Scored display (removed here, so it will fire on the checkAnswer method)
+
         document.getElementById('main-button').innerText = 'Shoot!';                                                        // Changes innerText of main button to 'Shoot!'.
         questionDialogueBox.innerText = quizEngine.questions[quizEngine.questionCounter];                                   // Displays the question text to the user, driven by the questionCounter.  
         
@@ -279,10 +281,10 @@ const quizEngine = {
 
             console.log('The user choice is ' + userChoiceSubmitted);                                                                                                                                                // Debugging message.
             console.log('The current correct answer is ' + quizEngine.currentCorrectAnswer)  ;                                                                                                                       // Debugging message.
-            // If answer is correct!
-            if (userChoiceSubmitted === quizEngine.currentCorrectAnswer){                                                                                                                                            // Checks if the userChoiceSubmitted equals the currentCorrectAnswer value (both values use the html element IDs associated with the radio inputs).
+            
+            if (userChoiceSubmitted === quizEngine.currentCorrectAnswer){ // Checks if the userChoiceSubmitted equals the currentCorrectAnswer value (both values use the html element IDs associated with the radio inputs).                                                                                                                                        
+                
                 ++quizEngine.goalsScored;                                                                                                                                                                            // Increments goalsScored value.   
-                document.getElementById('goals-scored-value').innerText = quizEngine.goalsScored;                                                                                                                    // Updates goals scored disaplyed to the user.
                 quizEngine.trackerItems[quizEngine.questionCounter].classList.add('tracker-item-correct');                                                                                                           // Adds 'correct' item class to tracker item.
                 quizEngine.trackerItems[quizEngine.questionCounter].classList.remove('tracker-item-active');                                                                                                         // Removes 'active' item class to tracker item.
                 quizEngine.trackerItems[quizEngine.questionCounter].style.transform = ('rotateY(180deg)');                                                                                                           // This will rotate the individual tracker item 180 degrees (content on w3schools.com was referenced, not copied).
@@ -294,7 +296,11 @@ const quizEngine = {
                 document.getElementById('answer-feedback-image-container').innerHTML = `<img src="assets/images/goal_image_${quizEngine.questionCounter}.webp" alt="Female Footballer" id="answer-feedback-image">`; // Displays the 'GOAL!' feedback image.
                 document.getElementById('answer-feedback-status').innerHTML = '<span>GOAL!</span>';                                                                                                                  // Displays answer feedback text to user.
                 console.log('The answer is correct!');                                                                                                                                                               // Debugging message.
+                document.getElementById('goals-scored-container').style.animation = 'rotate360 .2s ease-in-out 0s 1 normal forwards'                                                                                 // This will rotate the Goals Scored number 360 degress (this code was copied from https://stackoverflow.com/questions/14859322/css3-spin-animation)
+                document.getElementById('goals-scored-value').innerText = quizEngine.goalsScored;                                                                                                                    // Updates goals scored disaplyed to the user.
+
             } else { // If answer is incorrect!
+                
                 quizEngine.trackerItems[quizEngine.questionCounter].classList.add('tracker-item-incorrect');                                                                                                         // Adds 'incorrect' item class to tracker item.
                 quizEngine.trackerItems[quizEngine.questionCounter].classList.remove('tracker-item-active');                                                                                                         // Removes 'active' item class to tracker item.
                 quizEngine.trackerItems[quizEngine.questionCounter].style.transform = ('rotateY(180deg)');                                                                                                           // This will rotate the individual tracker item 180 degrees (content on w3schools.com was referenced, not copied).
@@ -307,8 +313,8 @@ const quizEngine = {
                 document.getElementById('answer-feedback-status').innerHTML = '<span>MISS!</span>';                                                                                                                  // Displays answer feedback text to user.
                 console.log('The answer is incorrect!');
             }
-            // If questionCounter is less than 10 (11 Questions)
-            if (quizEngine.questionCounter < 10) { 
+            
+            if (quizEngine.questionCounter < 10) { // If questionCounter is less than 10 (11 Questions)
                 quizEngine.questionCounter++;                                                                   // Increments question counter to drive the relevant array indices being accessed.
                 document.getElementById('main-button').innerText = 'Play On!';                                  // Changes the text of the main button to 'Play On!', which will display the next question, choices etc.
                 document.getElementById('main-button').addEventListener('click', quizEngine.displayQuiz);       // Changes the functionality of the main button to the displayQuiz method.  
