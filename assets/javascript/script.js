@@ -296,7 +296,7 @@ const quizEngine = {
                 document.getElementById('answer-feedback-image-container').innerHTML = `<img src="assets/images/goal_image_${quizEngine.questionCounter}.webp" alt="Female Footballer" id="answer-feedback-image">`; // Displays the 'GOAL!' feedback image.
                 document.getElementById('answer-feedback-status').innerHTML = '<span>GOAL!</span>';                                                                                                                  // Displays answer feedback text to user.
                 console.log('The answer is correct!');                                                                                                                                                               // Debugging message.
-                document.getElementById('goals-scored-container').style.animation = 'rotate360 .2s ease-in-out 0s 1 normal forwards'                                                                                 // This will rotate the Goals Scored number 360 degress (this code was copied from https://stackoverflow.com/questions/14859322/css3-spin-animation)
+                document.getElementById('goals-scored-container').style.animation = 'rotate360 .2s ease-in-out 0s 1 normal forwards';                                                                                // This will rotate the Goals Scored number 360 degress (this code was copied from https://stackoverflow.com/questions/14859322/css3-spin-animation)
                 document.getElementById('goals-scored-value').innerText = quizEngine.goalsScored;                                                                                                                    // Updates goals scored disaplyed to the user.
 
             } else { // If answer is incorrect!
@@ -331,19 +331,20 @@ const quizEngine = {
         document.getElementById('bottom-panel-item3').style.animation = 'fadeOut .2s ease-in 0s 1 normal forwards';        // Syntax referenced from W3Schools "animation: name duration timing-function delay iteration-count direction fill-mode play-state;"
         document.getElementById('hero-image').style.display = 'none';
         document.getElementById('end-quiz-image').style.display = 'flex';
-        document.getElementById('end-quiz-image').style.animation = 'easeIn .6s ease-in 0s 1 normal forwards'
+        document.getElementById('end-quiz-image').style.animation = 'easeIn .6s ease-in 0s 1 normal forwards';
         document.getElementById('tracker-container').classList.add('tracker-container-glow');
         questionDialogueBox.innerHTML = `Congratulations on making it to the final whistle ${quizEngine.userName.value}!`;
         document.getElementById('answer-feedback-outer').style.display = 'none';
         document.getElementById('end-quiz-message').style.display = 'flex';
         document.getElementById('end-quiz-message').style.animation = 'easeIn .3s ease-in-out 0s 1 normal forwards';
-        document.getElementById('end-quiz-inner').innerHTML = `<p>You scored <strong>${quizEngine.goalsScored}</strong> out of <strong>11</strong> attempts on goal!<br><br>Learn more about the development of women's football at:<br><br><a href="https://www.fifa.com/womens-football" target="_blank"><strong>fifa.com/womens-football</strong></a></p>`
+        document.getElementById('end-quiz-inner').innerHTML = `<p>You scored <strong>${quizEngine.goalsScored}</strong> out of <strong>11</strong> attempts on goal!<br><br>Learn more about the development of women's football at:<br><br><a href="https://www.fifa.com/womens-football" target="_blank"><strong>fifa.com/womens-football</strong></a></p>`;
         mainButton.innerText = "Rematch?";
     },
 
     varAssist: function () {
 
         if (quizEngine.varAssistCounter > 0) { // If there are VAR Assists remaining
+
             --quizEngine.varAssistCounter;
             document.getElementById(quizEngine.varAssists[quizEngine.questionCounter][0]).style.visibility = 'hidden';
             document.getElementById(quizEngine.varAssists[quizEngine.questionCounter][0]).previousElementSibling.innerText = 'Offside!';
@@ -359,12 +360,15 @@ const quizEngine = {
             document.getElementById('var-assist-button').disabled = true;
             document.getElementById('var-assist-button').classList.add('disabled');
             document.getElementById('var-assist-button').classList.remove('var-assist-button-style');
+
         } else { // If there are no VAR Assists remaining
+
             document.getElementById('var-assist-button').disabled = true;
             document.getElementById('var-assist-remaining').innerHTML = `<span>${quizEngine.varAssistCounter} Remaining</span>`;
             document.getElementById('var-assist-button').disabled = true;
             document.getElementById('var-assist-button').classList.add('disabled');
             document.getElementById('var-assist-button').classList.remove('var-assist-button-style');
+
         }
         
     },
