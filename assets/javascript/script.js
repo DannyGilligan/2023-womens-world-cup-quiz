@@ -28,7 +28,7 @@ const quizEngine = {
     /**
      * Stores user name entered at the start screen, initialised with a null value.
      */
-    userName: null,        
+    userName: '',        
 
     /**
      * Stores the number of the current question. 
@@ -182,9 +182,9 @@ const quizEngine = {
         document.getElementById('enter-username-container').style.display = 'none';                                                                   // Hides the enter user name screen, not needed now.
         document.getElementById('quiz-rules-inner-container').firstElementChild.style.animation = 'easeIn .3s ease-in 0s 1 normal forwards';          // Adds easeIn animation to rules text (child node of container).
         document.getElementById('quiz-rules-inner-container').style.display = 'flex';                                                                 // Displays the quiz rules.
-        document.getElementById('main-button').removeAttribute('form');                                                                               // Removes the form attribute, disonnecting the button from enter username form.
-        document.getElementById('main-button').addEventListener('click', quizEngine.displayQuiz);                                                     // Assigns a new event listener to 'hand off' functionality to the displayQuiz method.
+        document.getElementById('main-button').removeAttribute('form');                                                                               // Removes the form attribute, disconnecting the button from enter username form.
         document.getElementById('tracker-container-inner').style.display = 'none';                                                                    // Hides the the inner tracker panel.
+        document.getElementById('main-button').addEventListener('click', quizEngine.displayQuiz);                                                     // Assigns a new event listener to 'hand off' functionality to the displayQuiz method.
     },
 
     /**
@@ -193,14 +193,13 @@ const quizEngine = {
      * var assist container and the goals scored container.
      */
     displayQuiz: function () {
-        
+        document.getElementById('main-button').removeEventListener('click', quizEngine.displayQuiz);                        // Removes the displayQuiz event listener from main button, not needed once quiz is displayed.
         document.getElementById('answer-feedback-outer').style.display = 'none';                                            // Hides answer feedback container
         document.getElementById('no-option-selected-alert').style.display = 'none';                                         // Hides the 'no option selected' warning.
         document.getElementById('bottom-panel-item1').style.visibility = 'visible';                                         // Makes the VAR Assist button visible.
         document.getElementById('bottom-panel-item1').style.animation = 'easeIn .3s ease-in-out 0s 1 normal forwards';      // Eases the VAR Assist button onto the screen.
         document.getElementById('bottom-panel-item3').style.visibility = 'visible';                                         // Makes the Goals Scored box visible.
         document.getElementById('bottom-panel-item3').style.animation = 'easeIn .3s ease-in-out 0s 1 normal forwards';      // Eases the Goals Scored box onto the screen.
-        document.getElementById('main-button').removeEventListener('click', quizEngine.displayQuiz);                        // Removes the displayQuiz event listener from main button, not needed once quiz is displayed.
         document.getElementById('quiz-rules-inner-container').style.display = 'none';                                       // Hides the quiz rules screen.
         document.getElementById('tracker-container-inner').style.visibility = 'visible';                                    // Sets the tracker feature visibility to visible
         document.getElementById('tracker-container-inner').style.display = 'flex';                                          // Sets the tracker feature display to flex.
@@ -342,6 +341,7 @@ const quizEngine = {
     },
 
     viewFinalResult: function () {
+        document.getElementById('main-button').removeEventListener('click', quizEngine.viewFinalResult);
         document.getElementById('bottom-panel-item1').style.animation = 'fadeOut .2s ease-in 0s 1 normal forwards';        // Syntax referenced from W3Schools "animation: name duration timing-function delay iteration-count direction fill-mode play-state;"
         document.getElementById('bottom-panel-item3').style.animation = 'fadeOut .2s ease-in 0s 1 normal forwards';        // Syntax referenced from W3Schools "animation: name duration timing-function delay iteration-count direction fill-mode play-state;"
         document.getElementById('hero-image').style.display = 'none';
@@ -393,7 +393,8 @@ const quizEngine = {
     },
 
     rematch: function() {
-        //quizEngine.userName = null,
+        //quizEngine.userName = null;
+        document.getElementById('main-button').removeEventListener('click', quizEngine.rematch);
         quizEngine.questionCounter = 0;
         quizEngine.varAssistCounter = 3;
         quizEngine.goalsScored = 0;
@@ -409,7 +410,7 @@ const quizEngine = {
         document.getElementById('hero-image').style.display = 'flex';
         document.getElementById('enter-username-container').style.display = 'flex';
         questionDialogueBox.innerText = `Welcome back to the FIFA 2023 Women's World Cup Quiz!`;
-        document.getElementById('enter-username-message').innerHTML = `<p>Great to see you back in training so soon!<br><br><br>You can enter a different shirt name on the team sheet if you feel a new one will be luckier!</p>`;
+        document.getElementById('enter-username-message').innerHTML = `<p>Great to see you back in training so soon!<br><br>You can enter a different shirt name on the team sheet if you feel a new one will be luckier!</p>`;
         mainButton.innerText = 'Enter!';
         
 
@@ -417,9 +418,9 @@ const quizEngine = {
         document.getElementById('tracker-container').style.animation = 'rotateX180rematch .3s ease-in-out 0s 1 normal forwards';
         document.getElementById('top-panel-inner').style.animation = 'rotateX180rematch .3s ease-in-out 0s 1 normal forwards';
         document.getElementById('enter-username-container').style.animation = 'rotateX180rematch .3s ease-in-out 0s 1 normal forwards';
-
-        mainButton.addEventListener('submit', quizEngine.handleUserNameSubmit);
-
+        document.getElementById('enter-username').reset(); 
+        document.getElementById('main-button').setAttribute('form', 'enter-username');                                                                               // Adds the form attribute, connecting the button from enter username form (https://www.w3schools.com/jsref/met_element_setattribute.asp)
+        //mainButton.addEventListener('submit', quizEngine.handleUserNameSubmit);
     }
  
 };
