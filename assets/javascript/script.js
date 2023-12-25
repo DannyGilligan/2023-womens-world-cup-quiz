@@ -279,7 +279,7 @@ const quizEngine = {
 
         } else { // The code below will fire when a choice selection has been submitted.
             
-            document.getElementById('answer-feedback-inner').style.animation = 'rotateX180answerFeedback .2s linear 0s 1 normal forwards'; 
+            document.getElementById('answer-feedback-inner').style.animation = 'rotateX180answerFeedback .3s ease-in 0s 1 normal forwards'; 
             //document.getElementById('answer-feedback-inner').style.transform = 'scaleY(1)';
             document.getElementById('no-option-selected-alert').style.display = 'none';                   // Hides the no option selected alert if displayed previously.
             document.getElementById('tracker-container-inner').style.display = 'flex';                    // Displays the tracker panel if hidden previously.
