@@ -341,11 +341,11 @@ const quizEngine = {
 
     viewFinalResult: function () {
         document.getElementById('main-button').removeEventListener('click', quizEngine.viewFinalResult);
-        document.getElementById('bottom-panel-item1').style.animation = 'fadeOut .2s ease-in 0s 1 normal forwards';        // Syntax referenced from W3Schools "animation: name duration timing-function delay iteration-count direction fill-mode play-state;"
-        document.getElementById('bottom-panel-item3').style.animation = 'fadeOut .2s ease-in 0s 1 normal forwards';        // Syntax referenced from W3Schools "animation: name duration timing-function delay iteration-count direction fill-mode play-state;"
+        document.getElementById('bottom-panel-item1').style.animation = 'fadeOut .4s ease-in 0s 1 normal forwards';        // Syntax referenced from W3Schools "animation: name duration timing-function delay iteration-count direction fill-mode play-state;"
+        document.getElementById('bottom-panel-item3').style.animation = 'fadeOut .4s ease-in 0s 1 normal forwards';        // Syntax referenced from W3Schools "animation: name duration timing-function delay iteration-count direction fill-mode play-state;"
         document.getElementById('hero-image').style.display = 'none';
         document.getElementById('end-quiz-image').style.display = 'flex';
-        document.getElementById('end-quiz-image').style.animation = 'easeIn .6s ease-in 0s 1 normal forwards';
+        document.getElementById('end-quiz-image').style.animation = 'easeIn 1s ease-in 0s 1 normal forwards';
         document.getElementById('tracker-container').classList.add('tracker-container-glow');
         questionDialogueBox.innerHTML = `Congratulations on making it to the final whistle ${quizEngine.userName.value}!`;
         document.getElementById('answer-feedback-outer').style.display = 'none';
@@ -408,7 +408,7 @@ const quizEngine = {
         document.getElementById('hero-image').style.display = 'flex';
         document.getElementById('enter-username-container').style.display = 'flex';
         questionDialogueBox.innerText = `Welcome back to the FIFA 2023 Women's World Cup Quiz!`;
-        document.getElementById('enter-username-message').innerHTML = `<p>Great to see you back in training so soon!<br><br>You can enter a different shirt name on the team sheet if you feel a new one will be luckier!</p>`;
+        document.getElementById('enter-username-message').innerHTML = `<p>Great to see you back in training so soon!<br><br>We have a fresh shirt ready for you, just add your name to it and make it yours!</p>`;
         mainButton.innerText = 'Enter!';
         
 
