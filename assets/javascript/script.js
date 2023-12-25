@@ -6,7 +6,6 @@ const userChoiceInput1 = document.getElementById('choice-1-input');             
 const userChoiceInput2 = document.getElementById('choice-2-input');                 // Used for user input 2.
 const userChoiceInput3 = document.getElementById('choice-3-input');                 // Used for user input 3.
 const userChoiceInput4 = document.getElementById('choice-4-input');                 // Used for user input 4.
-const goalsScoredDisplay = document.getElementById('goals-scored-value');           // Assignss the display for goals scored.
 const trackerItem1 = document.getElementById('tracker-item-0');                     // Individual tracker item shown in the tracker panel.
 const trackerItem2 = document.getElementById('tracker-item-1');                     // Individual tracker item shown in the tracker panel.
 const trackerItem3 = document.getElementById('tracker-item-2');                     // Individual tracker item shown in the tracker panel.
