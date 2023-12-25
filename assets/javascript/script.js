@@ -399,7 +399,7 @@ const quizEngine = {
         quizEngine.varAssistCounter = 3;
         quizEngine.goalsScored = 0;
 
-        for (let i = 0; i < quizEngine.trackerItems; i++ ) {
+        for (let i = 0; i < quizEngine.trackerItems.length; i++ ) {
             quizEngine.trackerItems[i].className = 'tracker-item';
         }
 
