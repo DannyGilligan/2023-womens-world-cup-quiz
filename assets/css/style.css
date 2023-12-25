@@ -2223,7 +2223,7 @@ will be used throughout the quiz.
 /* The code for the ease/fade in animations were taken from https://blog.hubspot.com/website/css-fade-in */
 
 @keyframes easeIn {
-    0% { opacity: .2; }
+    0% { opacity: .6; }
     100% { opacity: 1; }
 }
 
@@ -2277,7 +2277,7 @@ will be used throughout the quiz.
 
 
 @keyframes easeInFeedbackOuter {
-    0% { opacity: .3; }
+    0% { opacity: .6; }
     100% { opacity: 1; }
 }
 
