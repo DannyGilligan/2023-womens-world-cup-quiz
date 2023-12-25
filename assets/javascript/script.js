@@ -400,7 +400,7 @@ const quizEngine = {
 
         for (let i = 0; i < quizEngine.trackerItems; i++ ) {
             quizEngine.trackerItems[i].className = 'tracker-item';
-        };
+        }
 
         document.getElementById('tracker-container-inner').style.display = 'none'; 
         document.getElementById('tracker-container').classList.remove('tracker-container-glow');
@@ -408,9 +408,9 @@ const quizEngine = {
         document.getElementById('end-quiz-image').style.display = 'none';
         document.getElementById('hero-image').style.display = 'flex';
         document.getElementById('enter-username-container').style.display = 'flex';
-        questionDialogueBox.innerText = `Welcome back to the FIFA 2023 Women's World Cup Quiz!`
-        document.getElementById('enter-username-message').innerHTML = `<p>Great to see you back in training so soon!<br><br><br>You can enter a different shirt name on the team sheet if you feel a different one will be luckier!</p>`
-        mainButton.innerText = 'Enter!'
+        questionDialogueBox.innerText = `Welcome back to the FIFA 2023 Women's World Cup Quiz!`;
+        document.getElementById('enter-username-message').innerHTML = `<p>Great to see you back in training so soon!<br><br><br>You can enter a different shirt name on the team sheet if you feel a new one will be luckier!</p>`;
+        mainButton.innerText = 'Enter!';
         
 
         document.getElementById('hero-image').style.animation = 'rotateX180rematch .3s ease-in-out 0s 1 normal forwards'; 
