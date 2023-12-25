@@ -18,10 +18,11 @@ const trackerItem9 = document.getElementById('tracker-item-8');                 
 const trackerItem10 = document.getElementById('tracker-item-9');                    // Individual tracker item shown in the tracker panel.
 const trackerItem11 = document.getElementById('tracker-item-10');                   // Individual tracker item shown in the tracker panel.
 const questionDialogueBox = document.getElementById('top-panel-inner');             // Assigns the main dialogue to the user (question text etc).
-const mainButton = document.getElementById('main-button');                          // Assigns the main button on screen
+const mainButton = document.getElementById('main-button');                          // Assigns the main button on screen.
 const choiceTextContainers = document.getElementsByClassName('choice-text');        // Assigns the containers used to display the choice text to the user.
 
 const quizEngine = {
+
     /* -- OBJECT PROPERTIES BELOW -- */
     
     /**
@@ -48,13 +49,15 @@ const quizEngine = {
      * the running total of goals scored
      * by the user. A goal is scored when a
      * question is answered correctly.
+     * Initialised with a 0 value.
      */
     goalsScored: 0,             
 
     /**
      * The currenctCorrectAnswer property holds the
      * correct answer for the current question
-     * displayed to the user
+     * displayed to the user.
+     * Initialised with a null value.
      */
     currentCorrectAnswer: null, 
 
@@ -97,7 +100,7 @@ const quizEngine = {
      * The 'answers' property will contain
      * the html element IDs that correspond
      * to the correct answers for each
-     * related question disaplyed to
+     * related question disaplayed to
      * the user
      */
     answers: [
@@ -171,17 +174,17 @@ const quizEngine = {
      * and 'required' attributes.
      */
     handleUserNameSubmit: function (event) {
-        event.preventDefault();
+        event.preventDefault();                                                                                                                       // Prevents the default behavious of the form upon submission.  
         quizEngine.userName = document.getElementById('username-input');                                                                              // Assigns the username entered to the userName property in quizEngine.
         questionDialogueBox.innerHTML = `<p>It's almost kick off time ${quizEngine.userName.value}, let's get the rules out of the way first..</p>`;  // Displays quiz rules message to user.
         questionDialogueBox.firstElementChild.style.animation = 'easeIn .2s ease-in 0s 1 normal forwards';                                            // Adds easeIn animation to text in question box
         document.getElementById('main-button').innerText = 'Kick Off!';                                                                               // Changes text of main button to 'Kick Off!'.
         document.getElementById('enter-username-container').style.display = 'none';                                                                   // Hides the enter user name screen, not needed now.
-        document.getElementById('quiz-rules-inner-container').firstElementChild.style.animation = 'easeIn .3s ease-in 0s 1 normal forwards';          // Adds easeIn animation to rules text (child node of container)
+        document.getElementById('quiz-rules-inner-container').firstElementChild.style.animation = 'easeIn .3s ease-in 0s 1 normal forwards';          // Adds easeIn animation to rules text (child node of container).
         document.getElementById('quiz-rules-inner-container').style.display = 'flex';                                                                 // Displays the quiz rules.
         document.getElementById('main-button').removeAttribute('form');                                                                               // Removes the form attribute, disonnecting the button from enter username form.
-        document.getElementById('main-button').addEventListener('click', quizEngine.displayQuiz);                                                     // Assigns a new event listener to 'hand off' functionality to next method
-        document.getElementById('tracker-container-inner').style.display = 'none';                                                                    // Hides the the inner tracker panel
+        document.getElementById('main-button').addEventListener('click', quizEngine.displayQuiz);                                                     // Assigns a new event listener to 'hand off' functionality to the displayQuiz method.
+        document.getElementById('tracker-container-inner').style.display = 'none';                                                                    // Hides the the inner tracker panel.
     },
 
     /**
@@ -193,7 +196,6 @@ const quizEngine = {
         
         document.getElementById('answer-feedback-outer').style.display = 'none';                                            // Hides answer feedback container
         document.getElementById('no-option-selected-alert').style.display = 'none';                                         // Hides the 'no option selected' warning.
-        document.getElementById('tracker-container-inner').style.animation = 'easeIn .3s ease-in-out 0s 1 normal forwards'; // Eases the tracker panel onto the screen.  
         document.getElementById('bottom-panel-item1').style.visibility = 'visible';                                         // Makes the VAR Assist button visible.
         document.getElementById('bottom-panel-item1').style.animation = 'easeIn .3s ease-in-out 0s 1 normal forwards';      // Eases the VAR Assist button onto the screen.
         document.getElementById('bottom-panel-item3').style.visibility = 'visible';                                         // Makes the Goals Scored box visible.
@@ -202,6 +204,7 @@ const quizEngine = {
         document.getElementById('quiz-rules-inner-container').style.display = 'none';                                       // Hides the quiz rules screen.
         document.getElementById('tracker-container-inner').style.visibility = 'visible';                                    // Sets the tracker feature visibility to visible
         document.getElementById('tracker-container-inner').style.display = 'flex';                                          // Sets the tracker feature display to flex.
+        document.getElementById('tracker-container-inner').style.animation = 'easeIn .3s ease-in-out 0s 1 normal forwards'; // Eases the tracker panel onto the screen. 
         quizEngine.trackerItems[quizEngine.questionCounter].classList.add('tracker-item-active');                           // Adds active item class to tracker item.
         
         for (let i = 0; i < choiceTextContainers.length; i++ ) {                                                            // Loops through the choice text containers and, 
@@ -270,23 +273,24 @@ const quizEngine = {
         document.getElementById('main-button').removeEventListener('click', quizEngine.checkAnswer);
         
         if ( quizEngine.userChoiceInputs[0].checked === false && quizEngine.userChoiceInputs[1].checked === false && quizEngine.userChoiceInputs[2].checked === false && quizEngine.userChoiceInputs[3].checked === false ) { // The code below will fire if the user clicks on 'Shoot!' without selecting a choice.
-            document.getElementById('no-option-selected-alert').style.display = 'flex';
-            document.getElementById('main-button').addEventListener('click', quizEngine.checkAnswer);
+           
+            document.getElementById('no-option-selected-alert').style.display = 'flex';                   // Will display the 'no option selected' alert to the user. 
+            document.getElementById('main-button').addEventListener('click', quizEngine.checkAnswer);     // Adds an event listener to the button and hands off functionality back to the checkAnswer function to wait for another choice submission.  
 
         } else { // The code below will fire when a choice selection has been submitted.
             
-            document.getElementById('no-option-selected-alert').style.display = 'none';         // Hides the no option selected alert
-            document.getElementById('tracker-container-inner').style.display = 'flex';          // Displays the tracker panel
-            document.getElementById('var-assist-button').disabled = true;                       // Disable VAR Assist button while answer feedback screen is displayed
-            let userChoiceSubmitted;                                                            // Declares a local variable within the else part of the IF statement, left unassigned initially.                  
-            if (quizEngine.userChoiceInputs[0].checked === true) {                              // First condition is checked to see if the 1st choice radio input has been checked.
-                userChoiceSubmitted = quizEngine.userChoiceInputs[0].id;                        // If first choice radio input has been checked, the ID of that input is assigned to userChoiceSubmitted variable, if not, the next condition is tested.
-            } else if (quizEngine.userChoiceInputs[1].checked === true) {                       // Second condition is checked to see if the 2nd choice radio input has been checked.
-                userChoiceSubmitted = quizEngine.userChoiceInputs[1].id;                        // If 2nd choice radio input has been checked, the ID of that input is assigned to userChoiceSubmitted variable, if not, the next condition is tested.
-            } else if (quizEngine.userChoiceInputs[2].checked === true) {                       // Third condition is checked to see if the 3rd choice radio input has been checked.
-                userChoiceSubmitted = quizEngine.userChoiceInputs[2].id;                        // If 3rd choice radio input has been checked, the ID of that input is assigned to userChoiceSubmitted variable.
-            } else {                                                                            // If the first 3 choice radio inputs are blank,
-                userChoiceSubmitted = quizEngine.userChoiceInputs[3].id;                        // The 4th choice is automatically assigned to userChoiceSubmitted.
+            document.getElementById('no-option-selected-alert').style.display = 'none';                   // Hides the no option selected alert if displayed previously.
+            document.getElementById('tracker-container-inner').style.display = 'flex';                    // Displays the tracker panel.
+            document.getElementById('var-assist-button').disabled = true;                                 // Disable VAR Assist button while answer feedback screen is displayed.
+            let userChoiceSubmitted;                                                                      // Declares a local variable within the else part of the IF statement, left unassigned initially.                  
+            if (quizEngine.userChoiceInputs[0].checked === true) {                                        // First condition is checked to see if the 1st choice radio input has been checked.
+                userChoiceSubmitted = quizEngine.userChoiceInputs[0].id;                                  // If first choice radio input has been checked, the ID of that input is assigned to userChoiceSubmitted variable, if not, the next condition is tested.
+            } else if (quizEngine.userChoiceInputs[1].checked === true) {                                 // Second condition is checked to see if the 2nd choice radio input has been checked.
+                userChoiceSubmitted = quizEngine.userChoiceInputs[1].id;                                  // If 2nd choice radio input has been checked, the ID of that input is assigned to userChoiceSubmitted variable, if not, the next condition is tested.
+            } else if (quizEngine.userChoiceInputs[2].checked === true) {                                 // Third condition is checked to see if the 3rd choice radio input has been checked.
+                userChoiceSubmitted = quizEngine.userChoiceInputs[2].id;                                  // If 3rd choice radio input has been checked, the ID of that input is assigned to userChoiceSubmitted variable.
+            } else {                                                                                      // If the first 3 choice radio inputs are blank,
+                userChoiceSubmitted = quizEngine.userChoiceInputs[3].id;                                  // The 4th choice is automatically assigned to userChoiceSubmitted.
             }
             
             if (userChoiceSubmitted === quizEngine.currentCorrectAnswer){ // Checks if the userChoiceSubmitted equals the currentCorrectAnswer value (both values use the html element IDs associated with the radio inputs).                                                                                                                                        
@@ -310,24 +314,24 @@ const quizEngine = {
                 quizEngine.trackerItems[quizEngine.questionCounter].classList.add('tracker-item-incorrect');                                                                                                         // Adds 'incorrect' item class to tracker item.
                 quizEngine.trackerItems[quizEngine.questionCounter].classList.remove('tracker-item-active');                                                                                                         // Removes 'active' item class to tracker item.
                 quizEngine.trackerItems[quizEngine.questionCounter].style.transform = ('rotateY(180deg)');                                                                                                           // This will rotate the individual tracker item 180 degrees (content on w3schools.com was referenced, not copied).
-                quizEngine.trackerItems[quizEngine.questionCounter].firstElementChild.style.transform = ('scaleX(-1)');                                                                                              // This will 'flip' the text to display correctly after the rotation
-                quizEngine.trackerItems[quizEngine.questionCounter].style.transition = 'all .3s ease';                                                                                                               // This will ease the rotation onto the screen
+                quizEngine.trackerItems[quizEngine.questionCounter].firstElementChild.style.transform = ('scaleX(-1)');                                                                                              // This will 'flip' the text to display correctly after the rotation.
+                quizEngine.trackerItems[quizEngine.questionCounter].style.transition = 'all .3s ease';                                                                                                               // This will ease the rotation onto the screen.
                 document.getElementById('choices-container-outer').style.display = 'none';                                                                                                                           // Hides the choices container.
-                document.getElementById('answer-feedback-inner').style.animation = 'easeIn .3s ease-in-out 0s 1 normal forwards';                                                                                    // Ease in the display of the inner answer feedback container (holds the image and feedback text)
+                document.getElementById('answer-feedback-inner').style.animation = 'easeIn .3s ease-in-out 0s 1 normal forwards';                                                                                    // Ease in the display of the inner answer feedback container (holds the image and feedback text).
                 document.getElementById('answer-feedback-outer').style.display = 'flex';                                                                                                                             // Displays the answer feedback container which will hold the feedback image.
                 document.getElementById('answer-feedback-image-container').innerHTML = `<img src="assets/images/miss_image_${quizEngine.questionCounter}.webp" alt="Female Footballer" id="answer-feedback-image">`; // Displays the 'MISS!' feedback image.
                 document.getElementById('answer-feedback-status').innerHTML = '<span>MISS!</span>';                                                                                                                  // Displays answer feedback text to user.
             }
             
-            if (quizEngine.questionCounter < 10) { // If questionCounter is less than 10 (11 Questions)
+            if (quizEngine.questionCounter < 10) { // If questionCounter is less than 10 (11 Questions), i.e, there are questions remaining
 
                 quizEngine.questionCounter++;                                                                              // Increments question counter to drive the relevant array indices being accessed.
                 document.getElementById('main-button').innerText = 'Play On!';                                             // Changes the text of the main button to 'Play On!', which will display the next question, choices etc.
                 document.getElementById('main-button').addEventListener('click', quizEngine.displayQuiz);                  // Changes the functionality of the main button to the displayQuiz method.  
 
-            } else { // If the last question has been answered
+            } else { // If the last question has been answered (no questions remaining)
 
-                document.getElementById('main-button').innerText = 'View Final Result!';                                   // Changes the text of the main button to 'View Final Result!', which will display the next question, choices etc.
+                document.getElementById('main-button').innerText = 'View Final Result!';                                   // Changes the text of the main button to 'View Final Result!', which will display the end screen of the quiz.
                 document.getElementById('main-button').addEventListener('click', quizEngine.viewFinalResult);              // Changes the functionality of the main button to the displayQuiz method.  
 
             }
