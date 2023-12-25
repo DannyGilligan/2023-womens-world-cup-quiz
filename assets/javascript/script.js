@@ -136,7 +136,7 @@ const quizEngine = {
         questionDialogueBox.firstElementChild.style.animation = 'easeIn .2s ease-in 0s 1 normal forwards';                                            // Adds easeIn animation to text in question box
         document.getElementById('main-button').innerText = 'Kick Off!';                                                                               // Changes text of main button to 'Kick Off!'.
         document.getElementById('enter-username-container').style.display = 'none';                                                                   // Hides the enter user name screen, not needed now.
-        document.getElementById('quiz-rules-inner-container').firstElementChild.style.animation = 'easeIn .3s ease-in 0s 1 normal forwards';          // Adds easeIn animation to rules text
+        document.getElementById('quiz-rules-inner-container').firstElementChild.style.animation = 'easeIn .3s ease-in 0s 1 normal forwards';          // Adds easeIn animation to rules text (child node of container)
         document.getElementById('quiz-rules-inner-container').style.display = 'flex';                                                                 // Displays the quiz rules.
         document.getElementById('main-button').removeAttribute('form');                                                                               // Removes the form attribute, disonnecting the button from enter username form.
         document.getElementById('main-button').addEventListener('click', quizEngine.displayQuiz);                                                     // Assigns a new event listener to 'hand off' functionality to next method
@@ -250,7 +250,7 @@ const quizEngine = {
             }
 
             console.log('The user choice is ' + userChoiceSubmitted);                                                                                                                                                // Debugging message.
-            console.log('The current correct answer is ' + quizEngine.currentCorrectAnswer)  ;                                                                                                                        // Debugging message.
+            console.log('The current correct answer is ' + quizEngine.currentCorrectAnswer)  ;                                                                                                                       // Debugging message.
             // If answer is correct!
             if (userChoiceSubmitted === quizEngine.currentCorrectAnswer){                                                                                                                                            // Checks if the userChoiceSubmitted equals the currentCorrectAnswer value (both values use the html element IDs associated with the radio inputs).
                 ++quizEngine.goalsScored;                                                                                                                                                                            // Increments goalsScored value.   
@@ -259,27 +259,30 @@ const quizEngine = {
                 quizEngine.trackerItems[quizEngine.questionCounter].classList.remove('tracker-item-active');                                                                                                         // Removes 'active' item class to tracker item.
                 document.getElementById('choices-container-outer').style.display = 'none';                                                                                                                           // Hides the choices container.
                 document.getElementById('answer-feedback-outer').style.display = 'flex';                                                                                                                             // Displays the answer feedback container which will hold the feedback image.
-                document.getElementById('answer-feedback-inner').style.animation = 'easeIn .3s ease-in-out 0s 1 normal forwards';                                                                                        // Eases in the image and 'GOAL!' feedback                                                                           
+                document.getElementById('answer-feedback-inner').style.animation = 'easeIn .3s ease-in-out 0s 1 normal forwards';                                                                                    // Ease in the display of the inner answer feedback container (holds the image and feedback text)                                                                          
                 document.getElementById('answer-feedback-image-container').innerHTML = `<img src="assets/images/goal_image_${quizEngine.questionCounter}.webp" alt="Female Footballer" id="answer-feedback-image">`; // Displays the 'GOAL!' feedback image.
                 document.getElementById('answer-feedback-status').innerHTML = '<span>GOAL!</span>';                                                                                                                  // Displays answer feedback text to user.
-                console.log('The answer is correct!');
+                console.log('The answer is correct!');                                                                                                                                                               // Debugging message.
             } else { // If answer is incorrect!
                 quizEngine.trackerItems[quizEngine.questionCounter].classList.add('tracker-item-incorrect');                                                                                                         // Adds 'incorrect' item class to tracker item.
                 quizEngine.trackerItems[quizEngine.questionCounter].classList.remove('tracker-item-active');                                                                                                         // Removes 'active' item class to tracker item.
+                quizEngine.trackerItems[quizEngine.questionCounter].style.transform = ('rotateY(180deg)');                                                                                                           // This will rotate the individual tracker item 180 degrees (content on w3schools.com was referenced, not copied).
+                quizEngine.trackerItems[quizEngine.questionCounter].firstElementChild.style.transform = ('scaleX(-1)');                                                                                              // This will 'flip' the text to display correctly after the rotation
+                quizEngine.trackerItems[quizEngine.questionCounter].style.transition = 'all .3s ease';                                                                                                               // This will ease the rotation onto the screen
                 document.getElementById('choices-container-outer').style.display = 'none';                                                                                                                           // Hides the choices container.
-                document.getElementById('answer-feedback-inner').style.animation = 'easeIn .3s ease-in-out 0s 1 normal forwards';
+                document.getElementById('answer-feedback-inner').style.animation = 'easeIn .3s ease-in-out 0s 1 normal forwards';                                                                                    // Ease in the display of the inner answer feedback container (holds the image and feedback text)
                 document.getElementById('answer-feedback-outer').style.display = 'flex';                                                                                                                             // Displays the answer feedback container which will hold the feedback image.
                 document.getElementById('answer-feedback-image-container').innerHTML = `<img src="assets/images/miss_image_${quizEngine.questionCounter}.webp" alt="Female Footballer" id="answer-feedback-image">`; // Displays the 'MISS!' feedback image.
                 document.getElementById('answer-feedback-status').innerHTML = '<span>MISS!</span>';                                                                                                                  // Displays answer feedback text to user.
                 console.log('The answer is incorrect!');
             }
-            
-            if (quizEngine.questionCounter < 10) {
+            // If questionCounter is less than 10 (11 Questions)
+            if (quizEngine.questionCounter < 10) { 
                 quizEngine.questionCounter++;                                                                   // Increments question counter to drive the relevant array indices being accessed.
                 document.getElementById('main-button').innerText = 'Play On!';                                  // Changes the text of the main button to 'Play On!', which will display the next question, choices etc.
                 document.getElementById('main-button').addEventListener('click', quizEngine.displayQuiz);       // Changes the functionality of the main button to the displayQuiz method.  
-            } else {
-                document.getElementById('main-button').innerText = 'View Final Result!';                        // Changes the text of the main button to 'Play On!', which will display the next question, choices etc.
+            } else { // If the last question has been answered
+                document.getElementById('main-button').innerText = 'View Final Result!';                        // Changes the text of the main button to 'View Final Result!', which will display the next question, choices etc.
                 document.getElementById('main-button').addEventListener('click', quizEngine.viewFinalResult);   // Changes the functionality of the main button to the displayQuiz method.  
             }
         
@@ -287,8 +290,8 @@ const quizEngine = {
     },
 
     viewFinalResult: function () {
-        document.getElementById('bottom-panel-item1').style.animation = 'fadeOut .4s ease-in .6s 1 normal forwards';        // Syntax referenced from W3Schools "animation: name duration timing-function delay iteration-count direction fill-mode play-state;"
-        document.getElementById('bottom-panel-item3').style.animation = 'fadeOut .4s ease-in .6s 1 normal forwards';        // Syntax referenced from W3Schools "animation: name duration timing-function delay iteration-count direction fill-mode play-state;"
+        document.getElementById('bottom-panel-item1').style.animation = 'fadeOut .2s ease-in 0s 1 normal forwards';        // Syntax referenced from W3Schools "animation: name duration timing-function delay iteration-count direction fill-mode play-state;"
+        document.getElementById('bottom-panel-item3').style.animation = 'fadeOut .2s ease-in 0s 1 normal forwards';        // Syntax referenced from W3Schools "animation: name duration timing-function delay iteration-count direction fill-mode play-state;"
         document.getElementById('hero-image').style.display = 'none';
         document.getElementById('end-quiz-image').style.display = 'flex';
         document.getElementById('end-quiz-image').style.animation = 'easeIn .6s ease-in 0s 1 normal forwards'
@@ -329,76 +332,6 @@ const quizEngine = {
         
     },
  
-
-    /** 
-     * The handleUserChoiceSubmit method will process the user's input and determine if it is correct or incorrect.
-     * It uses a 'for loop' to iterate through the userInputs property,
-     * the using an IF conditional statement, it will identify which 
-     * input has been selected by the user. This input is then compared
-     * against the correct answer for the current question stored in 
-     * the answers property of the quizEngine object. If the answer is 
-     * correct, it will result in the goals scored value being incremented.
-     * A correct answer will result in a feedback message of 'GOAL!' accompanied by
-     * an appropriate image. If the answer is incorrent, the goal scored will not be
-     * incremented, and an alternative appropriate image will be displayed. The text of the
-     * main button will be changed to 'Play on!' and the functionality will 'handed off' to another
-     * method.
-     */
-
-
-/*
-    handleUserChoiceSubmit: function (event) {
-        console.log('Hello from handleUserChoiceSubmit!')
-        event.preventDefault();   
-        mainButton.removeAttribute('form', 'choices-container-outer');                                           // Disonnects the main button to the user choice submit form 
-        document.getElementById('choices-container-outer').removeEventListener("submit", quizEngine.handleUserChoiceSubmit);                                                                               // prevents the form from submitting
-        quizEngine.trackerItems[0].classList.remove('tracker-item-active');                                      // Removes active class from first tracker item
-        quizEngine.trackerItems[quizEngine.questionCounter].classList.remove('tracker-item-active');             // Removes active class from current tracker item
-
-        for (let i = 0; i < quizEngine.userChoiceInputs.length; i++) {                                           // For loop that will iterate over the user inputs
-            if (quizEngine.userChoiceInputs[i].checked === true) {                                               // An IF conditional determines which input has been checked
-                quizEngine.userChoiceSubmitted = quizEngine.userChoiceInputs[i].id;                              // The id of the checked input is then assigned to the userChoiceSubmitted property
-                quizEngine.currentCorrectAnswer = quizEngine.answers[quizEngine.questionCounter];                // Assigns the answer to the current question to the currentCorrectAnswer property
-                if (quizEngine.userChoiceSubmitted === quizEngine.currentCorrectAnswer) {                        // An IF conditional determines if the user choice and the correct answer match
-                    ++quizEngine.goalsScored;                                                                    // Increments goals scored if answer is correct
-                    goalsScoredDisplay.innerText = quizEngine.goalsScored;                                       // Displays the goals scored on screen to the user
-                    quizEngine.trackerItems[quizEngine.questionCounter].classList.add('tracker-item-correct');   // Adds tracker item correct class
-                    document.getElementById('answer-feedback-status').innerHTML = `<span>GOAL!</span>`;          // Updates the feedback text
-                    // document.getElementById('choices-container-outer').style.display = 'none';               // Hides the choices container
-                    document.getElementById('answer-feedback-outer').style.display = 'flex';                     // Displays the answer feedback screen
-                    
-                } else {                                                                                         // If the answer is incorrect, the code below runs
-                    document.getElementById('answer-feedback-image-container').innerHTML = `<img src="assets/images/miss_image_${quizEngine.questionCounter}.webp" alt="Female Footballer" id="answer-feedback-image">`; // Displays the 'MISS!' feedback image
-                    quizEngine.trackerItems[quizEngine.questionCounter].classList.add('tracker-item-incorrect'); // Adds tracker item incorrect class
-                    document.getElementById('answer-feedback-status').innerHTML = `<span>MISS!</span>`;          // Updates the feedback text
-                    document.getElementById('choices-container-outer').style.display = 'none';                   // Hides the choices container
-                    document.getElementById('answer-feedback-outer').style.display = 'flex';                     // Displays the feedback container to the user
-                }
-            }
-        }
-        ++quizEngine.questionCounter;
-        mainButton.addEventListener('click', quizEngine.displayNextQuestion);                                    // Assigns an event listener to hand off functionality to displayNextQuestion method
-        mainButton.innerText = 'Play on!';                                                                       // Changes text of main button to 'Play On!'
-        console.log(quizEngine.questionCounter + 'printed from inside handleUserChoiceSubmit before increment')
-        console.log(quizEngine.questionCounter + 'printed from inside handleUserChoiceSubmit after increment')
-    },
-*/
-    
-
-    /* BLOCKED OUT, START AGAIN 
-    displayNextQuestion: function () {
-        console.log(quizEngine.questionCounter + 'printed from inside displayNextQuestion, after increment')
-        quizEngine.currentCorrectAnswer = null;
-        quizEngine.userChoiceSubmitted = null;
-        document.getElementById("choices-container-outer").reset();                                              // Resets the form, clearing the radio inputs (add credit to readme!)
-        document.getElementById('answer-feedback-outer').style.display = 'none';                                 // Hides the answer feedback screen
-        document.getElementById('choices-container-outer').style.display = 'flex';                               // Displays choices container
-        quizEngine.trackerItems[quizEngine.questionCounter].classList.add('tracker-item-active');                // Adds tracker item active class
-        mainButton.setAttribute('form', 'choices-container-outer');                                              // Connects the main button to the user choice submit form 
-        mainButton.addEventListener('click', quizEngine.displayQuiz)                                             // Adds displayQuiz event listener
-    }
-    */
-
 };
 
 
@@ -406,10 +339,4 @@ document.getElementById('enter-username').addEventListener("submit", quizEngine.
 document.getElementById('var-assist-button').addEventListener('click', quizEngine.varAssist);
 
 
-
-
-/*
-const submitUserChoiceForm = document.getElementById('choices-container-outer');
-submitUserChoiceForm.addEventListener("submit", quizEngine.handleUserChoiceSubmit);
-*/
 
