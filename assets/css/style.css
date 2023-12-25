@@ -266,12 +266,15 @@ and end quiz message.
     justify-content: center;
     align-items: center;
     height: 5rem;
+
 }
   
 #enter-username-message p{
     font-size: .8rem;
     margin: 0;
-    padding-top: .5rem;
+    padding-top: 1.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 #input-form-container{
@@ -761,3 +764,9 @@ The code for the ease/fade in animations were taken from https://blog.hubspot.co
     from {transform:rotateX(90deg);}
     to   {transform:rotateX(180deg);}
 }
+
+@keyframes rotateX180rematch {
+    from {transform:rotateX(90deg);}
+    to   {transform:rotateX(180deg);}
+}
+

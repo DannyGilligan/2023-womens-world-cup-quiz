@@ -174,7 +174,7 @@ const quizEngine = {
      * and 'required' attributes.
      */
     handleUserNameSubmit: function (event) {
-        event.preventDefault();                                                                                                                       // Prevents the default behavious of the form upon submission.  
+        event.preventDefault();                                                                                                                       // Prevents the default behavious of the form upon submission (this code was adapted from the Code Institute LMS content).  
         quizEngine.userName = document.getElementById('username-input');                                                                              // Assigns the username entered to the userName property in quizEngine.
         questionDialogueBox.innerHTML = `<p>It's almost kick off time ${quizEngine.userName.value}, let's get the rules out of the way first..</p>`;  // Displays quiz rules message to user.
         questionDialogueBox.firstElementChild.style.animation = 'easeIn .2s ease-in 0s 1 normal forwards';                                            // Adds easeIn animation to text in question box
@@ -305,7 +305,7 @@ const quizEngine = {
                 quizEngine.trackerItems[quizEngine.questionCounter].style.transition = 'all .3s ease';                                                                                                               // This will ease the rotation onto the screen
                 document.getElementById('choices-container-outer').style.display = 'none';                                                                                                                           // Hides the choices container.
                 document.getElementById('answer-feedback-outer').style.display = 'flex';                                                                                                                             // Displays the answer feedback container which will hold the feedback image.
-                //document.getElementById('answer-feedback-inner').style.animation = 'rotateX180 .2s linear 0s 1 normal forwards';                                                                                    // Ease in the display of the inner answer feedback container (holds the image and feedback text)                                                                          
+                //document.getElementById('answer-feedback-inner').style.animation = 'rotateX180 .2s linear 0s 1 normal forwards';                                                                                   // Ease in the display of the inner answer feedback container (holds the image and feedback text)                                                                          
                 document.getElementById('answer-feedback-image-container').innerHTML = `<img src="assets/images/goal_image_${quizEngine.questionCounter}.webp" alt="Female Footballer" id="answer-feedback-image">`; // Displays the 'GOAL!' feedback image.
                 document.getElementById('answer-feedback-status').innerHTML = '<span>GOAL!</span>';                                                                                                                  // Displays answer feedback text to user.
                 document.getElementById('goals-scored-container').style.animation = 'rotate360 .2s ease-in-out 0s 1 normal forwards';                                                                                // This will rotate the Goals Scored number 360 degress (this code was copied from https://stackoverflow.com/questions/14859322/css3-spin-animation)
@@ -319,7 +319,7 @@ const quizEngine = {
                 quizEngine.trackerItems[quizEngine.questionCounter].firstElementChild.style.transform = ('scaleX(-1)');                                                                                              // This will 'flip' the text to display correctly after the rotation.
                 quizEngine.trackerItems[quizEngine.questionCounter].style.transition = 'all .3s ease';                                                                                                               // This will ease the rotation onto the screen.
                 document.getElementById('choices-container-outer').style.display = 'none';                                                                                                                           // Hides the choices container.
-                //document.getElementById('answer-feedback-inner').style.animation = 'easeIn .3s ease-in-out 0s 1 normal forwards';                                                                                    // Ease in the display of the inner answer feedback container (holds the image and feedback text).
+                //document.getElementById('answer-feedback-inner').style.animation = 'easeIn .3s ease-in-out 0s 1 normal forwards';                                                                                  // Ease in the display of the inner answer feedback container (holds the image and feedback text).
                 document.getElementById('answer-feedback-outer').style.display = 'flex';                                                                                                                             // Displays the answer feedback container which will hold the feedback image.
                 document.getElementById('answer-feedback-image-container').innerHTML = `<img src="assets/images/miss_image_${quizEngine.questionCounter}.webp" alt="Female Footballer" id="answer-feedback-image">`; // Displays the 'MISS!' feedback image.
                 document.getElementById('answer-feedback-status').innerHTML = '<span>MISS!</span>';                                                                                                                  // Displays answer feedback text to user.
@@ -354,6 +354,7 @@ const quizEngine = {
         document.getElementById('end-quiz-message').style.animation = 'easeIn .3s ease-in-out 0s 1 normal forwards';
         document.getElementById('end-quiz-inner').innerHTML = `<p>You scored <strong>${quizEngine.goalsScored}</strong> out of <strong>11</strong> attempts on goal!<br><br>Learn more about the development of women's football at:<br><br><a href="https://www.fifa.com/womens-football" target="_blank"><strong>fifa.com/womens-football</strong></a></p>`;
         mainButton.innerText = "Rematch?";
+        mainButton.addEventListener('click', quizEngine.rematch);
     },
 
     varAssist: function () {
@@ -390,6 +391,29 @@ const quizEngine = {
         }
         
     },
+
+    rematch: function() {
+        quizEngine.userName = null,
+        quizEngine.questionCounter = 0;
+        quizEngine.varAssistCounter = 3;
+        quizEngine.goalsScored = 0;
+
+        for (let i = 0; i < quizEngine.trackerItems; i++ ) {
+            quizEngine.trackerItems[i].className = 'tracker-item';
+        };
+
+        document.getElementById('tracker-container-inner').style.display = 'none'; 
+        document.getElementById('tracker-container').classList.remove('tracker-container-glow');
+        document.getElementById('end-quiz-message').style.display = 'none';
+        document.getElementById('end-quiz-image').style.display = 'none';
+        document.getElementById('hero-image').style.display = 'flex';
+        document.getElementById('enter-username-container').style.display = 'flex';
+        questionDialogueBox.innerText = `Welcome back to the FIFA 2023 Women's World Cup Quiz!`
+        document.getElementById('enter-username-message').innerHTML = `<p>Good to see you back in training so soon!<br><br><br>You can enter a different shirt name on the team sheet if you feel the last one was unlucky!</p>`
+        mainButton.innerText = 'Enter!'
+        mainButton.addEventListener('click', quizEngine.handleUserNameSubmit);
+
+    }
  
 };
 
