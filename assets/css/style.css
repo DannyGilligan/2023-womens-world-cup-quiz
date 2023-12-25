@@ -766,7 +766,7 @@ The code for the ease/fade in animations were taken from https://blog.hubspot.co
 }
 
 @keyframes rotateX180rematch {
-    from {transform:rotateX(90deg);}
-    to   {transform:rotateX(180deg);}
+    from {transform:rotateX(270deg);}
+    to   {transform:rotateX(360deg);}
 }
 

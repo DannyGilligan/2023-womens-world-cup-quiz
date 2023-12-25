@@ -409,9 +409,14 @@ const quizEngine = {
         document.getElementById('hero-image').style.display = 'flex';
         document.getElementById('enter-username-container').style.display = 'flex';
         questionDialogueBox.innerText = `Welcome back to the FIFA 2023 Women's World Cup Quiz!`
-        document.getElementById('enter-username-message').innerHTML = `<p>Good to see you back in training so soon!<br><br><br>You can enter a different shirt name on the team sheet if you feel the last one was unlucky!</p>`
+        document.getElementById('enter-username-message').innerHTML = `<p>Good to see you back in training so soon!<br><br><br>You can enter a different shirt name on the team sheet if you feel a different one will be luckier!</p>`
         mainButton.innerText = 'Enter!'
         mainButton.addEventListener('click', quizEngine.handleUserNameSubmit);
+
+        document.getElementById('hero-image').style.animation = 'rotateX180rematch .3s ease-in-out 0s 1 normal forwards'; 
+        document.getElementById('tracker-container').style.animation = 'rotateX180rematch .3s ease-in-out 0s 1 normal forwards';
+        document.getElementById('top-panel-inner').style.animation = 'rotateX180rematch .3s ease-in-out 0s 1 normal forwards';
+        document.getElementById('enter-username-container').style.animation = 'rotateX180rematch .3s ease-in-out 0s 1 normal forwards';
 
     }
  
