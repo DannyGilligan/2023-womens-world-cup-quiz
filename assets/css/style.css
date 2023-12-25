@@ -93,7 +93,6 @@ an option
     background: -moz-linear-gradient(37deg, rgba(0,59,137,1) 0%, rgba(6,84,187,1) 29%, rgba(6,84,187,1) 50%, rgba(6,84,187,1) 80%, rgba(0,59,137,1) 100%);
     background: -webkit-linear-gradient(37deg, rgba(0,59,137,1) 0%, rgba(6,84,187,1) 29%, rgba(6,84,187,1) 50%, rgba(6,84,187,1) 80%, rgba(0,59,137,1) 100%);
     background: linear-gradient(37deg, rgba(0,59,137,1) 0%, rgba(6,84,187,1) 29%, rgba(6,84,187,1) 50%, rgba(6,84,187,1) 80%, rgba(0,59,137,1) 100%);
-    /* filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#003b89",endColorstr="#003b89",GradientType=1); */
     /* End of copied code from https://cssgradient.io/ */
 
     display: flex;
@@ -160,7 +159,6 @@ an option
     border: 2px solid #cc9d04;
     display: none;
     z-index: +5;  /* this will set the alert in front of the tracker panel */
-    /*transition: transform .1s ease-in-out;*/
     animation: rotateX180 .2s linear 0s 1 normal forwards;
 }
 
@@ -252,7 +250,6 @@ and end quiz message.
     background: -moz-linear-gradient(37deg, rgba(0,59,137,1) 0%, rgba(6,84,187,1) 29%, rgba(6,84,187,1) 50%, rgba(6,84,187,1) 80%, rgba(0,59,137,1) 100%);
     background: -webkit-linear-gradient(37deg, rgba(0,59,137,1) 0%, rgba(6,84,187,1) 29%, rgba(6,84,187,1) 50%, rgba(6,84,187,1) 80%, rgba(0,59,137,1) 100%);
     background: linear-gradient(37deg, rgba(0,59,137,1) 0%, rgba(6,84,187,1) 29%, rgba(6,84,187,1) 50%, rgba(6,84,187,1) 80%, rgba(0,59,137,1) 100%);
-    /* filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#003b89",endColorstr="#003b89",GradientType=1); */
     /* End of copied code from https://cssgradient.io/ */
     color: #EEEDCE;
     font-size: .7rem;
@@ -326,7 +323,6 @@ after the user enters a valid username
     padding-top: .3rem;
     padding-left: .1rem;
     padding-right: .1rem;
-    /*padding-bottom: .3rem;*/
     row-gap: .5rem;
     border: 2px solid black;
     border-radius: 5px;
@@ -335,7 +331,6 @@ after the user enters a valid username
     background: -moz-linear-gradient(37deg, rgba(0,59,137,1) 0%, rgba(6,84,187,1) 29%, rgba(6,84,187,1) 50%, rgba(6,84,187,1) 80%, rgba(0,59,137,1) 100%);
     background: -webkit-linear-gradient(37deg, rgba(0,59,137,1) 0%, rgba(6,84,187,1) 29%, rgba(6,84,187,1) 50%, rgba(6,84,187,1) 80%, rgba(0,59,137,1) 100%);
     background: linear-gradient(37deg, rgba(0,59,137,1) 0%, rgba(6,84,187,1) 29%, rgba(6,84,187,1) 50%, rgba(6,84,187,1) 80%, rgba(0,59,137,1) 100%);
-    /* filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#003b89",endColorstr="#003b89",GradientType=1); */
     /* End of copied code from https://cssgradient.io/ */
     color: #EEEDCE;
     font-size: .8rem;
@@ -360,7 +355,7 @@ the radio inputs is below
     justify-content: space-between;
     margin-top: .5rem;
     padding-top: .3rem;
-    display: none;      /*  <----------- TOGGLE THIS!!  */
+    display: none;      
     border: 2px solid transparent;
 }
   
@@ -378,7 +373,6 @@ the radio inputs is below
     background: -moz-linear-gradient(37deg, rgba(0,59,137,1) 0%, rgba(6,84,187,1) 29%, rgba(6,84,187,1) 50%, rgba(6,84,187,1) 80%, rgba(0,59,137,1) 100%);
     background: -webkit-linear-gradient(37deg, rgba(0,59,137,1) 0%, rgba(6,84,187,1) 29%, rgba(6,84,187,1) 50%, rgba(6,84,187,1) 80%, rgba(0,59,137,1) 100%);
     background: linear-gradient(37deg, rgba(0,59,137,1) 0%, rgba(6,84,187,1) 29%, rgba(6,84,187,1) 50%, rgba(6,84,187,1) 80%, rgba(0,59,137,1) 100%);
-    /* filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#003b89",endColorstr="#003b89",GradientType=1); */
     /* End of copied code from https://cssgradient.io/ */
     color: #EEEDCE;
     font-family: "FWWC 2023";
@@ -426,7 +420,6 @@ input {
     font-size: .9rem;
     padding: .3rem 1rem .3rem 1rem;
     box-shadow: 3px 3px 2px grey;
-    /*transition: transform .1s ease-in-out;*/
     animation:  rotateX180 .2s linear 0s 1 normal forwards;
 }
  
@@ -452,7 +445,6 @@ include the feedback image, text and
     background: -moz-linear-gradient(37deg, rgba(0,59,137,1) 0%, rgba(6,84,187,1) 29%, rgba(6,84,187,1) 50%, rgba(6,84,187,1) 80%, rgba(0,59,137,1) 100%);
     background: -webkit-linear-gradient(37deg, rgba(0,59,137,1) 0%, rgba(6,84,187,1) 29%, rgba(6,84,187,1) 50%, rgba(6,84,187,1) 80%, rgba(0,59,137,1) 100%);
     background: linear-gradient(37deg, rgba(0,59,137,1) 0%, rgba(6,84,187,1) 29%, rgba(6,84,187,1) 50%, rgba(6,84,187,1) 80%, rgba(0,59,137,1) 100%);
-    /* filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#003b89",endColorstr="#003b89",GradientType=1); */
     /* End of copied code from https://cssgradient.io/ */
     margin-top: .5rem;
     display: flex;
@@ -465,7 +457,7 @@ include the feedback image, text and
     border: 2px solid black;
     border-radius: 5px;
     box-shadow: 3px 3px 2px grey;
-    display: none;   /*  <----------- TOGGLE THIS!!  */
+    display: none;   
     transform: scaleY(-1); /* This is needed to make the rotate180answerFeedback animation display correctly! */
 }
   
@@ -496,7 +488,6 @@ include the feedback image, text and
     box-shadow: 0 0 5px 1px #EEEDCE;
 }
 
-/* This container will hold text "Choice is Correct", only to be displayed on larger screen sizes */
 #answer-feedback-text{
     display: flex;
     justify-content: center;
@@ -504,7 +495,7 @@ include the feedback image, text and
     text-align: center;
     width: 100%;
     height: 20%;
-    display: none;   /* <----------- TOGGLE THIS!!  */
+    display: none;   
 }
   
 #answer-feedback-status{
@@ -526,7 +517,6 @@ include the feedback image, text and
         background: -moz-linear-gradient(37deg, rgba(0,59,137,1) 0%, rgba(6,84,187,1) 29%, rgba(6,84,187,1) 50%, rgba(6,84,187,1) 80%, rgba(0,59,137,1) 100%);
         background: -webkit-linear-gradient(37deg, rgba(0,59,137,1) 0%, rgba(6,84,187,1) 29%, rgba(6,84,187,1) 50%, rgba(6,84,187,1) 80%, rgba(0,59,137,1) 100%);
         background: linear-gradient(37deg, rgba(0,59,137,1) 0%, rgba(6,84,187,1) 29%, rgba(6,84,187,1) 50%, rgba(6,84,187,1) 80%, rgba(0,59,137,1) 100%);
-        /* filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#003b89",endColorstr="#003b89",GradientType=1); */
         /* End of copied code from https://cssgradient.io/ */
         margin-top: .5rem;
         display: flex;
@@ -573,7 +563,6 @@ is shown below
     justify-content: space-between;
     border-radius: 5px;
     animation: easeIn 1s;
-    /* display: none;    <----------- TOGGLE THIS!!  */
 }
   
 
@@ -696,7 +685,7 @@ the Goals Scored tracker
     align-items: center;
     border-radius: 5px;
     box-shadow: 2px 2px 2px grey;
-    visibility: hidden;  /*   <----------- TOGGLE THIS!!  */
+    visibility: hidden; 
 }
 
 #goals-scored-text{

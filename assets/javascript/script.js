@@ -279,7 +279,6 @@ const quizEngine = {
         } else { // The code below will fire when a choice selection has been submitted.
             
             document.getElementById('answer-feedback-inner').style.animation = 'rotateX180answerFeedback .3s ease-in-out 0s 1 normal forwards'; 
-            //document.getElementById('answer-feedback-inner').style.transform = 'scaleY(1)';
             document.getElementById('no-option-selected-alert').style.display = 'none';                   // Hides the no option selected alert if displayed previously.
             document.getElementById('tracker-container-inner').style.display = 'flex';                    // Displays the tracker panel if hidden previously.
             document.getElementById('var-assist-button').disabled = true;                                 // Disable VAR Assist button while answer feedback screen is displayed.
@@ -304,7 +303,6 @@ const quizEngine = {
                 quizEngine.trackerItems[quizEngine.questionCounter].style.transition = 'all .3s ease';                                                                                                               // This will ease the rotation onto the screen
                 document.getElementById('choices-container-outer').style.display = 'none';                                                                                                                           // Hides the choices container.
                 document.getElementById('answer-feedback-outer').style.display = 'flex';                                                                                                                             // Displays the answer feedback container which will hold the feedback image.
-                //document.getElementById('answer-feedback-inner').style.animation = 'rotateX180 .2s linear 0s 1 normal forwards';                                                                                   // Ease in the display of the inner answer feedback container (holds the image and feedback text)                                                                          
                 document.getElementById('answer-feedback-image-container').innerHTML = `<img src="assets/images/goal_image_${quizEngine.questionCounter}.webp" alt="Female Footballer" id="answer-feedback-image">`; // Displays the 'GOAL!' feedback image.
                 document.getElementById('answer-feedback-status').innerHTML = '<span>GOAL!</span>';                                                                                                                  // Displays answer feedback text to user.
                 document.getElementById('goals-scored-container').style.animation = 'rotate360 .2s ease-in-out 0s 1 normal forwards';                                                                                // This will rotate the Goals Scored number 360 degress (this code was copied from https://stackoverflow.com/questions/14859322/css3-spin-animation)
@@ -393,7 +391,6 @@ const quizEngine = {
     },
 
     rematch: function() {
-        //quizEngine.userName = null;
         document.getElementById('main-button').removeEventListener('click', quizEngine.rematch);
         quizEngine.questionCounter = 0;
         quizEngine.varAssistCounter = 3;
@@ -419,8 +416,7 @@ const quizEngine = {
         document.getElementById('top-panel-inner').style.animation = 'rotateX180rematch .3s ease-in-out 0s 1 normal forwards';
         document.getElementById('enter-username-container').style.animation = 'rotateX180rematch .3s ease-in-out 0s 1 normal forwards';
         document.getElementById('enter-username').reset(); 
-        document.getElementById('main-button').setAttribute('form', 'enter-username');                                                                               // Adds the form attribute, connecting the button from enter username form (https://www.w3schools.com/jsref/met_element_setattribute.asp)
-        //mainButton.addEventListener('submit', quizEngine.handleUserNameSubmit);
+        document.getElementById('main-button').setAttribute('form', 'enter-username');                                                    // Adds the form attribute, connecting the button from enter username form (https://www.w3schools.com/jsref/met_element_setattribute.asp)
     }
  
 };
