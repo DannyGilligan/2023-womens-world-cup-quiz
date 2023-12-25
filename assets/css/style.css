@@ -413,7 +413,12 @@ input {
     padding: .3rem 1rem .3rem 1rem;
     box-shadow: 3px 3px 2px grey;
     transition: transform .1s ease-in-out;
+    animation:  rotateX180 .2s linear 0s 1 normal forwards;
 }
+
+rotate180
+
+
  
 .offside-text{
     display: flex;
@@ -728,9 +733,16 @@ The code for the ease/fade in animations were taken from https://blog.hubspot.co
 }
 
 
-/* The code for this animation was copied and adapted from a Stackoverflow post https://stackoverflow.com/questions/14859322/css3-spin-animation */
+/* The code for the animations below was copied and adapted from a Stackoverflow post https://stackoverflow.com/questions/14859322/css3-spin-animation */
 @keyframes rotate360 {
     from {transform:rotateY(0deg);}
     to   {transform:rotateY(360deg);}
 }
+
+@keyframes rotateX180 {
+    from {transform:rotateX(0deg);}
+    to   {transform:rotateX(180deg);
+          box-shadow: 2px -2px 2px grey;} /* Sets the box shadow to the correct angle/position after rotation */
+}
+
 /* End of copied code */

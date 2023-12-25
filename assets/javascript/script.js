@@ -1,4 +1,3 @@
-
 const choice1Container = document.getElementById('choice-1-text');                  // Displays choice text.
 const choice2Container = document.getElementById('choice-2-text');                  // Displays choice text.
 const choice3Container = document.getElementById('choice-3-text');                  // Displays choice text.
@@ -131,7 +130,7 @@ const quizEngine = {
      * The 'trackerItems' property contains the
      * individual tracker items displayed in the
      * tracker panel. These communicate the progress
-     * throughout the quiz, correct or incorrect answers,
+     * throughout the quiz by tracking the correct or incorrect answers,
      * and the current active question.
      */
     trackerItems: [
@@ -151,10 +150,10 @@ const quizEngine = {
     /* -- OBJECT METHODS BELOW -- */
 
     /**
-     * The handleUserNameSubmit method is triggered when the user enters their username,
-     * the default behaviour of the form is prevented and,
-     * the value of the input is assigned to the userName property in the quizEngine object,
-     * to note, the validation here occurs in the HTML element itself using the 'minlength', 'maxlength',
+     * The handleUserNameSubmit method is triggered when the user enters their username.
+     * The default behaviour of the form is prevented and
+     * the value of the input is assigned to the userName property in the quizEngine object.
+     * To note, the validation here occurs in the HTML element itself using the 'minlength', 'maxlength',
      * and 'required' attributes.
      */
     handleUserNameSubmit: function (event) {
@@ -172,9 +171,9 @@ const quizEngine = {
     },
 
     /**
-     * The displayQuiz method will display the question and the choices to the user, 
-     * this hides the previous 'quiz rules' screen, then displays the choices container,
-     * tracker container, var assist container and goals scored container.
+     * The displayQuiz method will display the question and the choices to the user. 
+     * This method hides the previous 'quiz rules' screen, then displays the tracker container, the choices container, the
+     * var assist container and the goals scored container.
      */
     displayQuiz: function () {
         
@@ -235,19 +234,19 @@ const quizEngine = {
     /** 
      * The checkAnswer method will process the user's input and determine if it is correct or incorrect.
      * It uses an if statement initially to determine if all radio inputs are unchecked,
-     * if this is the case, if will fire an alert message to the user,
+     * if this is the case, if will fire an alert message to the user
      * directing them to make a choice before clicking on 'Shoot!'.
      * Once a radio input has been checked, and submitted,
-     * an IF ELSE conditional will identify which,
-     * input has been selected by the user. This input is then compared,
-     * against the correct answer for the current question stored in, 
-     * the answers property of the quizEngine object. If the answer is, 
+     * an IF ELSE conditional will identify which
+     * input has been selected by the user. This input is then compared
+     * against the correct answer for the current question stored in 
+     * the answers property of the quizEngine object. If the answer is 
      * correct, it will result in the goals scored value being incremented.
-     * A correct answer will result in a feedback message of 'GOAL!' accompanied by,
-     * an appropriate image. If the answer is incorrent, the goal scored will not be,
-     * incremented, and an alternative appropriate image will be displayed. The text of the,
-     * main button will be changed to 'Play on!' and the functionality will 'handed off' to,
-     * displayQuiz method.
+     * A correct answer will result in a feedback message of 'GOAL!' accompanied by
+     * an appropriate image. If the answer is incorrect, the goal scored will not be
+     * incremented, and an alternative appropriate image will be displayed. The text of the
+     * main button will be changed to 'Play on!' and the functionality will 'handed off' to
+     * the displayQuiz method.
      */
     checkAnswer: function () {
         document.getElementById('main-button').removeEventListener('click', quizEngine.checkAnswer);
@@ -368,7 +367,7 @@ const quizEngine = {
 };
 
 
-// Event listeners 
+// Event listeners assigned outside of quizEngine object to maintain functionality of the quiz
 document.getElementById('enter-username').addEventListener("submit", quizEngine.handleUserNameSubmit);
 document.getElementById('var-assist-button').addEventListener('click', quizEngine.varAssist);
 
