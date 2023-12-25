@@ -472,7 +472,7 @@ include the feedback image, text and
     width: 98%;
     align-items: center;
     justify-content: center;
-    
+    animation: rotateX180answerFeedback;
 }
   
 #answer-feedback-image-container{
