@@ -415,15 +415,12 @@ input {
     transition: transform .1s ease-in-out;
     animation:  rotateX180 .2s linear 0s 1 normal forwards;
 }
-
-rotate180
-
-
  
 .offside-text{
     display: flex;
     justify-content: center;
     align-items: center;
+    transform: scaleX(-1);
 }
 
 
