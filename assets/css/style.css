@@ -748,7 +748,7 @@ The code for the ease/fade in animations were taken from https://blog.hubspot.co
 }
 
 @keyframes rotateX180 {
-    from {transform:rotateX(0deg);}
+    from {transform:rotateX(90deg);}
     to   {transform:rotateX(180deg);
           box-shadow: 2px -2px 2px grey;} /* Sets the box shadow to the correct angle/position after rotation */
 }
