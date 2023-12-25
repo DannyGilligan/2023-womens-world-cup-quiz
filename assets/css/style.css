@@ -93,7 +93,7 @@ an option
     background: -moz-linear-gradient(37deg, rgba(0,59,137,1) 0%, rgba(6,84,187,1) 29%, rgba(6,84,187,1) 50%, rgba(6,84,187,1) 80%, rgba(0,59,137,1) 100%);
     background: -webkit-linear-gradient(37deg, rgba(0,59,137,1) 0%, rgba(6,84,187,1) 29%, rgba(6,84,187,1) 50%, rgba(6,84,187,1) 80%, rgba(0,59,137,1) 100%);
     background: linear-gradient(37deg, rgba(0,59,137,1) 0%, rgba(6,84,187,1) 29%, rgba(6,84,187,1) 50%, rgba(6,84,187,1) 80%, rgba(0,59,137,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#003b89",endColorstr="#003b89",GradientType=1);
+    /* filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#003b89",endColorstr="#003b89",GradientType=1); */
     /* End of copied code from https://cssgradient.io/ */
 
     display: flex;
@@ -241,7 +241,7 @@ and end quiz message.
     background: -moz-linear-gradient(37deg, rgba(0,59,137,1) 0%, rgba(6,84,187,1) 29%, rgba(6,84,187,1) 50%, rgba(6,84,187,1) 80%, rgba(0,59,137,1) 100%);
     background: -webkit-linear-gradient(37deg, rgba(0,59,137,1) 0%, rgba(6,84,187,1) 29%, rgba(6,84,187,1) 50%, rgba(6,84,187,1) 80%, rgba(0,59,137,1) 100%);
     background: linear-gradient(37deg, rgba(0,59,137,1) 0%, rgba(6,84,187,1) 29%, rgba(6,84,187,1) 50%, rgba(6,84,187,1) 80%, rgba(0,59,137,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#003b89",endColorstr="#003b89",GradientType=1);
+    /* filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#003b89",endColorstr="#003b89",GradientType=1); */
     /* End of copied code from https://cssgradient.io/ */
     color: #EEEDCE;
     font-size: .7rem;
@@ -321,7 +321,7 @@ after the user enters a valid username
     background: -moz-linear-gradient(37deg, rgba(0,59,137,1) 0%, rgba(6,84,187,1) 29%, rgba(6,84,187,1) 50%, rgba(6,84,187,1) 80%, rgba(0,59,137,1) 100%);
     background: -webkit-linear-gradient(37deg, rgba(0,59,137,1) 0%, rgba(6,84,187,1) 29%, rgba(6,84,187,1) 50%, rgba(6,84,187,1) 80%, rgba(0,59,137,1) 100%);
     background: linear-gradient(37deg, rgba(0,59,137,1) 0%, rgba(6,84,187,1) 29%, rgba(6,84,187,1) 50%, rgba(6,84,187,1) 80%, rgba(0,59,137,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#003b89",endColorstr="#003b89",GradientType=1);
+    /* filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#003b89",endColorstr="#003b89",GradientType=1); */
     /* End of copied code from https://cssgradient.io/ */
     color: #EEEDCE;
     font-size: .8rem;
@@ -364,7 +364,7 @@ the radio inputs is below
     background: -moz-linear-gradient(37deg, rgba(0,59,137,1) 0%, rgba(6,84,187,1) 29%, rgba(6,84,187,1) 50%, rgba(6,84,187,1) 80%, rgba(0,59,137,1) 100%);
     background: -webkit-linear-gradient(37deg, rgba(0,59,137,1) 0%, rgba(6,84,187,1) 29%, rgba(6,84,187,1) 50%, rgba(6,84,187,1) 80%, rgba(0,59,137,1) 100%);
     background: linear-gradient(37deg, rgba(0,59,137,1) 0%, rgba(6,84,187,1) 29%, rgba(6,84,187,1) 50%, rgba(6,84,187,1) 80%, rgba(0,59,137,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#003b89",endColorstr="#003b89",GradientType=1);
+    /* filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#003b89",endColorstr="#003b89",GradientType=1); */
     /* End of copied code from https://cssgradient.io/ */
     color: #EEEDCE;
     font-family: "FWWC 2023";
@@ -436,7 +436,7 @@ include the feedback image, text and
     background: -moz-linear-gradient(37deg, rgba(0,59,137,1) 0%, rgba(6,84,187,1) 29%, rgba(6,84,187,1) 50%, rgba(6,84,187,1) 80%, rgba(0,59,137,1) 100%);
     background: -webkit-linear-gradient(37deg, rgba(0,59,137,1) 0%, rgba(6,84,187,1) 29%, rgba(6,84,187,1) 50%, rgba(6,84,187,1) 80%, rgba(0,59,137,1) 100%);
     background: linear-gradient(37deg, rgba(0,59,137,1) 0%, rgba(6,84,187,1) 29%, rgba(6,84,187,1) 50%, rgba(6,84,187,1) 80%, rgba(0,59,137,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#003b89",endColorstr="#003b89",GradientType=1);
+    /* filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#003b89",endColorstr="#003b89",GradientType=1); */
     /* End of copied code from https://cssgradient.io/ */
     margin-top: .5rem;
     display: flex;
@@ -508,7 +508,7 @@ include the feedback image, text and
         background: -moz-linear-gradient(37deg, rgba(0,59,137,1) 0%, rgba(6,84,187,1) 29%, rgba(6,84,187,1) 50%, rgba(6,84,187,1) 80%, rgba(0,59,137,1) 100%);
         background: -webkit-linear-gradient(37deg, rgba(0,59,137,1) 0%, rgba(6,84,187,1) 29%, rgba(6,84,187,1) 50%, rgba(6,84,187,1) 80%, rgba(0,59,137,1) 100%);
         background: linear-gradient(37deg, rgba(0,59,137,1) 0%, rgba(6,84,187,1) 29%, rgba(6,84,187,1) 50%, rgba(6,84,187,1) 80%, rgba(0,59,137,1) 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#003b89",endColorstr="#003b89",GradientType=1);
+        /* filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#003b89",endColorstr="#003b89",GradientType=1); */
         /* End of copied code from https://cssgradient.io/ */
         margin-top: .5rem;
         display: flex;
