@@ -1,12 +1,12 @@
-const choice1Container = document.getElementById('choice-1-text');                  // Displays choice text.
-const choice2Container = document.getElementById('choice-2-text');                  // Displays choice text.
-const choice3Container = document.getElementById('choice-3-text');                  // Displays choice text.
-const choice4Container = document.getElementById('choice-4-text');                  // Displays choice text.
-const userChoiceInput1 = document.getElementById('choice-1-input');                 // Used for user input.
-const userChoiceInput2 = document.getElementById('choice-2-input');                 // Used for user input.
-const userChoiceInput3 = document.getElementById('choice-3-input');                 // Used for user input.
-const userChoiceInput4 = document.getElementById('choice-4-input');                 // Used for user input.
-const goalsScoredDisplay = document.getElementById('goals-scored-value');           // Displays the goals scored to the user on screen.
+const choice1Container = document.getElementById('choice-1-text');                  // Assigns choice text 1.
+const choice2Container = document.getElementById('choice-2-text');                  // Assigns choice text 2.
+const choice3Container = document.getElementById('choice-3-text');                  // Assigns choice text 3.
+const choice4Container = document.getElementById('choice-4-text');                  // Assigns choice text 4.
+const userChoiceInput1 = document.getElementById('choice-1-input');                 // Used for user input 1.
+const userChoiceInput2 = document.getElementById('choice-2-input');                 // Used for user input 2.
+const userChoiceInput3 = document.getElementById('choice-3-input');                 // Used for user input 3.
+const userChoiceInput4 = document.getElementById('choice-4-input');                 // Used for user input 4.
+const goalsScoredDisplay = document.getElementById('goals-scored-value');           // Assignss the display for goals scored.
 const trackerItem1 = document.getElementById('tracker-item-0');                     // Individual tracker item shown in the tracker panel.
 const trackerItem2 = document.getElementById('tracker-item-1');                     // Individual tracker item shown in the tracker panel.
 const trackerItem3 = document.getElementById('tracker-item-2');                     // Individual tracker item shown in the tracker panel.
@@ -18,8 +18,9 @@ const trackerItem8 = document.getElementById('tracker-item-7');                 
 const trackerItem9 = document.getElementById('tracker-item-8');                     // Individual tracker item shown in the tracker panel.
 const trackerItem10 = document.getElementById('tracker-item-9');                    // Individual tracker item shown in the tracker panel.
 const trackerItem11 = document.getElementById('tracker-item-10');                   // Individual tracker item shown in the tracker panel.
-const questionDialogueBox = document.getElementById('top-panel-inner');             // Displays the main dialogue to the user (question text etc).
-const mainButton = document.getElementById('main-button');                          // Displays the main button on screen
+const questionDialogueBox = document.getElementById('top-panel-inner');             // Assigns the main dialogue to the user (question text etc).
+const mainButton = document.getElementById('main-button');                          // Assigns the main button on screen
+const choiceTextContainers = document.getElementsByClassName('choice-text');        // Assigns the containers used to display the choice text to the user.
 
 const quizEngine = {
     /* -- OBJECT PROPERTIES BELOW -- */
@@ -190,6 +191,10 @@ const quizEngine = {
         document.getElementById('tracker-container-inner').style.display = 'flex';                                              // Sets the tracker feature display to flex.
         quizEngine.trackerItems[quizEngine.questionCounter].classList.add('tracker-item-active');                               // Adds active item class to tracker item.
         
+        for (let i = 0; i < choiceTextContainers.length; i++ ) {                                                                // Loops through the choice text containers and, 
+            choiceTextContainers[i].classList.remove('offside-text');                                                           // removes the 'offside-text' class if any were added by the varAssist method. 
+        }
+
         for (let i = 0; i < quizEngine.userChoiceInputs.length; i++) {
             quizEngine.userChoiceInputs[i].parentNode.classList.add('choice-container');
         }
