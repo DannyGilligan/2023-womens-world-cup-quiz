@@ -549,7 +549,7 @@ is shown below
 #bottom-panel{
     display: flex;
     flex-direction: row;
-    margin-top: 1rem;
+    margin-top: .75rem;
     width: 98%;
     height: 5rem;
     justify-content: space-between;
@@ -649,7 +649,7 @@ for the main on screen button
       #EEEDCE
     );
     border-radius: 50%;
-    /* End of copied code from https://codepen.io/theanonymouskoder/pen/PomjmeY?editors=1100 */
+    /* End of copied code */
   
     cursor: pointer;
     transition: transform .1s ease-in-out;
