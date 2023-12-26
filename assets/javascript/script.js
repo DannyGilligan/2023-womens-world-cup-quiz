@@ -76,17 +76,17 @@ const quizEngine = {
     ],
 
     choices: [
-        ['Q1 Choice 1', 'Q1 Choice 2 correct', 'Q1 Choice 3', 'Q1 Choice 4'],     // Choices for Question 1.
-        ['Q2 Choice 1', 'Q2 Choice 2', 'Q2 Choice 3', 'Q2 Choice 4 correct'],     // Choices for Question 2.
-        ['Q3 Choice 1', 'Q3 Choice 2', 'Q3 Choice 3 correct', 'Q3 Choice 4'],     // Choices for Question 3.
-        ['Q4 Choice 1', 'Q4 Choice 2 correct', 'Q4 Choice 3', 'Q4 Choice 4'],     // Choices for Question 4.
-        ['Q5 Choice 1 correct', 'Q5 Choice 2', 'Q5 Choice 3', 'Q5 Choice 4'],     // Choices for Question 5.
-        ['Q6 Choice 1', 'Q6 Choice 2', 'Q6 Choice 3 correct', 'Q6 Choice 4'],     // Choices for Question 6.
-        ['Q7 Choice 1 correct', 'Q7 Choice 2', 'Q7 Choice 3', 'Q7 Choice 4'],     // Choices for Question 7.
-        ['Q8 Choice 1', 'Q8 Choice 2', 'Q8 Choice 3', 'Q8 Choice 4 correct'],     // Choices for Question 8.
-        ['Q9 Choice 1', 'Q9 Choice 2 correct', 'Q9 Choice 3', 'Q9 Choice 4'],     // Choices for Question 9.
-        ['Q10 Choice 1 correct', 'Q10 Choice 2', 'Q10 Choice 3', 'Q10 Choice 4'], // Choices for Question 10.
-        ['Q11 Choice 1', 'Q11 Choice 2', 'Q11 Choice 3 correct', 'Q11 Choice 4']  // Choices for Question 11.
+        ['Ireland', 'Spain', 'France', 'USA'],                                                             // Choices for Question 1.
+        ['Katie McCabe (IRE)', 'Amanda Ilestedt (SWE)', 'Alexandra Popp (DEU)', 'Miyazawa Hinata (JAP)'],  // Choices for Question 2.
+        ['20', '24', '32', '40'],                                                                          // Choices for Question 3.
+        ['$200,000', '$270,000', '$220,000', '$250,000'],                                                  // Choices for Question 4.
+        ['USA', 'Australia', 'Brazil', 'Germany'],                                                         // Choices for Question 5.
+        ['1.8 Million', '1.5 Million', '2.0 Million', '2.1 Million'],                                      // Choices for Question 6.
+        ['164', '150', '170', '135'],                                                                      // Choices for Question 7.
+        ['New York', 'Milan', 'Dublin', 'Sydney'],                                                         // Choices for Question 8.
+        ['15', '6', '21', '18'],                                                                           // Choices for Question 9.
+        ['1970', '1980', '1990', '2000'],                                                                  // Choices for Question 10.
+        ['Sam Kerr (AUS)', 'Kenza Dali (FRA)', 'Kristine Lilly (USA)', 'Filippa Angeldal (SWE)']           // Choices for Question 11.
     ],
 
     choiceContainers: [
