@@ -184,6 +184,7 @@ This feature will allow the user to swap out the question and choice set display
 This feature will add a timer to the quiz with a time limit of perhaps 11 minutes, with subtle on screen hints at different checkpoints (e.g "half-time approaching", "approaching the final minute", "we're in injury time"). This would run 'asynchronously' and when it reaches 'full-time', the quiz would end regardless of the user's progression.
 </td></tr>
 </table>
+<!-- spacer -->
 <br>
 <table>
 <tr><td><b>Home or Away Kit Toggle</b></td></tr>
@@ -192,12 +193,14 @@ This will toggle the colour scheme of the quiz to dark or light modes which will
 </td></tr>
 </table>
 <br>
+<!-- spacer -->
 <table>
 <tr><td><b>Bonus Facts</b></td></tr>
 <tr><td>
 Initially I wanted to include bonus facts containing bite size pieces of information about the tournament and women's football in general, these would have been displayed in the container along with the 'GOAL!' or 'MISS!' feedback. It will be added in a future update instead.
 </td></tr>
 </table>
+<!-- spacer -->
 <br>
 <table>
 <tr><td><b>Hall of Fame</b></td></tr>
@@ -205,6 +208,7 @@ Initially I wanted to include bonus facts containing bite size pieces of informa
 This feature will create a leaderboard to store user scores, adding a competitive dimension to the quiz and perhaps promote sharing, replayibilty and increase enjoyment.
 </td></tr>
 </table>
+<!-- spacer -->
 <br>
 <table>
 <tr><td><b>Custom Radio Inputs</b></td></tr>
@@ -218,13 +222,7 @@ The project has been deployed with standard/default radio inputs, however these 
 <br>
 <br>
 </details>
-
-
-
-
-
-
-
+<!-- Future Features ends here -->
 
 </details>
 
@@ -232,7 +230,7 @@ The project has been deployed with standard/default radio inputs, however these 
 <br>
 <br>
 <br>
-
+<!-- Features ends here -->
 
 <!-- The Wireframces section is shown below, this will be disaplyed in a collapsible format, with screenshots -->  
 ## Wireframes  
@@ -528,11 +526,11 @@ The issue was resolved by applying a 'max-width' property to the #answer-feedbac
 </tr>
 </table>
 </details>
-<!-- Resolved Bug 5 begins -->
+<!-- Resolved Bug 5 ends -->
 
 </details>
 
-
+<!-- Resolved Bugs section ends here -->
 
 
 
@@ -641,6 +639,7 @@ The issue was resolved by applying a 'max-width' property to the #answer-feedbac
 </table>
 </details>
 
+<!-- User Stories section ends here -->
 
 [Back to Top](#fifa-2023-womens-world-cup-quiz)
 <br>
@@ -648,6 +647,28 @@ The issue was resolved by applying a 'max-width' property to the #answer-feedbac
 <br>
 
 ## Manual Testing
+
+<table>
+
+<tr><th rowspan="2">Test description</th><th colspan="3">Device</th></tr>
+<tr><th>Phone</th><th>Tablet</th><th>Laptop</th></tr>
+<tr><td>Test 1</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td></tr>
+<tr><td>Test 1</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td></tr>
+<tr><td>Test 1</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td></tr>
+<tr><td>Test 1</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td></tr>
+<tr><td>Test 1</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td></tr>
+<tr><td>Test 1</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td></tr>
+<tr><td>Test 1</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td></tr>
+<tr><td>Test 1</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td></tr>
+<tr><td>Test 1</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td></tr>
+<tr><td>Test 1</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td></tr>
+
+
+</table>
+
+
+
+
 
 [Back to Top](#fifa-2023-womens-world-cup-quiz)
 <br>
