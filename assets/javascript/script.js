@@ -21,6 +21,14 @@ const questionDialogueBox = document.getElementById('top-panel-inner');         
 const mainButton = document.getElementById('main-button');                          // Assigns the main button on screen.
 const choiceTextContainers = document.getElementsByClassName('choice-text');        // Assigns the containers used to display the choice text to the user.
 
+
+/**
+ * The quizEngine object is the core of the quiz.
+ * This holds all related data and methods. E.g, data such 
+ * as the questions, choices and correct answers. And methods such as
+ * displayQuiz, checkAnswer, varAssist and rematch. The data and methods 
+ * can be easily accessed and maintained.
+ */
 const quizEngine = {
 
     /* -- OBJECT PROPERTIES BELOW -- */
