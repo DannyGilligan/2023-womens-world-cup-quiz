@@ -654,21 +654,101 @@ The issue was resolved by applying a 'max-width' property to the #answer-feedbac
 <table>
 <tr><th rowspan="2">Test description</th><th colspan="3">Device</th></tr>
 <tr><th>Phone</th><th>Tablet</th><th>Laptop</th></tr>
-<tr><td>Test 1</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td></tr>
-<tr><td>Test 1</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td></tr>
-<tr><td>Test 1</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td></tr>
-<tr><td>Test 1</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td></tr>
-<tr><td>Test 1</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td></tr>
-<tr><td>Test 1</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td></tr>
-<tr><td>Test 1</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td></tr>
-<tr><td>Test 1</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td></tr>
-<tr><td>Test 1</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td></tr>
-<tr><td>Test 1</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td></tr>
-<tr><td>Test 1</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td></tr>
-<tr><td>Test 1</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td></tr>
-<tr><td>Test 1</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td></tr>
-<tr><td>Test 1</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td></tr>
-<tr><td>Test 1</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td></tr>
+
+<tr><td>Deployed site link is live </td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td></tr>
+
+<tr><td>Welcome screen is displayed correctly</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td></tr>
+
+<tr><td>FIFA logo is displayed correctly</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td></tr>
+
+<tr><td>User name input validation functions as expected</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td></tr>
+
+<tr><td>'Enter!' button is displayed correctly</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td></tr>
+
+<tr><td>'Enter!' functions as expected</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td></tr>
+
+<tr><td>Quiz rules are displayed correctly</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td></tr>
+
+<tr><td>'Kick Off!' button is displayed correctly</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td></tr>
+
+<tr><td>'Kick Off!' button functions as expected</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td></tr>
+
+<tr><td>'Tracker' panel is displayed correctly</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td></tr>
+
+<tr><td>First 'tracker' item active animation is displayed correctly</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td></tr>
+
+<tr><td>Question text is displayed correctly</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td></tr>
+
+<tr><td>Choices text is displayed correctly</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td></tr>
+
+<tr><td>On hover effects function as expected</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td></tr>
+
+<tr><td>'VAR Assist' button is displayed correctly</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td></tr>
+
+<tr><td>'VAR Assists' remaining is displayed correctly</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td></tr>
+
+<tr><td>'VAR Assist' button functions as expected</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td></tr>
+
+<tr><td>'Var Assists Remaining' counter functions as expected</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td></tr>
+
+<tr><td>'Offside!' panels are displayed correctly after 'VAR Assist' button is clicked</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td></tr>
+
+<tr><td>'Shoot!' button is displayed correctly</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td></tr>
+
+<tr><td>'No option selected' alert is displayed correctly</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td></tr>
+
+<tr><td>Radio inputs function as expected</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td></tr>
+
+<tr><td>'Shoot!' button functions as expected</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td></tr>
+
+<tr><td>Answer feedback functions as expected after 'Shoot!' button is clicked</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td></tr>
+
+<tr><td>Feedback image is displayed correctly</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td></tr>
+
+<tr><td>Feedback 'GOAL!' text is displayed correctly</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td></tr>
+
+<tr><td>Feedback 'MISS!' text is displayed correctly</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td></tr>
+
+<tr><td>'Play On!' button is displayed correctly</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td></tr>
+
+<tr><td>'Play On!' button functions as expected</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td></tr>
+
+<tr><td>Goals scored panel is displayed correctly</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td></tr>
+
+<tr><td>Goals scored counter functions as expected</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td></tr>
+
+<tr><td>Tracker item updates correctly after correct answer</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td></tr>
+
+<tr><td>Tracker item updates correctly after incorrect answer</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td></tr>
+
+<tr><td>Tracker item updates correctly to display current active question</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td></tr>
+
+<tr><td>Next question is displayed correctly</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td></tr>
+
+<tr><td>'View Final Result' button is displayed correctly after last question</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td></tr>
+
+<tr><td>'View Final Result' button functions as expected</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td></tr>
+
+<tr><td>End quiz image is displayed correctly</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td></tr>
+
+<tr><td>End quiz tracker panel animation is displayed correctly</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td></tr>
+
+<tr><td>End quiz message is displayed correctly</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td></tr>
+
+<tr><td>End quiz result feedback is displayed correctly</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td></tr>
+
+<tr><td>End quiz result feedback is displayed correctly</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td></tr>
+
+<tr><td>Fifa.com/womens-football link is displayed correctly</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td></tr>
+
+<tr><td>Fifa.com/womens-football link opens site in a new window</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td></tr>
+
+<tr><td>'Rematch?' button is displayed correctly</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td></tr>
+
+<tr><td>'Rematch?' button functions as expected</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td></tr>
+
+<tr><td>Rematch welcome screen displays as expected</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td></tr>
+
 </table>
 
 </details>
@@ -869,7 +949,7 @@ The live link to this site is https://dannygilligan.github.io/2023-womens-world-
 
 <!-- The Credits section is shown below, this will be disaplyed in a collapsible format, with a sub section for reference content/materials and a sub section for images, with each item shown in tabular form -->
 <details>
-    <summary>Reference Materials Used</summary>
+    <summary><b>Reference Materials Used</b></summary>
 <br>
 <table>
 <tr><th><b> Description </b></th><th><b> Link </b></th></tr>
@@ -1161,7 +1241,7 @@ The live link to this site is https://dannygilligan.github.io/2023-womens-world-
 <!-- Reference Materials credits section ends here -->
 <!-- The Images sub section is shown below, this will be disaplyed in a collapsible format, with each item shown in tabular form, the images represent thumbnails of the actual pictures used on the live site (they've been scaled down to 10% of the original size, approx 50px by 50px) -->
 <details>
-  <summary>Images</summary>
+  <summary><b>Images</b></summary>
 <br>
 
 <table>

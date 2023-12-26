@@ -466,7 +466,7 @@ const quizEngine = {
 };
 
 
-// Event listeners assigned outside of quizEngine object to maintain functionality of the quiz
+// These event listeners have been assigned outside of the quizEngine object to maintain functionality of the quiz and avoid errors
 document.getElementById('enter-username').addEventListener("submit", quizEngine.handleUserNameSubmit);
 document.getElementById('var-assist-button').addEventListener('click', quizEngine.varAssist);
 
