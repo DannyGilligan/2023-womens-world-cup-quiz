@@ -61,6 +61,10 @@ const quizEngine = {
      */
     currentCorrectAnswer: null, 
 
+    /**
+     * The questions property contains the question
+     * text to be displayed on screen to the user.
+     */
     questions: [
         `Which country won the FIFA 2023 Women's World Cup?`,                                 // Text for Question 1.
         `Which player scored the most goals at the tournament?`,                              // Text for Question 2.
