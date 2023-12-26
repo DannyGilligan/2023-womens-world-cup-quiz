@@ -668,7 +668,7 @@ The issue was resolved by applying a 'max-width' property to the #answer-feedbac
 <details>
   <summary><b>Manual Testing</b></summary>
 <br>
-Several manual tests were performed across difference devices and browser. The results of which are detailed below.
+Several manual tests were performed across difference devices and browsers. The results of which are detailed below.
 <br>
 <br>
 <table>
