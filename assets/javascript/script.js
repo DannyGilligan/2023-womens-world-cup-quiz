@@ -395,8 +395,8 @@ const quizEngine = {
      * to determine which choices displayed on screen should have
      * the visibility set to hidden, and replaced with the text
      * 'Offside!'. The varassists property holds an array of
-     * two indices, with a HTML element ID stored in both. This method
-     * retrieves the ID, and then accesses that element in the DOM to
+     * two indices, with a HTML element ID stored at each index, for each corresponding question. 
+     * This method retrieves the ID, and then accesses that element in the DOM to
      * set the style attribute accordingly. Dom navigation using nodes such
      * as parents and siblings is also used to perform the task efficiently.
      */
