@@ -108,19 +108,6 @@ The user interaction with the quiz is enabled through a simple button that has c
 <!-- spacer -->
 <br>
 <table>
-<tr><th> <b>FWWC 2023 Official Font</b> </th></tr>
-<tr><td>
-The site uses the official font named 'FWWC 2023' to stay consistent with the brand identity of the event. The source of the font download has been linked in the Credits section.
-</td></tr>
-<tr><td>
-
-![Official Font](assets/documentation/features06_official_font.webp)
-
-</td></tr>
-</table>  
-<!-- spacer -->
-<br>
-<table>
 <tr><th Colspan="2"> <b>VAR Assist</b> </th></tr>
 <tr><td Colspan="2">
 The VAR Assist feature will allow the user to remove two incorrect choices from the screen. When activated, a function will be invoked that replaces the inner HTML of the incorrect choices with 'Offside!', the radio inputs will also be disabled for these choices. The user will be granted 3 VAR Assists at the start of the quiz, and can use 1 per question until they run out.
@@ -289,7 +276,18 @@ An overview of the key design aspects is included below.
 <!-- spacer -->
 <details>
   <summary><b> Font </b></summary>
+<br>
+<table>
+<tr><th> <b>FWWC 2023 Official Font</b> </th></tr>
+<tr><td>
+The site uses the official font named 'FWWC 2023' to stay consistent with the brand identity of the event. The source of the font download has been linked in the Credits section.
+</td></tr>
+<tr><td>
 
+![Official Font](assets/documentation/features06_official_font.webp)
+
+</td></tr>
+</table> 
 </details>
 <!-- spacer -->
 <details>
