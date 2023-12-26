@@ -171,9 +171,9 @@ Any items on the screen that the user can interact with will display a subtle co
 <table>
 <tr><th Colspan="2"> <b>Answer Feedback</b> </th></tr>
 <tr><td Colspan="2">
-The Answer Feedback feature provides the user with instant feedback after submitting their answers. An image depicting players in various stages of celebration or desolation are displayed to the user along with a 'GOAL!' or 'MISS!' text caption. 
+The Answer Feedback feature provides the user with instant feedback after submitting their answers. An image depicting players in various stages of celebration or desolation are displayed to the user along with a 'MISS!' or 'GOAL!' text caption. 
 </td></tr>
-<tr><td> <i>Goal!</i> </td><td> <i>Miss!</i> </td></tr>
+<tr><td> <i>Miss!</i> </td><td> <i>Goal!</i> </td></tr>
 
 <tr>
 <td>
