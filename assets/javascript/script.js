@@ -89,6 +89,12 @@ const quizEngine = {
         ['Sam Kerr (AUS)', 'Kenza Dali (FRA)', 'Kristine Lilly (USA)', 'Filippa Angeldal (SWE)']           // Choices for Question 11.
     ],
 
+
+    /**
+     * The choiceContainers holds the choice text
+     * displayed on screen for each individual choice
+     * (e.g, the HTML ID accessed for choice 1 is 'choice-1-text)
+     */
     choiceContainers: [
         choice1Container,
         choice2Container,
