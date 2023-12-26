@@ -737,8 +737,6 @@ The issue was resolved by applying a 'max-width' property to the #answer-feedbac
 
 <tr><td>End quiz result feedback is displayed correctly</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td></tr>
 
-<tr><td>End quiz result feedback is displayed correctly</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td></tr>
-
 <tr><td>Fifa.com/womens-football link is displayed correctly</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td></tr>
 
 <tr><td>Fifa.com/womens-football link opens site in a new window</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td></tr>
