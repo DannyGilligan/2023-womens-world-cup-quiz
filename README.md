@@ -238,17 +238,17 @@ The project has been deployed with standard/default radio inputs, however these 
 An overview of the key design aspects is included below.
 
 <details>
-  <summary>Colour Scheme</summary>
+  <summary><b>Colour Scheme</b></summary>
 
 </details>
 <!-- spacer -->
 <details>
-  <summary>Font</summary>
+  <summary><b>Font</b></summary>
 
 </details>
 <!-- spacer -->
 <details>
-  <summary>Responsiveness</summary>
+  <summary><b>Responsiveness</b></summary>
 
 </details>
 <!-- spacer -->
@@ -260,7 +260,7 @@ An overview of the key design aspects is included below.
 
 
 <!-- The Wireframces section is shown below, this will be disaplyed in a collapsible format, with screenshots -->  
-## Wireframes  
+<details>
 
 Below is a series of wireframes depicting the layout of the screens that will be displayed to the user in different contexts throughout the quiz.  
   
@@ -394,6 +394,9 @@ A little bonus for the whiteboard lovers :cupid:
 ![Whiteboard Wireframe](assets/documentation/wireframe09_whiteboard.webp)
 </details>
 <!-- Wireframe 9 ends -->
+</details>
+<!-- Wireframe section ends here -->
+
 
 [Back to Top](#fifa-2023-womens-world-cup-quiz)
 <br>
