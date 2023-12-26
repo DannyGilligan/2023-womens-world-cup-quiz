@@ -6,7 +6,7 @@
 
 * [Introduction](#introduction)
 * [Features](#features)
-* [Wireframes](#wireframes)
+* [Design](#design)
 * [User Stories](#user-stories)
 * [Bugs](#bugs)
 * [Manual Testing](#manual-testing)
@@ -252,14 +252,6 @@ An overview of the key design aspects is included below.
 
 </details>
 <!-- spacer -->
-
-
-
-
-
-
-
-<!-- The Wireframces section is shown below, this will be disaplyed in a collapsible format, with screenshots -->  
 <details>
   <summary><b> Wireframes </b></summary>
 <br>
@@ -395,15 +387,6 @@ A little bonus for the whiteboard lovers :cupid:
 <!-- Wireframe 9 ends -->
 </details>
 <!-- Wireframe section ends here -->
-
-
-[Back to Top](#fifa-2023-womens-world-cup-quiz)
-<br>
-<br>
-<br>
-
-
-
 
 [Back to Top](#fifa-2023-womens-world-cup-quiz)
 <br>
@@ -673,12 +656,12 @@ The issue was resolved by applying a 'max-width' property to the #answer-feedbac
 <!-- Resolved Bug 5 ends -->
 
 </details>
-
 <!-- Resolved Bugs section ends here -->
 
-
-
-
+[Back to Top](#fifa-2023-womens-world-cup-quiz)
+<br>
+<br>
+<br>
 
 ## Manual Testing
 
