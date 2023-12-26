@@ -1551,6 +1551,7 @@ The outer container encapsulates
 the entire contents of the page 
 */
 
+    /* The CSS code below for the background gradient effect was taken directly from https://cssgradient.io/ */
     body {
         background: rgb(255, 212, 254);
         background: -moz-linear-gradient(270deg, rgba(255, 212, 254, 1) 0%, rgba(255, 239, 254, 1) 14%, rgba(255, 255, 255, 1) 20%, rgba(255, 255, 255, 1) 80%, rgba(255, 239, 254, 1) 93%, rgba(255, 212, 254, 1) 100%);
@@ -1565,7 +1566,6 @@ the entire contents of the page
         flex-direction: column;
         align-items: center;
         max-width: 860px;
-        /*CHANGED*/
         animation: easeIn .7s;
     }
 
@@ -1622,7 +1622,6 @@ an option
 
     #tracker-container {
         height: 3.5rem;
-        /*<<<<< MEDIA QUERY >>>>>>>*/
         width: 98%;
 
 
@@ -1652,19 +1651,15 @@ an option
         align-items: center;
         animation: easeIn .5s ease-in;
         visibility: hidden;
-        /* <----------- TOGGLE THIS!!  */
     }
 
     .tracker-item {
         font-family: "FWWC 2023";
         font-size: 1rem;
-        /*<<<<< MEDIA QUERY >>>>>>>*/
         color: white;
         background-color: rgb(6, 84, 187);
         width: 2.3rem;
-        /*<<<<< MEDIA QUERY >>>>>>>*/
         height: 2.3rem;
-        /*<<<<< MEDIA QUERY >>>>>>>*/
         border: 1.8px solid white;
         border-radius: 50%;
         display: flex;
@@ -1692,7 +1687,6 @@ an option
         max-width: 844px;
         height: 100%;
         height: 3.5rem;
-        /*<<<<< MEDIA QUERY >>>>>>>*/
         position: absolute;
         justify-content: space-evenly;
         align-items: center;
@@ -1702,7 +1696,6 @@ an option
         border: 2px solid black;
         display: none;
         z-index: +5;
-        /* this will set the alert in front of the tracker panel */
         animation: rotateX180 .2s linear 0s 1 normal forwards;
     }
 
@@ -1712,7 +1705,6 @@ an option
         align-items: center;
         transform: scaleY(-1);
         font-size: 1.3rem;
-        /*<<<<< MEDIA QUERY >>>>>>>*/
     }
 
     /* 
@@ -1740,12 +1732,10 @@ the top panel contains the welcome message and question text box
         border-radius: 5px;
         width: 98%;
         height: 6.5rem;
-        /*<<<<< MEDIA QUERY >>>>>>>*/
         background-color: black;
         color: #EEEDCE;
         text-align: center;
         font-size: 1.5rem;
-        /*<<<<< MEDIA QUERY >>>>>>>*/
         font-family: "FWWC 2023";
         display: flex;
         justify-content: center;
@@ -1779,7 +1769,6 @@ and end quiz message.
         text-align: center;
         align-items: center;
         height: 18rem;
-        /*<<<<< MEDIA QUERY >>>>>>>*/
         margin-top: .75rem;
         padding-top: .3rem;
         padding-left: .3rem;
@@ -1809,7 +1798,6 @@ and end quiz message.
 
     #enter-username-message p {
         font-size: 1.3rem;
-        /*<<<<< MEDIA QUERY >>>>>>>*/
         margin: 0;
         padding-top: 1.5rem;
         padding-left: 1rem;
@@ -1841,7 +1829,6 @@ and end quiz message.
     input::placeholder {
         text-align: center;
         font-size: 1rem;
-        /*<<<<< MEDIA QUERY >>>>>>>*/
         opacity: 0.9;
         color: black;
     }
@@ -1876,11 +1863,9 @@ after the user enters a valid username
         /* End of copied code from https://cssgradient.io/ */
         color: #EEEDCE;
         font-size: 1.1rem;
-        /*<<<<< MEDIA QUERY >>>>>>>*/
         line-height: 1.6;
         box-shadow: 3px 3px 2px grey;
         display: none;
-        /*    <----------- TOGGLE THIS!!  */
     }
 
     /* 
@@ -1895,7 +1880,6 @@ the radio inputs is below
         flex-wrap: wrap;
         width: 100%;
         height: 18rem;
-        /*<<<<< MEDIA QUERY >>>>>>>*/
         justify-content: space-between;
         margin-top: .75rem;
         padding-top: .3rem;
@@ -1906,11 +1890,8 @@ the radio inputs is below
     .choice-container {
         display: flex;
         height: 6rem;
-        /*<<<<< MEDIA QUERY >>>>>>>*/
         width: 44%;
-        /*<<<<< MEDIA QUERY >>>>>>>*/
         margin-top: 1rem;
-        /*<<<<< MEDIA QUERY >>>>>>>*/
         border: 2px solid black;
         border-radius: 5px;
         justify-content: space-between;
@@ -1924,7 +1905,6 @@ the radio inputs is below
         color: #EEEDCE;
         font-family: "FWWC 2023";
         font-size: 1.5rem;
-        /*<<<<< MEDIA QUERY >>>>>>>*/
         padding: .3rem 1rem .3rem 1rem;
         box-shadow: 3px 3px 2px grey;
         transition: transform .1s ease-in-out;
@@ -1950,20 +1930,15 @@ the radio inputs is below
 
     input {
         width: 1.8rem;
-        /*<<<<< MEDIA QUERY >>>>>>>*/
         height: 1.8rem;
-        /*<<<<< MEDIA QUERY >>>>>>>*/
         border: 1px solid black;
     }
 
     .offside-container {
         display: flex;
         height: 6rem;
-        /*<<<<< MEDIA QUERY >>>>>>>*/
         width: 44%;
-        /*<<<<< MEDIA QUERY >>>>>>>*/
         margin-top: 1rem;
-        /*<<<<< MEDIA QUERY >>>>>>>*/
         border: 2px solid black;
         border-radius: 5px;
         justify-content: space-between;
@@ -1972,7 +1947,6 @@ the radio inputs is below
         color: #EEEDCE;
         font-family: "FWWC 2023";
         font-size: 1.5rem;
-        /*<<<<< MEDIA QUERY >>>>>>>*/
         padding: .3rem 1rem .3rem 1rem;
         box-shadow: 3px 3px 2px grey;
         animation: rotateX180 .2s linear 0s 1 normal forwards;
@@ -2003,7 +1977,6 @@ include the feedback image, text and
         margin-top: .75rem;
         display: flex;
         flex-direction: row;
-        /*<<<<< MEDIA QUERY >>>>>>>*/
         align-items: center;
         justify-content: center;
         width: 100%;
@@ -2014,7 +1987,6 @@ include the feedback image, text and
         box-shadow: 3px 3px 2px grey;
         display: none;
         transform: scaleY(-1);
-        /* This is needed to make the rotate180answerFeedback animation display correctly! */
     }
 
     #answer-feedback-inner {
@@ -2039,7 +2011,6 @@ include the feedback image, text and
         width: 100%;
         height: auto;
         max-width: 13rem;
-        /*<<<<< MEDIA QUERY >>>>>>>*/
         border-radius: 5px;
         border: 1px solid #EEEDCE;
         box-shadow: 0 0 5px 1px #EEEDCE;
@@ -2063,7 +2034,6 @@ include the feedback image, text and
         text-align: center;
         color: #EEEDCE;
         font-size: 1.8rem;
-        /*<<<<< MEDIA QUERY >>>>>>>*/
         font-weight: bold;
         width: 100%;
         height: 20%;
@@ -2087,7 +2057,6 @@ include the feedback image, text and
         border-radius: 5px;
         box-shadow: 3px 3px 2px grey;
         display: none;
-        /*  <----------- TOGGLE THIS!!  */
     }
 
     #end-quiz-inner {
@@ -2098,7 +2067,6 @@ include the feedback image, text and
         justify-content: center;
         color: #EEEDCE;
         font-size: 1.1rem;
-        /*<<<<< MEDIA QUERY >>>>>>>*/
         text-align: center;
     }
 
@@ -2120,7 +2088,6 @@ is shown below
         margin-top: 2rem;
         width: 98%;
         height: 7rem;
-        /*<<<<< MEDIA QUERY >>>>>>>*/
         justify-content: space-between;
         border-radius: 5px;
         animation: easeIn 1s;
@@ -2143,12 +2110,10 @@ the VAR Assist button
         background-color: black;
         box-shadow: 2px 2px 2px grey;
         visibility: hidden;
-        /*  <----------- TOGGLE THIS!!  */
     }
 
     .var-assist-button-style {
         font-size: 1.2rem;
-        /*<<<<< MEDIA QUERY >>>>>>>*/
         background-color: #E83800;
         border: 1px solid #EEEDCE;
         color: #EEEDCE;
@@ -2156,9 +2121,7 @@ the VAR Assist button
         border-radius: 5px;
         cursor: pointer;
         height: 3rem;
-        /*<<<<< MEDIA QUERY >>>>>>>*/
         min-width: 6.5rem;
-        /*<<<<< MEDIA QUERY >>>>>>>*/
         margin: .4rem;
         transition: transform .1s ease-in-out;
     }
@@ -2170,13 +2133,11 @@ the VAR Assist button
 
     #var-assist-remaining {
         font-size: .9rem;
-        /*<<<<< MEDIA QUERY >>>>>>>*/
         margin-top: .2rem;
     }
 
     .disabled {
         font-size: 1.2rem;
-        /*<<<<< MEDIA QUERY >>>>>>>*/
         background-color: grey;
         border: 1px solid #EEEDCE;
         color: #EEEDCE;
@@ -2184,9 +2145,7 @@ the VAR Assist button
         border-radius: 5px;
         cursor: pointer;
         height: 3rem;
-        /*<<<<< MEDIA QUERY >>>>>>>*/
         min-width: 6.5rem;
-        /*<<<<< MEDIA QUERY >>>>>>>*/
         margin: .4rem;
         cursor: default;
     }
@@ -2207,14 +2166,11 @@ for the main on screen button
     #main-button {
         font-family: "FWWC 2023";
         font-size: 1.3rem;
-        /*<<<<< MEDIA QUERY >>>>>>>*/
         display: flex;
         justify-content: center;
         align-items: center;
         width: 8rem;
-        /*<<<<< MEDIA QUERY >>>>>>>*/
         height: 8rem;
-        /*<<<<< MEDIA QUERY >>>>>>>*/
         border: 1.5px solid black;
         box-shadow: 3px 3px 2px grey;
 
@@ -2246,7 +2202,6 @@ the Goals Scored tracker
         background-color: black;
         width: 30%;
         font-size: 1.3rem;
-        /*<<<<< MEDIA QUERY >>>>>>>*/
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -2264,7 +2219,6 @@ the Goals Scored tracker
         text-align: center;
         margin-bottom: .3rem;
         font-size: 1.3rem;
-        /*<<<<< MEDIA QUERY >>>>>>>*/
     }
 
     /* 
