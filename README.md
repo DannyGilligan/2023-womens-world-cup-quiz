@@ -648,8 +648,10 @@ The issue was resolved by applying a 'max-width' property to the #answer-feedbac
 
 ## Manual Testing
 
-<table>
+<details>
+  <summary>Manual Testing</summary>
 
+<table>
 <tr><th rowspan="2">Test description</th><th colspan="3">Device</th></tr>
 <tr><th>Phone</th><th>Tablet</th><th>Laptop</th></tr>
 <tr><td>Test 1</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td></tr>
@@ -662,11 +664,14 @@ The issue was resolved by applying a 'max-width' property to the #answer-feedbac
 <tr><td>Test 1</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td></tr>
 <tr><td>Test 1</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td></tr>
 <tr><td>Test 1</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td></tr>
-
-
+<tr><td>Test 1</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td></tr>
+<tr><td>Test 1</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td></tr>
+<tr><td>Test 1</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td></tr>
+<tr><td>Test 1</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td></tr>
+<tr><td>Test 1</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td></tr>
 </table>
 
-
+</details>
 
 
 
