@@ -123,6 +123,11 @@ const quizEngine = {
         'choice-3-input', // Answer for Question 11.
     ],
 
+    /**
+     * The varAssists property contains the HTML IDs of
+     * the elements that will be accessed and hidden
+     * by the varAssist method.
+     */
     varAssists: [
         ['choice-3-input', 'choice-1-input'], // VAR Assists for Question 1.
         ['choice-1-input', 'choice-3-input'], // VAR Assists for Question 2.
