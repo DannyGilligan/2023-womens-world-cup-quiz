@@ -1269,6 +1269,13 @@ The live link to this site is https://dannygilligan.github.io/2023-womens-world-
 
 </td></tr>
 <!-- spacer -->
+<tr><td> How to align text in table headers in README.md markdown, published by markdownguide.org </td>
+<td> 
+
+[here](https://www.markdownguide.org/extended-syntax/)
+
+</td></tr>
+<!-- spacer -->
 </table>
 </details>
 <!-- Reference Materials credits section ends here -->
