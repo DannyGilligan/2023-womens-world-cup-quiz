@@ -209,7 +209,7 @@ This feature will create a leaderboard to store user scores, adding a competitiv
 <table>
 <tr><td><b>Custom Radio Inputs</b></td></tr>
 <tr><td>
-The project has been deployed with the standard radio inputs, however I find them to be very basic and visually unappealing, I'd like to add styling to them in the future. 
+The project has been deployed with standard/default radio inputs, however these will have customised styling in a future update.
 </td></tr>
 </table>
 
