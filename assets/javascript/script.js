@@ -405,24 +405,23 @@ const quizEngine = {
 
         if (quizEngine.varAssistCounter > 0) { // If there are VAR Assists remaining
 
-            --quizEngine.varAssistCounter;
-            document.getElementById(quizEngine.varAssists[quizEngine.questionCounter][0]).style.visibility = 'hidden';
-            document.getElementById(quizEngine.varAssists[quizEngine.questionCounter][0]).previousElementSibling.innerText = 'Offside!';
-            document.getElementById(quizEngine.varAssists[quizEngine.questionCounter][0]).parentNode.classList.remove('choice-container');
-            document.getElementById(quizEngine.varAssists[quizEngine.questionCounter][0]).parentNode.classList.add('offside-container');
-            document.getElementById(quizEngine.varAssists[quizEngine.questionCounter][0]).previousElementSibling.classList.add('offside-text');
+            --quizEngine.varAssistCounter;                                                                                                          // Decrements VAR Assists Remaining counter.
+            document.getElementById(quizEngine.varAssists[quizEngine.questionCounter][0]).style.visibility = 'hidden';                              // Sets the radio input to hidden for the first choice.
+            document.getElementById(quizEngine.varAssists[quizEngine.questionCounter][0]).previousElementSibling.innerText = 'Offside!';            // Sets the text to 'Offside!' for the first choice.
+            document.getElementById(quizEngine.varAssists[quizEngine.questionCounter][0]).parentNode.classList.remove('choice-container');          // Removes the 'choice-container' class, preventing the style rule from being applied for the first choice.   
+            document.getElementById(quizEngine.varAssists[quizEngine.questionCounter][0]).parentNode.classList.add('offside-container');            // Adds the 'offside-container' class, applying the related style rule to the container for the first choice.
+            document.getElementById(quizEngine.varAssists[quizEngine.questionCounter][0]).previousElementSibling.classList.add('offside-text');     // Adds the 'offside-text' class, applying the related style rule to the text for the first choice.
 
-            document.getElementById(quizEngine.varAssists[quizEngine.questionCounter][1]).style.visibility = 'hidden';
-            document.getElementById(quizEngine.varAssists[quizEngine.questionCounter][1]).previousElementSibling.innerText = 'Offside!';
-            document.getElementById(quizEngine.varAssists[quizEngine.questionCounter][1]).parentNode.classList.remove('choice-container');
-            document.getElementById(quizEngine.varAssists[quizEngine.questionCounter][1]).parentNode.classList.add('offside-container');
-            document.getElementById(quizEngine.varAssists[quizEngine.questionCounter][1]).previousElementSibling.classList.add('offside-text');
+            document.getElementById(quizEngine.varAssists[quizEngine.questionCounter][1]).style.visibility = 'hidden';                              // Sets the radio input to hidden for the second choice.
+            document.getElementById(quizEngine.varAssists[quizEngine.questionCounter][1]).previousElementSibling.innerText = 'Offside!';            // Sets the radio input to hidden for the second choice.
+            document.getElementById(quizEngine.varAssists[quizEngine.questionCounter][1]).parentNode.classList.remove('choice-container');          // Removes the 'choice-container' class, preventing the style rule from being applied for the second choice.  
+            document.getElementById(quizEngine.varAssists[quizEngine.questionCounter][1]).parentNode.classList.add('offside-container');            // Adds the 'offside-container' class, applying the related style rule to the container for the second choice.
+            document.getElementById(quizEngine.varAssists[quizEngine.questionCounter][1]).previousElementSibling.classList.add('offside-text');     // Adds the 'offside-text' class, applying the related style rule to the text for the second choice.
 
-
-            document.getElementById('var-assist-remaining').innerHTML = `<span>${quizEngine.varAssistCounter} Remaining</span>`;
-            document.getElementById('var-assist-button').disabled = true;
-            document.getElementById('var-assist-button').classList.add('disabled');
-            document.getElementById('var-assist-button').classList.remove('var-assist-button-style');
+            document.getElementById('var-assist-remaining').innerHTML = `<span>${quizEngine.varAssistCounter} Remaining</span>`;                    // Updates the VAR Assists remaining counter with the decremented value.
+            document.getElementById('var-assist-button').disabled = true;                                                                           // Disables the button once clicked so it can't be used twice for the same question.
+            document.getElementById('var-assist-button').classList.add('disabled');                                                                 // Adds the 'disabled' class, applying the related style rule.
+            document.getElementById('var-assist-button').classList.remove('var-assist-button-style');                                               // Removes the 'var-assist-button-style' class, preventing the related style being applied.
 
         } else { // If there are no VAR Assists remaining
 
