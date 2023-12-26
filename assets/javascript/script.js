@@ -366,6 +366,14 @@ const quizEngine = {
         }
     },
 
+    /**
+     * The viewFinalResult method will be triggered once
+     * the user has answered all questions. This will display
+     * the end screen of the quiz which includes a final image,
+     * a final score, a prompt to learn more about the development
+     * of women's football, and finally a 'Rematch' button to
+     * easily restart the quiz.
+     */
     viewFinalResult: function () {
         document.getElementById('main-button').removeEventListener('click', quizEngine.viewFinalResult);
         document.getElementById('bottom-panel-item1').style.animation = 'fadeOut .4s ease-in 0s 1 normal forwards';        // Syntax referenced from W3Schools "animation: name duration timing-function delay iteration-count direction fill-mode play-state;"
