@@ -62,17 +62,17 @@ const quizEngine = {
     currentCorrectAnswer: null, 
 
     questions: [
-        'Is this question 1?',  // Text for Question 1.
-        'Is this question 2?',  // Text for Question 2.
-        'Is this question 3?',  // Text for Question 3.
-        'Is this question 4?',  // Text for Question 4.
-        'Is this question 5?',  // Text for Question 5.
-        'Is this question 6?',  // Text for Question 6.
-        'Is this question 7?',  // Text for Question 7.
-        'Is this question 8?',  // Text for Question 8.
-        'Is this question 9?',  // Text for Question 9.
-        'Is this question 10?', // Text for Question 10.
-        'Is this question 11?'  // Text for Question 11.
+        `Which country won the FIFA 2023 Women's World Cup?`,                                 // Text for Question 1.
+        `Which player scored the most goals at the tournament?`,                              // Text for Question 2.
+        `How many countries competed at the 2023 World Cup?`,                                 // Text for Question 3.
+        `What was the prize money for each winning team member?`,                             // Text for Question 4.
+        `Which country has won the most World Cup tournaments?`,                              // Text for Question 5.
+        `What was the total fan match attendance for the 2023 World Cup? (approx)`,           // Text for Question 6.
+        `How many goals in total were scored during the tournament?`,                         // Text for Question 7.
+        `In which city was the 2023 World Cup final held?`,                                   // Text for Question 8.
+        `How many red cards were issued throughout the tournament?`,                          // Text for Question 9.
+        `When was the first Women's World Cup held?`,                                         // Text for Question 10.
+        `Which player has the record for World Cup caps, at 30 games over 5 tournaments?`     // Text for Question 11.
     ],
 
     choices: [
