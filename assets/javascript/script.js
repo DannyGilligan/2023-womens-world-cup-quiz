@@ -296,7 +296,7 @@ const quizEngine = {
      * the displayQuiz method.
      */
     checkAnswer: function () {
-        document.getElementById('main-button').removeEventListener('click', quizEngine.checkAnswer);
+        document.getElementById('main-button').removeEventListener('click', quizEngine.checkAnswer);      // Removes checkAnswer event listener, not needed once the method has been called
         
         if ( quizEngine.userChoiceInputs[0].checked === false && quizEngine.userChoiceInputs[1].checked === false && quizEngine.userChoiceInputs[2].checked === false && quizEngine.userChoiceInputs[3].checked === false ) { // The code below will fire if the user clicks on 'Shoot!' without selecting a choice.
            
@@ -344,7 +344,6 @@ const quizEngine = {
                 quizEngine.trackerItems[quizEngine.questionCounter].firstElementChild.style.transform = ('scaleX(-1)');                                                                                              // This will 'flip' the text to display correctly after the rotation.
                 quizEngine.trackerItems[quizEngine.questionCounter].style.transition = 'all .3s ease';                                                                                                               // This will ease the rotation onto the screen.
                 document.getElementById('choices-container-outer').style.display = 'none';                                                                                                                           // Hides the choices container.
-                //document.getElementById('answer-feedback-inner').style.animation = 'easeIn .3s ease-in-out 0s 1 normal forwards';                                                                                  // Ease in the display of the inner answer feedback container (holds the image and feedback text).
                 document.getElementById('answer-feedback-outer').style.display = 'flex';                                                                                                                             // Displays the answer feedback container which will hold the feedback image.
                 document.getElementById('answer-feedback-image-container').innerHTML = `<img src="assets/images/miss_image_${quizEngine.questionCounter}.webp" alt="Female Footballer" id="answer-feedback-image">`; // Displays the 'MISS!' feedback image.
                 document.getElementById('answer-feedback-status').innerHTML = '<span>MISS!</span>';                                                                                                                  // Displays answer feedback text to user.
