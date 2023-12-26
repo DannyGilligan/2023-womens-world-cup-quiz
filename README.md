@@ -649,7 +649,7 @@ The issue was resolved by applying a 'max-width' property to the #answer-feedbac
 ## Manual Testing
 
 <details>
-  <summary>Manual Testing</summary>
+  <summary><b>Manual Testing</b></summary>
 
 <table>
 <tr><th rowspan="2">Test description</th><th colspan="3">Device</th></tr>
