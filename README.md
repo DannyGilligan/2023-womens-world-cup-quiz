@@ -256,7 +256,7 @@ An overview of the key design aspects is included below.
   <summary><b> Wireframes </b></summary>
 <br>
 <details>  
-  <summary>  <i>Enter Username</i> </summary>  <!-- whitespace character used in heading '  ' to add indentation>
+  <summary>  <i>Enter Username</i> </summary>  <!-- whitespace character used in heading '  ' to add indentation -->
 <br>
 <!-- Wireframe 1 1 begins -->
 The initial landing page will display the 'FIFA Women's World Cup Quiz 2023' logo, along with an input field to enter a username, and an 'enter' button. 
