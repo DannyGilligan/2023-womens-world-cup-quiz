@@ -41,7 +41,7 @@ The deployed site can be found [here](https://dannygilligan.github.io/2023-women
 <!-- Feature 1 begins -->
 <br>
 <table>
-<tr><td> <b> Customised Logo</b></td></tr>
+<tr><th> <b> Customised Logo</b></th></tr>
 <tr>
 <td>
 The official FIFA Women's World Cup 2023 logo has been adapted to incorporate 'Quiz' in the title and serves as a visual highlight of the screen adding vibrant colour to enhance the user experience.
@@ -56,7 +56,7 @@ The official FIFA Women's World Cup 2023 logo has been adapted to incorporate 'Q
 <!-- Feature 1 ends -->
 <br>
 <table>
-<tr><td> <b>Tracker Panel</b> </td></tr>
+<tr><th> <b>Tracker Panel</b> </th></tr>
 <tr><td>
 A tracker panel has been developed that provides the user with information on their progress throughout the quiz such as the current question being displayed and which questions were previously answered correctly or incorrectly.
 </td></tr>
@@ -69,7 +69,7 @@ A tracker panel has been developed that provides the user with information on th
 <!-- spacer -->
 <br>
 <table>
-<tr><td> <b>Question Container</b> </td></tr>
+<tr><th> <b>Question Container</b> </th></tr>
 <tr><td>
 The question container takes up a prominent space on the screen and clearly displays the text to the user, the high contrast allows for easy readibility and accessibilty.
 </td></tr>
@@ -82,7 +82,7 @@ The question container takes up a prominent space on the screen and clearly disp
 <!-- spacer -->
 <br>
 <table>
-<tr><td> <b>Choice Container</b> </td></tr>
+<tr><th> <b>Choice Container</b> </th></tr>
 <tr><td>
 The choices can be selected from easy to use containers utilising radio inputs.
 </td></tr>
@@ -95,7 +95,7 @@ The choices can be selected from easy to use containers utilising radio inputs.
 <!-- spacer -->
 <br>
 <table>
-<tr><td> <b>Main Button</b> </td></tr>
+<tr><th> <b>Main Button</b> </th></tr>
 <tr><td>
 The user interaction with the quiz is enabled through a simple button that has contextual commands associated with it depending on what screen is currently displayed. The focus is on making the quiz easy to use and accessible.
 </td></tr>
@@ -108,7 +108,7 @@ The user interaction with the quiz is enabled through a simple button that has c
 <!-- spacer -->
 <br>
 <table>
-<tr><td> <b>FWWC 2023 Official Font</b> </td></tr>
+<tr><th> <b>FWWC 2023 Official Font</b> </th></tr>
 <tr><td>
 The site uses the official font named 'FWWC 2023' to stay consistent with the brand identity of the event. The source of the font download has been linked in the Credits section.
 </td></tr>
@@ -121,7 +121,7 @@ The site uses the official font named 'FWWC 2023' to stay consistent with the br
 <!-- spacer -->
 <br>
 <table>
-<tr><td> <b>VAR Assist</b> </td></tr>
+<tr><th> <b>VAR Assist</b> </th></tr>
 <tr><td>
 The VAR Assist feature will allow the user to remove two incorrect choices from the screen. When activated, a function will be invoked that replaces the inner HTML of the incorrect choices with 'Offside!', the radio inputs will also be disabled for these choices. The user will be granted 3 VAR Assists at the start of the quiz, and can use 1 per question until they run out.
 </td></tr>
@@ -134,7 +134,7 @@ The VAR Assist feature will allow the user to remove two incorrect choices from 
 <!-- spacer -->
 <br>
 <table>
-<tr><td> <b>Goals Scored</b> </td></tr>
+<tr><th> <b>Goals Scored</b> </th></tr>
 <tr><td>
 A tracker will be visible on the bottom right hand corner of the screen during the quiz that will display the 'Goals Scored' by the user.
 </td></tr>
@@ -147,7 +147,7 @@ A tracker will be visible on the bottom right hand corner of the screen during t
 <!-- spacer -->
 <br>
 <table>
-<tr><td> <b>On Hover Changes</b> </td></tr>
+<tr><th> <b>On Hover Changes</b> </th></tr>
 <tr><td>
 Any items on the screen that the user can interact with will display a subtle colour change on the box shadow when hovered over to convey that the item can be interacted with by tapping or clicking on it.
 </td></tr>
@@ -171,7 +171,7 @@ Any items on the screen that the user can interact with will display a subtle co
 <br>
 <!-- Future Feature 1 begins -->
 <table>
-<tr><td><b>Substitution</b></td></tr>
+<tr><th><b>Substitution</b></th></tr>
 <tr><td>
 This feature will allow the user to swap out the question and choice set displayed on screen for another set, this may provide them with a question that they may be able to answer instead. This would possibly involve adding a new 'Substitutes' property to the quizEngine object that would contain the alternative questions and choices values, a function would then change the inner HTML of the containers accordingly once called.
 </td></tr>
@@ -179,7 +179,7 @@ This feature will allow the user to swap out the question and choice set display
 <!-- Future Feature 1 ends -->
 <br>
 <table>
-<tr><td><b>Match Timer</b></td></tr>
+<tr><th><b>Match Timer</b></th></tr>
 <tr><td>
 This feature will add a timer to the quiz with a time limit of perhaps 11 minutes, with subtle on screen hints at different checkpoints (e.g "half-time approaching", "approaching the final minute", "we're in injury time"). This would run 'asynchronously' and when it reaches 'full-time', the quiz would end regardless of the user's progression.
 </td></tr>
@@ -187,7 +187,7 @@ This feature will add a timer to the quiz with a time limit of perhaps 11 minute
 <!-- spacer -->
 <br>
 <table>
-<tr><td><b>Home or Away Kit Toggle</b></td></tr>
+<tr><th><b>Home or Away Kit Toggle</b></th></tr>
 <tr><td>
 This will toggle the colour scheme of the quiz to dark or light modes which will enhance the user experience and aid accessibility.
 </td></tr>
@@ -195,7 +195,7 @@ This will toggle the colour scheme of the quiz to dark or light modes which will
 <br>
 <!-- spacer -->
 <table>
-<tr><td><b>Bonus Facts</b></td></tr>
+<tr><th><b>Bonus Facts</b></th></tr>
 <tr><td>
 Initially I wanted to include bonus facts containing bite size pieces of information about the tournament and women's football in general, these would have been displayed in the container along with the 'GOAL!' or 'MISS!' feedback. It will be added in a future update instead.
 </td></tr>
@@ -203,7 +203,7 @@ Initially I wanted to include bonus facts containing bite size pieces of informa
 <!-- spacer -->
 <br>
 <table>
-<tr><td><b>Hall of Fame</b></td></tr>
+<tr><th><b>Hall of Fame</b></th></tr>
 <tr><td>
 This feature will create a leaderboard to store user scores, adding a competitive dimension to the quiz and perhaps promote sharing, replayibilty and increase enjoyment.
 </td></tr>
@@ -211,7 +211,7 @@ This feature will create a leaderboard to store user scores, adding a competitiv
 <!-- spacer -->
 <br>
 <table>
-<tr><td><b>Custom Radio Inputs</b></td></tr>
+<tr><th><b>Custom Radio Inputs</b></th></tr>
 <tr><td>
 The project has been deployed with standard/default radio inputs, however these will have customised styling in a future update.
 </td></tr>
