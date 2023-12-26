@@ -232,6 +232,33 @@ The project has been deployed with standard/default radio inputs, however these 
 <br>
 <!-- Features ends here -->
 
+
+## Design
+
+An overview of the key design aspects is included below.
+
+<details>
+  <summary>Colour Scheme</summary>
+
+</details>
+<!-- spacer -->
+<details>
+  <summary>Font</summary>
+
+</details>
+<!-- spacer -->
+<details>
+  <summary>Responsiveness</summary>
+
+</details>
+<!-- spacer -->
+
+
+
+
+
+
+
 <!-- The Wireframces section is shown below, this will be disaplyed in a collapsible format, with screenshots -->  
 ## Wireframes  
 
