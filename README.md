@@ -670,6 +670,7 @@ The issue was resolved by applying a 'max-width' property to the #answer-feedbac
 <br>
 Several manual tests were performed across difference devices and browser. The results of which are detailed below.
 <br>
+<br>
 <table>
 <tr><th rowspan="2">Test description</th><th colspan="3">Device</th></tr>
 <tr><th>Phone</th><th>Tablet</th><th>Laptop</th></tr>
