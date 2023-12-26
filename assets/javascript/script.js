@@ -75,6 +75,11 @@ const quizEngine = {
         `Which player has the record for World Cup caps, at 30 games over 5 tournaments?`     // Text for Question 11.
     ],
 
+    /**
+     * The choices property contains the 
+     * choice text to be displayed on screen
+     * to the user for each related question.
+     */
     choices: [
         ['Ireland', 'Spain', 'France', 'USA'],                                                             // Choices for Question 1.
         ['Katie McCabe (IRE)', 'Amanda Ilestedt (SWE)', 'Alexandra Popp (DEU)', 'Miyazawa Hinata (JAP)'],  // Choices for Question 2.
@@ -88,7 +93,6 @@ const quizEngine = {
         ['1970', '1980', '1990', '2000'],                                                                  // Choices for Question 10.
         ['Sam Kerr (AUS)', 'Kenza Dali (FRA)', 'Kristine Lilly (USA)', 'Filippa Angeldal (SWE)']           // Choices for Question 11.
     ],
-
 
     /**
      * The choiceContainers holds the choice text
