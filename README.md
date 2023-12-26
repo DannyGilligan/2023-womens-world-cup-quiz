@@ -401,7 +401,7 @@ A little bonus for the whiteboard lovers :cupid:
 <br>
 <table>
 <tr>
-<th>User Story</th><th>Result</th>
+<th>:User Story</th><th>:Result</th>
 </tr>
 <!-- User Story 1 begins -->
 <tr>
@@ -467,7 +467,7 @@ A little bonus for the whiteboard lovers :cupid:
 <br>
 <table>
 <tr>
-<th>User Story</th><th>Result</th>
+<th>:User Story</th><th>:Result</th>
 </tr>
 <!-- spacer -->
 <tr>
@@ -672,8 +672,8 @@ Several manual tests were performed across difference devices and browsers. The 
 <br>
 <br>
 <table>
-<tr><th rowspan="2">Test description</th><th colspan="3">Device</th></tr>
-<tr><th>Phone</th><th>Tablet</th><th>Laptop</th></tr>
+<tr><th rowspan="2">:Test description</th><th colspan="3">Device</th></tr>
+<tr><th>:Phone</th><th>:Tablet</th><th>:Laptop</th></tr>
 
 <tr><td>Deployed site link is live </td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td></tr>
 
@@ -861,7 +861,7 @@ The live link to this site is https://dannygilligan.github.io/2023-womens-world-
 
 #### 
 <table>
-<tr><th>Logo</th><th>Name</th><th>Primary Role</th><th>Link</th></tr>
+<tr><th>:Logo</th><th>:Name</th><th>:Primary Role</th><th>:Link</th></tr>
 <!-- Technology Used 1 begins -->
 <tr><td>
 <div>
@@ -978,7 +978,7 @@ The live link to this site is https://dannygilligan.github.io/2023-womens-world-
     <summary><b>Reference Materials Used</b></summary>
 <br>
 <table>
-<tr><th><b> Description </b></th><th><b> Link </b></th></tr>
+<tr><th><b> :Description </b></th><th><b> :Link </b></th></tr>
 <!-- Reference Material 1 begins -->
 <tr><td> Code Institute LMS Javascript Essentials Content </td>
 <td> 
@@ -1285,7 +1285,7 @@ The live link to this site is https://dannygilligan.github.io/2023-womens-world-
 <br>
 
 <table>
-<tr><th><b> Thumb </b></th><th><b> Production File Name </b></th><th><b> Description </b></th><th><b> Source </b></th></tr>
+<tr><th><b> :Thumb </b></th><th><b> :Production File Name </b></th><th><b> :Description </b></th><th><b> :Source </b></th></tr>
 <!-- image 1 begins -->
 <tr><td>
 
