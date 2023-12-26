@@ -238,17 +238,17 @@ The project has been deployed with standard/default radio inputs, however these 
 An overview of the key design aspects is included below.
 
 <details>
-  <summary><b>Colour Scheme</b></summary>
+  <summary><b> Colour Scheme </b></summary>
 
 </details>
 <!-- spacer -->
 <details>
-  <summary><b>Font</b></summary>
+  <summary><b> Font </b></summary>
 
 </details>
 <!-- spacer -->
 <details>
-  <summary><b>Responsiveness</b></summary>
+  <summary><b> Responsiveness </b></summary>
 
 </details>
 <!-- spacer -->
@@ -261,11 +261,10 @@ An overview of the key design aspects is included below.
 
 <!-- The Wireframces section is shown below, this will be disaplyed in a collapsible format, with screenshots -->  
 <details>
-  <summary><b>Wireframes</b></summary>
- 
-  
+  <summary><b> Wireframes </b></summary>
+<br>
 <details>  
-  <summary><b> Enter Username</b></summary>  
+  <summary><i> Enter Username </i></summary>  
 <br>
 <!-- Wireframe 1 1 begins -->
 The initial landing page will display the 'FIFA Women's World Cup Quiz 2023' logo, along with an input field to enter a username, and an 'enter' button. 
@@ -281,7 +280,7 @@ To note, the quiz will exist on a single page of HTML, with different sections b
 <!-- Wireframe 1 ends -->
 <!-- Wireframe 2 begins -->
 <details>
-  <summary> <b>Quiz Rules</b></summary>
+  <summary> <i>Quiz Rules</i> </summary>
 <br>
 Once the username is accepted, the rules of the quiz will then be displayed using the displayRules() function.
 
@@ -296,7 +295,7 @@ The button on this screen will have an inner text of 'Kick Off!' and will call a
 <!-- Wireframe 2 ends -->
 <!-- Wireframe 3 begins -->
 <details>
-  <summary> <b>Display Quiz</b></summary>
+  <summary> <i>Display Quiz</i> </summary>
 <br>
 After the user kicks off the quiz, the questions and choices will be displayed using the displayQuiz() function. 
 
@@ -317,7 +316,7 @@ Just below the logo, a progress tracker will be located that gives the user feed
 <!-- Wireframe 3 ends -->
 <!-- Wireframe 4 begins -->
 <details>
-  <summary> <b>VAR Assist Feature</b></summary>
+  <summary> <i>VAR Assist Feature</i> </summary>
 <br>
 The user can decide to trigger the varAssist() feature in order to remove 2 wrong answers from the screen. A 'varAssists' property will be included in the quizEngine object, this property will have 2 choice IDs held as string values in an array at each index that correspond to the wrong answers for each question, these choice IDs will be used to access the related HTML elements and set the display attribute to 'none'. The 'VAR Assists remaining' counter will be decremented upon use until it reaches 0, at this point the VAR Assist button will be disabled for the remainder of the quiz.
 
@@ -328,7 +327,7 @@ Once a choice has been made by the user. the 'Shoot!' button will then trigger t
 <!-- Wireframe 4 ends -->
 <!-- Wireframe 5 begins -->
 <details>
-  <summary> <b>Check Answer</b></summary>
+  <summary> <i>Check Answer</i> </summary>
 <br>
 Once the user has decided on their choice and selected the corresponding radio input, they can then trigger the checkAnswer() function by clicking on the 'Shoot!' button. This will then assign the radio inputs to a HTML collection by utilising the getElementsByClass method (the radio inputs will have a class attribute of 'choices'). 
 
@@ -345,7 +344,7 @@ The inner HTML of the main button will change to 'Play On!' which when pressed w
 <!-- Wireframe 5 ends -->
 <!-- Wireframe 6 begins -->
 <details>
-  <summary> <b>Display Next Question</b></summary>
+  <summary> <i>Display Next Question</i> </summary>
 <br>
 The nextQuestion() function will continue the process of iterating over the quizEngine object using the value of the questionCounter variable to access the corresponding index of the questions and choices to display until the final question has been reached. 
 
@@ -359,7 +358,7 @@ When the last question has been answered, the nextQuestion() function will chang
 <!-- Wireframe 6 ends -->
 <!-- Wireframe 7 begins -->
 <details>
-  <summary> <b>Display Result</b></summary>
+  <summary> <i>Display Result</i> </summary>
 <br>
 Once the last question has been answered, the user can click on the 'View Result!' button. This will display feedback to the user on the total goals scored out of the 11 attempts along with a text message congratulating the user on completing the quiz.
 
@@ -374,7 +373,7 @@ This screen is the end of the current quiz session.
 <!-- Wireframe 7 ends -->
 <!-- Wireframe 8 begins -->
 <details>
-  <summary> <b>Rematch</b></summary>
+  <summary> <i>Rematch</i> </summary>
 <br>
 The end screen prompts the user with a 'Rematch!' that will guide them back to the start screen.
 
@@ -385,7 +384,7 @@ This will effectively reset the quiz.
 <!-- Wireframe 8 ends -->
 <!-- Wireframe 9 begins -->
 <details>
-  <summary> <b>Whiteboard Wireframe</b></summary>
+  <summary> <i>Whiteboard Wireframe</i> </summary>
 <br>
 A little bonus for the whiteboard lovers :cupid:
 <br>
