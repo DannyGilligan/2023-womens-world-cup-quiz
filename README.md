@@ -507,7 +507,7 @@ A little bonus for the whiteboard lovers :cupid:
 <br>
 <!--sub-section -->
 <details>
-  <summary><i>Bottom panel layout</i></summary>  
+  <summary>  <i>Bottom panel layout</i></summary>  
 <br>
 <!-- Resolved Bug 1 begins -->
 <table>
@@ -545,7 +545,7 @@ I was able to resolve the issue by separating the bottom container into 3 sectio
 <!-- Resolved Bug 1 ends -->
 <!-- Resolved But 2 begins -->
 <details>
-  <summary><i>Font Import Issue</i></summary>
+  <summary>  <i>Font Import Issue</i></summary>
 <br>
 <table>
 <tr><th><b>Font Import Issue</b></th><th><b>Status</b></th></tr>
@@ -563,7 +563,7 @@ I experienced problems when importing the 'FWWC2023' font, I could not get it to
 <!-- Resolved Bug 2 ends -->
 <!-- Resolved Bug 3 begins -->
 <details>
-  <summary><i>Image Naming Index</i></summary>
+  <summary>  <i>Image Naming Index</i></summary>
 <br>
 <table>
 <tr><th><b>Image Naming Index</b></th><th><b>Status</b></th></tr>
@@ -584,7 +584,7 @@ The first image filenames in the sequence are now goal_image_0.webp and miss_ima
 <!-- Resolved Bug 3 ends -->
 <!-- Resolved Bug 4 begins -->
 <details>
-  <summary><i>InnerText Display</i></summary>
+  <summary>  <i>InnerText Display</i></summary>
 <br>
 <table>
 <tr><th><b>InnerText Display</b></th><th><b>Status</b></th></tr>
@@ -620,7 +620,7 @@ The issue related to the innerText property that was attached to the this dialog
 <!-- Resolved Bug 4 ends -->
 <!-- Resolved Bug 5 begins -->
 <details>
-  <summary><i>Image Responsiveness</i></summary>
+  <summary>  <i>Image Responsiveness</i></summary>
 <br>
 <table>
 <tr><th><b>Image Responsiveness</b></th><th><b>Status</b></th></tr>
