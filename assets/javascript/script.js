@@ -36,7 +36,7 @@ const quizEngine = {
     /**
      * Stores user name entered at the start screen, initialised with a null value.
      */
-    userName: '',        
+    userName: null,        
 
     /**
      * Stores the number of the current question. 
