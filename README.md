@@ -189,13 +189,27 @@ The Answer Feedback feature provides the user with instant feedback after submit
 </tr>
 </table>  
 <!-- spacer -->
+<br>
+<table>
+<tr><th> <b>No Option Selected Alert</b> </th></tr>
+<tr><td>
+The No Option Selected Alert feature provides the user with prominent and immediate feedback if they attempt to answer a question without selecting a choice first. This alert will stay on screen for the duration of the current question being asked, and will be removed automatically for the next question.
+</td></tr>
+<tr><td>
+
+![Official Font](assets/documentation/features11_no_option_alert.webp)
+
+</td></tr>
+</table>  
+<!-- spacer -->
+
 
 [Back to Features](#features)
 <br>
 <br>
 <br>
 </details>
-
+<!-- The Existing Features section ends here -->
 <!-- The Future Features section is shown below, this will be disaplyed in a collapsible format, with each item shown in tabular form -->
 <details>
   <summary> <b>Future Features</b></summary>
