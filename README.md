@@ -749,6 +749,14 @@ The issue was resolved by applying a 'max-width' property to the #answer-feedbac
 
 <tr><td>Rematch welcome screen displays as expected</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td></tr>
 
+<tr><td>Site tested on Google Chrome</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td></tr>
+
+<tr><td>Site tested on Microsoft Edge</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td></tr>
+
+<tr><td>Site tested on Mozilla Firefox</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td><td>:heavy_check_mark:</td></tr>
+
+<tr><td>Site tested on Apple Safari</td><td></td><td>:heavy_check_mark:</td><td></td></tr>
+
 </table>
 
 </details>
