@@ -256,7 +256,7 @@ An overview of the key design aspects is included below.
   <summary><b> Wireframes </b></summary>
 <br>
 <details>  
-  <summary><i> Enter Username </i></summary>  
+  <summary>  <i>Enter Username</i> </summary>  <!-- whitespace character used in heading '  ' to add indentation>
 <br>
 <!-- Wireframe 1 1 begins -->
 The initial landing page will display the 'FIFA Women's World Cup Quiz 2023' logo, along with an input field to enter a username, and an 'enter' button. 
@@ -1258,6 +1258,13 @@ The live link to this site is https://dannygilligan.github.io/2023-womens-world-
 <td> 
 
 [here](https://www.w3schools.com/cssref/css3_pr_animation.php)
+
+</td></tr>
+<!-- spacer -->
+<tr><td> How to add whitespace characters to README.md, by Stackoverflow user Tim Smith </td>
+<td> 
+
+[here](https://stackoverflow.com/questions/44810511/how-to-add-empty-spaces-into-md-markdown-readme-on-github)
 
 </td></tr>
 <!-- spacer -->
