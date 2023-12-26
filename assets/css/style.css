@@ -1984,7 +1984,7 @@ include the feedback image, text and
         padding-top: .3rem;
         border: 2px solid black;
         border-radius: 5px;
-        box-shadow: 3px 3px 2px grey;
+        box-shadow: 3px -3px 2px grey;
         display: none;
         transform: scaleY(-1);
     }
