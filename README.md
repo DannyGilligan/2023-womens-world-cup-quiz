@@ -261,8 +261,8 @@ An overview of the key design aspects is included below.
 
 <!-- The Wireframces section is shown below, this will be disaplyed in a collapsible format, with screenshots -->  
 <details>
-
-Below is a series of wireframes depicting the layout of the screens that will be displayed to the user in different contexts throughout the quiz.  
+  <summary><b>Wireframes</b></summary>
+ 
   
 <details>  
   <summary><b> Enter Username</b></summary>  
