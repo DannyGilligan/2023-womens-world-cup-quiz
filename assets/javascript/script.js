@@ -345,7 +345,7 @@ const quizEngine = {
         document.getElementById('bottom-panel-item3').style.animation = 'fadeOut .4s ease-in 0s 1 normal forwards';        // Syntax referenced from W3Schools "animation: name duration timing-function delay iteration-count direction fill-mode play-state;"
         document.getElementById('hero-image').style.display = 'none';
         document.getElementById('end-quiz-image').style.display = 'flex';
-        document.getElementById('end-quiz-image').style.animation = 'easeIn 2s ease-in 0s 1 normal forwards';
+        document.getElementById('end-quiz-image').style.animation = 'easeIn 1.5s ease-in 0s 1 normal forwards';
         document.getElementById('tracker-container').classList.add('tracker-container-glow');
         questionDialogueBox.innerHTML = `Congratulations on making it to the final whistle ${quizEngine.userName.value}!`;
         document.getElementById('answer-feedback-outer').style.display = 'none';

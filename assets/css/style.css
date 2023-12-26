@@ -2173,6 +2173,7 @@ for the main on screen button
         height: 8rem;
         border: 1.5px solid black;
         box-shadow: 3px 3px 2px grey;
+        padding: .5rem;
 
         /* Below is the code for the subtle 3D sphere effect copied directly from https://codepen.io/theanonymouskoder/pen/PomjmeY?editors=1100 */
         background:
