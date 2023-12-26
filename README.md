@@ -167,6 +167,28 @@ Any items on the screen that the user can interact with will display a subtle co
 </td></tr>
 </table>
 <!-- spacer -->
+<br>
+<table>
+<tr><th Colspan="2"> <b>Answer Feedback</b> </th></tr>
+<tr><td Colspan="2">
+The Answer Feedback feature provides the user with instant feedback after submitting their answers. An image depicting players in various stages of celebration or desolation are displayed to the user along with a 'GOAL!' or 'MISS!' text caption. 
+</td></tr>
+<tr><td> <i>Goal!</i> </td><td> <i>Miss!</i> </td></tr>
+
+<tr>
+<td>
+
+![Before Use](assets/documentation/features10_answer_feedback_1.webp)
+
+</td>
+<td>
+
+![After Use](assets/documentation/features10_answer_feedback_2.webp)
+
+</td>
+</tr>
+</table>  
+<!-- spacer -->
 
 [Back to Features](#features)
 <br>
