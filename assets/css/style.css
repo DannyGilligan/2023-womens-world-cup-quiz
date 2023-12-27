@@ -10,7 +10,6 @@ body {
     margin: 0;
     padding: 0;
     background: white;
-    /*  <---- TOGGLE THIS!!! */
     font-family: "FWWC 2023";
 }
 
@@ -1552,13 +1551,10 @@ the entire contents of the page
 
     /* The CSS code below for the background gradient effect was taken directly from https://cssgradient.io/ */
     body {
-        background: #0d1017;
-        /*
         background: rgb(255, 212, 254);
         background: -moz-linear-gradient(270deg, rgba(255, 212, 254, 1) 0%, rgba(255, 239, 254, 1) 14%, rgba(255, 255, 255, 1) 20%, rgba(255, 255, 255, 1) 80%, rgba(255, 239, 254, 1) 93%, rgba(255, 212, 254, 1) 100%);
         background: -webkit-linear-gradient(270deg, rgba(255, 212, 254, 1) 0%, rgba(255, 239, 254, 1) 14%, rgba(255, 255, 255, 1) 20%, rgba(255, 255, 255, 1) 80%, rgba(255, 239, 254, 1) 93%, rgba(255, 212, 254, 1) 100%);
         background: linear-gradient(270deg, rgba(255, 212, 254, 1) 0%, rgba(255, 239, 254, 1) 14%, rgba(255, 255, 255, 1) 20%, rgba(255, 255, 255, 1) 80%, rgba(255, 239, 254, 1) 93%, rgba(255, 212, 254, 1) 100%);
-        */
     }
 
     #outer-container {
