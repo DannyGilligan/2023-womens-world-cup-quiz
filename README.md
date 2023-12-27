@@ -352,7 +352,7 @@ The site uses the official font named 'FWWC 2023' to stay consistent with the br
 <table>
 <tr><th> <b>Am I Responsive?</b> </th></tr>
 <tr><td>
-The site was designed following the principles of mobile first design. All initial CSS style rules were implemented for use on mobile devices with a min-width screen size of 320px, from there the layout was adapted as needed for progressively larger screens using media queries. <br><br>Flexbox functionality was utilised for the 'containers' used throughout the site which helped immensely in achieving the desired level of responsiveness. The screenshot below was taken from the site:<br> https://ui.dev/amiresponsive
+The site was designed following the principles of mobile first design. All initial CSS style rules were implemented for use on mobile devices with a min-width screen size of 320px, from there the layout was adapted as needed for progressively larger screens using media queries. <br><br>Flexbox functionality was utilised for the 'containers' used throughout the site which helped immensely in achieving the desired level of responsiveness. The screenshot below was taken from the site:<br><br> https://ui.dev/amiresponsive<br>
 </td></tr>
 <tr><td>
 
