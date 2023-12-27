@@ -278,6 +278,7 @@ The colours used throughout the quiz are inspired by the official colour palette
 <br><br>
 
 The official rgb and hex values were published by [schemecolor.com](https://www.schemecolor.com/fifa-womens-world-cup-2023-logo.php#download).
+<br><br>
 <table>
 <tr><th>Colour</th><th>Details</th></tr>
 <!-- spacer -->
