@@ -33,8 +33,8 @@ The deployed site can be found [here](https://dannygilligan.github.io/2023-women
 
 
 
-<!-- The Existing Features section is shown below, this will be disaplyed in a collapsible format, with each item shown in tabular form -->
-## Features
+
+## Features <!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- FEATURES SECTION >
 
 An overview of the key features that have been implemented for this project is shown below, along with several features that will be implemented in future updates.
 <br>
@@ -267,7 +267,7 @@ The project has been deployed with standard/default radio inputs, however these 
 <!-- Features ends here -->
 
 
-## Design
+## Design <!---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- DESIGN SECTION >
 
 An overview of the key design aspects is included below.
 
@@ -503,7 +503,7 @@ A little bonus for the whiteboard lovers :cupid:
 <br>
 <br>
 
-## User Stories
+## User Stories <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- USER STORIES SECTION >
 
 
 The user stories relating to this MVP version of the quiz from the perspective of both a user and a developer are outlined below.
@@ -628,7 +628,7 @@ The user stories relating to this MVP version of the quiz from the perspective o
 <br>
 <br>
 
-## Bugs
+## Bugs <!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- BUGS SECTION >
 
 <details>
   <summary><b>Resolved Bugs</b></summary>
@@ -829,12 +829,55 @@ During the coding phase of introducing Javascript to the site, I enountered seve
 </details>
 <!-- Resolved Bugs section ends here -->
 
+
+
+<details>
+  <summary><b>Unresolved Bug</b>
+<br>
+<details>
+  <summary>No Option Selected Alert Positioning</summary>
+<br>
+A bug was encountered when playing a 'rematch' of the quiz. When the 'no option selected' alert is displayed, it's positioning is slightly out of place on the tracker panel.<br><br>
+As this is purely cosmetic, and the core functionality is unaffected, the bug has not been fixed at the time of deployment.
+
+<table>
+<tr><td><b>No Option Selected Alert Bug</b></td><td><b>Status</b></td></th></tr>
+
+<tr><td>
+
+![No Option Alert Bug](assets/documentation/unresolved_bug_1_alert_positioning.webp)
+
+</td><td>:x:</td>
+
+
+</tr>
+
+
+
+
+
+
+
+</details>
+
+
+
+
+
+
+
+</details>
+
+
+
+
+
 [Back to Top](#fifa-2023-womens-world-cup-quiz)
 <br>
 <br>
 <br>
 
-## Manual Testing
+## Manual Testing  <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- MANUAL TESTING SECTION >
 
 Several manual tests were performed across different devices, browsers and code validators. The results of which are outlined below.
 <br>
@@ -1069,8 +1112,8 @@ The site passed through the [Google Lighthouse](https://developer.chrome.com/doc
 <br>
 <br>
 
-<!-- The Deployment section is shown below, this will be disaplyed in a collapsible format, with each item shown in tabular form -->
-## Deployment
+
+## Deployment <!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ DEPLOYMENT SECTION >
 
 The site was deployed as a Minimum Viable Product using Github pages. 
 
@@ -1139,8 +1182,8 @@ The live link to this site is https://dannygilligan.github.io/2023-womens-world-
 <br>
 <br>
 
-<!-- The Technologies Used section is shown below, this will be disaplyed in tabular form with icons for each technology -->
-## Technologies Used
+
+## Technologies Used <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- TECHNOLOGIES USED SECTION >
 
 #### 
 <table>
@@ -1254,7 +1297,7 @@ The live link to this site is https://dannygilligan.github.io/2023-womens-world-
 <br>
 <br>
 
-## Credits
+## Credits <!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ CREDITS SECTION >
 
 <!-- The Credits section is shown below, this will be disaplyed in a collapsible format, with a sub section for reference content/materials and a sub section for images, with each item shown in tabular form -->
 <details>
@@ -1881,7 +1924,7 @@ The live link to this site is https://dannygilligan.github.io/2023-womens-world-
 <br>
 <br>
 
-## Acknowledgements
+## Acknowledgements <!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ ACKNOWLEDGEMENTS SECTION >
 
 [Back to Top](#fifa-2023-womens-world-cup-quiz)
 <br>
