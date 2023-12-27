@@ -1602,8 +1602,7 @@ The live link to this site is https://dannygilligan.github.io/2023-womens-world-
 <td>Julie Ertz, USA</td>
 <td>
 
-[here](https://www.forbes.com/sites/maryroeloffs/2023/08/06/us-knocked-out-of-womens-world-cup-after-dramatic-loss-to-sweden/
-)
+[here](https://www.forbes.com/sites/maryroeloffs/2023/08/06/us-knocked-out-of-womens-world-cup-after-dramatic-loss-to-sweden/)
 </td>
 </tr>
 <!-- spacer -->
@@ -1627,8 +1626,7 @@ The live link to this site is https://dannygilligan.github.io/2023-womens-world-
 <td>Megan Rapinoe, USA</td>
 <td>
 
-[here](https://edition.cnn.com/sport/live-news/uswnt-sweden-womens-world-cup-knockout/h_9d56c79135d15aab65841753a8692a16
-)
+[here](https://edition.cnn.com/sport/live-news/uswnt-sweden-womens-world-cup-knockout/h_9d56c79135d15aab65841753a8692a16)
 </td>
 </tr>
 <!-- spacer -->
@@ -1640,8 +1638,7 @@ The live link to this site is https://dannygilligan.github.io/2023-womens-world-
 <td>Sophie Howard, Scotland</td>
 <td>
 
-[here](https://domesticolammy.medium.com/salma-paralluelo-and-my-uneven-connection-with-womens-football-a8a99bc4dd10
-)
+[here](https://domesticolammy.medium.com/salma-paralluelo-and-my-uneven-connection-with-womens-football-a8a99bc4dd10)
 </td>
 </tr>
 <!-- spacer -->
@@ -1653,8 +1650,7 @@ The live link to this site is https://dannygilligan.github.io/2023-womens-world-
 <td>Alex Morgan, USA</td>
 <td>
 
-[here](https://www.the-express.com/sport/soccer/109905/USWNT-lose-top-spot-FIFA-Rankings
-)
+[here](https://www.the-express.com/sport/soccer/109905/USWNT-lose-top-spot-FIFA-Rankings)
 </td>
 </tr>
 <!-- spacer -->
@@ -1666,8 +1662,7 @@ The live link to this site is https://dannygilligan.github.io/2023-womens-world-
 <td>Sam Kerr, Australia</td>
 <td>
 
-[here](https://www.foxsports.com.au/football/world-cup/changed-sport-forever-australia-reacts-to-matildas-devastating-world-cup-exit/news-story/de2c94a88de3019c2af2e7eae2f81774
-)
+[here](https://www.foxsports.com.au/football/world-cup/changed-sport-forever-australia-reacts-to-matildas-devastating-world-cup-exit/news-story/de2c94a88de3019c2af2e7eae2f81774)
 </td>
 </tr>
 <!-- spacer -->
@@ -1679,8 +1674,7 @@ The live link to this site is https://dannygilligan.github.io/2023-womens-world-
 <td>Mary Earps, England</td>
 <td>
 
-[here](https://www.bbc.com/sport/football/66611861
-)
+[here](https://www.bbc.com/sport/football/66611861)
 </td>
 </tr>
 <!-- spacer -->
@@ -1692,8 +1686,7 @@ The live link to this site is https://dannygilligan.github.io/2023-womens-world-
 <td>Hannah Wilkinson, New Zealand</td>
 <td>
 
-[here](https://www.abc.net.au/news/2023-07-25/womens-world-cup-live-updates-new-zealand-philippines-var/102644612
-)
+[here](https://www.abc.net.au/news/2023-07-25/womens-world-cup-live-updates-new-zealand-philippines-var/102644612)
 </td>
 </tr>
 <!-- spacer -->
@@ -1866,8 +1859,20 @@ The live link to this site is https://dannygilligan.github.io/2023-womens-world-
 [here](https://seeklogo.com/vector-logo/495259/fifa-womens-world-cup-2023)
 </td>
 </tr>
-</table>
+<!-- spacer -->
+<tr><td>
 
+![favicon_source_thumb](assets/documentation/thumbnails/quiz_over_pic_thumb.webp)
+</td>
+<td>end_quiz_image</td>
+<td>Spain Women's World Cup Squad</td>
+<td>
+
+[here](https://www.uefa.com/womensworldcup/news/027a-166817b8be17-9e0082e122cd-1000--spain-win-2023-women-s-world-cup-all-the-results/)
+</td>
+</tr>
+<!-- spacer -->
+</table>
 </details>
 <!-- Images credits end here -->
 
