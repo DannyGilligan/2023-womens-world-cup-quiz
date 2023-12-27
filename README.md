@@ -739,11 +739,10 @@ The issue was resolved by applying a 'max-width' property to the #answer-feedbac
 
 ## Manual Testing
 
+Several manual tests were performed across different devices, browsers and code validators. The results of which are outlined below.
+<br>
 <details>
   <summary><b>Manual Testing</b></summary>
-<br>
-Several manual tests were performed across difference devices and browsers. The results of which are detailed below.
-<br>
 <br>
 <table>
 <tr><th rowspan="2">Test description</th><th colspan="3">Device</th></tr>
