@@ -863,11 +863,12 @@ Several manual tests were performed across different devices, browsers and code 
 <details>
   <summary><b>Code Validation</b></summary>
 <br>
+<!-- spacer -->
 <details>
   <summary>  <i>HTML Validation</i></summary>
 <br>
-The HTML code passed through the [W3C Validator](https://validator.w3.org/) without returning any errors.
-
+The HTML code passed through the [W3C HTML Validator](https://validator.w3.org/) without returning any errors.
+<br>
 <table>
 <tr><td>W3C HTML Validator</td><td>Status</td></tr>
 
@@ -882,13 +883,29 @@ The HTML code passed through the [W3C Validator](https://validator.w3.org/) with
 </td>
 </tr>
 </table>
-
 </details>
-
+<!-- spacer -->
 <details>
   <summary>  <i>CSS Validation</i></summary>
+<br>
+The HTML code passed through the [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) without returning any errors.
+<br>
+<table>
+<tr><td>W3C CSS Validator</td><td>Status</td></tr>
 
+</tr>
+<td>
+
+![HTML Validation](assets/documentation/validation_css_final.webp)
+
+</td>
+<td>
+:heavy_check_mark:
+</td>
+</tr>
+</table>
 </details>
+<!-- spacer -->
 
 <details>
   <summary>  <i>Javascript Validation</i></summary>
