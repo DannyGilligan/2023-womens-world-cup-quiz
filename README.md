@@ -857,6 +857,7 @@ As this is purely cosmetic, and the core functionality is unaffected, the bug ha
 </table>
 </details>
 <!-- spacer -->
+<br>
 <details>
   <summary> <i>FWWC2023 Font File Name</i></summary>
 <br>
