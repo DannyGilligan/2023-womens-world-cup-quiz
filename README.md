@@ -277,45 +277,53 @@ An overview of the key design aspects is included below.
 <table>
 <tr><th>Colour</th><th>Details</th></tr>
 <!-- spacer -->
-<tr>
-<td>
+<tr><td>
+<br>
 
 ![Coquelicot](assets/documentation/colour_1.webp)
 
 </td>
-<td>Name: Coquelicot<br>Hex: #E83800<br>RGB: (232, 56, 0)<br>CMYK: 0, 0.758, 1, 0.090</td>
+<td>Name: Coquelicot<br><br>Hex: #E83800<br><br>RGB: (232, 56, 0)<br><br>CMYK: 0, 0.758, 1, 0.090</td>
 </tr>
 <!-- spacer -->
+<tr><td>
+<br>
 
-<tr><td>insert</td><td>Name: Coquelicot<br>Hex: #E83800<br>RGB: (232, 56, 0)<br>CMYK: 0, 0.758, 1, 0.090</td></tr>
+![Eggshell](assets/documentation/colour_2.webp)
 
+</td><td><br>Name: Eggshell<br><br>Hex: #EEEDCE<br><br>RGB: (238, 237, 206)<br><br>CMYK: 0, 0.004, 0.134, 0.066</td></tr>
+<!-- spacer -->
+<tr><td>
+<br>
 
-<tr><td>insert</td><td>Name: Coquelicot<br>Hex: #E83800<br>RGB: (232, 56, 0)<br>CMYK: 0, 0.758, 1, 0.090</td></tr>
+![Web Forest Green](assets/documentation/colour_3.webp)
 
+</td><td>Name: Web Forest Green<br><br>Hex: #2F852B<br><br>RGB: (47, 133, 43)<br><br>CMYK: 0.646, 0, 0.676, 0.478</td></tr>
+<!-- spacer -->
+<tr><td>
+<br>
 
-<tr><td>insert</td><td>Name: Coquelicot<br>Hex: #E83800<br>RGB: (232, 56, 0)<br>CMYK: 0, 0.758, 1, 0.090</td></tr>
+![Web Forest Green](assets/documentation/colour_4.webp)
 
+</td><td>Name: Light Carmine Pink<br><br>Hex: #ED6877<br><br>RGB: (237, 104, 119)<br><br>CMYK: 0, 0.561, 0.497, 0.070</td></tr>
+<!-- spacer -->
+<tr><td>
+<br>
 
-<tr><td>insert</td><td>Name: Coquelicot<br>Hex: #E83800<br>RGB: (232, 56, 0)<br>CMYK: 0, 0.758, 1, 0.090</td></tr>
+![Web Forest Green](assets/documentation/colour_5.webp)
 
+</td><td>Name: American Yellow<br><br>Hex: #F3BC00<br><br>RGB: (243, 188, 0)<br><br>CMYK: 0, 0.226, 1, 0.047</td></tr>
+<!-- spacer -->
+<tr><td>
+<br>
 
-<tr><td>insert</td><td>Name: Coquelicot<br>Hex: #E83800<br>RGB: (232, 56, 0)<br>CMYK: 0, 0.758, 1, 0.090</td></tr>
+![Web Forest Green](assets/documentation/colour_6.webp)
 
-
-
-
-
-
-
-
-
+</td><td>Name: Dodger Blue<br><br>Hex: #2C86FF<br><br>RGB: (44, 134, 255)<br><br>CMYK: 0.827, 0.474, 0, 0</td></tr>
+<!-- spacer -->
 </table>
-
-
-
-
-
 </details>
+<!-- Colour Scheme section ends here -->
 <!-- spacer -->
 <details>
   <summary><b> Font </b></summary>
