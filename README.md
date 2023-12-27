@@ -647,7 +647,7 @@ The user stories relating to this MVP version of the quiz from the perspective o
 
 <tr>
 <td>
-I encountered issues with displaying the bottom container that holds the VAR Assist and Shoot Buttons, along with the Goals Scored tracker. Initially I thought that using display: flex, and using 'space-between' would automatically position these items evenly, with the shoot button in the centre.
+I encountered issues with displaying the bottom container that holds the VAR Assist and Shoot Buttons, along with the Goals Scored tracker. Initially I thought that using display: flex, and using 'space-between' would automatically position these items evenly, with the shoot button in the centre.<br><br>
 </td>
 <td rowspan="4">
 :heavy_check_mark:
@@ -663,7 +663,7 @@ I encountered issues with displaying the bottom container that holds the VAR Ass
 
 <tr>
 <td>
-I was able to resolve the issue by separating the bottom container into 3 sections with widths of 30%, 40% and 30% respectively (yellow borders added for illustration, percentage values may change after deployment), and then set the flex properties for each individual section, and the entire container as a whole. This produced the desired result. 
+I was able to resolve the issue by separating the bottom container into 3 sections with widths of 30%, 40% and 30% respectively (yellow borders added for illustration, percentage values may change after deployment), and then set the flex properties for each individual section, and the entire container as a whole. This produced the desired result.<br><br>
 </td>
 </tr>
 
@@ -722,7 +722,7 @@ The first image filenames in the sequence are now goal_image_0.webp and miss_ima
 <tr><th><b>InnerText Display</b></th><th><b>Status</b></th></tr>
 <tr>
 <td>
-While testing the initial screens displayed to the user, such as the 'display rules' and 'display choices' screens, I noticed the innerText of the main dialogue box was not behaving as expected. It appeared to be 'stuck' on the welcome message.
+While testing the initial screens displayed to the user, such as the 'display rules' and 'display choices' screens, I noticed the innerText of the main dialogue box was not behaving as expected. It appeared to be 'stuck' on the welcome message.<br><br>
 </td>
 <td rowspan="4">
 :heavy_check_mark:
@@ -738,7 +738,7 @@ While testing the initial screens displayed to the user, such as the 'display ru
 
 <tr>
 <td>
-The issue related to the innerText property that was attached to the this dialogue box when it was declared as a variable. Once the innerText property was removed, the screens displayed the correct/expected text to the user.
+The issue related to the innerText property that was attached to the this dialogue box when it was declared as a variable. Once the innerText property was removed, the screens displayed the correct/expected text to the user.<br><br>
 </td>
 </tr>
 
@@ -764,7 +764,7 @@ The issue related to the innerText property that was attached to the this dialog
 <tr><th><b>Image Responsiveness</b></th><th><b>Status</b></th></tr>
 <tr>
 <td>
-During testing, the images displayed at the answer feedback stage lost responsiveness. I was following a mobile first approach and focused my initial styling for smaller screen devices. When testing for larger screens, the bug was discovered.
+During testing, the images displayed at the answer feedback stage lost responsiveness. I was following a mobile first approach and focused my initial styling for smaller screen devices. When testing for larger screens, the bug was discovered.<br><br>
 </td>
 <td rowspan="4">
 :heavy_check_mark:
@@ -780,7 +780,7 @@ During testing, the images displayed at the answer feedback stage lost responsiv
 
 <tr>
 <td>
-The issue was resolved by applying a 'max-width' property to the #answer-feedback-image rule.
+The issue was resolved by applying a 'max-width' property to the #answer-feedback-image rule.<br><br>
 </td>
 </tr>
 
