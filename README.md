@@ -852,18 +852,10 @@ As this is purely cosmetic, and the core functionality is unaffected, the bug ha
 ![No Option Alert Bug](assets/documentation/unresolved_bug_1_alert_positioning.webp)
 
 </td><td>:x:</td>
-
-
 </tr>
-
-
-
-
-
-
-
+</table>
 </details>
-
+<!-- spacer -->
 
 
 
