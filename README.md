@@ -274,6 +274,10 @@ An overview of the key design aspects is included below.
 <details>
   <summary><b> Colour Scheme </b></summary>
 <br>
+The colours used throughout the quiz are inspired by the official colour palette and branding of the FIFA 2023 Women's World Cup.<br><br>For the purposes of accessibility and offering more contrast to the user, adjustments were made accordingly (e.g the shade of blue used in the question containers).
+<br><br>
+
+The official rgb and hex values were published by [schemecolor.com](https://www.schemecolor.com/fifa-womens-world-cup-2023-logo.php#download).
 <table>
 <tr><th>Colour</th><th>Details</th></tr>
 <!-- spacer -->
