@@ -851,8 +851,13 @@ Several manual tests were performed across difference devices and browsers. The 
 
 </table>
 
-</details>
+[Back to Manual Testing](#manual-testing)
+<br>
+<br>
+<br>
 
+</details>
+<!-- Manual Testing section ends here -->
 
 
 [Back to Top](#fifa-2023-womens-world-cup-quiz)
