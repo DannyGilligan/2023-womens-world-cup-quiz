@@ -866,6 +866,22 @@ Several manual tests were performed across different devices, browsers and code 
 <details>
   <summary>  <i>HTML Validation</i></summary>
 
+The HTML code passed through the [W3C Validator](https://validator.w3.org/) without returning any errors.
+
+<tr><td>W3C HTML Validator</td><td>Status</td></tr>
+
+<tr>
+<td>
+
+![HTML Validation](assets/documentation/validation_html_final.webp)
+
+</td>
+<td>
+:heavy_check_mark:
+</td>
+</tr>
+
+
 </details>
 
 <details>
