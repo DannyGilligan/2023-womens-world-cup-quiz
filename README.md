@@ -33,8 +33,8 @@ The deployed site can be found [here](https://dannygilligan.github.io/2023-women
 
 
 
-
-## Features <!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- FEATURES SECTION -->
+<!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- FEATURES SECTION -->
+## Features 
 
 An overview of the key features that have been implemented for this project is shown below, along with several features that will be implemented in future updates.
 <br>
@@ -266,8 +266,8 @@ The project has been deployed with standard/default radio inputs, however these 
 <br>
 <!-- Features ends here -->
 
-
-## Design <!---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- DESIGN SECTION -->
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- DESIGN SECTION -->
+## Design 
 
 An overview of the key design aspects is included below.
 
@@ -503,7 +503,9 @@ A little bonus for the whiteboard lovers :cupid:
 <br>
 <br>
 
-## User Stories <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- USER STORIES SECTION -->
+
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ USER STORIES SECTION -->
+## User Stories 
 
 
 The user stories relating to this MVP version of the quiz from the perspective of both a user and a developer are outlined below.
@@ -628,7 +630,9 @@ The user stories relating to this MVP version of the quiz from the perspective o
 <br>
 <br>
 
-## Bugs <!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- BUGS SECTION -->
+
+<!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- BUGS SECTION -->
+## Bugs 
 
 <details>
   <summary><b>Resolved Bugs</b></summary>
@@ -877,7 +881,8 @@ As this is purely cosmetic, and the core functionality is unaffected, the bug ha
 <br>
 <br>
 
-## Manual Testing  <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- MANUAL TESTING SECTION -->
+<!---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- MANUAL TESTING SECTION -->
+## Manual Testing  
 
 Several manual tests were performed across different devices, browsers and code validators. The results of which are outlined below.
 <br>
@@ -1112,8 +1117,8 @@ The site passed through the [Google Lighthouse](https://developer.chrome.com/doc
 <br>
 <br>
 
-
-## Deployment <!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ DEPLOYMENT SECTION -->
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ DEPLOYMENT SECTION -->
+## Deployment 
 
 The site was deployed as a Minimum Viable Product using Github pages. 
 
@@ -1183,7 +1188,8 @@ The live link to this site is https://dannygilligan.github.io/2023-womens-world-
 <br>
 
 
-## Technologies Used <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- TECHNOLOGIES USED SECTION -->
+<!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- TECHNOLOGIES USED SECTION -->
+## Technologies Used 
 
 #### 
 <table>
@@ -1297,7 +1303,8 @@ The live link to this site is https://dannygilligan.github.io/2023-womens-world-
 <br>
 <br>
 
-## Credits <!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ CREDITS SECTION -->
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- CREDITS SECTION -->
+## Credits 
 
 <!-- The Credits section is shown below, this will be disaplyed in a collapsible format, with a sub section for reference content/materials and a sub section for images, with each item shown in tabular form -->
 <details>
@@ -1924,7 +1931,8 @@ The live link to this site is https://dannygilligan.github.io/2023-womens-world-
 <br>
 <br>
 
-## Acknowledgements <!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ ACKNOWLEDGEMENTS SECTION -->
+<!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- ACKNOWLEDGEMENTS SECTION -->
+## Acknowledgements 
 
 [Back to Top](#fifa-2023-womens-world-cup-quiz)
 <br>
