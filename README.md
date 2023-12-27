@@ -273,6 +273,47 @@ An overview of the key design aspects is included below.
 
 <details>
   <summary><b> Colour Scheme </b></summary>
+<br>
+<table>
+<tr><th>Colour</th><th>Details</th></tr>
+<!-- spacer -->
+<tr>
+<td>
+
+![Coquelicot](assets/documentation/colour_1.webp)
+
+</td>
+<td>Name: Coquelicot<br>Hex: #E83800<br>RGB: (232, 56, 0)<br>CMYK: 0, 0.758, 1, 0.090</td>
+</tr>
+<!-- spacer -->
+
+<tr><td>insert</td><td>Name: Coquelicot<br>Hex: #E83800<br>RGB: (232, 56, 0)<br>CMYK: 0, 0.758, 1, 0.090</td></tr>
+
+
+<tr><td>insert</td><td>Name: Coquelicot<br>Hex: #E83800<br>RGB: (232, 56, 0)<br>CMYK: 0, 0.758, 1, 0.090</td></tr>
+
+
+<tr><td>insert</td><td>Name: Coquelicot<br>Hex: #E83800<br>RGB: (232, 56, 0)<br>CMYK: 0, 0.758, 1, 0.090</td></tr>
+
+
+<tr><td>insert</td><td>Name: Coquelicot<br>Hex: #E83800<br>RGB: (232, 56, 0)<br>CMYK: 0, 0.758, 1, 0.090</td></tr>
+
+
+<tr><td>insert</td><td>Name: Coquelicot<br>Hex: #E83800<br>RGB: (232, 56, 0)<br>CMYK: 0, 0.758, 1, 0.090</td></tr>
+
+
+
+
+
+
+
+
+
+</table>
+
+
+
+
 
 </details>
 <!-- spacer -->
