@@ -857,11 +857,25 @@ As this is purely cosmetic, and the core functionality is unaffected, the bug ha
 </table>
 </details>
 <!-- spacer -->
+<details>
+  <summary> <i>Font File Name</i></summary>
+<br>
+The official FIFA font name is FWWC2023-Regular, as I had encountered issues with importing and self hosting font, I am reluctant to change the file naming convention in case it results in unexpected behavious.<br><br>
+The fonts load as expected with the current file name across all devices tested, so I have left the font file name as it is, even though it contains upper case characters.
+<br><br>
+<table>
+<tr><td><b>Font File Name</b></td><td><b>Status</b></td></th></tr>
 
+<tr><td>
+
+![No Option Alert Bug](assets/documentation/unresolved_bug_2_font_file_name.webp)
+
+</td><td>:x:</td>
+</tr>
+</table>
 </details>
-
-
-
+<!-- spacer -->
+</details>
 
 
 [Back to Top](#fifa-2023-womens-world-cup-quiz)
