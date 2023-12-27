@@ -844,7 +844,7 @@ During the coding phase of introducing Javascript to the site, I enountered seve
 <br>
 A bug was encountered when playing a 'rematch' of the quiz. When the 'no option selected' alert is displayed, its positioning is slightly out of place on the tracker panel.<br><br>
 As this is purely cosmetic, and the core functionality is unaffected, the bug has not been fixed at the time of deployment.
-
+<br>
 <table>
 <tr><td><b>No Option Selected Alert Bug</b></td><td><b>Status</b></td></th></tr>
 
@@ -852,7 +852,7 @@ As this is purely cosmetic, and the core functionality is unaffected, the bug ha
 
 ![No Option Alert Bug](assets/documentation/unresolved_bug_1_alert_positioning.webp)
 
-</td><td>:x:</td>
+</td><td> :x:</td>
 </tr>
 </table>
 </details>
