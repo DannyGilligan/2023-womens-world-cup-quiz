@@ -730,13 +730,13 @@ The issue was resolved by applying a 'max-width' property to the #answer-feedbac
 <!-- Resolved Bug 5 ends -->
 <!-- Resolved Bug 6 begins -->
 <details>
-  <summary>  <i>Unexpected Javascript Behavious</i></summary>
+  <summary>  <i>Unexpected Javascript Behaviour</i></summary>
 <br>
 <table>
 <tr><th><b>Unexpected Javascript Behaviour</b></th><th><b>Status</b></th></tr>
 <tr>
 <td>
-During the coding phase of introducing Javascript to the site, I enountered several situations where the code did not behave as anticipated, this was always down to some assumption I made implicitly, such as when adding event listeners somehow thinking they would 'overwrite' the existing listener instead literally adding another one on top. It's something I'm vigilant about now! Each time I ran into an issue like this, I used the debugging tool to step through the code to identify when it departed from what I expected, I don't think I could have completed the project without using this tool! Even though I'm a novice at this stage regarding it's full functionality, it was intuitive enough to use without needing too much experience. If you're a student and reading this, use this tool whenever you're stuck!
+During the coding phase of introducing Javascript to the site, I enountered several situations where the code did not behave as anticipated, this was always down to some assumption I made implicitly, such as when adding event listeners somehow thinking they would 'overwrite' the existing listener instead of literally adding another one on top of the button. It's something I'm vigilant about now! <br><br>Each time I ran into an issue like this, I used the debugging tool to add breakpoints and step through the code to identify exactly where it departed from what I expected.<br><br> I don't think I could have completed the project without using this tool! Even though I'm a novice at this stage regarding it's full functionality, it was intuitive enough to use without needing too much experience. If you're a student and reading this, use this tool whenever you're stuck!<br><br>
 </td>
 <td rowspan="2">
 :heavy_check_mark:
