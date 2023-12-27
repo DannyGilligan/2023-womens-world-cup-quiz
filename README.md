@@ -915,7 +915,7 @@ The HTML code passed through the [W3C HTML Validator](https://validator.w3.org/)
 
 <br>
 <table>
-<tr><td>W3C HTML Validator</td><td>Status</td></tr>
+<tr><td><b>W3C HTML Validator</b></td><td>Status</td></tr>
 
 </tr>
 <td>
@@ -938,7 +938,7 @@ The HTML code passed through the [W3C CSS Validator](https://jigsaw.w3.org/css-v
 
 <br>
 <table>
-<tr><td>W3C CSS Validator</td><td>Status</td></tr>
+<tr><td><b>W3C CSS Validator</b></td><td>Status</td></tr>
 
 </tr>
 <td>
@@ -961,7 +961,7 @@ The HTML code passed through the [JS Hint Validator](https://jshint.com/) withou
 
 <br>
 <table>
-<tr><td>JS Hint Validator</td><td>Status</td></tr>
+<tr><td><b>JS Hint Validator</b></td><td>Status</td></tr>
 
 </tr>
 <td>
@@ -984,7 +984,7 @@ The site passed through the [Google Lighthouse](https://developer.chrome.com/doc
 
 <br>
 <table>
-<tr><td>Lighthouse Analysis</td><td>Status</td></tr>
+<tr><td><b>Lighthouse Analysis</b></td><td>Status</td></tr>
 
 </tr>
 <td>
