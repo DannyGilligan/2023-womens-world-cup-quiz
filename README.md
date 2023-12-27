@@ -690,6 +690,12 @@ The issue related to the innerText property that was attached to the this dialog
 </td>
 </tr>
 </table>
+
+[Back to Bugs](#bugs)
+<br>
+<br>
+<br>
+
 </details>
 <!-- Resolved Bug 4 ends -->
 <!-- Resolved Bug 5 begins -->
@@ -726,6 +732,12 @@ The issue was resolved by applying a 'max-width' property to the #answer-feedbac
 </td>
 </tr>
 </table>
+
+[Back to Bugs](#bugs)
+<br>
+<br>
+<br>
+
 </details>
 <!-- Resolved Bug 5 ends -->
 <!-- Resolved Bug 6 begins -->
@@ -751,6 +763,12 @@ During the coding phase of introducing Javascript to the site, I enountered seve
 </tr>
 
 </table>
+
+[Back to Bugs](#bugs)
+<br>
+<br>
+<br>
+
 </details>
 <!-- Resolved Bug 6 ends -->
 
