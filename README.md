@@ -836,12 +836,13 @@ During the coding phase of introducing Javascript to the site, I enountered seve
 
 
 <details>
-  <summary><b>Unresolved Bug</b>
+  <summary><b>Unresolved Bugs</b></summary>
 <br>
+
 <details>
   <summary>No Option Selected Alert Positioning</summary>
 <br>
-A bug was encountered when playing a 'rematch' of the quiz. When the 'no option selected' alert is displayed, it's positioning is slightly out of place on the tracker panel.<br><br>
+A bug was encountered when playing a 'rematch' of the quiz. When the 'no option selected' alert is displayed, its positioning is slightly out of place on the tracker panel.<br><br>
 As this is purely cosmetic, and the core functionality is unaffected, the bug has not been fixed at the time of deployment.
 
 <table>
@@ -856,11 +857,6 @@ As this is purely cosmetic, and the core functionality is unaffected, the bug ha
 </table>
 </details>
 <!-- spacer -->
-
-
-
-
-
 
 </details>
 
