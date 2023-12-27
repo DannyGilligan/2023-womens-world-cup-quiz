@@ -865,12 +865,13 @@ Several manual tests were performed across different devices, browsers and code 
 <br>
 <details>
   <summary>  <i>HTML Validation</i></summary>
-
+<br>
 The HTML code passed through the [W3C Validator](https://validator.w3.org/) without returning any errors.
 
+<table>
 <tr><td>W3C HTML Validator</td><td>Status</td></tr>
 
-<tr>
+</tr>
 <td>
 
 ![HTML Validation](assets/documentation/validation_html_final.webp)
@@ -880,7 +881,7 @@ The HTML code passed through the [W3C Validator](https://validator.w3.org/) with
 :heavy_check_mark:
 </td>
 </tr>
-
+</table>
 
 </details>
 
