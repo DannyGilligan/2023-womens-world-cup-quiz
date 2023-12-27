@@ -855,9 +855,9 @@ As this is purely cosmetic, and the core functionality is unaffected, the bug ha
 </td><td>:x:</td>
 </tr>
 </table>
+<br>
 </details>
 <!-- spacer -->
-<br>
 <details>
   <summary> <i>FWWC2023 Font File Name</i></summary>
 <br>
