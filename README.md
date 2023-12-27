@@ -933,11 +933,29 @@ The HTML code passed through the [JS Hint Validator](https://jshint.com/) withou
 </table>
 </details>
 <!-- spacer -->
-
 <details>
   <summary>  <i>Lighthouse Results</i></summary>
+<br>
 
+The site passed through the [Google Lighthouse](https://developer.chrome.com/docs/lighthouse/overview) tool scoring 100 in all categories.
+
+<br>
+<table>
+<tr><td>Lighthouse Analysis</td><td>Status</td></tr>
+
+</tr>
+<td>
+
+![HTML Validation](assets/documentation/validation_lighthouse_final.webp)
+
+</td>
+<td>
+:heavy_check_mark:
+</td>
+</tr>
+</table>
 </details>
+<!-- spacer -->
 
 
 [Back to Manual Testing](#manual-testing)
