@@ -858,10 +858,10 @@ As this is purely cosmetic, and the core functionality is unaffected, the bug ha
 </details>
 <!-- spacer -->
 <details>
-  <summary> <i>Font File Name</i></summary>
+  <summary> <i>FWWC2023 Font File Name</i></summary>
 <br>
-The official FIFA font name is FWWC2023-Regular, as I had encountered issues with importing and self hosting font, I am reluctant to change the file naming convention in case it results in unexpected behavious.<br><br>
-The fonts load as expected with the current file name across all devices tested, so I have left the font file name as it is, even though it contains upper case characters.
+The official FIFA font name is FWWC2023-Regular. As I had encountered issues with importing and self hosting this font during the development of the site, I am reluctant to change the file name in case it results in unexpected behaviour.<br><br>
+The font loads and displays successfully with the current file name across all devices tested, so I have left the font file name as it is, even though it contains upper case characters.
 <br><br>
 <table>
 <tr><td><b>Font File Name</b></td><td><b>Status</b></td></th></tr>
