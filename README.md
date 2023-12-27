@@ -857,7 +857,41 @@ Several manual tests were performed across difference devices and browsers. The 
 <br>
 
 </details>
+
 <!-- Manual Testing section ends here -->
+
+
+<details>
+  <summary><b>Code Validation</b></summary>
+<br>
+<details>
+  <summary>  <i>HTML Validation</i></summary>
+
+</details>
+
+<details>
+  <summary>  <i>CSS Validation</i></summary>
+
+</details>
+
+<details>
+  <summary>  <i>Javascript Validation</i></summary>
+
+</details>
+
+<details>
+  <summary>  <i>Lighthouse Results</i></summary>
+
+</details>
+
+
+[Back to Manual Testing](#manual-testing)
+<br>
+<br>
+<br>
+
+</details>
+
 
 
 [Back to Top](#fifa-2023-womens-world-cup-quiz)
