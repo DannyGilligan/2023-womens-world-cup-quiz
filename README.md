@@ -519,12 +519,13 @@ The user stories relating to a minimum viable product version of the quiz from t
 <td>As a user, I am provided with a final result</td><td>:heavy_check_mark:</td>
 </tr>
 </table>
-</details>
 
 [Back to User Stories](#user-stories)
 <br>
 <br>
 <br>
+
+</details>
 <!-- 'As a User' User Stories end here -->
 <!-- 'As a Developer' User Stories are shown below -->
 <details>
@@ -556,12 +557,15 @@ The user stories relating to a minimum viable product version of the quiz from t
 </tr>
 <!-- spacer -->
 </table>
-</details>
 
 [Back to User Stories](#user-stories)
 <br>
 <br>
 <br>
+
+</details>
+
+
 
 <!-- User Stories section ends here -->
 
