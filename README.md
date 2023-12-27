@@ -452,7 +452,7 @@ A little bonus for the whiteboard lovers :cupid:
 ## User Stories
 
 
-The user stories relating to a minimum viable product version of the quiz from the perspective of both a user and a developer are outlined below.
+The user stories relating to this MVP version of the quiz from the perspective of both a user and a developer are outlined below.
 <br>
 <!-- 'As a user' User Stories are shown below -->
 <details>
