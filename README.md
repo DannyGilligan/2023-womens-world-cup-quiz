@@ -1936,6 +1936,13 @@ The live link to this site is https://dannygilligan.github.io/2023-womens-world-
 <!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- ACKNOWLEDGEMENTS SECTION -->
 ## Acknowledgements 
 
+I'd like to acknowledge and thank the Student Support team at Code Institute.<br>
+Life likes to take unexpected twists and turns at times, and I was hanging on to this course by the thinnest of threads. The support team was willing and able to help when it was needed most. Thank you! :pray:<br>
+
+I'd also like to thank my mentor Martina Terlevic who jumped online over the christmas period to give a much needed second look at my code, thank you!<br>
+
+Thanks also to every person who chooses to go out of their way to answer random questions on Stackoverflow and forums across the internet, you're the unsung heroes of the world! :superhero:
+
 [Back to Top](#fifa-2023-womens-world-cup-quiz)
 <br>
 <br>
