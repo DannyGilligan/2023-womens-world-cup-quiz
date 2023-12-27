@@ -988,7 +988,7 @@ The HTML code passed through the [W3C HTML Validator](https://validator.w3.org/)
   <summary>  <i>CSS Validation</i></summary>
 <br>
 
-The HTML code passed through the [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) without returning any errors.
+The CSS code passed through the [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) without returning any errors.
 
 <br>
 <table>
@@ -1011,7 +1011,7 @@ The HTML code passed through the [W3C CSS Validator](https://jigsaw.w3.org/css-v
   <summary>  <i>Javascript Validation</i></summary>
 <br>
 
-The HTML code passed through the [JS Hint Validator](https://jshint.com/) without returning any errors.
+The Javascript code passed through the [JS Hint Validator](https://jshint.com/) without returning any errors.
 
 <br>
 <table>
