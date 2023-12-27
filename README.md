@@ -520,6 +520,12 @@ The user stories relating to a minimum viable product version of the quiz from t
 </tr>
 </table>
 </details>
+
+[Back to User Stories](#user-stories)
+<br>
+<br>
+<br>
+<!-- 'As a User' User Stories end here -->
 <!-- 'As a Developer' User Stories are shown below -->
 <details>
   <summary><b>As a Developer</b></summary>
@@ -551,6 +557,11 @@ The user stories relating to a minimum viable product version of the quiz from t
 <!-- spacer -->
 </table>
 </details>
+
+[Back to User Stories](#user-stories)
+<br>
+<br>
+<br>
 
 <!-- User Stories section ends here -->
 
